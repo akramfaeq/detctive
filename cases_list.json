@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "case_busan_001",
+      "title": "الموجة الرقمية الميتة",
+      "location": "منارة سونغدو المهجورة، بوسان",
+      "shortDesc": "طالبة ثانوية من أغنى عائلات كوريا وُجدت ميتة على درج منارة مهجورة خارج بوسان. لا مقاومة عنيفة، لا شهود واضحين، والتغطية مقطوعة — لكن كل شيء بدأ بحساب مجهول على X.",
+      "thumbnailEmoji": "🗼",
+      "difficulty": "hard",
+      "estimatedMinutes": 30,
+      "evidenceCount": 12,
+      "isNew": true,
+      "requiredPoints": 0
+    }
+  ]
+}
