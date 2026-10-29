@@ -1,0 +1,169 @@
+{
+  "id": "case_travel_002",
+  "title": "عشاء بالدرجة الأولى",
+  "location": "قطار يوروستار، نفق المانش، بين باريس ولندن",
+  "date": "2026/02/14",
+  "shortDesc": "ناشر كتب شهير وُجد ميتاً في مقصورة الطعام بالدرجة الأولى قبل وصول القطار للندن. كل من كان على الطاولة يدّعي أنه لم يمس كأسه — لكن ترتيب الجلوس يُثبت أن شخصاً واحداً فقط كان في موقع يسمح له بذلك.",
+  "thumbnailEmoji": "🚄",
+  "difficulty": "easy",
+  "estimatedMinutes": 15,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 150,
+  "fullStory": "على متن قطار يوروستار الفاخر بين باريس ولندن، وُجد الناشر البريطاني الشهير أوليفر هيوز (62 عاماً) فاقداً للوعي في مقصورة الطعام بالدرجة الأولى ولفظ أنفاسه الأخيرة قبيل وصول القطار لمحطة سانت بانكراس.\n\nكان أوليفر يتعشى مع أربعة من كبار كتّابه على طاولة دائرية. السم وُجد في كأس النبيذ الأحمر الخاص به.\n\nالطاولة الدائرية كانت مرتبة بشكل محدد: أوليفر في الشمال، وكاتبة الجرائم في الجنوب، والروائي الفرنسي في الشرق، والشاعرة في الغرب، والمحرر الأدبي في الشمال الشرقي مباشرة بجانب أوليفر. النادل يؤكد أنه وضع النبيذ أمام أوليفر مباشرة ولم يلمسه أحد من الطاقم بعدها.",
+  "hint": "الطاولة دائرية وكل جالس فيها على مسافة متساوية تقريباً — إلا من كان في الشمال الشرقي مباشرة بجانب أوليفر. المسافة بين يده وكأس أوليفر أقل من نصف متر.",
+  "correctSuspectId": "char_editor",
+  "solutionExplanation": "القاتل هو المحرر الأدبي فيليكس برون.\n\nالثغرة القاتلة:\nالطاولة دائرية وكل شخص يمكنه نظرياً الوصول لكأس أوليفر — لكن الواقع مختلف. خريطة الجلوس تُثبت أن فيليكس كان الجار المباشر لأوليفر في الشمال الشرقي. مسافة يده من كأس أوليفر لا تتجاوز أربعين سنتيمتراً.\n\nباقي الجالسين كانوا يحتاجون لمد الذراع بشكل لافت فوق الطاولة لتصل أيديهم للكأس — وهذه الحركة كانت ستُلاحظ. فيليكس وحده يمكنه إضافة شيء للكأس بحركة طبيعية غير ملفتة.\n\nالدليل: حبة صغيرة من السم المستخدم وُجدت في جيب سترة فيليكس — وأوليفر كان على وشك فسخ عقده معه بعد انكشاف سرقته لأفكار كاتب آخر.",
+  "characters": [
+    {
+      "id": "char_oliver",
+      "name": "أوليفر هيوز",
+      "age": 62,
+      "role": "الضحية",
+      "description": "ناشر بريطاني شهير وُجد مسموماً في مقصورة الطعام بالدرجة الأولى.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_editor",
+      "name": "فيليكس برون",
+      "age": 45,
+      "role": "مشتبه به",
+      "description": "المحرر الأدبي لدار النشر. كان يجلس مباشرة بجانب أوليفر في الشمال الشرقي. على وشك فقدان وظيفته.",
+      "imageEmoji": "👤",
+      "interrogation": "يؤكد أنه لم يمس كأس أوليفر ويُشير لباقي الجالسين.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل مددت يدك نحو كأس أوليفر في أي لحظة؟",
+          "answer": "لا إطلاقاً، لم أقترب من كأسه.",
+          "isLie": true,
+          "lieHint": "كان الأقرب جلوساً لكأس أوليفر من بين جميع الجالسين."
+        },
+        {
+          "id": "q2",
+          "text": "هل كنت تعلم أن أوليفر يعتزم فسخ عقدك؟",
+          "answer": "سمعت إشاعات لكنني لم أصدقها.",
+          "isLie": true,
+          "lieHint": "أوليفر أرسله رسالة رسمية بالفسخ قبل يومين."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": true,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_writer",
+      "name": "إيزابيل مورو",
+      "age": 38,
+      "role": "مشتبه بها",
+      "description": "كاتبة الجرائم الشهيرة. كانت تجلس في الجنوب مقابل أوليفر تماماً.",
+      "imageEmoji": "👤",
+      "interrogation": "بدت منزعجة ولكن إجاباتها متسقة — الجلوس في الجنوب يجعل مد اليد لكأسه أمراً لافتاً.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل لاحظت أي شيء غير عادي على الطاولة؟",
+          "answer": "رأيت فيليكس يتحرك كثيراً في مقعده لكنني لم أُعر الأمر اهتماماً.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "خريطة ترتيب الجلوس على الطاولة الدائرية",
+      "description": "خريطة دقيقة ترسم مواقع كل جالس — تُثبت أن فيليكس في الشمال الشرقي كان الأقرب لكأس أوليفر بمسافة أربعين سنتيمتراً فقط.",
+      "type": "physical",
+      "emoji": "🗺️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "حبة السم في جيب فيليكس",
+      "description": "حبة صغيرة من السم المستخدم في الجريمة وُجدت في جيب سترة فيليكس الداخلي.",
+      "type": "physical",
+      "emoji": "💊",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "رسالة فسخ العقد",
+      "description": "رسالة رسمية من أوليفر لفيليكس قبل يومين تُعلمه بفسخ عقده بعد اكتشاف سرقته لأفكار كاتب آخر.",
+      "type": "digital",
+      "emoji": "📧",
+      "revealOrder": 3,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "id": "case_travel_006",
+  "title": "السيارة رقم 9",
+  "location": "قطار نوم أوروبي، بين فيينا وبودابست",
+  "date": "2026/06/23",
+  "shortDesc": "دبلوماسي وُجد خانقاً في مقصورة النوم رقم 9. الباب مقفول من الداخل والنافذة مغلقة — لكن مقياس الضوضاء المثبت في المقصورة يُثبت أن الجريمة وقعت حين كان القطار يمر في النفق الطويل والضوضاء تُغطي كل شيء.",
+  "thumbnailEmoji": "🛏️",
+  "difficulty": "medium",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 100,
+  "rewardPoints": 200,
+  "fullStory": "على متن قطار النوم الليلي بين فيينا وبودابست، وُجد الدبلوماسي النمساوي إيغور فيلد (58 عاماً) خانقاً في مقصورة النوم رقم 9 الساعة الثالثة والنصف فجراً. الباب مقفول من الداخل والنافذة مغلقة.\n\nمواجه مقصورته في المقصورة 10 كان ضابط شرطة متقاعد. ادّعى أنه سمع أي صوت طوال الليل ولاحظ فتح الباب مرة واحدة فقط حين دخل إيغور في البداية.\n\nلكن النظام الإلكتروني الجديد الذي يراقب مستوى الضوضاء في كل مقصورة لأسباب أمنية كشف أن في الفترة بين الثانية والثانية وعشرين دقيقة — الفترة التي يمر فيها القطار في النفق الطويل — كان هناك ارتفاع غير طبيعي في الضوضاء داخل المقصورة 9 لمدة دقيقتين كاملتين.",
+  "hint": "القاتل اختار توقيت النفق الطويل عمداً — لأن ضوضاء النفق تُغطي كل صوت. لكن كيف دخل مقصورة مقفولة من الداخل؟ راجع طريقة قفل مقصورات القطار القديمة.",
+  "correctSuspectId": "char_conductor",
+  "solutionExplanation": "القاتل هو مسؤول المقصورات هانس ماير.\n\nالثغرة القاتلة:\nالقطار قديم والمقصورات تستخدم أقفالاً ميكانيكية من نوع خاص يمكن للمسؤول المدرب فتحها من الخارج بأداة خاصة دون الحاجة لمفتاح البطاقة.\n\nهانس اختار توقيت النفق الطويل بدقة — دقيقتان من الضوضاء الكافية لتغطية صوت الجريمة. دخل المقصورة بأداة القفل الخاصة، نفّذ الجريمة، وأعاد إغلاق الباب من الخارج.\n\nالنظام الإلكتروني لمراقبة الضوضاء سجّل الارتفاع الغير طبيعي في المقصورة 9 خلال النفق — ارتفاع لا يُفسَّر بضوضاء النفق وحدها.\n\nالدليل: أداة فتح القفل الخاصة وُجدت في حقيبة هانس، وإيغور كان يحمل وثائق تُدين هانس في قضية تهريب.",
+  "characters": [
+    {
+      "id": "char_igor",
+      "name": "إيغور فيلد",
+      "age": 58,
+      "role": "الضحية",
+      "description": "دبلوماسي نمساوي وُجد خانقاً في مقصورة نومه المقفولة.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_conductor",
+      "name": "هانس ماير",
+      "age": 49,
+      "role": "مشتبه به",
+      "description": "مسؤول المقصورات على القطار. يمتلك أداة فتح القفل الخاصة. متورط في قضية تهريب.",
+      "imageEmoji": "👤",
+      "interrogation": "يدّعي أنه كان في كابينة الطاقم طوال الليل.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل زرت المقصورة 9 في أي وقت بعد منتصف الليل؟",
+          "answer": "لا، لم يستدعني أحد من المقصورة 9.",
+          "isLie": true,
+          "lieHint": "سجل الضوضاء يُثبت نشاطاً في المقصورة 9 خلال النفق — لم يُثبَّت بدون دخيل."
+        },
+        {
+          "id": "q2",
+          "text": "هل تمتلك أداة فتح الأقفال الخاصة بمقصورات هذا الطراز؟",
+          "answer": "نعم لكنها للطوارئ فقط ولم أستخدمها الليلة.",
+          "isLie": true,
+          "lieHint": "آثار استخدام حديثة على الأداة وُجدت عند الفحص."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_police",
+      "name": "كارل هوفر",
+      "age": 63,
+      "role": "شاهد",
+      "description": "ضابط شرطة متقاعد في المقصورة 10 مقابل الضحية.",
+      "imageEmoji": "👤",
+      "interrogation": "صادق ومفصّل — لم يسمع شيئاً خلال النفق لأن الضوضاء كانت عالية.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل سمعت أي صوت غير عادي خلال الليل؟",
+          "answer": "لم أسمع شيئاً — الضوضاء في النفق كانت عالية جداً لمدة دقيقتين حوالي الثانية فجراً.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": true,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "سجل مراقبة الضوضاء الإلكتروني",
+      "description": "يُثبت ارتفاعاً غير طبيعي في ضوضاء المقصورة 9 لمدة دقيقتين خلال النفق — ارتفاع لا يُفسَّر بضوضاء النفق وحدها.",
+      "type": "digital",
+      "emoji": "📊",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "أداة فتح القفل في حقيبة هانس",
+      "description": "أداة خاصة لفتح أقفال مقصورات هذا الطراز القديم وُجدت في حقيبة هانس — مع آثار استخدام حديثة.",
+      "type": "physical",
+      "emoji": "🔧",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "وثائق التهريب عند الضحية",
+      "description": "وثائق في حوزة إيغور تُثبت تورط هانس في شبكة تهريب تعمل عبر قطارات النوم الأوروبية.",
+      "type": "physical",
+      "emoji": "📁",
+      "revealOrder": 3,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

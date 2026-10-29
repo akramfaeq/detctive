@@ -1,0 +1,191 @@
+{
+  "id": "case_travel_005",
+  "title": "الجسر المتحرك",
+  "location": "عبّارة ليلية، بحر البلطيق، بين ستوكهولم وهلسنكي",
+  "date": "2026/05/07",
+  "shortDesc": "مهندس بحري وُجد ميتاً في قاع العبّارة الليلية. يبدو سقوطاً عرضياً من الجسر المتحرك — حتى يُثبت تسجيل الرياح والأمواج أن الجسر كان مستحيل الوقوف عليه تلك الليلة بدون مساعدة شخص آخر.",
+  "thumbnailEmoji": "⛴️",
+  "difficulty": "medium",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 100,
+  "rewardPoints": 200,
+  "fullStory": "على متن العبّارة الليلية 'بالتيك ستار' بين ستوكهولم وهلسنكي، وُجد جثة المهندس البحري لارس إيكسون (52 عاماً) في قاع الجسر الخارجي الثالث في الساعة الثالثة فجراً.\n\nبدا للوهلة الأولى أنه خرج ليلاً وسقط بفعل الأمواج العالية. لكن خبير الملاحة البحرية الذي راجع سجلات الطقس والأمواج تلك الليلة قال شيئاً حاسماً: سرعة الرياح وميلان العبّارة تلك الليلة كانت بدرجة تجعل البقاء على الجسر الثالث مستحيلاً لشخص واحد دون التمسك بدعامتين يدوياً — ومن يتمسك بالدعامتين لا يمكنه السقوط وحده.\n\nأربعة أشخاص كانوا في نفس جناح لارس وكان لديهم سبب للخروج ليلاً.",
+  "hint": "إذا كان البقاء على الجسر يستلزم التمسك بكلتا اليدين — فلا يمكن لشخص أن يسقط وحده. شخص آخر كان يمسك لارس ودفعه. من كان معه على الجسر؟",
+  "correctSuspectId": "char_colleague",
+  "solutionExplanation": "القاتل هو الزميل البحري أوسكار ليندبرغ.\n\nالثغرة القاتلة:\nأثبت خبير الملاحة البحرية أن الوقوف على الجسر الثالث تلك الليلة يستلزم التمسك بكلتا اليدين — مما يجعل السقوط العرضي مستحيلاً. شخص آخر كان حاضراً ودفع لارس.\n\nأوسكار كان المسؤول عن فريق الصيانة البحرية على العبّارة — يعرف الجسر الثالث جيداً ويعرف أنه المنطقة الوحيدة بلا كاميرات مراقبة.\n\nالدليل: ألياف قماشية من معطف أوسكار وُجدت على درابزين الجسر الثالث في المكان الذي كان يقف فيه القاتل. ولارس كان يحمل أدلة على تلاعب أوسكار بتقارير السلامة البحرية.",
+  "characters": [
+    {
+      "id": "char_lars",
+      "name": "لارس إيكسون",
+      "age": 52,
+      "role": "الضحية",
+      "description": "مهندس بحري وُجد ميتاً في قاع الجسر الثالث. كان يحمل تقارير تُثبت تلاعباً في سلامة العبّارة.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "blue",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_colleague",
+      "name": "أوسكار ليندبرغ",
+      "age": 45,
+      "role": "مشتبه به",
+      "description": "مسؤول الصيانة البحرية على العبّارة. يعرف الجسر الثالث جيداً ويعرف أنه بلا كاميرات.",
+      "imageEmoji": "👤",
+      "interrogation": "يؤكد أنه كان في كابينته نائماً طوال الليل.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل خرجت للجسر الخارجي في أي وقت الليل؟",
+          "answer": "لا، الطقس كان سيئاً والريح قوية. بقيت في كابينتي.",
+          "isLie": true,
+          "lieHint": "ألياف معطفه وُجدت على درابزين الجسر الثالث."
+        },
+        {
+          "id": "q2",
+          "text": "هل كنت تعلم أن لارس يفحص تقارير السلامة البحرية؟",
+          "answer": "من المفترض أن يفعل ذلك — هذا عمله.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q3",
+          "text": "هل تلاعبت بأي تقارير سلامة على هذه العبّارة؟",
+          "answer": "اتهام خطير بلا أساس.",
+          "isLie": true,
+          "lieHint": "التقارير التي كان لارس يحملها تُثبت التلاعب بتواقيع مزورة لأوسكار."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_passenger",
+      "name": "إيريكا سالونن",
+      "age": 33,
+      "role": "مشتبه بها",
+      "description": "راكبة فنلندية. كانت على جسر خارجي آخر وقت الجريمة تُدخّن.",
+      "imageEmoji": "👤",
+      "interrogation": "إجاباتها متسقة — كانت على الجسر الأول لا الثالث.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل رأيت أي شخص على الجسر الثالث؟",
+          "answer": "رأيت شكلين في الظلام على الجسر الثالث قبل أن تشتد الريح — ظننتهما يتحدثان.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "تقرير خبير الملاحة البحرية",
+      "description": "يُثبت التقرير أن سرعة الرياح وميلان العبّارة تلك الليلة كانت تجعل الوقوف على الجسر الثالث مستحيلاً بدون التمسك بكلتا اليدين — مما يجعل السقوط العرضي لشخص واحد مستحيلاً.",
+      "type": "physical",
+      "emoji": "🌊",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "ألياف القماش على الدرابزين",
+      "description": "ألياف قماشية من معطف بحري ثقيل وُجدت على درابزين الجسر الثالث في موضع يد القاتل — تتطابق مع قماش معطف أوسكار.",
+      "type": "physical",
+      "emoji": "🧶",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "شهادة إيريكا",
+      "description": "رأت شكلين على الجسر الثالث قبيل الجريمة — مما يُثبت أن القاتل كان حاضراً مع الضحية لا أنه سقط وحده.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "تقارير السلامة المزورة",
+      "description": "تقارير السلامة البحرية التي كان لارس يحملها تُثبت تلاعباً بتواقيع مزورة — توقيع أوسكار ليندبرغ يظهر في المكان الخطأ.",
+      "type": "physical",
+      "emoji": "📋",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

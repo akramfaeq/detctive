@@ -1,0 +1,233 @@
+{
+  "id": "case_travel_010",
+  "title": "الممر الأخير",
+  "location": "قطار أنفاق معلق، كوالالمبور، ماليزيا",
+  "date": "2026/10/19",
+  "shortDesc": "مدير شركة تقنية وُجد ميتاً في آخر عربة من قطار الأنفاق المعلق الفاخر. الكاميرات تُثبت أن ثلاثة أشخاص دخلوا العربة وخرج منها شخصان فقط — لكن الشخص الثالث لم يكن الضحية.",
+  "thumbnailEmoji": "🚡",
+  "difficulty": "hard",
+  "estimatedMinutes": 35,
+  "isNew": true,
+  "requiredPoints": 200,
+  "rewardPoints": 400,
+  "fullStory": "في آخر رحلة ليلية لقطار 'سكاي لينك' المعلق الفاخر في كوالالمبور، وُجد مدير شركة التقنية الماليزية ليم وي تشونغ (47 عاماً) ميتاً في آخر عربة من القطار حين وصل المحطة النهائية.\n\nكاميرات محطة الانطلاق تُثبت أن ثلاثة أشخاص ركبوا آخر عربة: ليم، وامرأة بمعطف بيج، ورجل بحقيبة عمل. كاميرات محطة الوصول تُثبت أن امرأة بمعطف بيج ورجلاً بحقيبة عمل خرجا — لكن الرجل الذي خرج لم يكن نفس الرجل الذي ركب.\n\nبين المحطتين توقف القطار في محطتين وسيطتين — في إحداهما حدث التبديل.",
+  "hint": "شخص ركب بحقيبة عمل وشخص آخر نزل بحقيبة عمل — لكنهما شخصان مختلفان. في أي محطة وسيطة حدث التبديل؟ وكيف خرج القاتل الحقيقي دون أن تُسجّله الكاميرا؟",
+  "correctSuspectId": "char_switcher",
+  "solutionExplanation": "القاتل هو زياد إبراهيم — والعملية تضمنت شريكاً.\n\nالثغرة القاتلة:\nزياد ركب القطار في محطة الانطلاق بحقيبة عمل، نفّذ الجريمة في العربة الأخيرة، ثم في المحطة الوسيطة الأولى نزل بسرعة وسلّم الحقيبة لشريكه أحمد الذي ركب بنفس الحقيبة وخرج في محطة الوصول.\n\nزياد نفسه خرج من المحطة الوسيطة من الباب الخلفي الذي لا تُغطيه الكاميرا الرئيسية — باب طارئ يُفتح من الداخل فقط.\n\nالثغرة: كاميرا المحطة الوسيطة تُظهر رجلاً بحقيبة عمل ينزل ورجلاً آخر يركب في نفس الثانية — مما يعني أنهما تعمّدا التزامن ليبدو كشخص واحد في التسجيل السريع.\n\nالدليل: سجل بطاقة زياد في محطة الانطلاق، وتحليل وجهي دقيق يُثبت أن الراكب والنازل في محطة الوصول شخصان مختلفان.",
+  "characters": [
+    {
+      "id": "char_lim",
+      "name": "ليم وي تشونغ",
+      "age": 47,
+      "role": "الضحية",
+      "description": "مدير شركة تقنية ماليزية وُجد ميتاً في آخر عربة عند الوصول.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_switcher",
+      "name": "زياد إبراهيم",
+      "age": 35,
+      "role": "مشتبه به",
+      "description": "ركب القطار في محطة الانطلاق ونزل في المحطة الوسيطة. يدّعي أنه لم يركب القطار أصلاً تلك الليلة.",
+      "imageEmoji": "👤",
+      "interrogation": "ينكر ركوب القطار تلك الليلة بشكل قاطع.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل ركبت قطار سكاي لينك تلك الليلة؟",
+          "answer": "لا، لم أقترب من محطة القطار الليلة الماضية.",
+          "isLie": true,
+          "lieHint": "سجل بطاقته الممغنطة يُثبت دخوله محطة الانطلاق."
+        },
+        {
+          "id": "q2",
+          "text": "هل تعرف شخصاً اسمه أحمد يشبهك في اللباس؟",
+          "answer": "أحمد صديق قديم لكن لا علاقة له بهذا الأمر.",
+          "isLie": true,
+          "lieHint": "تحليل الوجه يُثبت أن الخارج من محطة الوصول هو أحمد لا زياد."
+        },
+        {
+          "id": "q3",
+          "text": "ما علاقتك بليم وي تشونغ؟",
+          "answer": "لا أعرفه.",
+          "isLie": true,
+          "lieHint": "سجلات شركته تُثبت أن ليم رفض عقداً ضخماً مع شركة زياد قبل أسبوعين."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "medium",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_partner",
+      "name": "أحمد رضا",
+      "age": 33,
+      "role": "مشتبه به",
+      "description": "شريك زياد الذي ركب في المحطة الوسيطة وخرج في محطة الوصول بنفس حقيبة العمل.",
+      "imageEmoji": "👤",
+      "interrogation": "يدّعي أنه ركب من المحطة الوسيطة بشكل طبيعي.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "من أين ركبت القطار تلك الليلة؟",
+          "answer": "ركبت من المحطة الوسيطة الأولى كالمعتاد.",
+          "isLie": true,
+          "lieHint": "التزامن الدقيق بين نزوله وركوبه في نفس الثانية غير طبيعي — كان منسقاً مع زياد."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "medium",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_woman",
+      "name": "سارة عبدالله",
+      "age": 29,
+      "role": "شاهدة",
+      "description": "المرأة بالمعطف البيج التي ركبت وخرجت بشكل طبيعي.",
+      "imageEmoji": "👤",
+      "interrogation": "شاهدة مهمة لاحظت تفصيلة دقيقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل لاحظت أي شيء غير عادي في العربة؟",
+          "answer": "الرجل بالحقيبة ركب من المحطة الوسيطة ببدلة مختلفة قليلاً عن الرجل الذي كان في العربة — ظننت أنني أتخيل.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "medium",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "brown",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "لقطات كاميرا محطة الانطلاق والوصول",
+      "description": "تُثبت اللقطات أن ثلاثة أشخاص ركبوا وشخصان خرجا — والرجل بالحقيبة الذي خرج يختلف جسدياً عن الذي ركب.",
+      "type": "digital",
+      "emoji": "📹",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "تحليل الوجه بالذكاء الاصطناعي",
+      "description": "يُثبت التحليل الدقيق أن الراكب في الانطلاق والخارج في الوصول شخصان مختلفان رغم تشابه اللباس والحقيبة.",
+      "type": "digital",
+      "emoji": "🤖",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "سجل بطاقة زياد في محطة الانطلاق",
+      "description": "يُثبت السجل دخول زياد محطة الانطلاق تلك الليلة رغم إنكاره القاطع.",
+      "type": "digital",
+      "emoji": "💳",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "شهادة سارة عن اختلاف البدلة",
+      "description": "لاحظت سارة أن الرجل الذي ركب من المحطة الوسيطة كان يرتدي بدلة مختلفة قليلاً عن الرجل الأول — فارق طفيف لكنه حقيقي.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev5",
+      "title": "سجلات العقد المرفوض",
+      "description": "وثيقة تُثبت أن ليم رفض عقداً ضخماً مع شركة زياد قبل أسبوعين — خسارة مالية ضخمة كانت الدافع.",
+      "type": "digital",
+      "emoji": "💼",
+      "revealOrder": 5,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

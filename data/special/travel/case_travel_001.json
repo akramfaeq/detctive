@@ -1,0 +1,196 @@
+{
+  "id": "case_travel_001",
+  "title": "المقعد 14A",
+  "location": "طائرة الرحلة IB-447، على ارتفاع 35,000 قدم فوق المحيط الأطلسي",
+  "date": "2026/01/28",
+  "shortDesc": "راكب وُجد ميتاً في مقعده خلال رحلة ليلية طويلة. الجميع كان نائماً والأضواء مطفأة — لكن سجل الاستدعاءات الرقمي يُثبت أن أحد الركاب ضغط على زر النداء مرتين في التوقيت الحرج دون أن يطلب شيئاً.",
+  "thumbnailEmoji": "✈️",
+  "difficulty": "easy",
+  "estimatedMinutes": 15,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 150,
+  "fullStory": "على متن رحلة إيبيريا رقم 447 من مدريد إلى بوينس آيريس، وُجد رجل الأعمال الأرجنتيني كارلوس مندوزا (55 عاماً) ميتاً في مقعده في الساعة الثالثة فجراً بعد ثماني ساعات من الإقلاع. الطائرة في منتصف المحيط الأطلسي والجميع نائم.\n\nالطبيب الشرعي الذي فحص الجثة في بوينس آيريس أكّد أن الوفاة لم تكن طبيعية — مادة سامة سريعة المفعول أُضيفت لمشروبه.\n\nأربعة ركاب كانوا في المقاعد المجاورة: في 14B ورجل أعمال، وفي 13A امرأة تنام بعيون مغمضة، وفي 15A شاب بسماعات، وفي 14C موظفة بنك. سجل الاستدعاءات الرقمي للطائرة يُثبت أن زر النداء في أحد المقاعد المجاورة ضُغط مرتين بين الثانية والثالثة فجراً دون أن يطلب الراكب أي شيء حين جاءت المضيفة.",
+  "hint": "الضغط على زر النداء مرتين دون طلب أي شيء — ماذا يعني ذلك؟ ربما كان الراكب يختبر هل المضيفة ستلاحظ الضحية في المقعد المجاور أم لا.",
+  "correctSuspectId": "char_14b",
+  "solutionExplanation": "القاتل هو راكب المقعد 14B، رجل الأعمال الإسباني دييغو فوينتيس.\n\nالثغرة القاتلة:\nدييغو ضغط زر النداء مرتين بين الثانية والثالثة فجراً. حين جاءت المضيفة في المرتين قال 'اعتذر، ضغطته بالخطأ'. الهدف الحقيقي كان اختبار مدى انتباه طاقم الطائرة — هل سيلاحظون كارلوس أم لا.\n\nفي المرة الثانية حين جاءت المضيفة وانشغلت معه، أضاف دييغو السم لمشروب كارلوس النائم الذي كان على طاولته الصغيرة.\n\nالدليل: سجل الاستدعاءات يُثبت الضغطتين من مقعد 14B، وبقايا المادة السامة وُجدت على باطن كم سترة دييغو بالتحليل الكيميائي.",
+  "characters": [
+    {
+      "id": "char_carlos",
+      "name": "كارلوس مندوزا",
+      "age": 55,
+      "role": "الضحية",
+      "description": "رجل أعمال أرجنتيني وُجد ميتاً في مقعده خلال رحلة ليلية طويلة.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "medium",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_14b",
+      "name": "دييغو فوينتيس",
+      "age": 48,
+      "role": "مشتبه به",
+      "description": "راكب المقعد 14B. رجل أعمال إسباني. ضغط زر النداء مرتين دون طلب أي شيء.",
+      "imageEmoji": "👤",
+      "interrogation": "يبدو هادئاً ويُفسّر الضغطتين بالخطأ العرضي.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "لماذا ضغطت زر النداء مرتين دون أن تطلب شيئاً؟",
+          "answer": "ضغطته بالخطأ وأنا أتحرك في مقعدي — اعتذرت للمضيفة في كلتا المرتين.",
+          "isLie": true,
+          "lieHint": "الضغطتان جاءتا بفاصل عشرين دقيقة — لا يُضغط الزر بالخطأ مرتين بهذا الفاصل."
+        },
+        {
+          "id": "q2",
+          "text": "هل كنت تعرف كارلوس مندوزا قبل هذه الرحلة؟",
+          "answer": "لا، لأول مرة أراه في هذه الرحلة.",
+          "isLie": true,
+          "lieHint": "صورة مشتركة لهما في مؤتمر تجاري قبل ستة أشهر وُجدت على هاتفه."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_13a",
+      "name": "سوفيا رييس",
+      "age": 41,
+      "role": "مشتبه بها",
+      "description": "راكبة المقعد 13A. كانت تنام طوال الرحلة حسب إفادتها.",
+      "imageEmoji": "👤",
+      "interrogation": "إجاباتها هادئة ومتسقة — المضيفة تؤكد أنها لم تتحرك من مقعدها.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل لاحظت أي شيء غير عادي خلال الرحلة؟",
+          "answer": "كنت أنام بسماعات وقناع عيون — لم أر ولم أسمع شيئاً.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_14c",
+      "name": "أماندا فيريرا",
+      "age": 35,
+      "role": "مشتبه بها",
+      "description": "راكبة المقعد 14C. موظفة بنك. كانت تشاهد فيلماً على شاشتها.",
+      "imageEmoji": "👤",
+      "interrogation": "سجل الشاشة يُثبت أنها كانت تشاهد فيلماً طوال الفترة الحرجة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل رأيت الراكب في 14B يتحرك خلال الليل؟",
+          "answer": "رأيته يتحرك مرة أو مرتين لكنني لم أنتبه كثيراً كنت مشغولة بالفيلم.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "medium",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "سجل الاستدعاءات الرقمي",
+      "description": "يُثبت السجل أن زر النداء في المقعد 14B ضُغط مرتين بفاصل عشرين دقيقة بين الثانية والثالثة فجراً — والمضيفة تؤكد أن الراكب لم يطلب شيئاً في كلتا المرتين.",
+      "type": "digital",
+      "emoji": "🔔",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "التحليل الكيميائي لكم السترة",
+      "description": "بقايا دقيقة من المادة السامة ذاتها المكتشفة في جسد الضحية وُجدت على باطن كم سترة دييغو اليمنى.",
+      "type": "physical",
+      "emoji": "🧪",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "الصورة المشتركة على هاتف دييغو",
+      "description": "صورة تجمع دييغو وكارلوس في مؤتمر تجاري قبل ستة أشهر — تُثبت أنهما يعرفان بعضهما خلافاً لادعاء دييغو.",
+      "type": "digital",
+      "emoji": "📸",
+      "revealOrder": 3,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

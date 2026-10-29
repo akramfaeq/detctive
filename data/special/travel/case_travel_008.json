@@ -1,0 +1,184 @@
+{
+  "id": "case_travel_008",
+  "title": "تحت الماء",
+  "location": "غواصة سياحية، جزر المالديف",
+  "date": "2026/08/29",
+  "shortDesc": "باحث بحري وُجد ميتاً في غواصة سياحية صغيرة في عمق أربعين متراً. الجميع يدّعي أنه لم يلمس معدات الغواص — لكن سجل استهلاك الأكسجين يُثبت أن خزان أحدهم استُنزف أسرع بكثير مما ينبغي لشخص جالس.",
+  "thumbnailEmoji": "🤿",
+  "difficulty": "hard",
+  "estimatedMinutes": 30,
+  "isNew": true,
+  "requiredPoints": 200,
+  "rewardPoints": 350,
+  "fullStory": "في رحلة غوص سياحية بجزر المالديف، وُجد الباحث البحري الدكتور كيرا ناكامورا (44 عاماً) فاقداً الحياة في الغواصة السياحية الصغيرة على عمق أربعين متراً.\n\nسبب الوفاة نقص حاد في الأكسجين — كان الصمام الرئيسي لخزان أكسجينه مفتوحاً جزئياً مما تسبب في تسرب بطيء ومميت.\n\nأربعة غواصين آخرين كانوا في نفس الرحلة. كل واحد ادّعى أنه لم يقترب من معدات الآخرين. لكن الجهاز الإلكتروني الذي يراقب معدل استهلاك الأكسجين لكل غواص أظهر أن خزان أحد الغواصين استُنزف بمعدل ضعف المعدل الطبيعي للجلوس.",
+  "hint": "معدل استهلاك الأكسجين ضعف المعتاد لشخص جالس — هذا يعني أن الشخص كان يتنفس بشكل مكثف أو أن الخزان كان يُغذّي جهازاً آخر إضافةً لتنفسه. ماذا يمكن أن يفعل الغواص بالأكسجين الإضافي؟",
+  "correctSuspectId": "char_diver",
+  "solutionExplanation": "القاتل هو الغواص المحترف ريان كولينز.\n\nالثغرة القاتلة:\nريان ربط خرطوم إضافياً دقيقاً من خزانه الخاص لصمام خزان كيرا — يُحوّل جزءاً من أكسجينه ليضخ هواء مضغوط يفتح صمام خزان كيرا ببطء.\n\nالنتيجة: خزان كيرا كان يتسرب ببطء والأكسجين كان يتناقص دون أن يُلاحظ كيرا في البداية. وخزان ريان استُنزف بمعدل ضعف المعتاد لأنه كان يُغذّي جهازين لا جهازاً واحداً.\n\nالدليل: الخرطوم الدقيق وُجد ملفوفاً في جيب بدلة ريان، وتحليل صمام خزان كيرا أثبت أنه فُتح من الخارج لا من الداخل.",
+  "characters": [
+    {
+      "id": "char_kira",
+      "name": "دكتورة كيرا ناكامورا",
+      "age": 44,
+      "role": "الضحية",
+      "description": "باحثة بحرية وُجدت ميتة بنقص أكسجين في الغواصة السياحية.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفاة ولا يمكن استجوابها.",
+      "questions": [],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "blue",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_diver",
+      "name": "ريان كولينز",
+      "age": 38,
+      "role": "مشتبه به",
+      "description": "غواص محترف وعضو في شركة منافسة للباحثة. خزانه استُنزف بمعدل ضعف المعتاد.",
+      "imageEmoji": "👤",
+      "interrogation": "يُفسّر ارتفاع معدل استهلاك الأكسجين بالتوتر والنشاط البدني.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "لماذا استُنزف خزانك بمعدل ضعف المعتاد؟",
+          "answer": "كنت أتحرك أكثر من الآخرين لأصوّر بعض اللقطات — الحركة تزيد استهلاك الأكسجين.",
+          "isLie": true,
+          "lieHint": "كاميرا الغواصة لم تُظهره يتحرك بشكل كافٍ يُفسّر هذا الاستهلاك المضاعف."
+        },
+        {
+          "id": "q2",
+          "text": "هل اقتربت من معدات كيرا في أي وقت؟",
+          "answer": "لا، احترمت مساحتها الشخصية طوال الرحلة.",
+          "isLie": true,
+          "lieHint": "خرطوم دقيق وُجد في جيب بدلته يمكنه الوصول لصمام خزان مجاور."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "blue",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_guide",
+      "name": "أكيرا تاناكا",
+      "age": 30,
+      "role": "شاهد",
+      "description": "مرشد الغوص الياباني. يراقب معدات كل غواص بدقة.",
+      "imageEmoji": "👤",
+      "interrogation": "صادق ومتعاون — لاحظ شيئاً على بدلة ريان.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل لاحظت أي شيء غير عادي على معدات ريان؟",
+          "answer": "لاحظت خيطاً رفيعاً من مطاط يظهر من جيب بدلته لكنني ظننته حزام الكاميرا.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "blue",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "سجل استهلاك الأكسجين الإلكتروني",
+      "description": "يُثبت السجل أن خزان ريان استُنزف بمعدل ضعف المعتاد لشخص جالس بحركة محدودة — مما يُشير لاستخدام مزدوج للأكسجين.",
+      "type": "digital",
+      "emoji": "📊",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "الخرطوم الدقيق في جيب البدلة",
+      "description": "خرطوم مطاطي دقيق وُجد ملفوفاً في جيب بدلة ريان — يمكنه الربط بين خزانين لنقل الأكسجين.",
+      "type": "physical",
+      "emoji": "🔗",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "تحليل صمام خزان الضحية",
+      "description": "يُثبت التحليل الجنائي أن صمام خزان كيرا فُتح من الخارج بضغط هواء خارجي — لا عن طريق التلاعب اليدوي المباشر.",
+      "type": "physical",
+      "emoji": "🔬",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "شهادة المرشد أكيرا",
+      "description": "لاحظ خيطاً مطاطياً يظهر من جيب بدلة ريان — ظنّه حزام كاميرا لكنه أدق وأطول.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

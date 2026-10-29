@@ -1,0 +1,218 @@
+{
+  "id": "case_travel_007",
+  "title": "الرحلة الأخيرة",
+  "location": "طائرة خاصة، فوق الألب السويسري",
+  "date": "2026/07/18",
+  "shortDesc": "ملياردير وُجد ميتاً في طائرته الخاصة قبيل الهبوط. الطيار وحده كان في القمرة والثلاثة الآخرون في الصالون. كل واحد يتهم الآخرين — لكن سجل ضغط الهواء في الطائرة يُثبت أن باب حجرة الأمتعة فُتح لثلاثين ثانية في التوقيت الحرج.",
+  "thumbnailEmoji": "🛩️",
+  "difficulty": "hard",
+  "estimatedMinutes": 30,
+  "isNew": true,
+  "requiredPoints": 200,
+  "rewardPoints": 350,
+  "fullStory": "على متن طائرته الخاصة من زيورخ إلى نيس، وُجد الملياردير السويسري بيير كلوزو (73 عاماً) ميتاً في كرسيه الجلدي الفاخر قبيل الهبوط. التقرير الطبي أكّد وجود مادة مخدرة قاتلة في دمه.\n\nفي القمرة الطيار وحده لم يغادرها طوال الرحلة. في الصالون ثلاثة أشخاص: المساعدة الشخصية، والمحامي، والطبيب الخاص. كل واحد يجلس بعيداً عن الآخر وكل واحد يدّعي البراءة.\n\nلكن النظام الإلكتروني الذي يراقب ضغط الهواء في جميع أقسام الطائرة كشف أن باب حجرة الأمتعة الخلفية فُتح لثلاثين ثانية في الساعة الثانية عشرة وخمس عشرة دقيقة — وقت الجريمة بالضبط.",
+  "hint": "حجرة الأمتعة الخلفية — من وصل إليها في تلك الدقيقة؟ وماذا يمكن أن يأخذ منها شخص في ثلاثين ثانية يمكنه استخدامه في تسميم الضحية دون أن يقترب منه؟",
+  "correctSuspectId": "char_doctor",
+  "solutionExplanation": "القاتل هو الطبيب الخاص دكتور ماكسيم بلانش.\n\nالثغرة القاتلة:\nالدكتور ماكسيم فتح باب حجرة الأمتعة الخلفية لثلاثين ثانية بحجة أنه يحتاج حقيبته الطبية. في الحقيقة أخذ من الحقيبة الطبية جهاز ضخ دقيق صغير وضعه في نظام تكييف الهواء الخاص بكرسي بيير — الجهاز يُطلق كمية دقيقة من المادة المخدرة مع الهواء مباشرة نحو وجه بيير دون أن يقترب منه أحد.\n\nبعد الجريمة أعاد الجهاز للحقيبة الطبية وأغلق باب الأمتعة.\n\nالدليل: الجهاز الصغير وُجد في الحقيبة الطبية، وسجل ضغط الهواء يُثبت أن نظام تكييف كرسي بيير فُتح يدوياً في نفس الوقت.",
+  "characters": [
+    {
+      "id": "char_pierre",
+      "name": "بيير كلوزو",
+      "age": 73,
+      "role": "الضحية",
+      "description": "ملياردير سويسري وُجد ميتاً بمادة مخدرة قاتلة في طائرته الخاصة.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_doctor",
+      "name": "دكتور ماكسيم بلانش",
+      "age": 52,
+      "role": "مشتبه به",
+      "description": "الطبيب الخاص لبيير. فتح باب حجرة الأمتعة لثلاثين ثانية في التوقيت الحرج.",
+      "imageEmoji": "👤",
+      "interrogation": "يدّعي أنه فتح الحقيبة الطبية لأخذ مسكن ألم طلبه منه بيير.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "لماذا فتحت باب حجرة الأمتعة في الساعة الثانية عشرة وخمس عشرة؟",
+          "answer": "بيير طلب مني مسكن ألم لصداعه، ذهبت لحقيبتي الطبية في الخلف.",
+          "isLie": true,
+          "lieHint": "بيير كان قد طلب منه مسكن الألم قبل ساعة وقال له إنه أخذه — لماذا يحتاجه مرة أخرى؟"
+        },
+        {
+          "id": "q2",
+          "text": "هل تمتلك جهاز ضخ دقيق للمواد الطبية؟",
+          "answer": "لدي أجهزة طبية متعددة في حقيبتي — أحتاجها لحالات الطوارئ.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q3",
+          "text": "هل كان بيير على وشك إنهاء عقدك الطبي؟",
+          "answer": "لم يُخبرني بشيء من هذا القبيل.",
+          "isLie": true,
+          "lieHint": "المساعدة الشخصية تؤكد أنها أرسلت له إشعاراً بإنهاء العقد قبل يومين."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_assistant",
+      "name": "كلود مارتان",
+      "age": 35,
+      "role": "مشتبه بها",
+      "description": "المساعدة الشخصية لبيير. تعلم بقرار إنهاء عقد الطبيب.",
+      "imageEmoji": "👤",
+      "interrogation": "إجاباتها متسقة — كانت تعمل على حاسوبها طوال الرحلة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل أرسلت إشعار إنهاء العقد للدكتور بلانش؟",
+          "answer": "نعم، بأمر من السيد كلوزو قبل يومين من الرحلة.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_lawyer",
+      "name": "أنطوان دوبوا",
+      "age": 58,
+      "role": "مشتبه به",
+      "description": "محامي بيير الخاص. يعرف تفاصيل الوصية لكن مصلحته في حياة بيير.",
+      "imageEmoji": "👤",
+      "interrogation": "يُقدم أدلة على أن حياة بيير كانت في مصلحته.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل تحركت من مقعدك خلال الرحلة؟",
+          "answer": "مرة واحدة لدورة المياه الأمامية — لم أقترب من المؤخرة.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": true,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "سجل ضغط الهواء في حجرة الأمتعة",
+      "description": "يُثبت السجل أن باب حجرة الأمتعة الخلفية فُتح لثلاثين ثانية في الساعة الثانية عشرة وخمس عشرة — وقت الجريمة بالضبط.",
+      "type": "digital",
+      "emoji": "💨",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "جهاز الضخ الدقيق في الحقيبة الطبية",
+      "description": "جهاز ضخ دقيق صغير وُجد في الحقيبة الطبية للدكتور — يحمل آثار المادة المخدرة القاتلة ذاتها.",
+      "type": "physical",
+      "emoji": "💉",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "سجل فتح نظام التكييف اليدوي",
+      "description": "سجل الطائرة يُثبت أن نظام تكييف كرسي بيير فُتح يدوياً في نفس توقيت فتح حجرة الأمتعة.",
+      "type": "digital",
+      "emoji": "❄️",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "إشعار إنهاء العقد",
+      "description": "وثيقة رسمية أرسلتها المساعدة للدكتور بأمر من بيير قبل يومين — تُثبت دافع الجريمة.",
+      "type": "digital",
+      "emoji": "📧",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

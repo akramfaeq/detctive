@@ -1,0 +1,176 @@
+{
+  "id": "case_travel_009",
+  "title": "البضاعة الثمينة",
+  "location": "سفينة شحن فاخرة، المحيط الهندي",
+  "date": "2026/09/14",
+  "shortDesc": "ضابط شحن وُجد ميتاً في غرفة البضائع الثمينة المؤمّنة. كل من يدخل يُسجَّل بالكاميرا — إلا في الفترة التي انقطع فيها التيار الكهربائي لعشر دقائق. لكن سجل البطاقات الممغنطة يُثبت أن الانقطاع لم يكن عرضياً.",
+  "thumbnailEmoji": "⚓",
+  "difficulty": "hard",
+  "estimatedMinutes": 30,
+  "isNew": true,
+  "requiredPoints": 200,
+  "rewardPoints": 350,
+  "fullStory": "على متن سفينة الشحن الفاخرة 'إنديان ستار' في المحيط الهندي، وُجد ضابط الشحن الأول ناثان أوكويي (41 عاماً) مقتولاً في غرفة البضائع الثمينة بين الليلة والفجر.\n\nالغرفة محمية بكاميرات مراقبة وبطاقات دخول مشفّرة. السجل الرقمي يُثبت أن الكاميرات انقطعت لعشر دقائق بين الثانية والثانية والعاشرة فجراً بسبب 'انقطاع كهربائي مؤقت'.\n\nلكن مهندس الكهرباء على السفينة لاحظ أن الانقطاع لم يطل باقي أجزاء السفينة — فقط دائرة كاميرات تلك الغرفة. وهذا النوع من الانقطاع الموضعي يستلزم يداً بشرية على لوحة التحكم.",
+  "hint": "انقطاع كهربائي موضعي يطال دائرة واحدة فقط — هذا ليس عطلاً بل تدخل متعمد. من يمتلك صلاحية الوصول للوحة التحكم الكهربائية على هذه السفينة؟",
+  "correctSuspectId": "char_engineer",
+  "solutionExplanation": "القاتل هو مهندس الكهرباء الأول فيكتور ساديك.\n\nالثغرة القاتلة:\nفيكتور قطع الكهرباء عن دائرة كاميرات غرفة البضائع الثمينة فقط لعشر دقائق — خلالها دخل الغرفة ونفّذ الجريمة وغادر.\n\nلكن سجل البطاقات الممغنطة يُثبت أمراً غريباً: بطاقة دخول غرفة التحكم الكهربائية استُخدمت في الساعة الواحدة وخمسين دقيقة — تسع دقائق قبل الانقطاع. وبطاقة فيكتور هي الوحيدة التي استُخدمت في تلك الفترة.\n\nالدليل: فيكتور ادّعى أنه لم يقترب من لوحة التحكم تلك الليلة، لكن سجل بطاقته يُكذّبه. وناثان كان قد اكتشف أن فيكتور يُخفي بضائع مهرّبة بين الشحنات الرسمية.",
+  "characters": [
+    {
+      "id": "char_nathan",
+      "name": "ناثان أوكويي",
+      "age": 41,
+      "role": "الضحية",
+      "description": "ضابط الشحن الأول. وُجد مقتولاً في غرفة البضائع الثمينة.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "dark",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_engineer",
+      "name": "فيكتور ساديك",
+      "age": 46,
+      "role": "مشتبه به",
+      "description": "مهندس الكهرباء الأول على السفينة. يمتلك صلاحية الوصول للوحة التحكم الكهربائية.",
+      "imageEmoji": "👤",
+      "interrogation": "يدّعي أنه نام طوال الليل ولم يقترب من لوحة التحكم.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل اقتربت من لوحة التحكم الكهربائية الليلة الماضية؟",
+          "answer": "لا، كنت في غرفتي نائماً منذ العاشرة مساءً.",
+          "isLie": true,
+          "lieHint": "سجل بطاقته يُثبت استخدامها في غرفة التحكم الكهربائية الساعة الواحدة وخمسين دقيقة."
+        },
+        {
+          "id": "q2",
+          "text": "هل الانقطاع الكهربائي الذي طال كاميرات غرفة البضائع كان عرضياً؟",
+          "answer": "يمكن لأعطال الدوائر الكهربائية أن تكون موضعية أحياناً.",
+          "isLie": true,
+          "lieHint": "مهندس الكهرباء نفسه أقرّ لاحقاً بأن هذا النوع يستلزم تدخلاً يدوياً."
+        },
+        {
+          "id": "q3",
+          "text": "هل كانت لديك علاقة بأي بضائع خارج قوائم الشحن الرسمية؟",
+          "answer": "أنا أهتم بالكهرباء لا بالبضائع.",
+          "isLie": true,
+          "lieHint": "تقرير ناثان يُثبت وجود بضائع مخفية في قسم كهربائي تحت إشراف فيكتور."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "medium",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_captain",
+      "name": "الكابتن هيرو ياماموتو",
+      "age": 55,
+      "role": "شاهد",
+      "description": "ربان السفينة. يُشرف على سجلات البطاقات ويُقدّم التقارير.",
+      "imageEmoji": "👤",
+      "interrogation": "صادق ومتعاون — يُؤكد أن الانقطاع الموضعي غير معتاد.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل سبق أن حدث انقطاع كهربائي موضعي كهذا من قبل؟",
+          "answer": "لا، هذا أول مرة في تاريخ هذه السفينة — الانقطاعات العرضية دائماً تطال مناطق أوسع.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "سجل الانقطاع الكهربائي الموضعي",
+      "description": "يُثبت السجل أن الانقطاع طال دائرة كاميرات غرفة البضائع فقط لعشر دقائق — دون أي تأثير على باقي السفينة.",
+      "type": "digital",
+      "emoji": "⚡",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "سجل بطاقة فيكتور في غرفة التحكم",
+      "description": "يُثبت السجل استخدام بطاقة فيكتور في غرفة التحكم الكهربائية الساعة الواحدة وخمسين دقيقة — تسع دقائق قبل الانقطاع.",
+      "type": "digital",
+      "emoji": "💳",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "تقرير ناثان عن البضائع المخفية",
+      "description": "تقرير كتبه ناثان قبل وفاته يُثبت وجود بضائع غير مُدرجة في قوائم الشحن الرسمية في قسم كهربائي تحت إشراف فيكتور.",
+      "type": "physical",
+      "emoji": "📋",
+      "revealOrder": 3,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

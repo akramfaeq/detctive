@@ -1,0 +1,191 @@
+{
+  "id": "case_travel_004",
+  "title": "محطة العبور",
+  "location": "مطار هيثرو الدولي، لندن، المملكة المتحدة",
+  "date": "2026/04/11",
+  "shortDesc": "محقق خاص وُجد مقتولاً في غرفة الانتظار المخصصة للركاب بين الرحلات في مطار هيثرو. كل مشتبه به أثبت دخوله لمنطقة العبور بجواز سفر حقيقي — لكن أحدهم استخدم جواز سفره مرتين بتوقيتين مختلفين في نفس المنفذ.",
+  "thumbnailEmoji": "🛂",
+  "difficulty": "medium",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 100,
+  "rewardPoints": 200,
+  "fullStory": "في غرفة الانتظار المخصصة للعبور بمطار هيثرو، وُجد المحقق الخاص البريطاني مارتن فولر (49 عاماً) مقتولاً بطعنة دقيقة خلف الأذن بين رحلتين متتاليتين.\n\nمارتن كان يتتبع شبكة تزوير وثائق دولية وكان على وشك تسليم أدلته لإنتربول. أربعة أشخاص كانوا في نفس منطقة العبور في الفترة الحرجة — كلهم دخلوا بجوازات سفر حقيقية.\n\nالمحقق الجنائي الذي راجع سجلات الحدود الإلكترونية لاحظ أمراً غريباً: أحد الجوازات مسح في البوابة الإلكترونية مرتين — مرة الساعة الثانية عشرة والنصف ومرة الساعة الواحدة — بنفس الرقم التسلسلي لكن بصورتين مختلفتين طفيف.",
+  "hint": "نفس رقم جواز السفر — صورتان مختلفتان. هذا يعني أن جواز السفر نُسخ بصورة مزيفة طفيفة، واستخدمه شخصان مختلفان لإثبات الدخول في وقتين مختلفين — أحدهما ارتكب الجريمة بين التوقيتين.",
+  "correctSuspectId": "char_forger",
+  "solutionExplanation": "القاتل هو أليكسي فولكوف، عضو شبكة تزوير الوثائق.\n\nالثغرة القاتلة:\nأليكسي صنع نسخة مزيفة من جواز سفر زميله بيتر — نسخة متطابقة تقريباً إلا في بضعة بكسلات في الصورة.\n\nالخطة: بيتر دخل العبور الساعة الثانية عشرة والنصف بجوازه الحقيقي وأعطاه لأليكسي الذي استخدمه في الساعة الواحدة كغطاء لدخوله — لكن النظام الإلكتروني المتطور لاحظ أن نفس الرقم التسلسلي استُخدم مرتين وأن الصورة المضمّنة في الشريحة تختلف طفيفاً بين الاستخدامين.\n\nأليكسي دخل منطقة العبور بين الاستخدامين وقتل مارتن ثم غادر قبل أن يُكتشف الأمر.",
+  "characters": [
+    {
+      "id": "char_martin",
+      "name": "مارتن فولر",
+      "age": 49,
+      "role": "الضحية",
+      "description": "محقق خاص كان يتتبع شبكة تزوير وثائق دولية. وُجد مقتولاً في منطقة العبور بمطار هيثرو.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_forger",
+      "name": "أليكسي فولكوف",
+      "age": 38,
+      "role": "مشتبه به",
+      "description": "عضو في شبكة تزوير وثائق دولية. استخدم نسخة مزيفة من جواز سفر زميله لإثبات دخوله في وقت مختلف.",
+      "imageEmoji": "👤",
+      "interrogation": "يدّعي أنه استخدم جوازه الخاص مرة واحدة فقط.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى بالضبط دخلت منطقة العبور؟",
+          "answer": "دخلت مرة واحدة الساعة الواحدة بجوازي الخاص.",
+          "isLie": true,
+          "lieHint": "نظام الحدود يُثبت استخدام نفس الرقم التسلسلي مرتين بصورتين مختلفتين."
+        },
+        {
+          "id": "q2",
+          "text": "هل تعرف بيتر سيمونوف المسافر في نفس الرحلة؟",
+          "answer": "لا أعرفه، مجرد مسافر عادي.",
+          "isLie": true,
+          "lieHint": "سجلات الاتصال تُثبت تواصلاً بينهما قبل يوم من السفر."
+        },
+        {
+          "id": "q3",
+          "text": "هل كنت تعلم أن مارتن فولر يتتبع شبكتك؟",
+          "answer": "لا أعرف هذا الشخص ولا أنتمي لأي شبكة.",
+          "isLie": true,
+          "lieHint": "ملف التحقيق الذي كان مارتن يعمل عليه يذكر اسم أليكسي صراحة."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_peter",
+      "name": "بيتر سيمونوف",
+      "age": 41,
+      "role": "مشتبه به",
+      "description": "عضو آخر في الشبكة. أعار جوازه لأليكسي لصنع نسخة منه.",
+      "imageEmoji": "👤",
+      "interrogation": "خائف ومتوتر جداً.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل أعطيت جوازك لأي شخص آخر؟",
+          "answer": "لا، جوازي كان معي طوال الوقت.",
+          "isLie": true,
+          "lieHint": "نظام الحدود يُثبت استخدام رقمه التسلسلي مرتين بصورتين مختلفتين."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "تقرير الحدود الإلكترونية",
+      "description": "نفس الرقم التسلسلي لجواز سفر استُخدم مرتين في الساعة الثانية عشرة والنصف والساعة الواحدة — مع اختلاف طفيف في الصورة المضمّنة بالشريحة.",
+      "type": "digital",
+      "emoji": "🛂",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "تحليل صورة الجواز الرقمية",
+      "description": "مقارنة الصورتين المحفوظتين في الشريحة تُثبت أنهما لشخصين مختلفين — وجه مختلف بتفاصيل دقيقة لا تُلاحظ بالعين المجردة لكن يكشفها التحليل الجنائي الرقمي.",
+      "type": "digital",
+      "emoji": "🖼️",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "ملف تحقيق مارتن",
+      "description": "ملف التحقيق الذي كان يعمل عليه مارتن يذكر اسم أليكسي فولكوف كعضو رئيسي في شبكة التزوير الدولية.",
+      "type": "physical",
+      "emoji": "📁",
+      "revealOrder": 3,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "سجل الاتصالات بين أليكسي وبيتر",
+      "description": "مكالمات متعددة بين هاتفيهما قبل يوم من السفر — تُثبت التنسيق المسبق بينهما.",
+      "type": "digital",
+      "emoji": "📞",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}
