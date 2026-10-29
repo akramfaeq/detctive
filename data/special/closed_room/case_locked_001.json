@@ -1,0 +1,211 @@
+{
+  "id": "case_locked_001",
+  "title": "المفتاح الذي لم يتحرك",
+  "location": "قصر عائلي قديم، إدنبره، اسكتلندا",
+  "date": "2026/01/15",
+  "shortDesc": "وُجد لورد اسكتلندي عجوز مقتولاً في مكتبه المقفول من الداخل. المفتاح في جيبه والقفل سليم — لكن خيطاً رفيعاً ملتوياً حول قاعدة القفل يكشف كيف أُغلق الباب من الخارج.",
+  "thumbnailEmoji": "🔑",
+  "difficulty": "easy",
+  "estimatedMinutes": 15,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 150,
+  "fullStory": "في قصر آل مكنزي العريق على مشارف إدنبره، وُجد اللورد أرتشيبالد مكنزي (78 عاماً) مقتولاً في مكتبه الخاص صباح الثلاثاء. الباب مقفول من الداخل بمفتاح وُجد في جيب معطفه، والنافذة الوحيدة موصدة من الداخل بمزلاج حديدي.\n\nالعائلة المجتمعة في القصر تلك الليلة ثلاثة أشخاص: ابنته الكبرى، وابنه الأصغر، وأمين مكتبته الخاص. كل واحد منهم ادّعى أنه لم يقترب من المكتب بعد العاشرة مساءً.\n\nالمحقق الذي فحص الباب من الداخل لاحظ شيئاً دقيقاً جداً حول قاعدة القفل النحاسي — خيط حرير رفيع ملتوٍ لا يُرى إلا تحت الضوء المباشر.",
+  "hint": "الخيط الرفيع حول قاعدة القفل — كيف يمكن لخيط مربوط بالمفتاح من الداخل أن يُدار من الخارج عبر فجوة الباب؟",
+  "correctSuspectId": "char_son",
+  "solutionExplanation": "القاتل هو الابن الأصغر روبرت مكنزي.\n\nالثغرة القاتلة:\nبعد ارتكاب الجريمة، أدار روبرت المفتاح من الخارج باستخدام خيط حرير رفيع ربطه مسبقاً حول عمود المفتاح داخل الغرفة. مرر الخيط تحت فجوة الباب، وحين أغلق الباب خلفه شدّ الخيط بحركة دقيقة فأدار المفتاح من الداخل، ثم سحب الخيط بلطف حتى انفكّ من حول المفتاح وخرج من تحت الباب.\n\nالمفتاح بقي في القفل مقفلاً — وهو ما جعل الجريمة تبدو مستحيلة. لكن الخيط الرفيع الذي لم يُسحب بالكامل — بقي خيط صغير ملتوٍ حول قاعدة القفل — كشف الحيلة.\n\nالدافع: اللورد كان على وشك تعديل وصيته لحرمان روبرت بسبب ديونه المتراكمة.",
+  "characters": [
+    {
+      "id": "char_archibald",
+      "name": "اللورد أرتشيبالد مكنزي",
+      "age": 78,
+      "role": "الضحية",
+      "description": "لورد اسكتلندي عجوز وُجد مقتولاً في مكتبه المقفول. كان على وشك تعديل وصيته.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": true,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_son",
+      "name": "روبرت مكنزي",
+      "age": 44,
+      "role": "مشتبه به",
+      "description": "الابن الأصغر. مثقل بديون القمار ويعتمد على الإرث. يدّعي أنه لم يقترب من المكتب بعد العاشرة.",
+      "imageEmoji": "👤",
+      "interrogation": "يبدو هادئاً لكنه يتجنب النظر إلى الباب حين يُذكر.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت بعد العاشرة مساءً؟",
+          "answer": "في غرفتي أقرأ. لم أغادرها حتى الصباح.",
+          "isLie": true,
+          "lieHint": "آثار حذائه على سجادة ممر المكتب طازجة."
+        },
+        {
+          "id": "q2",
+          "text": "هل كنت تعلم أن والدك يعتزم تعديل وصيته؟",
+          "answer": "سمعت شيئاً لكن لم أهتم.",
+          "isLie": true,
+          "lieHint": "المحامي يؤكد أنه أبلغ روبرت بالقرار قبل يومين."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_daughter",
+      "name": "إليانور مكنزي",
+      "age": 50,
+      "role": "مشتبه بها",
+      "description": "الابنة الكبرى. علاقتها بوالدها متوترة بسبب خلاف على إدارة الأملاك.",
+      "imageEmoji": "👤",
+      "interrogation": "صادقة ومتعاونة وإجاباتها متسقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت بعد العاشرة؟",
+          "answer": "في غرفة الجلوس مع أمين المكتبة نتحدث حتى منتصف الليل. يمكنه التأكيد.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "long",
+        "clothColor": "purple",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_librarian",
+      "name": "هيوغو فينلي",
+      "age": 60,
+      "role": "مشتبه به",
+      "description": "أمين مكتبة اللورد منذ عشرين عاماً. يعلم أسرار القصر كلها.",
+      "imageEmoji": "👤",
+      "interrogation": "يؤكد وجود إليانور معه ويبدو صادقاً.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل رأيت روبرت بعد العاشرة مساءً؟",
+          "answer": "رأيته يمر بسرعة في الممر نحو الجناح الشرقي حوالي الحادية عشرة — ظننته يذهب للمطبخ.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": true,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الباب المقفول والمفتاح في جيب الضحية",
+      "description": "الباب الرئيسي للمكتب مقفول من الداخل والمفتاح الوحيد وُجد في جيب معطف اللورد.",
+      "type": "physical",
+      "emoji": "🔒",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "الخيط الحريري حول قاعدة القفل",
+      "description": "خيط حرير رفيع جداً ملتوٍ جزئياً حول قاعدة القفل النحاسي من الداخل — لا يُرى إلا تحت الضوء المباشر.",
+      "type": "physical",
+      "emoji": "🧵",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "آثار الحذاء على سجادة الممر",
+      "description": "آثار حذاء رجالي طازجة على سجادة ممر الجناح الشرقي المؤدي للمكتب — تتطابق مع حذاء روبرت.",
+      "type": "physical",
+      "emoji": "👞",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "شهادة أمين المكتبة",
+      "description": "رأى روبرت يمر بسرعة في الممر نحو الجناح الشرقي حوالي الحادية عشرة مساءً.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

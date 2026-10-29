@@ -1,0 +1,191 @@
+{
+  "id": "case_locked_004",
+  "title": "الجرح المتأخر",
+  "location": "منتجع ثلجي، سانت موريتز، سويسرا",
+  "date": "2026/04/03",
+  "shortDesc": "مستثمر وُجد مقتولاً في كابينته المقفولة ولا آثار دخول. الجريمة بدت مستحيلة — حتى أثبت الطب الشرعي أن الجرح نُفّذ قبل إغلاق الكابينة بثلاث ساعات وأن الضحية أغلقها بنفسه وهو لا يعلم أنه مات.",
+  "thumbnailEmoji": "🏔️",
+  "difficulty": "medium",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 100,
+  "rewardPoints": 200,
+  "fullStory": "في منتجع سانت موريتز الجبلي، وُجد المستثمر السويسري هانس روتمان (61 عاماً) ميتاً في كابينته الخشبية الخاصة. الباب مقفول من الداخل بثلاثة أقفال، والنوافذ مثبتة بمسامير ثلج ضخمة من الداخل.\n\nبدت الجريمة مستحيلة حتى قال الطبيب الشرعي شيئاً صادماً: السم الذي قتل هانس ليس سريع المفعول — نوع نادر يستغرق من أربع إلى ست ساعات قبل أن يُودي بالحياة. ووقت تناوله بين الثانية والثالثة ظهراً — بينما وُجد الجثة منتصف الليل في كابينة أغلقها هانس بنفسه الساعة التاسعة مساءً.",
+  "hint": "السم أُعطي لهانس في الثانية والثالثة ظهراً — أي سبع ساعات قبل وفاته. من كان بجانبه في تلك الفترة؟ وفي ماذا تناول شيئاً محتملاً؟",
+  "correctSuspectId": "char_partner",
+  "solutionExplanation": "القاتل هو الشريك التجاري كارل أوبرهاوزر.\n\nالثغرة القاتلة:\nالغداء المشترك في الساعة الثانية ظهراً — كارل أضاف السم إلى مشروب هانس خلال وجبة الغداء في المطعم الجبلي. السم بطيء المفعول لا يُسبب أي أعراض فورية.\n\nهانس عاد لكابينته في التاسعة مساءً يشعر بتعب طبيعي، أغلق أقفاله الثلاثة بنفسه كعادته، ونام — ومات في النوم بين الحادية عشرة ومنتصف الليل.\n\nالدليل: ترسبات السم وُجدت في كأس هانس المحفوظ من الغداء — ومطبخ المنتجع يُثبت أن الكأس لم يُضف إليه أي مادة من قِبل الطاقم.\n\nكارل الجالس أمام هانس في الغداء هو الشخص الوحيد القادر على إضافة شيء للكأس دون أن يُلاحظ.",
+  "characters": [
+    {
+      "id": "char_hans",
+      "name": "هانس روتمان",
+      "age": 61,
+      "role": "الضحية",
+      "description": "مستثمر سويسري وُجد ميتاً في كابينته المقفولة بعد أن أغلقها بنفسه. مات من سم بطيء المفعول.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_partner",
+      "name": "كارل أوبرهاوزر",
+      "age": 55,
+      "role": "مشتبه به",
+      "description": "الشريك التجاري لهانس. تناول معه الغداء في الساعة الثانية ظهراً. على وشك خسارة دعوى قضائية ضد هانس.",
+      "imageEmoji": "👤",
+      "interrogation": "يُصر على أن الغداء كان عادياً ولا شيء غير معتاد.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما الذي تناوله هانس في الغداء؟",
+          "answer": "شرب عصير التفاح كالمعتاد وتناول طبق اللحم. لا شيء غير طبيعي.",
+          "isLie": true,
+          "lieHint": "ترسبات السم وُجدت في كأس العصير المحفوظ."
+        },
+        {
+          "id": "q2",
+          "text": "هل تركت الطاولة في أي لحظة خلال الغداء؟",
+          "answer": "ذهبت للحمام مرة واحدة لا أكثر.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q3",
+          "text": "ما طبيعة الدعوى القضائية بينك وبين هانس؟",
+          "answer": "خلاف تجاري بسيط كنا على وشك تسويته.",
+          "isLie": true,
+          "lieHint": "المحامي يؤكد أن كارل كان سيخسر خمسة ملايين فرنك بحكم أسبوع واحد."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_waiter",
+      "name": "لوكاس برونر",
+      "age": 25,
+      "role": "شاهد",
+      "description": "النادل الذي خدم طاولة الغداء. يتذكر تفاصيل الوجبة.",
+      "imageEmoji": "👤",
+      "interrogation": "صادق ومتفصّل في إجاباته.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل لاحظت أي شيء غير عادي على الطاولة؟",
+          "answer": "حين عدت بالحساب رأيت كارل يسحب يده من ناحية كأس هانس بسرعة — ظننته يضبط موضع الكأس.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "تقرير الطب الشرعي — نوع السم وتوقيت التناول",
+      "description": "سم بطيء المفعول يستغرق أربعاً إلى ست ساعات. التناول بين الثانية والثالثة ظهراً — أي أن الضحية أغلقت كابينتها بنفسها بعد سبع ساعات لا تعلم فيها أنها مسمومة.",
+      "type": "physical",
+      "emoji": "🩺",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "ترسبات السم في كأس الغداء",
+      "description": "الكأس المحفوظ من طاولة الغداء يحتوي على ترسبات السم ذاته — ومطبخ المنتجع يؤكد أن الطاقم لم يُضف أي مادة للمشروبات.",
+      "type": "physical",
+      "emoji": "🥃",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "شهادة النادل",
+      "description": "رأى النادل كارل يسحب يده من ناحية كأس هانس بسرعة — لحظة لم ينتبه لها أحد في وقتها.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "وثائق الدعوى القضائية",
+      "description": "يُثبت الملف القانوني أن كارل كان سيخسر خمسة ملايين فرنك في حكم مقرر بعد أسبوع واحد — قبل مقتل هانس بيوم.",
+      "type": "physical",
+      "emoji": "⚖️",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

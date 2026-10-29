@@ -1,0 +1,184 @@
+{
+  "id": "case_locked_006",
+  "title": "الجدار الذي يتنفس",
+  "location": "قصر نبيل قديم، بوخارست، رومانيا",
+  "date": "2026/06/07",
+  "shortDesc": "كونتيسة ثرية وُجدت مقتولة في قبو مقفول بأقفال ثلاثة. القبو لا نوافذ له ولا مخرج سوى الباب الموصد — حتى اكتشف المحقق أن الجدار الحجري نفسه ليس ما يبدو عليه.",
+  "thumbnailEmoji": "🏰",
+  "difficulty": "hard",
+  "estimatedMinutes": 30,
+  "isNew": true,
+  "requiredPoints": 200,
+  "rewardPoints": 350,
+  "fullStory": "في قبو القصر الأثري في بوخارست، وُجدت الكونتيسة ميهاييلا بوبيسكو (70 عاماً) مقتولة على كرسيها العتيق. ثلاثة أقفال نحاسية ثقيلة تحرس الباب الوحيد للقبو — والمفاتيح الثلاثة في أيدي ثلاثة ورثة مختلفين.\n\nالورثة الثلاثة يتهم كل واحد منهم الآخرين. الباب لم يُفتح إلا حين اجتمع الثلاثة صباحاً وفتحوه معاً ليجدوا الجثة.\n\nالمحقق الذي فحص القبو لاحظ أن أحد الجدران الحجرية القديمة يُصدر صوتاً مجوفاً حين يُطرق عليه — صوتاً مختلفاً عن الجدران الأخرى.",
+  "hint": "الجدار المجوف في قبو عمره مئتا عام — القصور القديمة كانت تحتوي ممرات سرية للخدم. ابحث عن الحجر الذي يتحرك.",
+  "correctSuspectId": "char_nephew",
+  "solutionExplanation": "القاتل هو ابن الأخ رادو بوبيسكو.\n\nالثغرة القاتلة:\nرادو اكتشف منذ سنوات ممراً سرياً قديماً خلف أحد الجدران الحجرية للقبو — ممر كان يستخدمه خدم القصر قبل مئتي عام للوصول للقبو دون المرور بالبهو الرئيسي.\n\nاقتحم القبو ليلاً عبر الممر السري، نفّذ الجريمة، وغادر بنفس الطريق مُثبّتاً الحجر المتحرك خلفه.\n\nالدليل: غبار من نوع الحجر الداخلي للممر وُجد على سترة رادو رغم إنكاره دخول القبو. والممر السري نفسه وُجد حين طرق المحقق الجدار واكتشف التجويف.",
+  "characters": [
+    {
+      "id": "char_mihaela",
+      "name": "الكونتيسة ميهاييلا بوبيسكو",
+      "age": 70,
+      "role": "الضحية",
+      "description": "ورثة القصر العريق، وُجدت مقتولة في قبوه المقفول بثلاثة أقفال.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفاة ولا يمكن استجوابها.",
+      "questions": [],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_nephew",
+      "name": "رادو بوبيسكو",
+      "age": 42,
+      "role": "مشتبه به",
+      "description": "ابن أخ الكونتيسة. يعيش في القصر ويعرف تاريخه الكامل. يحمل مفتاح القفل الأول.",
+      "imageEmoji": "👤",
+      "interrogation": "يبدو واثقاً من أن الأقفال الثلاثة تُثبت براءته — لا يعلم أن المحقق وجد الممر السري.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل تعلم بوجود ممرات سرية في القصر؟",
+          "answer": "مجرد أساطير يرويها المرشدون السياحيون. لا أصحة لها.",
+          "isLie": true,
+          "lieHint": "وثائق تاريخية للقصر تُثبت وجود ممرين سريين للخدم في القرن الثامن عشر."
+        },
+        {
+          "id": "q2",
+          "text": "أين كنت بين منتصف الليل والثالثة صباحاً؟",
+          "answer": "في جناحي في الطابق الثاني نائماً.",
+          "isLie": true,
+          "lieHint": "غبار الحجر الداخلي للممر وُجد على سترته."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_niece",
+      "name": "إيلينا فلوريسكو",
+      "age": 38,
+      "role": "مشتبه بها",
+      "description": "ابنة أخت الكونتيسة. تحمل مفتاح القفل الثاني. تعيش خارج القصر.",
+      "imageEmoji": "👤",
+      "interrogation": "إجاباتها متسقة وأمضت الليل في فندق قريب يُثبت وجودها.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين أمضيت الليل؟",
+          "answer": "في فندق ماريوت على بُعد كيلومترين. سجل تسجيل الدخول موجود.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الجدار المجوف في القبو",
+      "description": "أحد الجدران الحجرية يُصدر صوتاً مجوفاً حين يُطرق عليه — مختلفاً عن الجدران الأخرى الصلبة.",
+      "type": "physical",
+      "emoji": "🧱",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "الممر السري المكتشف",
+      "description": "ممر حجري ضيق خلف الجدار المجوف — طوله ثمانية أمتار يؤدي إلى مخرج مخفي خلف خزانة خشبية في الممر الجانبي للقصر.",
+      "type": "physical",
+      "emoji": "🚪",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "غبار الحجر على سترة رادو",
+      "description": "غبار أبيض ناعم من نوع الحجر الجيري الداخلي للممر السري وُجد على ظهر سترة رادو — نوع لا يوجد في أي مكان آخر بالقصر.",
+      "type": "physical",
+      "emoji": "🧥",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "الوثائق التاريخية للقصر",
+      "description": "مخططات القصر الأصلية من القرن الثامن عشر تُثبت وجود ممرين سريين للخدم — أحدهما يؤدي مباشرة للقبو.",
+      "type": "physical",
+      "emoji": "📜",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

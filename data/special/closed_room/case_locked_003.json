@@ -1,0 +1,184 @@
+{
+  "id": "case_locked_003",
+  "title": "النافذة التي لا تُفتح",
+  "location": "فندق تاريخي، براغ، جمهورية التشيك",
+  "date": "2026/03/10",
+  "shortDesc": "دبلوماسي وُجد مقتولاً في غرفة فندقية مقفولة والنافذة موصدة. لكن الطلاء الجديد على إطار النافذة يخفي آثار فتحها وإعادة إغلاقها في نفس الليلة.",
+  "thumbnailEmoji": "🪟",
+  "difficulty": "medium",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 100,
+  "rewardPoints": 200,
+  "fullStory": "في غرفة 304 من فندق 'غولدن برايغ' التاريخي ببراغ، وُجد الدبلوماسي البولندي كريستوف نوفاك (54 عاماً) مقتولاً صباح الثلاثاء. باب الغرفة مقفول بالبطاقة الإلكترونية من الداخل، والنافذة العتيقة موصدة بمزلاجها النحاسي.\n\nسجل بطاقات الدخول الإلكتروني يُثبت أن بطاقة نوفاك استُخدمت مرة واحدة فقط للدخول الساعة التاسعة مساءً ولم تُستخدم للخروج.\n\nلكن أحد عمال الصيانة لاحظ في الصباح شيئاً غريباً: إطار النافذة الخشبي القديم الذي طُلي حديثاً قبل ثلاثة أيام يُظهر كسراً دقيقاً في طبقة الطلاء — كسر يتشكل فقط حين تُفتح النافذة وتُغلق.",
+  "hint": "الطلاء الجديد على إطار النافذة القديمة حساس جداً — أي حركة تفتيح أو إغلاق تترك كسراً في الطلاء الطازج. من فتح النافذة وكيف أغلقها من الخارج ليُوهم بأنها موصدة؟",
+  "correctSuspectId": "char_assistant",
+  "solutionExplanation": "القاتلة هي المساعدة الشخصية أنا كوفالسكا.\n\nالثغرة القاتلة:\nأنا دخلت الغرفة في وقت سابق بذريعة إيصال وثائق — وفتحت النافذة من الداخل وثبّتت بها آلية إغلاق خارجية دقيقة عبارة عن مزلاج مغناطيسي صغير يمكن تشغيله بمغناطيس من الخارج.\n\nبعد تنفيذ الجريمة غادرت من النافذة نزولاً عبر أنابيب تصريف المياه القديمة، ثم أدارت المزلاج المغناطيسي من الخارج ليبدو الإطار موصداً.\n\nكسر الطلاء كشف أن النافذة تحركت — والمزلاج المغناطيسي الصغير وُجد خلف لوحة الفندق الخشبية تحت النافذة مباشرة.\n\nالدافع: كريستوف كان يملك وثائق تُدين أنا في قضية تجسس.",
+  "characters": [
+    {
+      "id": "char_krzysztof",
+      "name": "كريستوف نوفاك",
+      "age": 54,
+      "role": "الضحية",
+      "description": "دبلوماسي بولندي وُجد مقتولاً في غرفته المقفولة. كان يحمل وثائق حساسة.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_assistant",
+      "name": "أنا كوفالسكا",
+      "age": 32,
+      "role": "مشتبه بها",
+      "description": "المساعدة الشخصية لنوفاك. زارت غرفته مساءً لإيصال وثائق. تدّعي أنها غادرت من الباب الأمامي.",
+      "imageEmoji": "👤",
+      "interrogation": "تبدو مهنية وهادئة لكنها تتجنب أي سؤال عن النافذة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى غادرت غرفة كريستوف مساءً؟",
+          "answer": "غادرت الساعة التاسعة وعشرين دقيقة من الباب الأمامي بعد تسليم الوثائق.",
+          "isLie": true,
+          "lieHint": "سجل البطاقة الإلكترونية لا يُظهر فتح الباب مرة أخرى بعد دخول كريستوف الساعة التاسعة."
+        },
+        {
+          "id": "q2",
+          "text": "هل اقتربت من النافذة خلال زيارتك؟",
+          "answer": "لا، جلست على الكرسي فقط وسلّمته الأوراق.",
+          "isLie": true,
+          "lieHint": "كسر الطلاء على إطار النافذة يُثبت أنها تحركت تلك الليلة."
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "long",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_reception",
+      "name": "توماش هولوب",
+      "age": 38,
+      "role": "شاهد",
+      "description": "موظف الاستقبال في الفندق. يمتلك سجلات البطاقات الإلكترونية الكاملة.",
+      "imageEmoji": "👤",
+      "interrogation": "متعاون ودقيق في المعلومات.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما الذي يُثبته سجل البطاقات الإلكترونية؟",
+          "answer": "بطاقة الضحية دخلت الساعة التاسعة ولم تخرج. بطاقة المساعدة استُخدمت للدخول الساعة التاسعة وخمس دقائق — ولا يوجد تسجيل خروج لها.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "سجل البطاقات الإلكترونية",
+      "description": "لا يوجد تسجيل خروج لبطاقة المساعدة بعد دخولها الساعة التاسعة وخمس دقائق — مما يعني أنها لم تغادر من الباب.",
+      "type": "digital",
+      "emoji": "💳",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "كسر الطلاء على إطار النافذة",
+      "description": "الطلاء الجديد على إطار النافذة الخشبي يُظهر كسراً دقيقاً يتشكل فقط حين تُفتح النافذة وتُغلق — يُثبت أن النافذة تحركت تلك الليلة.",
+      "type": "physical",
+      "emoji": "🪟",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "المزلاج المغناطيسي الصغير",
+      "description": "أداة مغناطيسية صغيرة وُجدت خلف لوحة الفندق الخشبية تحت النافذة مباشرة — تسمح بإغلاق مزلاج النافذة من الخارج.",
+      "type": "physical",
+      "emoji": "🧲",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "الوثائق الحساسة المفقودة",
+      "description": "حقيبة كريستوف التي وُجدت في الغرفة كانت تحتوي على ملف مهم وفقاً لزميله — الملف غائب تماماً.",
+      "type": "physical",
+      "emoji": "📁",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

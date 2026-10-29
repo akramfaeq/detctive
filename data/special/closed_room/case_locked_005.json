@@ -1,0 +1,176 @@
+{
+  "id": "case_locked_005",
+  "title": "المكتشف هو القاتل",
+  "location": "مبنى جامعي، أوسلو، النرويج",
+  "date": "2026/05/18",
+  "shortDesc": "أستاذ جامعي وُجد مقتولاً في مختبره المقفول بكلمة مرور. الطالب الذي اكتشفه أثبت وجوده في مكان آخر بعشرين شاهداً — لكن كلمة المرور التي استخدمها لفتح المختبر كانت كلمة مرور الضحية الشخصية.",
+  "thumbnailEmoji": "🔬",
+  "difficulty": "medium",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 100,
+  "rewardPoints": 200,
+  "fullStory": "في مختبر الكيمياء بجامعة أوسلو، وُجد البروفيسور إريك لارسن (57 عاماً) مقتولاً داخل مختبره المحمي بكلمة مرور رقمية على اللوحة الخارجية.\n\nالطالب المتفوق سفن هولم ادّعى أنه وصل الساعة الثامنة صباحاً وأدخل كلمة مروره الخاصة للدخول — لكن سجل اللوحة الرقمية يُثبت أن كلمة المرور المستخدمة لفتح الباب صباحاً كانت كلمة مرور البروفيسور الشخصية لا كلمة سفن.\n\nسفن يملك عشرين شاهداً يُثبتون وجوده في حفل طلابي ليلة الجريمة. فكيف استخدم كلمة مرور لا يفترض أن يعرفها؟",
+  "hint": "استخدم كلمة مرور الضحية لفتح الباب — لكنه يدّعي أنه استخدم كلمته هو. لماذا يكذب في هذه التفصيلة تحديداً إذا كان بريئاً؟",
+  "correctSuspectId": "char_sven",
+  "solutionExplanation": "القاتل هو الطالب سفن هولم — ليلة الجريمة وليس صباح الاكتشاف.\n\nالثغرة القاتلة:\nسفن ارتكب الجريمة في وقت متأخر من الليل أثناء الحفل — غادر الحفل لساعة كاملة بين الثانية عشرة والواحدة دون أن ينتبه أحد، نفّذ الجريمة، وأغلق الباب بكلمة مرور البروفيسور التي كان يعرفها لأنه رآه يُدخلها مراراً.\n\nصباحاً عاد وادّعى أنه اكتشف الجثة مستخدماً كلمته هو — لكنه أخطأ وأدخل كلمة مرور البروفيسور بدافع الإجهاد والتوتر، وهي الكلمة التي تعوّد استخدامها ليلاً.\n\nسجل اللوحة الرقمية يحفظ كل إدخال بتوقيته — وكلمة مرور البروفيسور استُخدمت مرتين: الليلة الماضية بعد منتصف الليل، وصباح الاكتشاف.",
+  "characters": [
+    {
+      "id": "char_erik",
+      "name": "البروفيسور إريك لارسن",
+      "age": 57,
+      "role": "الضحية",
+      "description": "أستاذ كيمياء جامعي، وُجد مقتولاً في مختبره المقفول بكلمة مرور.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_sven",
+      "name": "سفن هولم",
+      "age": 24,
+      "role": "مشتبه به",
+      "description": "الطالب المتفوق الذي اكتشف الجثة. يملك عشرين شاهداً من الحفل الطلابي. يدّعي أنه استخدم كلمة مروره هو.",
+      "imageEmoji": "👤",
+      "interrogation": "واثق من نفسه ويُشير لشهود الحفل باستمرار — لكنه يتوتر حين يُذكر سجل اللوحة الرقمية.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما كلمة المرور التي استخدمتها لفتح المختبر صباحاً؟",
+          "answer": "كلمتي الشخصية المخصصة لي كطالب بحث.",
+          "isLie": true,
+          "lieHint": "سجل اللوحة يُثبت أن كلمة مرور البروفيسور هي التي استُخدمت صباحاً."
+        },
+        {
+          "id": "q2",
+          "text": "هل غادرت الحفل الطلابي في أي وقت ليلة أمس؟",
+          "answer": "لم أغادر أبداً، كنت مع الجميع طوال الليل.",
+          "isLie": true,
+          "lieHint": "ثلاثة أشخاص فقط من العشرين يتذكرونه بشكل متواصل — الباقون لاحظوا غيابه ساعة."
+        },
+        {
+          "id": "q3",
+          "text": "هل كنت تعرف كلمة مرور البروفيسور؟",
+          "answer": "لا، كلمات المرور سرية ولا يُشاركها أحد.",
+          "isLie": true,
+          "lieHint": "رآه يُدخلها أمامه مرات عديدة في المختبر المشترك."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_colleague",
+      "name": "أنيتا بيرغ",
+      "age": 45,
+      "role": "مشتبه بها",
+      "description": "زميلة البروفيسور في القسم. بينهما خلاف على منح بحثية.",
+      "imageEmoji": "👤",
+      "interrogation": "إجاباتها متسقة ومدعومة بسجل دخولها للمبنى.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى آخر مرة دخلت المبنى أمس؟",
+          "answer": "غادرت الساعة السادسة مساءً — سجل الدخول الإلكتروني يُثبت ذلك.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "سجل اللوحة الرقمية",
+      "description": "السجل يُثبت أن كلمة مرور البروفيسور استُخدمت مرتين: الأولى بعد منتصف الليل ليلة الجريمة، والثانية صباح الاكتشاف — لا كلمة سفن الشخصية.",
+      "type": "digital",
+      "emoji": "🔢",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "شهادات شهود الحفل المتضاربة",
+      "description": "من العشرين شاهداً، ثلاثة فقط يتذكرون سفن بشكل متواصل — الباقون لاحظوا غيابه لفترة تتراوح بين الساعة الثانية عشرة والواحدة.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "سجل كاميرا مدخل المبنى",
+      "description": "كاميرا المدخل سجّلت دخول شخص بمعطف هودي أسود بعد منتصف الليل — الصورة غير واضحة لكن البنية الجسدية تُشابه سفن.",
+      "type": "digital",
+      "emoji": "📹",
+      "revealOrder": 3,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

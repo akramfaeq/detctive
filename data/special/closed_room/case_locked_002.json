@@ -1,0 +1,184 @@
+{
+  "id": "case_locked_002",
+  "title": "الجثة التي أغلقت الباب",
+  "location": "شقة فاخرة، ميلانو، إيطاليا",
+  "date": "2026/02/22",
+  "shortDesc": "ممثلة شهيرة وُجدت ميتة في شقتها المقفولة من الداخل. الجميع يظن انتحاراً — حتى يُثبت الطب الشرعي أنها ماتت قبل إغلاق الباب بساعتين كاملتين.",
+  "thumbnailEmoji": "🎭",
+  "difficulty": "easy",
+  "estimatedMinutes": 15,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 150,
+  "fullStory": "في شقتها الفاخرة بحي بريرا الميلاني، وُجدت الممثلة الإيطالية الشهيرة فيوريلا سيري (38 عاماً) ميتة على الأريكة. الباب الأمامي مقفول من الداخل بالمزلاج والسلسلة، ولا آثار اقتحام.\n\nبدا الأمر انتحاراً بجرعة دواء زائدة — حتى راجع الطبيب الشرعي درجة حرارة الجثة بدقة وأعلن أن الوفاة حدثت بين السابعة والثامنة مساءً، في حين أن الباب لم يُغلق بالسلسلة إلا بعد العاشرة حسب إفادة الجارة التي سمعت صوت السلسلة.\n\nكيف أغلقت جثة ميتة منذ ساعتين بابها بالسلسلة؟",
+  "hint": "الضحية ماتت الساعة السابعة لكن الباب أُغلق بالسلسلة الساعة العاشرة — من كان في الشقة بين السابعة والعاشرة؟",
+  "correctSuspectId": "char_agent",
+  "solutionExplanation": "القاتل هو وكيل الأعمال ماركو دي لوكا.\n\nالثغرة القاتلة:\nماركو دخل الشقة في السابعة بمفتاحه الاحتياطي الذي أعطته إياه فيوريلا للطوارئ، أعطاها جرعة مميتة مخلوطة بمشروبها، انتظر حتى ماتت، رتّب المشهد ليبدو انتحاراً، ثم غادر وأغلق الباب خلفه — لكن قبل مغادرته أغلق السلسلة من الداخل بخيط سحبه لاحقاً تحت الفجوة.\n\nلكن الجارة سمعت صوت السلسلة الساعة العاشرة بوضوح — وهو الوقت الذي سحب فيه ماركو الخيط من أسفل الباب بعد أن تأكد أنه في الجانب الصحيح.\n\nالدليل: مفتاح احتياطي وُجد في درج ماركو رغم إنكاره امتلاكه.",
+  "characters": [
+    {
+      "id": "char_fiorella",
+      "name": "فيوريلا سيري",
+      "age": 38,
+      "role": "الضحية",
+      "description": "ممثلة شهيرة وُجدت ميتة في شقتها. الطب الشرعي يُثبت وفاتها بين السابعة والثامنة مساءً.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفاة ولا يمكن استجوابها.",
+      "questions": [],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "purple",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_agent",
+      "name": "ماركو دي لوكا",
+      "age": 46,
+      "role": "مشتبه به",
+      "description": "وكيل أعمال فيوريلا. كان على وشك أن تكشف عنه أمام وسائل الإعلام بسبب سرقته من عقودها.",
+      "imageEmoji": "👤",
+      "interrogation": "ينكر امتلاك مفتاح احتياطي بشكل قاطع.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل تمتلك مفتاحاً احتياطياً لشقة فيوريلا؟",
+          "answer": "لا إطلاقاً، لم أطلب مفتاحاً ولم تعطني إياه.",
+          "isLie": true,
+          "lieHint": "مفتاح احتياطي وُجد في درجه في المكتب."
+        },
+        {
+          "id": "q2",
+          "text": "أين كنت بين السابعة والعاشرة مساءً؟",
+          "answer": "في مكتبي أُنهي عقداً مهماً. الحاسوب يُثبت نشاطي.",
+          "isLie": true,
+          "lieHint": "نشاط الحاسوب يمكن جدولته مسبقاً ليعمل تلقائياً."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_neighbor",
+      "name": "ليديا كونتي",
+      "age": 55,
+      "role": "شاهدة",
+      "description": "الجارة التي سمعت صوت سلسلة الباب في الساعة العاشرة مساءً.",
+      "imageEmoji": "👤",
+      "interrogation": "واثقة تماماً من توقيت سماعها للصوت.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل أنت متأكدة من الساعة العاشرة؟",
+          "answer": "نعم تماماً — كنت أُشاهد نشرة العاشرة حين سمعت صوت السلسلة من الجانب الآخر للجدار.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "تقرير الطب الشرعي — وقت الوفاة",
+      "description": "تُثبت درجة حرارة الجثة ومرحلة التيبس أن الوفاة حدثت بين السابعة والثامنة مساءً — قبل إغلاق السلسلة بساعتين.",
+      "type": "physical",
+      "emoji": "🩺",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "المفتاح الاحتياطي في درج ماركو",
+      "description": "مفتاح يتطابق مع قفل شقة فيوريلا وُجد في الدرج السفلي لمكتب ماركو رغم إنكاره القاطع.",
+      "type": "physical",
+      "emoji": "🔑",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "شهادة الجارة عن صوت السلسلة",
+      "description": "سمعت الجارة ليديا صوت سلسلة الباب تُغلق من الداخل الساعة العاشرة مساءً بوضوح — بعد وفاة فيوريلا بساعتين.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "وثائق الاختلاس المالي",
+      "description": "مستندات تُثبت أن ماركو اختلس ما يزيد على مئتي ألف يورو من عقود فيوريلا — وأنها اكتشفت الأمر قبل ثلاثة أيام.",
+      "type": "digital",
+      "emoji": "💶",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "id": "case_locked_008",
+  "title": "الجثة المنقولة",
+  "location": "مصنع نسيج قديم، ليون، فرنسا",
+  "date": "2026/08/29",
+  "shortDesc": "مالك مصنع وُجد ميتاً في مخزنه المقفول بقفل واحد يمتلك مفتاحه وحده. لكن درجة الحرارة في المخزن والجثة تُثبت أنها لم تكن هناك حين وقعت الجريمة — بل نُقلت إليه لاحقاً.",
+  "thumbnailEmoji": "🏭",
+  "difficulty": "hard",
+  "estimatedMinutes": 30,
+  "isNew": true,
+  "requiredPoints": 200,
+  "rewardPoints": 350,
+  "fullStory": "في مخزن القطن البارد بمصنع نسيج ليون، وُجد مالك المصنع بيير دوبوا (65 عاماً) ميتاً على الأرض. المخزن بدرجة حرارة منخفضة جداً ومقفول بقفل ضخم كان يحتفظ بمفتاحه الوحيد في جيبه دائماً.\n\nلكن الطبيب الشرعي لاحظ أمراً غريباً: معدل تبريد الجثة لا يتوافق مع مدة بقائها في هذا المخزن البارد — الجثة أبرد مما ينبغي بمقدار درجتين، مما يُشير إلى أنها تبردت في بيئة أشد برودة ثم نُقلت للمخزن.\n\nثلاثة موظفين يمتلكون مفاتيح المناطق الأخرى للمصنع.",
+  "hint": "الجثة أبرد مما ينبغي — أين في المصنع توجد بيئة أشد برودة من مخزن القطن؟ وكيف نُقلت الجثة للمخزن المقفول إذا كان المفتاح في جيب الضحية؟",
+  "correctSuspectId": "char_manager",
+  "solutionExplanation": "القاتل هو مدير الإنتاج فيليب مارتان.\n\nالثغرة القاتلة:\nالجريمة وقعت في غرفة التبريد الصناعية الخاصة بحفظ الأصباغ — درجة حرارتها أقل بعشر درجات من مخزن القطن. فيليب يمتلك مفتاح غرفة التبريد.\n\nبعد الجريمة، واجه فيليب مشكلة: كيف يجعل الجثة في مكان يملك الضحية مفتاحه هو فقط؟ الحل: صنع نسخة من مفتاح المخزن قبل أسبوع حين أعار بيير مفاتيحه له لإصلاح قفل.\n\nنقل الجثة للمخزن بالمفتاح المنسوخ، أغلق القفل، وأعاد المفتاح الأصلي لجيب الضحية.\n\nالدليل: درجة حرارة الجثة تُثبت التبريد المسبق، ومشغل نسخ المفاتيح في المنطقة يؤكد زيارة فيليب قبل أسبوع.",
+  "characters": [
+    {
+      "id": "char_pierre",
+      "name": "بيير دوبوا",
+      "age": 65,
+      "role": "الضحية",
+      "description": "مالك المصنع، وُجد ميتاً في مخزنه المقفول. المفتاح الوحيد كان في جيبه.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_manager",
+      "name": "فيليب مارتان",
+      "age": 47,
+      "role": "مشتبه به",
+      "description": "مدير الإنتاج. يمتلك مفتاح غرفة التبريد الصناعية. زار مشغل نسخ المفاتيح قبل أسبوع.",
+      "imageEmoji": "👤",
+      "interrogation": "يُصر على أن المفتاح الوحيد للمخزن كان مع الضحية دائماً.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل أعارك بيير مفاتيحه في أي وقت مؤخراً؟",
+          "answer": "لا، بيير لم يُعر مفاتيحه لأحد قط كان شديد الحرص عليها.",
+          "isLie": true,
+          "lieHint": "موظف الاستقبال يتذكر أن بيير أعطى فيليب مفاتيحه لإصلاح قفل قبل أسبوع."
+        },
+        {
+          "id": "q2",
+          "text": "متى دخلت غرفة التبريد الصناعية آخر مرة؟",
+          "answer": "قبل أسبوع للتحقق من مخزون الأصباغ.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q3",
+          "text": "هل زرت أي مشغل لنسخ المفاتيح مؤخراً؟",
+          "answer": "لا أتذكر. ربما لمفتاح منزلي قديم.",
+          "isLie": true,
+          "lieHint": "مشغل نسخ المفاتيح يحتفظ بسجل الزيارات وصورة للمفتاح المنسوخ."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_accountant",
+      "name": "سيلين دوران",
+      "age": 39,
+      "role": "مشتبه بها",
+      "description": "محاسبة المصنع. تعلم بالوضع المالي الصعب وتتهم الإدارة.",
+      "imageEmoji": "👤",
+      "interrogation": "إجاباتها متسقة ولا صلة لها بغرفة التبريد.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل تمتلكين مفتاح غرفة التبريد الصناعية؟",
+          "answer": "لا، فيليب هو الوحيد الذي يمتلكه من الموظفين.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "medium",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "تقرير درجة حرارة الجثة",
+      "description": "الجثة أبرد بدرجتين مما ينبغي لمدة بقائها في مخزن القطن — مما يُثبت أنها مكثت في بيئة أشد برودة قبل نقلها.",
+      "type": "physical",
+      "emoji": "🌡️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "سجل نسخ المفاتيح",
+      "description": "مشغل نسخ المفاتيح يحتفظ بسجل إلكتروني وصورة لكل مفتاح مُنسخ — يُثبت أن فيليب نسخ مفتاح المخزن قبل أسبوع.",
+      "type": "digital",
+      "emoji": "🔑",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "شهادة موظف الاستقبال",
+      "description": "يتذكر أن بيير أعطى فيليب مفاتيحه لساعة كاملة قبل أسبوع بحجة إصلاح قفل.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "آثار على أرضية غرفة التبريد",
+      "description": "خدوش دقيقة على أرضية غرفة التبريد تتوافق مع سحب جسم ثقيل — في المنطقة المقابلة لباب المخزن.",
+      "type": "physical",
+      "emoji": "🔍",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

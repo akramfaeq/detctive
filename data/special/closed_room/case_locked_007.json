@@ -1,0 +1,164 @@
+{
+  "id": "case_locked_007",
+  "title": "الآلية المتأخرة",
+  "location": "منزل مهندس ميكانيكي، هلسنكي، فنلندا",
+  "date": "2026/07/14",
+  "shortDesc": "مهندس عبقري وُجد ميتاً في ورشته المقفولة بقفل رقمي. القاتل كان خارج البلاد وقت الجريمة — لكن آلية ميكانيكية مبرمجة نفّذت الجريمة بدلاً منه بعد ثماني ساعات من مغادرته.",
+  "thumbnailEmoji": "⚙️",
+  "difficulty": "hard",
+  "estimatedMinutes": 30,
+  "isNew": true,
+  "requiredPoints": 200,
+  "rewardPoints": 350,
+  "fullStory": "في ورشة المهندس الفنلندي المخضرم يوهاني كارهونن (59 عاماً) بهلسنكي، وُجد جثته الساعة الثامنة صباحاً. القفل الرقمي على الباب الخارجي مقفول والسجل يُثبت أنه لم يُفتح منذ دخول يوهاني الساعة العاشرة مساءً.\n\nالمشتبه الرئيسي شريكه التجاري السابق مارتي لاهتينن — لكن مارتي كان على متن طائرة إلى طوكيو الساعة الحادية عشرة مساءً وهبط فيها الصباح. فيما فُتحت الورشة الساعة العاشرة ليلاً ووُجدت الجثة الثامنة صباحاً.\n\nالمحقق الذي فحص الورشة وجد آلية ميكانيكية غير معتادة مثبّتة خلف أحد الرفوف.",
+  "hint": "المهندس عبقري ويعيش في ورشة مليئة بالآلات. آلية مبرمجة بموقت يمكنها أن تنفّذ حركة بعد ساعات من تشغيلها — من يستطيع بناء هذه الآلية وتثبيتها خلسة في الورشة؟",
+  "correctSuspectId": "char_marti",
+  "solutionExplanation": "القاتل هو الشريك السابق مارتي لاهتينن.\n\nالثغرة القاتلة:\nمارتي مهندس أيضاً — بنى آلية ميكانيكية مبرمجة بموقت وثبّتها في الورشة أثناء زيارته قبل أسبوعين. الآلية تتضمن ذراعاً ميكانيكية مثبّتة خلف الرف تُطلق حركة محددة بعد ثماني ساعات من تشغيلها.\n\nدخل مارتي الورشة بذريعة زيارة عادية قبل أسبوعين، شغّل الموقت المخفي، ثم في يوم الجريمة اتصل بيوهاني وأقنعه بالذهاب للورشة مساءً بحجة عقد مهم — يوهاني دخل الورشة الساعة العاشرة والآلية أطلقت حركتها الثامنة صباحاً.\n\nمارتي كان فوق المحيط الهادئ وقت الجريمة.\n\nالدليل: الآلية الميكانيكية نفسها تحمل بصمات مارتي، وسجل زياراته للورشة قبل أسبوعين.",
+  "characters": [
+    {
+      "id": "char_juhani",
+      "name": "يوهاني كارهونن",
+      "age": 59,
+      "role": "الضحية",
+      "description": "مهندس ميكانيكي عبقري وُجد ميتاً في ورشته المقفولة.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "blue",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_marti",
+      "name": "مارتي لاهتينن",
+      "age": 52,
+      "role": "مشتبه به",
+      "description": "شريك تجاري سابق. كان على متن طائرة إلى طوكيو وقت الجريمة. مهندس ميكانيكي بارع.",
+      "imageEmoji": "👤",
+      "interrogation": "يُقدّم بطاقة الطائرة بثقة تامة — لكنه لا يعلم أن الآلية وُجدت.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى زرت ورشة يوهاني آخر مرة؟",
+          "answer": "قبل شهر تقريباً في زيارة ودية عادية.",
+          "isLie": true,
+          "lieHint": "سجل الزيارات يُثبت زيارته قبل أسبوعين بالضبط."
+        },
+        {
+          "id": "q2",
+          "text": "هل تستطيع بناء آلية ميكانيكية مبرمجة بموقت؟",
+          "answer": "من الناحية النظرية نعم لكن لماذا أفعل ذلك؟",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q3",
+          "text": "لماذا اتصلت بيوهاني مساء الجريمة؟",
+          "answer": "لم أتصل به تلك الليلة إطلاقاً.",
+          "isLie": true,
+          "lieHint": "سجل المكالمات يُثبت اتصالاً من رقمه الساعة التاسعة مساءً."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الآلية الميكانيكية خلف الرف",
+      "description": "آلية ذراع ميكانيكية مبرمجة بموقت وُجدت مثبّتة خلف أحد رفوف الورشة — مُصممة لتطلق حركة محددة بعد ثماني ساعات من تشغيلها.",
+      "type": "physical",
+      "emoji": "⚙️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "بصمات مارتي على الآلية",
+      "description": "تحليل البصمات يُثبت أن الآلية صُنعت وثُبّتت بأيدي مارتي لاهتينن.",
+      "type": "physical",
+      "emoji": "🖐️",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "سجل زيارات الورشة",
+      "description": "يُثبت السجل أن مارتي زار الورشة قبل أسبوعين — لا قبل شهر كما ادّعى.",
+      "type": "digital",
+      "emoji": "📋",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "سجل المكالمات الهاتفية",
+      "description": "مكالمة من رقم مارتي لرقم يوهاني الساعة التاسعة مساء الجريمة — رغم إنكار مارتي القاطع.",
+      "type": "digital",
+      "emoji": "📞",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

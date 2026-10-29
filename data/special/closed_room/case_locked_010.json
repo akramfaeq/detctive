@@ -1,0 +1,206 @@
+{
+  "id": "case_locked_010",
+  "title": "من لم يغادر",
+  "location": "برج مكتبي فاخر، هونغ كونغ",
+  "date": "2026/10/19",
+  "shortDesc": "رجل أعمال وُجد مقتولاً في مكتبه المقفول بنظام بصمة العين. السجل الرقمي يُثبت أنه دخل وحده ولم يخرج أحد — لكن المكتب يحتوي على غرفة خادمات قديمة خلف الجدار نسيها الجميع إلا شخصاً واحداً.",
+  "thumbnailEmoji": "🏙️",
+  "difficulty": "hard",
+  "estimatedMinutes": 30,
+  "isNew": true,
+  "requiredPoints": 200,
+  "rewardPoints": 350,
+  "fullStory": "في الطابق الخامس والأربعين من برج 'هاربور فيو' بهونغ كونغ، وُجد رجل الأعمال الثري وينغ تشان (67 عاماً) مقتولاً في مكتبه المجهز بنظام أمني يُسجّل كل دخول وخروج ببصمة العين.\n\nالسجل الرقمي للنظام يُثبت أن وينغ دخل المكتب الساعة الثامنة مساءً وحده — ولم يُسجَّل خروج أي شخص حتى الصباح حين وُجدت الجثة.\n\nأربعة مشتبه بهم مسجّلون في النظام ويمكنهم دخول المكتب — كل واحد منهم يُثبت أنه لم يدخل تلك الليلة. لكن المحقق الذي فحص المكتب القديم لاحظ في الركن الخلفي باباً صغيراً خلف خزانة ضخمة — باباً لا يظهر في مخططات المبنى الحديثة.",
+  "hint": "الباب خلف الخزانة لا يظهر في مخططات المبنى الحديثة — لكنه موجود في مخططات البناء الأصلية من عام 1987. من درس تاريخ هذا المبنى بما يكفي ليعرف بوجوده؟",
+  "correctSuspectId": "char_cfo",
+  "solutionExplanation": "القاتل هو المدير المالي ريموند لي.\n\nالثغرة القاتلة:\nريموند يعمل في هذا البرج منذ ثلاثين عاماً — منذ افتتاحه عام 1994. في بداية عمله، طّلع على مخططات البناء الأصلية لأسباب عقارية وعلم بوجود غرفة الخدم الصغيرة خلف المكتب الرئيسي، وهي غرفة أُغلقت بالخزانة وأُزيلت من المخططات الحديثة.\n\nفي يوم الجريمة دخل ريموند غرفة الخدم القديمة من الممر الخلفي للطابق — ممر لا كاميرات فيه — واختبأ فيها قبل وصول وينغ. بعد الجريمة عاد من نفس الطريق.\n\nبصمة نعل حذائه وُجدت على أرضية الغرفة الصغيرة المغبرة — غبار لم يتحرك منذ سنوات إلا في تلك الليلة.\n\nالدافع: وينغ اكتشف أن ريموند يحوّل أموالاً للخارج منذ خمس سنوات.",
+  "characters": [
+    {
+      "id": "char_wing",
+      "name": "وينغ تشان",
+      "age": 67,
+      "role": "الضحية",
+      "description": "رجل أعمال ثري وُجد مقتولاً في مكتبه المقفول ببصمة العين.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_cfo",
+      "name": "ريموند لي",
+      "age": 58,
+      "role": "مشتبه به",
+      "description": "المدير المالي منذ ثلاثين عاماً. يعرف البرج من الداخل والخارج. يُسجّل النظام بصمته لكنها لم تُستخدم تلك الليلة.",
+      "imageEmoji": "👤",
+      "interrogation": "هادئ ومنظم، يُحيل المحقق دائماً إلى سجل بصمة العين.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "منذ متى تعمل في هذا البرج؟",
+          "answer": "منذ عام 1994 — كنت من أوائل الموظفين.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q2",
+          "text": "هل اطّلعت على مخططات البناء الأصلية للبرج؟",
+          "answer": "في البداية ربما لكنني لا أتذكر التفاصيل بعد كل هذه السنوات.",
+          "isLie": true,
+          "lieHint": "نسخة من مخططات 1987 موجودة في أرشيف مكتبه الخاص."
+        },
+        {
+          "id": "q3",
+          "text": "هل تعلم بوجود غرفة خلف خزانة المكتب الرئيسي؟",
+          "answer": "لا، هذه أول مرة أسمع عن شيء كهذا.",
+          "isLie": true,
+          "lieHint": "بصمة حذائه في غبار الغرفة تُثبت أنه دخلها تلك الليلة."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_secretary",
+      "name": "غريس وونغ",
+      "age": 35,
+      "role": "مشتبه بها",
+      "description": "السكرتيرة الشخصية. بصمتها مسجّلة لكنها لم تدخل تلك الليلة.",
+      "imageEmoji": "👤",
+      "interrogation": "إجاباتها متسقة وكاميرا مبنى سكنها تُثبت وجودها هناك.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل دخلت المكتب بعد الثامنة مساءً؟",
+          "answer": "لا، غادرت الساعة السادسة ولم أعد.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "سجل نظام بصمة العين",
+      "description": "وينغ دخل وحده الساعة الثامنة — لا تسجيل لأي دخول أو خروج آخر طوال الليل من الباب الرئيسي.",
+      "type": "digital",
+      "emoji": "👁️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "الباب الصغير خلف الخزانة",
+      "description": "باب صغير مخفي خلف خزانة ضخمة في ركن المكتب — يؤدي لغرفة خدم قديمة ثم لممر خلفي بلا كاميرات.",
+      "type": "physical",
+      "emoji": "🚪",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "بصمة الحذاء في غبار الغرفة",
+      "description": "أرضية الغرفة الصغيرة مغطاة بغبار سنوات — وفيها بصمة حذاء واحدة طازجة تتطابق مع حذاء ريموند.",
+      "type": "physical",
+      "emoji": "👞",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "مخططات البناء الأصلية في أرشيف ريموند",
+      "description": "نسخة من مخططات البرج الأصلية لعام 1987 وُجدت في أرشيف مكتب ريموند — تُظهر غرفة الخدم والممر الخلفي بوضوح.",
+      "type": "physical",
+      "emoji": "📐",
+      "revealOrder": 4,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev5",
+      "title": "سجل التحويلات المالية المخفية",
+      "description": "تقرير مالي يُثبت أن ريموند كان يحوّل مبالغ صغيرة للخارج منذ خمس سنوات — واكتشف وينغ الأمر قبل أسبوع.",
+      "type": "digital",
+      "emoji": "💰",
+      "revealOrder": 5,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

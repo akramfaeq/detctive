@@ -1,0 +1,191 @@
+{
+  "id": "case_locked_009",
+  "title": "الأمر الأخير",
+  "location": "شقة ذكية، سيول، كوريا الجنوبية",
+  "date": "2026/09/20",
+  "shortDesc": "مبرمج وُجد مقتولاً في شقته الذكية المقفولة. الشقة تُغلق أبوابها تلقائياً بأمر صوتي — وسجل المساعد الذكي يُثبت أن آخر أمر صوتي أُعطي قبل الجريمة بدقيقة واحدة لم يصدر من صوت الضحية.",
+  "thumbnailEmoji": "🤖",
+  "difficulty": "hard",
+  "estimatedMinutes": 30,
+  "isNew": true,
+  "requiredPoints": 200,
+  "rewardPoints": 350,
+  "fullStory": "في شقته الذكية بسيول، وُجد المبرمج كيم جيسو (33 عاماً) مقتولاً. شقته مزودة بنظام ذكي متكامل يتحكم في الأبواب والأضواء والأمان بالأوامر الصوتية.\n\nسجل المساعد الذكي يُثبت أن الباب الرئيسي أُغلق بأمر صوتي في الساعة العاشرة والنصف مساءً — قبل وقت الجريمة المُقدّر بدقيقة واحدة. لكن تحليل الصوت أثبت أن من أعطى الأمر لم يكن جيسو.\n\nثلاثة أصدقاء كانوا في الشقة تلك الليلة للعشاء وغادروا قبل العاشرة. أحدهم عاد.",
+  "hint": "المساعد الذكي يتعرف على صوت مسجّل — لكن هل يُفرّق بين صوت حي وتسجيل صوتي مُشغَّل عبر مكبر صوت صغير ترك في الشقة؟",
+  "correctSuspectId": "char_friend",
+  "solutionExplanation": "القاتل هو الصديق مين جيون.\n\nالثغرة القاتلة:\nمين جيون مبرمج أيضاً — سجّل صوت جيسو وهو يُعطي أوامر عادية للمساعد الذكي خلال العشاء، ثم أعاد تجميع الجملة الصوتية 'أغلق الباب الرئيسي' من مقاطع جيسو المُسجّلة.\n\nحين غادر مع الأصدقاء الساعة التاسعة والنصف، ترك مكبر صوت بلوتوث صغيراً مخفياً خلف الديكور. عاد لاحقاً عبر الباب الخلفي للمبنى، نفّذ الجريمة، شغّل التسجيل الصوتي عن بُعد من هاتفه ليُغلق الباب الأمامي، ثم غادر من الباب الخلفي.\n\nالتحليل الصوتي الدقيق كشف أن الأمر الأخير كان صوتاً مُجمَّعاً من مقاطع منفصلة — لا صوتاً حياً متواصلاً.\n\nالدليل: مكبر الصوت الصغير وُجد خلف الديكور ويحمل بصمات مين جيون.",
+  "characters": [
+    {
+      "id": "char_jisoo",
+      "name": "كيم جيسو",
+      "age": 33,
+      "role": "الضحية",
+      "description": "مبرمج متخصص في الأنظمة الذكية. وُجد مقتولاً في شقته الذكية المقفولة.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_friend",
+      "name": "مين جيون أوه",
+      "age": 32,
+      "role": "مشتبه به",
+      "description": "مبرمج وصديق مقرب لجيسو. كان في العشاء وغادر مع الآخرين. يعرف نظام الشقة الذكية جيداً.",
+      "imageEmoji": "👤",
+      "interrogation": "يُصر على أنه لم يعد للشقة بعد مغادرته الساعة التاسعة والنصف.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل عدت للشقة بعد مغادرتك مساءً؟",
+          "answer": "لا، ذهبت مباشرة لمنزلي بعد العشاء.",
+          "isLie": true,
+          "lieHint": "كاميرا مدخل المبنى الخلفي سجّلت دخول شخص بنفس ملابسه الساعة العاشرة وعشرين دقيقة."
+        },
+        {
+          "id": "q2",
+          "text": "هل تعرف كيف يعمل نظام الأوامر الصوتية في شقة جيسو؟",
+          "answer": "أعرف الأساسيات مثل الجميع.",
+          "isLie": true,
+          "lieHint": "ساعد جيسو في برمجة النظام قبل ستة أشهر ويعرف كل تفاصيله."
+        },
+        {
+          "id": "q3",
+          "text": "هل تركت أي شيء في شقة جيسو حين غادرت؟",
+          "answer": "لا شيء، أخذت كل أغراضي.",
+          "isLie": true,
+          "lieHint": "مكبر صوت بلوتوث صغير وُجد خلف الديكور يحمل بصماته."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_friend2",
+      "name": "يوجين كيم",
+      "age": 31,
+      "role": "مشتبه به",
+      "description": "صديق آخر كان في العشاء. غادر مع مين جيون.",
+      "imageEmoji": "👤",
+      "interrogation": "إجاباته متسقة وسجل موقعه الجغرافي يُثبت وجوده في منزله.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل لاحظت شيئاً غير عادي خلال العشاء؟",
+          "answer": "مين جيون طلب من جيسو تشغيل الموسيقى عدة مرات — ظننته يحاول تعلّم الأوامر الصوتية.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "سجل المساعد الذكي",
+      "description": "يُثبت السجل أن أمر إغلاق الباب الرئيسي صدر الساعة العاشرة والنصف — قبل الجريمة بدقيقة — من صوت غير صوت الضحية.",
+      "type": "digital",
+      "emoji": "🤖",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "تحليل الطيف الصوتي للأمر",
+      "description": "يُثبت التحليل الصوتي الدقيق أن الأمر الأخير صوت مُجمَّع من مقاطع منفصلة لصوت الضحية — لا صوت حي متواصل.",
+      "type": "digital",
+      "emoji": "🎵",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "مكبر الصوت المخفي",
+      "description": "مكبر صوت بلوتوث صغير وُجد خلف الديكور — يحمل بصمات مين جيون ويمكن تشغيله عن بُعد.",
+      "type": "physical",
+      "emoji": "🔊",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "كاميرا المدخل الخلفي",
+      "description": "سجّلت دخول شخص بملابس مطابقة لما يرتديه مين جيون الساعة العاشرة وعشرين دقيقة — بعد ادعاء مغادرته بأقل من ساعة.",
+      "type": "digital",
+      "emoji": "📹",
+      "revealOrder": 4,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}
