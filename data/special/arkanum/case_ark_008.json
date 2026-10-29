@@ -1,0 +1,191 @@
+{
+  "id": "case_ark_008",
+  "title": "الإحداثيات 7.777",
+  "location": "ميناء سيدني، أستراليا",
+  "date": "2026/08/19",
+  "shortDesc": "ملاح بحري وُجد ميتاً في قمرة قيادة قاربه. آخر إدخال في نظام الملاحة كان إحداثيات غريبة تنتهي بـ 7.777 — إحداثيات لا تُشير لموقع بحري بل لمبنى في قلب المدينة.",
+  "thumbnailEmoji": "🌊",
+  "difficulty": "hard",
+  "estimatedMinutes": 30,
+  "isNew": true,
+  "requiredPoints": 200,
+  "rewardPoints": 300,
+  "seriesId": "arkanum",
+  "seriesOrder": 8,
+  "hiddenClue": {
+    "clueId": "ark_clue_008",
+    "description": "إحداثيات تنتهي بـ 7.777 تُشير لمبنى في المدينة — رسالة أخيرة من الضحية",
+    "revealsAt": "solution"
+  },
+  "fullStory": "في ميناء سيدني عند الفجر، وُجد الملاح البحري كونور مالوني (44 عاماً) ميتاً في قمرة قيادة قاربه الخاص. ظاهر الوفاة غرق — رغم أن جثته كانت جافة تماماً.\n\nكونور كان يعمل ناقلاً للبضائع في المياه الأسترالية — رحلات قصيرة بين الموانئ الصغيرة. لكن تحقيقاً سابقاً كشف أن بعض رحلاته كانت تنقل حاويات مجهولة المصدر.\n\nحين فتح المحقق نظام الملاحة على القارب، وجد آخر إدخال يدوي أجراه كونور قبيل وفاته: إحداثيات 33.8688° S, 151.2093° E 7.777\n\nالإحداثيات الأولى تُشير بدقة لمبنى محدد في وسط سيدني — لا لموقع بحري. والرقم 7.777 ليس جزءاً من نظام الإحداثيات البحرية.",
+  "hint": "كونور أدخل هذه الإحداثيات يدوياً قبيل وفاته — كان يترك دليلاً. المبنى الذي تُشير إليه الإحداثيات في وسط سيدني: ما وظيفته؟ ومن يعمل فيه؟",
+  "correctSuspectId": "char_broker",
+  "solutionExplanation": "القاتل هو وسيط الشحن مارك إيفانوف، العميل الميداني لأركانوم في أستراليا.\n\nكونور اكتشف أن الحاويات التي ينقلها تحتوي معدات مزدوجة الاستخدام — نفس التقنية التي اختفت من موسكو. أبلغ مارك بأنه يريد الخروج والإبلاغ للسلطات.\n\nقبيل وفاته أدخل كونور الإحداثيات الدقيقة لمبنى أركانوم الأسترالي في نظام الملاحة — المبنى الذي كان يستلم فيه مارك الحاويات.\n\nالرقم 7.777 لم يكن جزءاً من الإحداثيات — كان كونور يُكرر الرقم الذي ربطه بالعملية كلها منذ أن رأى الرمز ARK-7 على إحدى الحاويات.\n\nالخيط الثامن: 7.777 — الرقم يتحول لصرخة.",
+  "characters": [
+    {
+      "id": "char_connor",
+      "name": "كونور مالوني",
+      "age": 44,
+      "role": "الضحية",
+      "description": "ملاح بحري كان ينقل حاويات مجهولة لأركانوم. ترك رسالة في نظام الملاحة قبيل وفاته.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "blue",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_broker",
+      "name": "مارك إيفانوف",
+      "age": 50,
+      "role": "مشتبه به",
+      "description": "وسيط شحن دولي. رتّب رحلات كونور المجهولة. آخر من تواصل معه هاتفياً.",
+      "imageEmoji": "👤",
+      "interrogation": "ينكر أي علاقة بالحاويات المجهولة ويدّعي أن عمله روتيني بحت.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما الذي كانت تحتوي الحاويات التي رتّبتها لكونور؟",
+          "answer": "معدات صناعية عادية — لديّ كل الوثائق الجمركية.",
+          "isLie": true,
+          "lieHint": "تقرير جمارك الميناء يُثبت أن الحاويات لم تخضع للفحص المعتاد."
+        },
+        {
+          "id": "q2",
+          "text": "هل أبلغك كونور بنيته الانسحاب والإبلاغ؟",
+          "answer": "لا، آخر اتصال بيننا كان أسبوعاً قبل وفاته.",
+          "isLie": true,
+          "lieHint": "سجل المكالمات يُثبت اتصالاً في مساء الجريمة استمر أربع دقائق."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_port",
+      "name": "جيمس وولي",
+      "age": 55,
+      "role": "شاهد",
+      "description": "مشرف الميناء الذي لاحظ الحاويات غير المعتادة.",
+      "imageEmoji": "👤",
+      "interrogation": "صادق ومتعاون — لاحظ شيئاً على الحاويات.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما الذي لاحظته على الحاويات التي ينقلها كونور؟",
+          "answer": "كانت مُختومة بشريط خاص عليه رمز ARK-7 — قلت لكونور إن هذا غير معتاد فبدا قلقاً جداً.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "blue",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الإدخال الأخير في نظام الملاحة",
+      "description": "إحداثيات أدخلها كونور يدوياً قبيل وفاته: 33.8688° S, 151.2093° E 7.777 — تُشير بدقة لمبنى محدد في وسط سيدني.",
+      "type": "digital",
+      "emoji": "🧭",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "المبنى الذي تُشير إليه الإحداثيات",
+      "description": "المبنى في وسط سيدني الذي تُحدده الإحداثيات هو مكتب شركة وساطة شحن مسجّلة حديثاً باسم ARKN Logistics.",
+      "type": "physical",
+      "emoji": "🏢",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "شريط الختم على الحاويات",
+      "description": "شريط خاص عليه رمز ARK-7 وُجد على حاويات من رحلات كونور الأخيرة — نفس الرمز الذي تكرر في القضايا السابقة.",
+      "type": "physical",
+      "emoji": "📦",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "سجل المكالمات — الاتصال الأخير",
+      "description": "مكالمة بين كونور ومارك في مساء الجريمة استمرت أربع دقائق — ناقض فيها مارك ادعاءه بأن آخر تواصل كان أسبوعاً قبل الوفاة.",
+      "type": "digital",
+      "emoji": "📞",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

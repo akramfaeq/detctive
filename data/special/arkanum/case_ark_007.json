@@ -1,0 +1,176 @@
+{
+  "id": "case_ark_007",
+  "title": "الطابق السابع",
+  "location": "مركز حقوق الإنسان، نيروبي، كينيا",
+  "date": "2026/07/14",
+  "shortDesc": "محامية حقوق إنسان وُجدت ميتة في مكتبها بالطابق السابع. كانت تجمع أدلة على تهجير قسري لمجتمعات محلية لصالح مشاريع بنية تحتية — نفس المشاريع التي تموّلها أركانوم.",
+  "thumbnailEmoji": "⚖️",
+  "difficulty": "hard",
+  "estimatedMinutes": 30,
+  "isNew": true,
+  "requiredPoints": 200,
+  "rewardPoints": 300,
+  "seriesId": "arkanum",
+  "seriesOrder": 7,
+  "hiddenClue": {
+    "clueId": "ark_clue_007",
+    "description": "مكتب الضحية في الطابق السابع — والرقم 7 يكتسب معنى جديداً هنا",
+    "revealsAt": "solution"
+  },
+  "fullStory": "في الطابق السابع من مركز حقوق الإنسان الأفريقي بنيروبي، وُجدت المحامية الكينية البارزة أميلي أوتيينو (46 عاماً) ميتة في مكتبها صباح الثلاثاء.\n\nأميلي كانت تُعدّ ملفاً ضخماً لتقديمه للمحكمة الجنائية الدولية عن عمليات تهجير قسري طالت 7 مجتمعات محلية في شرق أفريقيا — جميعها طُرد سكانها لإفساح المجال لمشاريع بنية تحتية ضخمة.\n\nالملف كان يحتوي على توقيعات 847 ضحية من المجتمعات السبعة. الفحص الجنائي أثبت أن الملف الورقي سليم — لكن النسخة الرقمية الاحتياطية اختفت من السيرفر الخارجي تماماً.",
+  "hint": "7 مجتمعات مُهجَّرة — والمشاريع التي أُقيمت على أراضيها تموّلها نفس الجهة التي تظهر في القضايا السابقة. من يملك مصلحة في إخفاء هذه الأدلة؟ وكيف اختفت النسخة الرقمية؟",
+  "correctSuspectId": "char_tech",
+  "solutionExplanation": "القاتل هو مسؤول التقنية في المركز، أوباما أوندي، العميل الداخلي لأركانوم.\n\nأوباما يمتلك صلاحيات كاملة على السيرفر الخارجي. أرسل تقريراً لأركانوم يُبلّغهم باكتمال ملف أميلي وقُربها من تقديمه للمحكمة.\n\nفي ليلة الجريمة دخل أوباما للمكتب بحجة صيانة الشبكة — ومحا النسخة الرقمية الاحتياطية ثم نفّذ الجريمة وغادر.\n\nالملف الورقي تُركَ لأن إخفاءه كان سيُثير شبهة فورية — لكن بدون النسخة الرقمية يصعب تقديم الملف بالحجم الكافي للمحكمة الدولية.\n\nالخيط السابع: 7 مجتمعات مُهجَّرة — والطابق السابع — الرقم 7 يكتسب بُعداً إنسانياً هنا.",
+  "characters": [
+    {
+      "id": "char_ameli",
+      "name": "أميلي أوتيينو",
+      "age": 46,
+      "role": "الضحية",
+      "description": "محامية حقوق إنسان وُجدت ميتة في مكتبها بالطابق السابع. كانت تُعدّ ملفاً للمحكمة الجنائية الدولية.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفاة ولا يمكن استجوابها.",
+      "questions": [],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "dark",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_tech",
+      "name": "أوباما أوندي",
+      "age": 33,
+      "role": "مشتبه به",
+      "description": "مسؤول التقنية في المركز. يمتلك صلاحيات السيرفر الخارجي. دخل المبنى ليلاً بحجة صيانة الشبكة.",
+      "imageEmoji": "👤",
+      "interrogation": "يُبرر دخوله الليلي بعطل تقني طارئ.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "لماذا دخلت المركز ليلاً قبل الجريمة؟",
+          "answer": "تلقيت إشعاراً تلقائياً بعطل في السيرفر الخارجي — إجراء روتيني.",
+          "isLie": true,
+          "lieHint": "سجل السيرفر لا يُظهر أي عطل في ذلك التوقيت."
+        },
+        {
+          "id": "q2",
+          "text": "هل مسست النسخة الرقمية الاحتياطية لملف أميلي؟",
+          "answer": "لم أقترب من ملفات أميلي — صلاحياتي للبنية التحتية فقط.",
+          "isLie": true,
+          "lieHint": "سجل الصلاحيات يُثبت وصوله لمجلد الملفات الاحتياطية في تلك الليلة."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "dark",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_colleague",
+      "name": "واهيرو موتاي",
+      "age": 38,
+      "role": "شاهدة",
+      "description": "زميلة أميلي التي تعلم بتفاصيل الملف.",
+      "imageEmoji": "👤",
+      "interrogation": "صادقة وغاضبة ومصممة على متابعة القضية.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما الرابط بين المجتمعات السبعة المهجَّرة؟",
+          "answer": "جميعها طُردت لصالح مشاريع موّلتها نفس الشركة — شركة تستخدم اسم ARK في وثائقها الداخلية.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "dark",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "purple",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "ملف التهجير القسري لـ 7 مجتمعات",
+      "description": "الملف الورقي سليم يحمل توقيعات 847 ضحية — لكن النسخة الرقمية الاحتياطية اختفت تماماً من السيرفر.",
+      "type": "physical",
+      "emoji": "📁",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "سجل صلاحيات السيرفر",
+      "description": "يُثبت وصول أوباما لمجلد الملفات الاحتياطية في ليلة الجريمة — وحذف كامل لملفات أميلي.",
+      "type": "digital",
+      "emoji": "💾",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "وثائق المشاريع — الشركة الممولة",
+      "description": "وثائق المشاريع على أراضي المجتمعات السبعة تُظهر الجهة الممولة باسم ARK — نفس الرمز الذي تكرر في القضايا السابقة.",
+      "type": "physical",
+      "emoji": "🏗️",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

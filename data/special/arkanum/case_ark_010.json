@@ -1,0 +1,190 @@
+{
+  "id": "case_ark_010",
+  "title": "أركانوم",
+  "location": "جزيرة خاصة، البحر الأبيض المتوسط",
+  "date": "2026/10/29",
+  "shortDesc": "تسعة خيوط من تسع مدن حول العالم تجتمع أخيراً. المحقق يصل للجزيرة حيث يقع المقر الحقيقي لأركانوم — ويكتشف أن الشخص الذي يقود كل شيء ليس مجهولاً بل شخص ظهر في إحدى القضايا التسع.",
+  "thumbnailEmoji": "🏝️",
+  "difficulty": "hard",
+  "estimatedMinutes": 40,
+  "isNew": true,
+  "requiredPoints": 300,
+  "rewardPoints": 500,
+  "seriesId": "arkanum",
+  "seriesOrder": 10,
+  "isFinalCase": true,
+  "fullStory": "بعد تسع قضايا في تسع مدن حول العالم — باريس، طوكيو، كيب تاون، سيول، بيونس آيريس، موسكو، نيروبي، سيدني، إسطنبول — جمع المحقق الخيوط التسعة:\n\n🔢 الرقم 7 في جيب إيتيان\n⏰ الساعة 7:07 في طوكيو\n📸 7 صور محذوفة في كيب تاون\n💻 متغير ARK7 في سيول\n📄 الوثيقة رقم 7 في بيونس آيريس\n🗑️ 7 ملفات محذوفة في موسكو\n⚖️ 7 مجتمعات مُهجَّرة في نيروبي\n🧭 7.777 في إحداثيات سيدني\n🏺 7 قطع أثرية في إسطنبول\n\nالإحداثيات من القطع الأثرية تُشير لجزيرة مجهولة في البحر الأبيض المتوسط — الجزيرة التي لا اسم لها في الخرائط الرسمية.\n\nحين وصل المحقق للجزيرة، وجد منشأة متكاملة ومجهزة — وفي مركز عملياتها وجد الشخص الذي يقود كل شيء: سوفي لوران، زميلة إيتيان مورو في باريس — الشاهدة في القضية الأولى.",
+  "hint": "تسعة خيوط — تسعة ضحايا — تسعة مجرمين نفّذوا الأوامر. لكن من يعطي الأوامر؟ عُد للقضية الأولى: من كان هناك؟ من كان 'الشاهدة البريئة' التي أعطت المحقق أول معلومة وجّهت التحقيق؟",
+  "correctSuspectId": "char_sophie",
+  "solutionExplanation": "قائدة أركانوم هي سوفي لوران — الشاهدة في القضية الأولى بباريس.\n\nالثغرة القاتلة الكبرى:\nسوفي كانت في مكتب إيتيان في باريس ليس كزميلة بريئة — بل كمشرفة على العملية. أعطت المحقق في القضية الأولى معلومة حقيقية لكنها انتقائية: وجّهت انتباهه لأدريان وبعيداً عنها.\n\nتسع سنوات أسست فيها سوفي أركانوم من الخفاء — شبكة تسيطر على بنية تحتية ضخمة في كل قارة من خلال مجموعة استثمارية وهمية. كل من اقترب من الحقيقة أُسكت.\n\nالرقم 7 لم يكن مجرد رمز — كان توقيع سوفي. الجزيرة رقمها في السجلات السرية: ARK-7. بنت شبكتها على سبع قارات وسبعة مجالات وسبعة عملاء إقليميين.\n\nحين واجهها المحقق بكل الخيوط معاً، كان أول ما قالته: 'كنت أتساءل كم ستأخذ وقتاً.'",
+  "characters": [
+    {
+      "id": "char_sophie",
+      "name": "سوفي لوران",
+      "age": 42,
+      "role": "الجانية الرئيسية",
+      "description": "قائدة أركانوم. ظهرت كشاهدة بريئة في القضية الأولى بباريس. أسست الشبكة على مدى تسع سنوات من الخفاء.",
+      "imageEmoji": "👤",
+      "interrogation": "هادئة تماماً. تتحدث كأن المواجهة كانت متوقعة ومرحّباً بها.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ماذا تعني أركانوم؟",
+          "answer": "سر — باللاتينية. بنيت ما بنيته على مبدأ واحد: السيطرة تأتي من الخفاء. ARK-7 كان توقيعي الشخصي — الجزيرة، المشروع، كل شيء.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q2",
+          "text": "لماذا أعطيتني المعلومة الأولى عن إيتيان في باريس؟",
+          "answer": "لأنني كنت أُراقب المحققين الذين يقتربون. أفضل طريقة لمراقبة المحقق أن توجّهه أنت — أعطيتك خيطاً حقيقياً صغيراً ليشغلك عن الصورة الكبيرة.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q3",
+          "text": "هل ندمت على شيء؟",
+          "answer": "لو بدأت من جديد، ما كنت سأترك أي رقم 7. الغرور هو الدليل الوحيد الذي لا يمكن محوه.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_all_clues",
+      "name": "الخيوط التسعة مجتمعة",
+      "age": 0,
+      "role": "دليل",
+      "description": "مجموع الخيوط التسعة من القضايا السابقة تشكّل الصورة الكاملة.",
+      "imageEmoji": "🔗",
+      "interrogation": "ربط الخيوط التسعة يكشف الجانية.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما الرابط بين كل خيوط القضايا التسع؟",
+          "answer": "الرقم 7 في كل قضية — توقيع سوفي. والضحايا التسعة جميعهم اقتربوا من كشف أركانوم من زوايا مختلفة.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الخيوط التسعة مجتمعة",
+      "description": "الرقم 7 يظهر في تسع أشكال مختلفة عبر تسع قضايا في تسع مدن — توقيع واحد يربط جميعها.",
+      "type": "physical",
+      "emoji": "🔗",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "سجلات الجزيرة — ARK-7",
+      "description": "سجلات المنشأة على الجزيرة تُثبت أنها مُسجَّلة باسم ARK-7 منذ تسع سنوات — بنفس الاسم الذي ظهر في كل القضايا.",
+      "type": "digital",
+      "emoji": "🏝️",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "صورة سوفي في باريس",
+      "description": "العودة لصورة كاميرا مكتب إيتيان بباريس: سوفي لوران كانت هناك ليس كزميلة بل كمشرفة — زاوية الكاميرا تُظهرها تحمل شيئاً لم يُلاحَظ في التحقيق الأول.",
+      "type": "digital",
+      "emoji": "📸",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev4",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "خريطة عمليات أركانوم الكاملة",
+      "description": "خريطة وُجدت في مركز العمليات تُظهر نقاط التحكم في سبع قارات — وتُثبت أن أركانوم كانت تُسيطر على بنية تحتية ضخمة حول العالم منذ تسع سنوات.",
+      "type": "physical",
+      "emoji": "🌍",
+      "revealOrder": 4,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev5",
+      "title": "اعتراف سوفي الكامل",
+      "description": "سوفي لوران اعترفت بكل شيء — قالت إن الرقم 7 كان توقيعها الشخصي الذي لم تتوقع أن يكتشفه أحد.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 5,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

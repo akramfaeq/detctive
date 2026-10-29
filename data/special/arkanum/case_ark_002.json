@@ -1,0 +1,191 @@
+{
+  "id": "case_ark_002",
+  "title": "الساعة 7:07",
+  "location": "مختبر ذكاء اصطناعي، طوكيو، اليابان",
+  "date": "2026/02/14",
+  "shortDesc": "باحثة يابانية في الذكاء الاصطناعي وُجدت ميتة في مختبرها. كاميرا المختبر سجّلت توقف حركتها في الساعة 7:07 صباحاً بالضبط — رقم لن يُفهم أهميته إلا لاحقاً.",
+  "thumbnailEmoji": "🤖",
+  "difficulty": "easy",
+  "estimatedMinutes": 15,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 150,
+  "seriesId": "arkanum",
+  "seriesOrder": 2,
+  "hiddenClue": {
+    "clueId": "ark_clue_002",
+    "description": "الساعة 7:07 — التوقيت الدقيق لتوقف حركة الضحية في لقطات الكاميرا",
+    "revealsAt": "solution"
+  },
+  "fullStory": "في الساعة التاسعة صباحاً، أبلغ حارس مختبر الذكاء الاصطناعي في جامعة طوكيو عن عدم استجابة الباحثة المتميزة يوكو ناكاشيما (39 عاماً).\n\nيوكو كانت تعمل على مشروع سري من تمويل خارجي — نظام ذكاء اصطناعي قادر على تتبع التحويلات المالية الدولية المعقدة وكشف الشبكات المخفية خلفها.\n\nالكاميرا الداخلية للمختبر سجّلت يوكو تعمل بشكل طبيعي حتى الساعة 7:07 صباحاً — ثم توقفت حركتها فجأة وانهارت على كرسيها.\n\nالتقرير الأولي أشار لسكتة دماغية مفاجئة — لكن زميلها لاحظ أن شاشة حاسوبها أُغلقت من الخارج عبر الشبكة في الساعة 7:06 بالضبط — دقيقة واحدة قبل وفاتها.",
+  "hint": "الحاسوب أُغلق من الخارج عبر الشبكة قبل دقيقة من وفاتها — من يمتلك صلاحية الوصول عن بُعد لشبكة المختبر؟ وما الذي كانت يوكو تعمل عليه في تلك اللحظة بالذات؟",
+  "correctSuspectId": "char_director",
+  "solutionExplanation": "القاتل هو مدير تمويل المشروع، تاكاشي موريياما، الذي يعمل وسيطاً لمجموعة أركانوم.\n\nيوكو أنهت في تلك الليلة النسخة التجريبية الأولى من نظامها — وحين شغّلته كشف فوراً شبكة تحويلات ضخمة تنتهي جميعها في حساب واحد: ARK-7.\n\nتاكاشي راقب شاشتها عن بُعد وحين رأى النتيجة أغلق الحاسوب على الفور عبر صلاحياته الإدارية — ثم أطلق نبضة كهربائية عن بُعد عبر القطب الكهربائي المثبّت في كرسيها المخصص للأبحاث التجريبية.\n\nالخيط الثاني: الساعة 7:07 — نفس رقم 7 الذي ظهر في باريس، لكن في شكل مختلف.",
+  "characters": [
+    {
+      "id": "char_yoko",
+      "name": "يوكو ناكاشيما",
+      "age": 39,
+      "role": "الضحية",
+      "description": "باحثة في الذكاء الاصطناعي متخصصة في تتبع الشبكات المالية. اكتشفت أركانوم في لحظة وفاتها.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفاة ولا يمكن استجوابها.",
+      "questions": [],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_director",
+      "name": "تاكاشي موريياما",
+      "age": 52,
+      "role": "مشتبه به",
+      "description": "مدير تمويل المشروع. يمتلك صلاحيات الوصول عن بُعد لجميع أجهزة المختبر.",
+      "imageEmoji": "👤",
+      "interrogation": "هادئ ومنظم ويُقدّم نفسه كشخص مفجوع بفقدان باحثته المتميزة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل استخدمت صلاحياتك للوصول عن بُعد لحاسوب يوكو صباح الجريمة؟",
+          "answer": "أجريت فحصاً روتينياً للشبكة في تلك الساعة — لكن لم أتدخل في عمل يوكو.",
+          "isLie": true,
+          "lieHint": "سجل الشبكة يُثبت أن حاسوب يوكو أُغلق بأمر من حسابه الإداري في الساعة 7:06."
+        },
+        {
+          "id": "q2",
+          "text": "هل أطّلعت على نتائج نظام يوكو قبل وفاتها؟",
+          "answer": "لم تكن النتائج جاهزة بعد — كانت لا تزال في مرحلة التطوير.",
+          "isLie": true,
+          "lieHint": "سجل الشبكة يُثبت أنه دخل على شاشتها عن بُعد في الساعة 7:05."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_colleague",
+      "name": "كينجي ساتو",
+      "age": 35,
+      "role": "شاهد",
+      "description": "زميل يوكو في المختبر. لاحظ إغلاق الحاسوب من الخارج.",
+      "imageEmoji": "👤",
+      "interrogation": "صادق ومتعاون، يمتلك معلومة تقنية حاسمة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما الذي لاحظته في سجلات الشبكة؟",
+          "answer": "شاشة يوكو أُغلقت من حساب إداري خارجي في الساعة 7:06 — دقيقة واحدة قبل توقف حركتها في الكاميرا.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "لقطة الكاميرا عند 7:07",
+      "description": "الكاميرا الداخلية تُظهر يوكو تعمل بشكل طبيعي ثم تنهار فجأة في الساعة 7:07 صباحاً بالضبط.",
+      "type": "digital",
+      "emoji": "📹",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "سجل الشبكة — إغلاق الحاسوب",
+      "description": "يُثبت أن حاسوب يوكو أُغلق من حساب تاكاشي الإداري في الساعة 7:06 — دقيقة قبل وفاتها.",
+      "type": "digital",
+      "emoji": "💻",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "القطب الكهربائي في الكرسي",
+      "description": "فحص الكرسي التجريبي كشف عن قطب كهربائي صغير مثبّت في المسند — يمكن تشغيله عن بُعد عبر الشبكة.",
+      "type": "physical",
+      "emoji": "⚡",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "نتائج نظام يوكو — ARK-7",
+      "description": "آخر ملف أنشأه نظامها قبل إغلاقه: شبكة تحويلات مالية ضخمة تنتهي جميعها في حساب واحد مُسجَّل تحت الرمز ARK-7.",
+      "type": "digital",
+      "emoji": "🕸️",
+      "revealOrder": 4,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

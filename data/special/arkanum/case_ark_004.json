@@ -1,0 +1,176 @@
+{
+  "id": "case_ark_004",
+  "title": "المتغير ARK7",
+  "location": "شركة تقنية ناشئة، سيول، كوريا الجنوبية",
+  "date": "2026/04/17",
+  "shortDesc": "مبرمج موهوب وُجد ميتاً في مكتبه. آخر كود كتبه يحتوي متغيراً غريباً اسمه ARK7 لم يكن جزءاً من المشروع — رسالة تركها للمحققين.",
+  "thumbnailEmoji": "💻",
+  "difficulty": "medium",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 100,
+  "rewardPoints": 200,
+  "seriesId": "arkanum",
+  "seriesOrder": 4,
+  "hiddenClue": {
+    "clueId": "ark_clue_004",
+    "description": "متغير ARK7 في آخر كود كتبه المبرمج قبيل وفاته",
+    "revealsAt": "solution"
+  },
+  "fullStory": "في الدور التاسع والعشرين من برج تقنية سيول، وُجد المبرمج الكوري المتميز جي هون كيم (29 عاماً) ميتاً على مكتبه صباحاً. ظاهر الوفاة سكتة قلبية مفاجئة.\n\nجي هون كان يعمل على نظام تشفير متقدم طلبته شركة عملاء جديدة. لكن زميله حين فتح الحاسوب وجد آخر ملف كود كتبه جي هون قبيل وفاته يحتوي متغيراً غريباً لا علاقة له بالمشروع:\n\nconst ARK7 = 'THEY ARE WATCHING';\n\nسطر واحد مُدرج في منتصف الكود بخط مختلف عن باقي الكود — أُضيف في آخر لحظة.",
+  "hint": "متغير أُضيف في آخر لحظة بخط مختلف ومحتواه رسالة — 'إنهم يراقبون'. من الذي كان يراقب جي هون؟ ومن يمتلك القدرة على المراقبة الرقمية في هذا المستوى؟",
+  "correctSuspectId": "char_cto",
+  "solutionExplanation": "القاتل هو المدير التقني للشركة العميلة، هيون سيونغ باك، الذي يعمل لصالح أركانوم.\n\nجي هون اكتشف خلال عمله على النظام أن الشركة العميلة ليست ما تدّعيه — واجهة فارغة لأركانوم. حين بدأ بالبحث وجد أن كل اتصالاتهم مراقبة وأن الشركة تُعيد توجيه نظام التشفير الذي يبنيه لحماية تحويلات مالية بدلاً من تأمين البيانات.\n\nأضاف السطر في الكود كرسالة يائسة يعلم أنه لن يتمكن من إرسالها بطريقة أخرى — لأن اتصالاته مراقبة كلها.\n\nهيون أرسل عميلاً ليحقن جي هون بجرعة قاتلة تُشبه السكتة القلبية، ثم بحث في الكود ومحا ما يعتقد أنه الخطر — لكنه لم يُلاحظ السطر المخفي.\n\nالخيط الرابع: ARK7 يظهر صريحاً لأول مرة في الكود.",
+  "characters": [
+    {
+      "id": "char_jihoon",
+      "name": "جي هون كيم",
+      "age": 29,
+      "role": "الضحية",
+      "description": "مبرمج موهوب اكتشف أن الشركة العميلة واجهة لأركانوم. ترك رسالة في الكود.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_cto",
+      "name": "هيون سيونغ باك",
+      "age": 44,
+      "role": "مشتبه به",
+      "description": "المدير التقني للشركة العميلة. زار المكتب في مساء الجريمة بحجة مراجعة تقدم العمل.",
+      "imageEmoji": "👤",
+      "interrogation": "محترف ومتحكم في انفعالاته بشكل لافت.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل اطّلعت على آخر ما كتبه جي هون في الكود؟",
+          "answer": "لم أراجع الكود بالتفصيل — زيارتي كانت لمناقشة الجدول الزمني فقط.",
+          "isLie": true,
+          "lieHint": "سجل الحاسوب يُثبت دخوله لملف الكود في مساء الجريمة."
+        },
+        {
+          "id": "q2",
+          "text": "ما الغرض الحقيقي من نظام التشفير الذي طلبتموه؟",
+          "answer": "تأمين بيانات عملائنا — هذا ما وضّحناه في العقد.",
+          "isLie": true,
+          "lieHint": "تحليل النظام يُثبت أنه مُعدّ لتشفير تحويلات مالية دولية لا بيانات عملاء."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_coworker",
+      "name": "ييون أه جانغ",
+      "age": 27,
+      "role": "شاهدة",
+      "description": "زميلة جي هون التي اكتشفت السطر الغريب في الكود.",
+      "imageEmoji": "👤",
+      "interrogation": "صادقة ومذعورة من ما اكتشفت.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما الذي لاحظته في الكود؟",
+          "answer": "سطر واحد مُضاف في المنتصف بخط مختلف: const ARK7 = 'THEY ARE WATCHING' — ليس له أي علاقة بالمشروع.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "purple",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "السطر الغريب في الكود",
+      "description": "سطر واحد مُضاف في آخر لحظة: const ARK7 = 'THEY ARE WATCHING' — رسالة يائسة من المبرمج المتوفى.",
+      "type": "digital",
+      "emoji": "💻",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "تحليل النظام — الاستخدام الحقيقي",
+      "description": "تحليل تقني يُثبت أن النظام مُصمَّم لتشفير تحويلات مالية دولية لا بيانات عملاء كما ادّعت الشركة.",
+      "type": "digital",
+      "emoji": "🔍",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "سجل دخول هيون لملف الكود",
+      "description": "سجل الحاسوب يُثبت أن هيون دخل لملف الكود في مساء الجريمة — رغم إنكاره.",
+      "type": "digital",
+      "emoji": "📋",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

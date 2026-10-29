@@ -1,0 +1,176 @@
+{
+  "id": "case_ark_005",
+  "title": "الوثيقة رقم 7",
+  "location": "مقر بعثة دبلوماسية، بيونس آيريس، الأرجنتين",
+  "date": "2026/05/22",
+  "shortDesc": "دبلوماسية وُجدت ميتة في مكتبها. توقيعها الأخير كان على وثيقة رقم 7 من حزمة اتفاقيات — وثيقة تمنح مجموعة مجهولة صلاحيات استثمارية ضخمة دون علمها الحقيقي.",
+  "thumbnailEmoji": "🌎",
+  "difficulty": "medium",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 100,
+  "rewardPoints": 200,
+  "seriesId": "arkanum",
+  "seriesOrder": 5,
+  "hiddenClue": {
+    "clueId": "ark_clue_005",
+    "description": "الوثيقة رقم 7 من حزمة الاتفاقيات — آخر ما وقّعت عليه الضحية",
+    "revealsAt": "solution"
+  },
+  "fullStory": "في مقر البعثة الدبلوماسية الأرجنتينية، وُجدت الدبلوماسية ماريا خوسيه أورتيز (51 عاماً) ميتة على مكتبها في صباح يوم العمل.\n\nماريا كانت تُفاوض على حزمة استثمارية ضخمة لتطوير البنية التحتية في منطقة باتاغونيا. الحزمة تضمّنت اثنتي عشرة وثيقة — وقّعت على إحدى عشرة منها قبل أسابيع.\n\nالوثيقة الثانية عشرة لم تُوقّع — لكن الوثيقة رقم 7 التي وقّعتها في اليوم السابق مباشرة تبيّن لاحقاً أنها تحتوي بنداً خفياً في صفحتها الثلاثين يمنح شركة مجهولة في كايمان صلاحيات إدارة حصرية على كل مشاريع المنطقة.",
+  "hint": "الوثيقة رقم 7 والبند الخفي في الصفحة الثلاثين — من أعدّ هذه الحزمة؟ ومن الذي أدرج هذا البند الخفي في الوثيقة دون علم ماريا؟",
+  "correctSuspectId": "char_lawyer",
+  "solutionExplanation": "القاتل هو المستشار القانوني للبعثة، أليخاندرو فيغا، العميل الداخلي لأركانوم.\n\nأليهاندرو أعدّ حزمة الوثائق وأدرج في الوثيقة رقم 7 بنداً خفياً في الصفحة الثلاثين يمنح شركة ARK-7 المسجّلة في كايمان صلاحيات إدارة حصرية.\n\nماريا وقّعت الوثيقة دون قراءة الصفحة الثلاثين بالكامل — عادة شائعة في الوثائق الطويلة. لكن في اليوم التالي أرادت مراجعة كامل ما وقّعت عليه قبل الوثيقة الثانية عشرة — وحين بدأت القراءة وجدت البند الخفي.\n\nأبلغت أليهاندرو بأنها ستُلغي التوقيع وتُبلّغ الجهات المختصة. في تلك الليلة نُفِّذت الجريمة.\n\nالخيط الخامس: الوثيقة رقم 7 وشركة ARK-7 تظهران معاً.",
+  "characters": [
+    {
+      "id": "char_maria",
+      "name": "ماريا خوسيه أورتيز",
+      "age": 51,
+      "role": "الضحية",
+      "description": "دبلوماسية أرجنتينية وُجدت ميتة بعد اكتشافها البند الخفي في الوثيقة رقم 7.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفاة ولا يمكن استجوابها.",
+      "questions": [],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "medium",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_lawyer",
+      "name": "أليهاندرو فيغا",
+      "age": 48,
+      "role": "مشتبه به",
+      "description": "المستشار القانوني للبعثة. أعدّ حزمة الوثائق وأدرج البند الخفي.",
+      "imageEmoji": "👤",
+      "interrogation": "يُصرّ على أن البند كان واضحاً ومعلناً.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "من أعدّ الوثيقة رقم 7 وأدرج البند في الصفحة الثلاثين؟",
+          "answer": "أعددت الوثيقة بناءً على تعليمات الجهة الممولة — البند كان معلوماً لجميع الأطراف.",
+          "isLie": true,
+          "lieHint": "رسائل ماريا تُثبت أنها لم تكن تعلم بالبند حتى يوم قبل وفاتها."
+        },
+        {
+          "id": "q2",
+          "text": "هل أبلغتك ماريا بنيّتها إلغاء توقيعها؟",
+          "answer": "ناقشنا الوثيقة لكنها لم تذكر إلغاء التوقيع.",
+          "isLie": true,
+          "lieHint": "رسالة إلكترونية أرسلتها ماريا له تُثبت إبلاغه صراحة."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "medium",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": true,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_secretary",
+      "name": "كارمن ريوس",
+      "age": 34,
+      "role": "شاهدة",
+      "description": "سكرتيرة ماريا. تعلم بالرسالة التي أرسلتها ماريا لأليهاندرو.",
+      "imageEmoji": "👤",
+      "interrogation": "صادقة وتمتلك نسخة من الرسالة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل أرسلت ماريا رسالة لأليهاندرو مساء الجريمة؟",
+          "answer": "نعم، أرسلت له رسالة تُبلّغه بنيتها إلغاء توقيعها على الوثيقة رقم 7 وإبلاغ مكتب المدعي العام.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "medium",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الوثيقة رقم 7 والبند الخفي",
+      "description": "الوثيقة رقم 7 تحتوي في صفحتها الثلاثين بنداً يمنح شركة ARK-7 المسجّلة في كايمان صلاحيات إدارة حصرية على مشاريع المنطقة.",
+      "type": "physical",
+      "emoji": "📄",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "رسالة ماريا الأخيرة لأليهاندرو",
+      "description": "رسالة إلكترونية تُبلّغه بنيتها إلغاء التوقيع وإبلاغ مكتب المدعي العام — أُرسلت في مساء الجريمة.",
+      "type": "digital",
+      "emoji": "📧",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "سجل تسجيل شركة ARK-7",
+      "description": "وثيقة رسمية تُثبت أن شركة ARK-7 مسجّلة في جزر كايمان بنفس العنوان الذي ظهر في قضايا باريس وطوكيو وكيب تاون.",
+      "type": "digital",
+      "emoji": "🏢",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

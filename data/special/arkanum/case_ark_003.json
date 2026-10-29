@@ -1,0 +1,176 @@
+{
+  "id": "case_ark_003",
+  "title": "الصور المفقودة",
+  "location": "حي بو كاب، كيب تاون، جنوب أفريقيا",
+  "date": "2026/03/21",
+  "shortDesc": "صحفي استقصائي وُجد ميتاً في شقته بكيب تاون. كاميرته كانت بجانبه — لكن 7 صور بالضبط محذوفة من الذاكرة وسط مئات الصور الأخرى.",
+  "thumbnailEmoji": "📸",
+  "difficulty": "medium",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 100,
+  "rewardPoints": 200,
+  "seriesId": "arkanum",
+  "seriesOrder": 3,
+  "hiddenClue": {
+    "clueId": "ark_clue_003",
+    "description": "7 صور محذوفة بالضبط من ذاكرة الكاميرا",
+    "revealsAt": "solution"
+  },
+  "fullStory": "في شقته المطلة على البحر بحي بو كاب الملون، وُجد الصحفي الاستقصائي الجنوب أفريقي مايكل دلاميني (43 عاماً) مقتولاً طعناً.\n\nمايكل كان يعمل على تحقيق ضخم عن تدفق أموال مجهولة لتمويل مشاريع بنية تحتية في أفريقيا جنوب الصحراء — مشاريع تبدو خيرية من الخارج لكن تُخفي وراءها شبكة سيطرة ممنهجة.\n\nكاميرته الاحترافية كانت على الطاولة بجانبه — ويبدو أنه كان يراجع صوره حين فاجأه القاتل. الذاكرة تحتوي على 847 صورة، لكن الفحص الرقمي كشف أن 7 صور بالضبط حُذفت بعناية من وسط الذاكرة.",
+  "hint": "7 صور محذوفة من وسط 847 صورة — من يعلم بالضبط أي 7 صور تُشكّل خطراً؟ القاتل لم يأخذ الكاميرا كلها بل بحث عن صور محددة بالذات.",
+  "correctSuspectId": "char_fixer",
+  "solutionExplanation": "القاتل هو وسيط الصحفي المحلي ثابو نكوسي، الذي كان يعمل مزدوجاً لأركانوم.\n\nالصور السبع المحذوفة كانت تُظهر لقاءً سرياً بين مسؤولين حكوميين ومندوبي شركة وهمية مسجّلة في جزر كايمان — نفس الشركة التي ظهر رمزها ARK-7 في باريس وطوكيو.\n\nثابو كان حاضراً في بعض اللقاءات وعرف ماذا التقطت الكاميرا. أبلغ أركانوم فوصل عميلهم وحذف الصور السبع ثم قتل مايكل.\n\nالخيط الثالث: 7 صور — الرقم يتكرر مجدداً.",
+  "characters": [
+    {
+      "id": "char_michael",
+      "name": "مايكل دلاميني",
+      "age": 43,
+      "role": "الضحية",
+      "description": "صحفي استقصائي يعمل على تحقيق عن تمويل مشبوه في أفريقيا.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "dark",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_fixer",
+      "name": "ثابو نكوسي",
+      "age": 37,
+      "role": "مشتبه به",
+      "description": "وسيط محلي يُساعد الصحفيين الأجانب على التواصل مع المصادر. كان على علم بكل تحركات مايكل.",
+      "imageEmoji": "👤",
+      "interrogation": "يُظهر حزناً ويُقدم نفسه كصديق مخلص.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل علمت بالصور التي التقطها مايكل في اجتماعات الأسبوع الماضي؟",
+          "answer": "لم أكن حاضراً في الاجتماعات — رتّبتها فقط من بعيد.",
+          "isLie": true,
+          "lieHint": "بطاقة دخول مبنى الاجتماع تُثبت دخوله في نفس اليوم."
+        },
+        {
+          "id": "q2",
+          "text": "هل أخبرت أحداً عن موضوع تحقيق مايكل؟",
+          "answer": "موضوع التحقيق كان سرياً — لم أُفصح عنه لأحد.",
+          "isLie": true,
+          "lieHint": "اتصالات هاتفية متكررة مع رقم مجهول في الأسبوع السابق للجريمة."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "dark",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_editor",
+      "name": "أنيتا فان ديك",
+      "age": 49,
+      "role": "شاهدة",
+      "description": "المحررة التي كانت تتابع تحقيق مايكل عن بُعد.",
+      "imageEmoji": "👤",
+      "interrogation": "صادقة وتمتلك نسخة من ملاحظات مايكل.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما الذي أرسله مايكل في آخر تقرير له؟",
+          "answer": "أرسل لي ملاحظات تذكر شركة وهمية في جزر كايمان برمز ARK-7 — وقال إنه التقط صوراً تُثبت الصلة.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الكاميرا وذاكرتها",
+      "description": "كاميرا مايكل تحتوي على 847 صورة — لكن الفحص الرقمي يُثبت حذف 7 صور بعناية من وسط الذاكرة.",
+      "type": "physical",
+      "emoji": "📷",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "سجل دخول مبنى الاجتماع",
+      "description": "بطاقة دخول ثابو تُثبت وجوده في مبنى الاجتماع السري في نفس اليوم الذي ادّعى فيه أنه لم يكن حاضراً.",
+      "type": "digital",
+      "emoji": "💳",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "ملاحظات مايكل الأخيرة",
+      "description": "ملاحظات أرسلها لمحررته تذكر رمز ARK-7 وتُشير لصور تُثبت الصلة — الصور السبع التي حُذفت.",
+      "type": "digital",
+      "emoji": "📧",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}
