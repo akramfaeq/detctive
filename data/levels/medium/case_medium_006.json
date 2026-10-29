@@ -1,0 +1,191 @@
+{
+  "id": "case_watch_006",
+  "title": "الساعة الذكية لا تكذب",
+  "location": "نادي رياضي خاص، سيول، كوريا الجنوبية",
+  "date": "2026/08/03",
+  "shortDesc": "مقتل مدير شركة تقنية داخل غرفة تبديل الملابس بالنادي الرياضي. المشتبه به يُثبت وجوده في المدينة الأخرى عبر صور موثّقة — لكن ساعته الذكية تُسجّل قصة مختلفة تماماً.",
+  "thumbnailEmoji": "⌚",
+  "difficulty": "medium",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 150,
+  "rewardPoints": 200,
+  "fullStory": "في نادي 'ألفا' الرياضي الخاص بمدينة سيول، عُثر على مدير شركة التقنية الناشئة جي هو كيم (42 عاماً) مقتولاً داخل غرفة تبديل الملابس الخاصة بين الساعة السابعة والثامنة مساءً.\n\nالمشتبه به الرئيسي هو مستثمر الشركة السابق ريو سيونغ، الذي سحب تمويله مؤخراً وأدّعى ذلك خسائر فادحة. وحين سُئل عن مكان وجوده وقت الجريمة، قدّم ريو مفاجأة: صوراً موثقة ومُعلَّمة بالموقع والوقت تُظهره في مدينة بوسان على بعد أربعمئة كيلومتر — وكان يحضر حفل عشاء رسمياً.\n\nلكن المحقق التقني طلب بيانات إضافية واحدة: سجل الساعة الذكية التي يرتديها ريو.",
+  "hint": "الصور يمكن التلاعب بها أو التخطيط لها مسبقاً. لكن بيانات الساعة الذكية تُسجّل نشاطاً لا يمكن تزويره — ابحث في سجل ضربات القلب والخطوات والموقع GPS في الفترة الحرجة.",
+  "correctSuspectId": "char_ryu",
+  "solutionExplanation": "القاتل هو المستثمر ريو سيونغ.\n\nالثغرة القاتلة:\nقدّم ريو صوراً تُثبت وجوده في بوسان. لكن البيانات المُستخرجة من ساعته الذكية كشفت الحقيقة:\n\nأولاً: سجل GPS الساعة أظهر أنها كانت في سيول بالقرب من نادي ألفا تحديداً بين السابعة والثامنة مساءً — لا في بوسان.\n\nثانياً: سجل ضربات القلب أظهر ارتفاعاً حاداً وشديداً في نفس الفترة يتوافق مع النشاط البدني المكثف وليس مع حضور عشاء هادئ.\n\nما فعله ريو: سافر إلى بوسان مبكراً وسلّم ساعته لشخص آخر ليرتديها خلال حفل العشاء لإثبات وجوده هناك، ثم عاد بطائرة خاصة لارتكاب الجريمة وعاد مجدداً. لكنه نسي أنه أعاد الساعة إلى معصمه لحظة الجريمة قبل أن يسلّمها لمن كان يرتديها.",
+  "characters": [
+    {
+      "id": "char_jiho",
+      "name": "جي هو كيم",
+      "age": 42,
+      "role": "الضحية",
+      "description": "مدير شركة تقنية ناشئة، عُثر عليه مقتولاً داخل غرفة تبديل الملابس بالنادي الرياضي.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_ryu",
+      "name": "ريو سيونغ",
+      "age": 49,
+      "role": "مشتبه به",
+      "description": "مستثمر سابق في الشركة. سحب تمويله بعد خسائر كبيرة ويتهم الضحية بالتلاعب في بيانات الشركة.",
+      "imageEmoji": "👤",
+      "interrogation": "يُقدّم الصور بثقة بالغة ويعرض التعاون الكامل — لكنه يتردد لثوانٍ حين يُذكر سجل الساعة الذكية.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت بين السابعة والثامنة مساءً؟",
+          "answer": "في قاعة العشاء الرسمي بفندق لوتي بوسان. هذه الصور موثّقة بالوقت والموقع أمام الجميع.",
+          "isLie": true,
+          "lieHint": "GPS الساعة الذكية يُظهر موقعاً مختلفاً تماماً في تلك الساعة."
+        },
+        {
+          "id": "q2",
+          "text": "هل أنت من كان يرتدي ساعتك الذكية طوال يوم أمس؟",
+          "answer": "بالطبع، لم أنزعها أبداً.",
+          "isLie": true,
+          "lieHint": "سجل ضربات القلب يُظهر تبايناً غير منطقي يتوافق مع وجود شخصين يرتدون الساعة في أوقات مختلفة."
+        },
+        {
+          "id": "q3",
+          "text": "هل تمتلك وسيلة نقل خاصة بين سيول وبوسان؟",
+          "answer": "أملك حصة في طائرة خاصة مشتركة لكنني لم أستخدمها منذ شهر.",
+          "isLie": true,
+          "lieHint": "سجل رحلات الطائرة يُثبت رحلتين في نفس اليوم."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_min",
+      "name": "مين جون لي",
+      "age": 35,
+      "role": "مشتبه به",
+      "description": "المدير التنفيذي للشركة ومنافس الضحية الداخلي على السيطرة في مجلس الإدارة.",
+      "imageEmoji": "👤",
+      "interrogation": "يُظهر انزعاجاً واضحاً من التحقيق لكن إجاباته متسقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت وقت الجريمة؟",
+          "answer": "كنت في اجتماع مع فريق التطوير في مقر الشركة، وتسجيل الاجتماع موجود على الخوادم.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "صور ريو في بوسان",
+      "description": "مجموعة صور موثّقة بالوقت والموقع تُظهر ريو في حفل العشاء الرسمي ببوسان — تبدو للوهلة الأولى دليلاً قاطعاً على بُعده عن مسرح الجريمة.",
+      "type": "digital",
+      "emoji": "📸",
+      "revealOrder": 1,
+      "importance": "important",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "بيانات GPS وضربات القلب من الساعة الذكية",
+      "description": "سجل الساعة الذكية يُثبت تواجدها بالقرب من نادي ألفا بسيول بين السابعة والثامنة، مع ارتفاع حاد في ضربات القلب يتوافق مع نشاط بدني مكثف لا مع حضور عشاء.",
+      "type": "digital",
+      "emoji": "⌚",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "سجل رحلات الطائرة الخاصة",
+      "description": "يُثبت سجل شركة الطائرة الخاصة المشتركة أن الطائرة أجرت رحلتين في ذلك اليوم: الأولى من سيول إلى بوسان صباحاً والثانية عودة مساءً قبيل وقت الجريمة.",
+      "type": "physical",
+      "emoji": "✈️",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "وثائق الخسائر الاستثمارية",
+      "description": "مستندات مالية تُثبت أن ريو خسر ما يزيد على ثلاثة ملايين دولار بسبب بيانات الشركة المضللة التي قدّمها الضحية.",
+      "type": "physical",
+      "emoji": "💰",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

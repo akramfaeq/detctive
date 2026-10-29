@@ -1,0 +1,247 @@
+{
+  "id": "case_deadmsg_002",
+  "title": "رسالة الميت",
+  "location": "منزل مؤرخ متقاعد، براغ، جمهورية التشيك",
+  "date": "2026/04/17",
+  "shortDesc": "عُثر على مؤرخ مشهور مقتولاً في مكتبه وبجانبه رسالة دم كتبها بيده قبل وفاته. الرسالة تبدو كلمة واحدة غير مفهومة — لكنها في الحقيقة تشير بدقة إلى القاتل.",
+  "thumbnailEmoji": "🩸",
+  "difficulty": "medium",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 150,
+  "rewardPoints": 200,
+  "fullStory": "في مكتبه المليء بالكتب النادرة، عُثر على المؤرخ البارز كارل نوفاك (67 عاماً) مقتولاً متأثراً بجرح في البطن. وقبل أن يفارق الحياة، تمكّن بآخر ما تبقى له من قوة من كتابة كلمة واحدة بدمه على حافة كتاب قديم كان بين يديه.\n\nالكلمة بدت للوهلة الأولى هراءً مشوّهاً: 'MRVN'\n\nثلاثة أشخاص كانوا في المنزل ليلة الجريمة: مساعده الأكاديمي، وشقيقته، وزميله اللدود. كل واحد منهم لديه دافع، وكل واحد ادّعى أن الكلمة لا علاقة لها به.",
+  "hint": "كارل مؤرخ متخصص في الحضارات القديمة. هل الكلمة بالأحرف اللاتينية حقاً، أم أنها شيء آخر؟",
+  "correctSuspectId": "char_marvin",
+  "solutionExplanation": "القاتل هو الزميل اللدود مارفن كولار.\n\nالثغرة القاتلة:\nكتب كارل 'MRVN' وهو يحتضر. للوهلة الأولى تبدو أحرفاً لاتينية عشوائية. لكن كارل مؤرخ متخصص في الحضارات القديمة — وبالتحديد في الكتابة الرونية الإسكندنافية التي تحذف أحرف العلة عادةً عند الكتابة السريعة.\n\nبإضافة حرف العلة المحذوف: M-R-V-N = MARVIN.\n\nكارل كتب اسم قاتله بالطريقة الكتابية التي عاش يدرسها طوال حياته — حذف الحركات — ليضمن أن من يفهم تخصصه سيكتشف الاسم، دون أن يدرك القاتل ما كتبه.",
+  "characters": [
+    {
+      "id": "char_karl",
+      "name": "كارل نوفاك",
+      "age": 67,
+      "role": "الضحية",
+      "description": "مؤرخ متخصص في الحضارات القديمة والكتابات الرونية. عُثر عليه مقتولاً وبجانبه رسالته الأخيرة.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": true,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_marvin",
+      "name": "مارفن كولار",
+      "age": 59,
+      "role": "مشتبه به",
+      "description": "زميل أكاديمي وخصم قديم. كان يتنافس مع كارل على منصب رئيس قسم التاريخ منذ عشرين عاماً وخسر المنصب مجدداً الشهر الماضي.",
+      "imageEmoji": "👤",
+      "interrogation": "يتعمد إظهار الهدوء لكنه يتعرق حين تُذكر الرسالة أو التخصص الأكاديمي لكارل.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل تعرف معنى الكلمة التي كتبها كارل قبل وفاته؟",
+          "answer": "ورقة ممزقة وحروف مشوهة كتبها محتضر. لا معنى لها بالنسبة لي.",
+          "isLie": true,
+          "lieHint": "هو أكاديمي متخصص في التاريخ القديم ويعرف تماماً أسلوب كارل الكتابي."
+        },
+        {
+          "id": "q2",
+          "text": "أين كنت بين الثامنة والعاشرة مساءً؟",
+          "answer": "كنت في المكتبة الأمامية أراجع وثائق كارل التي أعطاني إذناً بمطالعتها.",
+          "isLie": true,
+          "lieHint": "المكتبة الأمامية تبعد خطوات قليلة عن مكتب كارل ولم يره أحد هناك."
+        },
+        {
+          "id": "q3",
+          "text": "هل كانت بينك وبين كارل خلافات مؤخراً؟",
+          "answer": "خلافات أكاديمية عادية لا تتجاوز النقاش الفكري.",
+          "isLie": true,
+          "lieHint": "رسائل بريد إلكتروني مسربة تُثبت تهديدات صريحة بالانتقام."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_hana",
+      "name": "هانا نوفاكوفا",
+      "age": 62,
+      "role": "مشتبه بها",
+      "description": "شقيقة الضحية. تعيش معه في المنزل وتطالب منذ سنوات بحصة من ثروة مجموعة الكتب النادرة التي ترفض بيعها.",
+      "imageEmoji": "👤",
+      "interrogation": "تبكي باستمرار لكنها ترفض الإجابة عن أسئلة محددة تتعلق بالإرث.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت حين وقعت الجريمة؟",
+          "answer": "كنت في غرفتي في الطابق العلوي. سمعت صوتاً خافتاً لكنني ظننته صوت كتاب يسقط.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q2",
+          "text": "ما رأيك في الكلمة التي كتبها أخوك؟",
+          "answer": "لا أفهم تخصصه ولا أعرف ما تعنيه تلك الأحرف.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "long",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_tomas",
+      "name": "توماس هرابال",
+      "age": 28,
+      "role": "مشتبه به",
+      "description": "المساعد الأكاديمي لكارل منذ ثلاث سنوات. كان يعمل على أطروحته بإشراف كارل الذي رفض مؤخراً إقرار الأطروحة ما يعني ضياع سنوات عمله.",
+      "imageEmoji": "👤",
+      "interrogation": "خائف وصادق في تعبيره عن الصدمة، إجاباته متسقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل تعرف معنى الكلمة التي كتبها كارل؟",
+          "answer": "ربما هي محاولة لكتابة اسم ما بأسلوب الكتابة الرونية التي أمضى حياته يدرسها — تحذف الحركات.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q2",
+          "text": "أين كنت وقت الجريمة؟",
+          "answer": "كنت في مدخل البناية أنتظر سيارة أجرة طلبتها، وكاميرا المدخل تُثبت ذلك.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "رسالة الدم على الكتاب",
+      "description": "كتب الضحية بدمه على حافة كتاب أثري: MRVN — الأحرف واضحة لكن معناها غير مفهوم بادئ الأمر.",
+      "type": "physical",
+      "emoji": "🩸",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "أبحاث كارل المنشورة في الكتابة الرونية",
+      "description": "سجل أكاديمي يُثبت أن كارل نشر أبحاثاً متخصصة في الكتابة الرونية الإسكندنافية التي تحذف أحرف العلة في الكتابة السريعة.",
+      "type": "physical",
+      "emoji": "📚",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "رسائل التهديد الإلكترونية",
+      "description": "بريد إلكتروني أرسله مارفن لكارل قبل عشرة أيام يتضمن عبارات صريحة: 'لن أسمح لك بسرقة ما بنيته طوال عمري.'",
+      "type": "digital",
+      "emoji": "📧",
+      "revealOrder": 3,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "كاميرا مدخل المنزل",
+      "description": "تُثبت لقطات الكاميرا أن توماس المساعد ظل في مدخل البناية طوال الفترة الحرجة، فيما لا يظهر مارفن في أي لقطة رغم ادعائه التواجد في المكتبة الأمامية.",
+      "type": "digital",
+      "emoji": "📹",
+      "revealOrder": 4,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev5",
+      "title": "قرار لجنة الترقية الأكاديمية",
+      "description": "وثيقة رسمية تُثبت أن مارفن خسر المنصب الأكاديمي الرفيع لصالح كارل للمرة الثالثة على التوالي، وذلك قبل أسبوعين من الجريمة.",
+      "type": "physical",
+      "emoji": "📄",
+      "revealOrder": 5,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

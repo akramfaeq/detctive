@@ -1,0 +1,191 @@
+{
+  "id": "case_negatives_010",
+  "title": "الصورة التي تُدين وتُبرئ",
+  "location": "استوديو تصوير، بودابست، المجر",
+  "date": "2026/10/22",
+  "shortDesc": "مقتل مصور فوتوغرافي شهير في الاستوديو. المشتبه به يُقدّم صورة تُثبت براءته — لكن المحقق يُثبت أن الصورة ذاتها تُدينه، بتفصيل لم يتوقعه أحد.",
+  "thumbnailEmoji": "🎞️",
+  "difficulty": "medium",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 150,
+  "rewardPoints": 200,
+  "fullStory": "في استوديو التصوير الفني الشهير ببودابست، عُثر على المصور البارز أندراس ناغي (49 عاماً) مقتولاً في الغرفة المعتمة لتحميض الأفلام.\n\nالمشتبه الرئيسي هو غابور سيكي، المصور المنافس الذي سرق أندراس عملاءه الكبار مؤخراً. ادّعى غابور أنه كان يصوّر جلسة فوتوغرافية خارجية في ضواحي بودابست وقت الجريمة — وقدّم دليله الأقوى: فيلم صور تقليدي لم يُحمَّض بعد يثبت أنه كان في الهواء الطلق تلك الليلة.\n\nحين حُمِّض الفيلم في المختبر وظهرت الصور، بدت براءة غابور واضحة. لكن المحقق الذي درس الصور بعناية توقف عند واحدة منها.",
+  "hint": "في إحدى صور الفيلم، يظهر القمر في السماء. القمر ساعة طبيعية لا تكذب — ما شكله تلك الليلة وفي أي موقع كان في السماء يُحدّد التوقيت بدقة. هل يتطابق مع رواية غابور؟",
+  "correctSuspectId": "char_gabor",
+  "solutionExplanation": "القاتل هو غابور سيكي.\n\nالثغرة القاتلة:\nقدّم غابور فيلماً تقليدياً لم يُحمَّض كدليل على تواجده خارج بودابست. لكن حين حُمِّض الفيلم، لاحظ المحقق في إحدى الصور أن القمر الظاهر في السماء كان في طور البدر الكامل وفي زاوية محددة شرقاً.\n\nبالرجوع إلى بيانات الفلك لتلك الليلة، كان القمر في تلك الزاوية الشرقية تحديداً بين الساعة العاشرة مساءً والحادية عشرة — أي بعد وقت الجريمة بساعتين.\n\nهذا يعني أن غابور التقط صور الفيلم بعد الجريمة لا قبلها، وأنه أوهم المحققين بأن الفيلم غير المُحمَّض يثبت تواجده قبل الجريمة في حين أن كل صوره كانت بعدها. ارتكب الجريمة أولاً ثم ذهب للتصوير الخارجي لاحقاً كغطاء متقن.",
+  "characters": [
+    {
+      "id": "char_andras",
+      "name": "أندراس ناغي",
+      "age": 49,
+      "role": "الضحية",
+      "description": "مصور فوتوغرافي بارز عُثر عليه مقتولاً في غرفة التحميض باستوديوه.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_gabor",
+      "name": "غابور سيكي",
+      "age": 43,
+      "role": "مشتبه به",
+      "description": "مصور منافس سرق عملاء أندراس الكبار. يُقدّم فيلماً تقليدياً غير مُحمَّض كدليل على وجوده خارج المدينة.",
+      "imageEmoji": "👤",
+      "interrogation": "يبدو واثقاً جداً من دليل الفيلم — ثقة شخص يعتقد أن خطته محكمة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى بالضبط بدأت جلسة التصوير الخارجية؟",
+          "answer": "بدأت عند غروب الشمس حوالي السابعة مساءً واستمررت حتى منتصف الليل تقريباً.",
+          "isLie": true,
+          "lieHint": "بيانات القمر في الصور تُثبت أنه كان يُصوِّر بعد العاشرة مساءً لا قبلها."
+        },
+        {
+          "id": "q2",
+          "text": "لماذا لم تُحمِّض الفيلم فور انتهاء الجلسة؟",
+          "answer": "أُفضّل دائماً تحميض أفلامي في مختبري الخاص في الصباح التالي للحصول على أفضل النتائج.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q3",
+          "text": "هل كنت تعلم أن موضع القمر في الصور يمكن استخدامه لتحديد توقيت التصوير بدقة؟",
+          "answer": "لم أفكر في ذلك. الفيلم يُثبت وجودي خارج المدينة وهذا يكفي.",
+          "isLie": true,
+          "lieHint": "بحث في سجل هاتفه عن 'مواقع القمر' و'حساب زاوية القمر' قبل يومين من الجريمة."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_eszter",
+      "name": "إيستر كوفاكس",
+      "age": 31,
+      "role": "مشتبه بها",
+      "description": "مساعدة أندراس الشخصية. كانت تعلم بسر مالي خطير يخص الضحية وتطالب بحصتها.",
+      "imageEmoji": "👤",
+      "interrogation": "إجاباتها صادقة ودقيقة ومدعومة بكاميرات المطعم.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت مساء الجريمة؟",
+          "answer": "كنت في مطعم عشاء مع صديقتي من السابعة حتى الحادية عشرة. الفاتورة وكاميرات المطعم تُثبت ذلك.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "فيلم التصوير التقليدي غير المُحمَّض",
+      "description": "فيلم تقليدي قدّمه غابور كدليل على تواجده خارج المدينة — يبدو للوهلة الأولى براهيناً قاطعة على براءته.",
+      "type": "physical",
+      "emoji": "🎞️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "تحليل موضع القمر في الصور",
+      "description": "بيانات فلكية تُثبت أن موضع القمر وزاويته الظاهرة في إحدى صور غابور تتوافق حصراً مع الفترة بين العاشرة والحادية عشرة مساءً — أي بعد وقت الجريمة.",
+      "type": "physical",
+      "emoji": "🌕",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "سجل بحث غابور الإلكتروني",
+      "description": "كشف تحليل الهاتف عن بحث مكثف عن 'زاوية القمر وتحديد التوقيت' و'مواقع القمر ببودابست' قبل يومين من الجريمة.",
+      "type": "digital",
+      "emoji": "💻",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "تقرير الطب الشرعي — وقت الوفاة",
+      "description": "يُحدّد التقرير وقت الوفاة بين الثامنة والتاسعة مساءً — قبل التوقيت الذي تُثبته الصور الفلكية لنشاط غابور.",
+      "type": "physical",
+      "emoji": "🩺",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

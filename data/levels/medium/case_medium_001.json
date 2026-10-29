@@ -1,0 +1,254 @@
+{
+  "id": "case_blind_001",
+  "title": "الشاهد الذي رأى كل شيء",
+  "location": "فيلا خاصة في ضواحي فيينا، النمسا",
+  "date": "2026/03/08",
+  "shortDesc": "مقتل تاجر أسلحة داخل فيلته المحاطة بالحراسة. الشاهد الوحيد كفيف أكّد أنه سمع صوت الجاني وعرف هويته. لكن روايته تنطوي على تفصيل واحد يستحيل على أعمى معرفته.",
+  "thumbnailEmoji": "👁️",
+  "difficulty": "medium",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 150,
+  "rewardPoints": 200,
+  "fullStory": "في مساء ربيعي هادئ، عُثر على تاجر الأسلحة المتقاعد فيكتور هاوزر (61 عاماً) مقتولاً بطعنة واحدة دقيقة في مكتبه الخاص بالطابق الثاني من فيلته.\n\nالغريب أن الفيلا مزودة بأنظمة مراقبة متطورة، وكان عدد من الحراس والمقربين داخل المبنى ليلة الحادثة. ومع ذلك لم تُسجّل أي كاميرا ما جرى داخل المكتب.\n\nالشاهد الوحيد كان إيزاك، كفيف منذ الولادة، يعمل معلم بيانو للعائلة منذ اثنتي عشرة سنة. أكّد إيزاك أنه كان يجلس في الردهة المجاورة للمكتب، وسمع صوتاً يعرفه جيداً يدخل على الضحية، وسمع الشجار، ثم صوت سقوط. وقال بثقة تامة إن الجاني كان يرتدي الحذاء الجلدي البني الذي يميل لصوت صرير خفيف عند المشي.",
+  "hint": "كيف يعرف الشاهد الكفيف لون الحذاء؟ ابحث عمّن أخبره بهذه التفصيلة وفي أي سياق.",
+  "correctSuspectId": "char_stefan",
+  "solutionExplanation": "الجاني هو ستيفان هاوزر، نجل الضحية، بتواطؤ مع إيزاك المعلم الكفيف.\n\nإيزاك لم يكن شاهداً بريئاً — كان جزءاً من المخطط. اتفق مع ستيفان على توجيه الاتهام نحو المدير المالي لوكاس بعيداً عن ستيفان، وذلك مقابل حصته في الإرث.\n\nالثغرة القاتلة:\nادّعى إيزاك أن الجاني كان يرتدي 'الحذاء الجلدي البني الذي يميل لصرير خفيف.' غير أن إيزاك أعمى منذ ولادته ولم ير اللون قط في حياته. صوت الصرير يمكن سماعه، لكن اللون 'البني' معلومة بصرية لا يمكن لكفيف معرفتها من الصوت وحده. هذا يعني أن شخصاً آخر أخبره بلون الحذاء مسبقاً ليدرجه في روايته — وهذا الشخص هو ستيفان نفسه، الذي أراد توجيه الاتهام نحو لوكاس الذي يمتلك حذاءً جلدياً بنياً معروفاً.\n\nعند مواجهة إيزاك بهذه الثغرة، انهار وأدلى باعترافه الكامل.",
+  "characters": [
+    {
+      "id": "char_victor",
+      "name": "فيكتور هاوزر",
+      "age": 61,
+      "role": "الضحية",
+      "description": "تاجر أسلحة متقاعد يعيش في فيلته المحصّنة. كان على وشك تحديث وصيته لصالح مؤسسة خيرية بدلاً من نجله.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": true,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_isaac",
+      "name": "إيزاك فولر",
+      "age": 50,
+      "role": "مشتبه به",
+      "description": "معلم البيانو الكفيف منذ ولادته. الشاهد الوحيد على الجريمة. يمتلك ذاكرة سمعية استثنائية ويعرف أصوات الجميع في الفيلا.",
+      "imageEmoji": "👤",
+      "interrogation": "هادئ واثق من نفسه، يُدلي بشهادته بتفاصيل دقيقة جداً — ربما أدق مما ينبغي.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "كيف عرفت أن الحذاء كان لونه بنياً؟",
+          "answer": "أنا أعرف أصوات خطوات الجميع في هذه الفيلا. الصرير الجلدي يميز الحذاء البني الخاص للوكاس.",
+          "isLie": true,
+          "lieHint": "الصرير يدل على المادة لكن ليس على اللون. كيف ربط الكفيف الصرير باللون البني تحديداً؟"
+        },
+        {
+          "id": "q2",
+          "text": "هل أخبرك أحد بأوصاف ملابس المشتبه بهم قبل الحادثة؟",
+          "answer": "لا أحد. أنا أعتمد على حواسي فقط وهي أحدّ من حواس المبصرين.",
+          "isLie": true,
+          "lieHint": "معلومة اللون جاءت من مصدر خارجي لا من الحواس."
+        },
+        {
+          "id": "q3",
+          "text": "ما طبيعة علاقتك بستيفان نجل الضحية؟",
+          "answer": "علاقة عمل محترمة. أعلّمه البيانو مثلما علّمت والده من قبل.",
+          "isLie": true,
+          "lieHint": "العلاقة أعمق من مجرد معلم وطالب."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_stefan",
+      "name": "ستيفان هاوزر",
+      "age": 34,
+      "role": "مشتبه به",
+      "description": "نجل الضحية الوحيد. يعلم أن أباه كان يعتزم تعديل وصيته. يمتلك مفتاح الفيلا ويعرف جدول حراسة كل مدخل.",
+      "imageEmoji": "👤",
+      "interrogation": "يتظاهر بالحزن لكنه يبادر بتوجيه الاتهام نحو لوكاس بسرعة لافتة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت بين الثامنة والتاسعة مساءً؟",
+          "answer": "كنت في غرفتي بالطابق الأول أقرأ. لم أسمع شيئاً.",
+          "isLie": true,
+          "lieHint": "غرفته تقع مباشرة تحت المكتب — يستحيل ألا يسمع شيئاً إن وجد شجاراً."
+        },
+        {
+          "id": "q2",
+          "text": "هل كنت تعلم أن والدك يعتزم تعديل وصيته؟",
+          "answer": "سمعت شيئاً من هذا القبيل لكنني لم أكن قلقاً.",
+          "isLie": true,
+          "lieHint": "سجلات اتصالاته تُثبت أنه تواصل مع محامٍ لمعرفة تفاصيل الوصية قبل أسبوع."
+        },
+        {
+          "id": "q3",
+          "text": "هل حدّثت إيزاك يوماً عن ملابس أو أحذية لوكاس؟",
+          "answer": "ربما في حديث عابر. لا أتذكر.",
+          "isLie": true,
+          "lieHint": "هذا الحديث العابر كان مقصوداً ومحسوباً."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_lukas",
+      "name": "لوكاس برند",
+      "age": 45,
+      "role": "مشتبه به",
+      "description": "المدير المالي للثروة العائلية. تربطه خلافات مع الضحية حول استثمارات فاشلة. يمتلك حذاءً جلدياً بنياً معروفاً لدى الجميع.",
+      "imageEmoji": "👤",
+      "interrogation": "يبدو مذعوراً لأن الاتهام يتجه نحوه بدليل الحذاء.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت وقت الجريمة؟",
+          "answer": "كنت في غرفة الضيوف بالطابق الأرضي أنتظر موعد اجتماع مع فيكتور صباح الغد.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q2",
+          "text": "هل سمعت أي أصوات من الطابق الثاني؟",
+          "answer": "سمعت صوتاً خافتاً أشبه بسقوط شيء ثقيل لكنني لم أعطه اهتماماً.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": true,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "شهادة إيزاك التفصيلية",
+      "description": "أكّد الشاهد الكفيف أن الجاني كان يرتدي 'الحذاء الجلدي البني ذا الصرير الخفيف' — وهو وصف جمع بين معلومة سمعية ومعلومة بصرية في آنٍ واحد.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "تقرير السجل الطبي لإيزاك",
+      "description": "يُثبت التقرير الطبي أن إيزاك كفيف منذ الولادة ولم يرَ اللون في أي مرحلة من حياته.",
+      "type": "physical",
+      "emoji": "📋",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "سجلات اتصالات ستيفان",
+      "description": "كشف تحليل الهاتف عن اتصالات متكررة بين ستيفان وإيزاك خلال الأسبوع السابق للجريمة، تجاوزت خمس عشرة مكالمة.",
+      "type": "digital",
+      "emoji": "📞",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "وثيقة تعديل الوصية",
+      "description": "مسودة وصية جديدة وجدها المحققون في مكتب الضحية، تُحوّل الإرث كاملاً نحو مؤسسة خيرية وتُقصي ستيفان تماماً.",
+      "type": "physical",
+      "emoji": "📄",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev5",
+      "title": "تقرير الطب الشرعي",
+      "description": "أثبت التقرير أن الطعنة جاءت من زاوية دقيقة تشير إلى أن الجاني يعرف تماماً مواضع الضعف في جسم الضحية — معرفة لا يمتلكها سوى المقربين.",
+      "type": "physical",
+      "emoji": "🩺",
+      "revealOrder": 5,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "id": "case_distance_008",
+  "title": "المسافة المستحيلة",
+  "location": "مكتب محاماة، ميلانو، إيطاليا",
+  "date": "2026/09/29",
+  "shortDesc": "مقتل محامٍ شهير في مكتبه بميلانو. المشتبه به يُثبت أنه كان في روما حين وقعت الجريمة — لكن حساب الوقت والمسافة يُثبت استحالة قصته بهامش دقائق لا يمكن التلاعب بها.",
+  "thumbnailEmoji": "🚄",
+  "difficulty": "medium",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 150,
+  "rewardPoints": 200,
+  "fullStory": "في مكتبه الأنيق بميلانو، عُثر على المحامي البارز ألبرتو كونتي (55 عاماً) مقتولاً عند الساعة الثانية والنصف بعد الظهر.\n\nالمشتبه الرئيسي موكّله السابق فرناندو روسي، الذي خسر قضية كبرى بسبب تقصير المحامي. ادّعى فرناندو أنه كان في روما طوال اليوم: التقط صورة أمام نافورة تريفي في روما عند الساعة الحادية عشرة صباحاً وله فاتورة من مطعم روماني في الساعة الثانية ظهراً.\n\nروما تبعد عن ميلانو مئة وثمانين دقيقة بالقطار السريع — فكيف يكون في روما الثانية ظهراً ويرتكب جريمة في ميلانو الثانية والنصف؟ لكن المحقق وجد ثغرة في الحسابات.",
+  "hint": "اجمع أوقات الفاتورة والصورة وموعد الجريمة، ثم فكّر: ما الوسيلة الوحيدة التي يمكنها قطع هذه المسافة في نصف ساعة؟ وهل توجد دليل على استخدامها؟",
+  "correctSuspectId": "char_fernando",
+  "solutionExplanation": "القاتل هو فرناندو روسي.\n\nالثغرة القاتلة:\nفاتورة المطعم الروماني كانت في الساعة الثانية ظهراً — والجريمة في ميلانو الثانية والنصف. بالقطار مستحيل — يستغرق ثلاث ساعات. لكن بالطائرة؟ المطار الداخلي الصغير يبعد خمس عشرة دقيقة عن وسط روما، ورحلة الطائرة خمس وعشرون دقيقة، والمطار الداخلي في ميلانو قريب من المكتب.\n\nفرناندو دفع نقداً في المطعم وغادر قبل أن تُطبع الفاتورة بثلاث دقائق، وأخذ سيارة أجرة فورية للمطار، ثم طائرة خاصة مستأجرة مدفوعة نقداً وصلت ميلانو الثانية وعشرين دقيقة.\n\nالدليل الحاسم: كاميرا مطار ليونارد دا فينشي الداخلي في روما سجّلت وجهه في الساعة الثانية وخمس دقائق.",
+  "characters": [
+    {
+      "id": "char_alberto",
+      "name": "ألبرتو كونتي",
+      "age": 55,
+      "role": "الضحية",
+      "description": "محامٍ بارز في ميلانو، عُثر عليه مقتولاً في مكتبه.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_fernando",
+      "name": "فرناندو روسي",
+      "age": 48,
+      "role": "مشتبه به",
+      "description": "موكّل سابق خسر قضية مليونية بسبب إهمال المحامي. يُثبت وجوده في روما بصور وفواتير.",
+      "imageEmoji": "👤",
+      "interrogation": "واثق جداً من صحة عذر غيابه ويُقدّم أدلته بثقة — ثقة أكثر من اللازم.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "كيف أمضيت وقتك بين الثانية ظهراً والرابعة عصراً في روما؟",
+          "answer": "تناولت غدائي في مطعم تراتوريا دا لوكا ثم تجوّلت في مناطق سياحية.",
+          "isLie": true,
+          "lieHint": "غادر المطعم قبل أن تُطبع الفاتورة ودفع نقداً، وكاميرا المطار تُثبت وجوده هناك الثانية وخمس."
+        },
+        {
+          "id": "q2",
+          "text": "هل استخدمت أي وسيلة نقل جوية اليوم؟",
+          "answer": "لا، أنا لا أحب الطيران وأفضل القطار دائماً.",
+          "isLie": true,
+          "lieHint": "سجل الطائرة الخاصة المؤجرة بالنقد يُثبت العكس."
+        },
+        {
+          "id": "q3",
+          "text": "هل تعلم كم تستغرق المسافة من روما إلى ميلانو بالطائرة الخاصة؟",
+          "answer": "لا أعرف، لم أفكر في ذلك.",
+          "isLie": true,
+          "lieHint": "أجرى بحثاً إلكترونياً عن أوقات الرحلات الجوية الداخلية بين المدينتين قبل أسبوع."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_giulia",
+      "name": "جوليا مورينو",
+      "age": 35,
+      "role": "مشتبه بها",
+      "description": "السكرتيرة القانونية للضحية. اكتشفت مؤخراً أن ألبرتو كان يسرق جزءاً من أتعابها.",
+      "imageEmoji": "👤",
+      "interrogation": "غاضبة لكن إجاباتها متسقة ومدعومة بسجلات الكاميرات الداخلية للمكتب.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت حين وقعت الجريمة؟",
+          "answer": "كنت في قاعة الاجتماعات بالطابق الأول في اجتماع مع عميل. سجل الكاميرا يُثبت ذلك.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "صورة فرناندو في روما وفاتورة المطعم",
+      "description": "صورة أمام نافورة تريفي بتوقيت الحادية عشرة صباحاً وفاتورة مطعم روماني بتوقيت الثانية ظهراً — يبدوان دليلاً قاطعاً على غيابه عن ميلانو.",
+      "type": "physical",
+      "emoji": "🧾",
+      "revealOrder": 1,
+      "importance": "important",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "كاميرا مطار ليونارد دا فينشي الداخلي",
+      "description": "لقطة واضحة تُظهر وجه فرناندو في مطار روما الداخلي عند الثانية وخمس دقائق — أي بعد خمس دقائق فقط من فاتورة المطعم.",
+      "type": "digital",
+      "emoji": "📹",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "سجل الطائرة الخاصة المؤجرة",
+      "description": "طائرة خاصة صغيرة أُؤجرت نقداً في مطار روما الداخلي، أقلعت الثانية وعشر دقائق ووصلت ميلانو الثانية وخمس وثلاثين دقيقة.",
+      "type": "physical",
+      "emoji": "✈️",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "سجل البحث الإلكتروني لفرناندو",
+      "description": "أجرى فرناندو بحثاً تفصيلياً عن أوقات الرحلات الجوية الداخلية بين روما وميلانو قبل أسبوع من الجريمة.",
+      "type": "digital",
+      "emoji": "💻",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}
