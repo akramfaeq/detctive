@@ -1,0 +1,267 @@
+{
+  "id": "case_window_001",
+  "title": "النافذة الثالثة",
+  "location": "فندق غراند بلازا، برلين، ألمانيا",
+  "date": "2026/02/14",
+  "shortDesc": "مقتل دبلوماسي في غرفته بالطابق الثاني عشر. أربعة مشتبه بهم كل واحد منهم تُثبت له كاميرا المصعد وجوده في طابق مختلف وقت الجريمة — لكن تسلسل لقطات الكاميرات نفسه يحمل الدليل على أن أحدهم لاعب على التوقيت.",
+  "thumbnailEmoji": "🪟",
+  "difficulty": "hard",
+  "estimatedMinutes": 35,
+  "isNew": true,
+  "requiredPoints": 300,
+  "rewardPoints": 400,
+  "fullStory": "في ليلة عيد الحب، استضاف فندق غراند بلازا برلين مؤتمراً دبلوماسياً دولياً رفيع المستوى. في الساعة التاسعة والنصف مساءً، أبلغت عاملة التنظيف عن عدم استجابة غرفة 1214 — غرفة المستشار الدبلوماسي الألماني فولفغانغ ماير (58 عاماً).\n\nعند فتح الغرفة، وُجد ماير مقتولاً بطعنة دقيقة خلف الأذن اليسرى، ملقى أمام النافذة المفتوحة. وقت الوفاة بين الثامنة والنصف والثامنة وخمس وأربعين دقيقة مساءً بحسب الطب الشرعي.\n\nكاميرات المصعد والممرات سجّلت أربعة مشتبه بهم في تلك الفترة: كل واحد منهم في طابق مختلف — لا أحد منهم في الطابق الثاني عشر. لكن خبير الأمن الذي راجع اللقطات لاحظ أن مجموع وقت لقطة واحدة لا يتطابق مع الباقي — بفارق لا يتجاوز ثماني عشرة ثانية.",
+  "hint": "لا تنظر إلى أين كان كل مشتبه به — انظر إلى متى ظهر كل واحد منهم وكم استغرقت اللقطة بالثواني. كاميرا واحدة من الأربع تُظهر لقطة أقصر من المعتاد بثماني عشرة ثانية — هذه الثواني هي وقت التلاعب.",
+  "correctSuspectId": "char_ingrid",
+  "solutionExplanation": "القاتلة هي إنغريد فولر، مساعدة الضحية الشخصية.\n\nالثغرة القاتلة:\nراجع خبير الأمن مدة كل لقطة كاميرا على حدة. لقطات المصعد لكل مشتبه به كانت بين 22 و26 ثانية — الوقت الطبيعي لركوب المصعد بين طابقين. إلا لقطة إنغريد في الطابق التاسع كانت 8 ثواني فقط.\n\nثماني ثوانٍ تكفي للمرور أمام الكاميرا لكنها لا تكفي للخروج من المصعد والسير حتى نهاية الممر كما ادّعت. هذا يعني أنها مرّت أمام الكاميرا في الطابق التاسع للتسجيل فقط ثم أعادت الضغط على زر الطابع الثاني عشر فوراً.\n\nخطّطت إنغريد بدقة: حجزت لنفسها غرفة في الطابق التاسع لتظهر في كاميرته. صعدت للثاني عشر قبل الثامنة والنصف عبر السلّم الخلفي، نفّذت الجريمة، ثم عادت للمصعد وضغطت على الطابق التاسع ومرّت أمام الكاميرا — لكنها تسرّعت ولم تُكمل المشوار المعتاد.\n\nالدافع: إنغريد كانت تعمل لصالح جهة منافسة وكانت تعلم أن ماير على وشك الكشف عنها.",
+  "characters": [
+    {
+      "id": "char_meyer",
+      "name": "فولفغانغ ماير",
+      "age": 58,
+      "role": "الضحية",
+      "description": "مستشار دبلوماسي ألماني بارز، وُجد مقتولاً في غرفته بطعنة دقيقة خلف الأذن اليسرى. كان على وشك الكشف عن عميل مزدوج داخل وفده.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_ingrid",
+      "name": "إنغريد فولر",
+      "age": 34,
+      "role": "مشتبه بها",
+      "description": "مساعدة ماير الشخصية منذ ثلاث سنوات. تملك مفتاح غرفته وتعرف جدول حركته بدقة. تدّعي أنها كانت في الطابق التاسع وقت الجريمة.",
+      "imageEmoji": "👤",
+      "interrogation": "هادئة بشكل مريب، تُجيب بعبارات محسوبة ولا تتطوع بأي معلومة إضافية.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ماذا كنت تفعلين في الطابق التاسع بين الثامنة والنصف والثامنة وخمسة وأربعين؟",
+          "answer": "كنت أسترجع وثائق من غرفتي ثم توجهت لقاعة الاجتماعات في الطابق السادس.",
+          "isLie": true,
+          "lieHint": "لقطتها في كاميرا الطابع التاسع استمرت ثماني ثوانٍ فقط — أقل بكثير من الوقت اللازم للخروج من المصعد والسير حتى غرفتها."
+        },
+        {
+          "id": "q2",
+          "text": "هل استخدمت السلّم الخلفي في أي وقت تلك الليلة؟",
+          "answer": "لا، لا أستخدم السلالم أبداً بسبب مشكلة في ركبتي.",
+          "isLie": true,
+          "lieHint": "آثار حذائها موجودة على درجات السلّم الخلفي بين الطابع التاسع والثاني عشر."
+        },
+        {
+          "id": "q3",
+          "text": "هل كانت علاقتك بماير علاقة عمل فقط؟",
+          "answer": "بالطبع، علاقة مهنية بحتة منذ البداية.",
+          "isLie": true,
+          "lieHint": "وثائق مشفرة على هاتفها تُثبت تواصلها مع جهة منافسة لمدة عامين."
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "long",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_dieter",
+      "name": "ديتر شولتز",
+      "age": 49,
+      "role": "مشتبه به",
+      "description": "دبلوماسي منافس لماير داخل الوفد. كانت بينهما خلافات مهنية حادة حول قرار سياسي مصيري. تُثبت الكاميرا وجوده في الطابق الخامس عشر وقت الجريمة.",
+      "imageEmoji": "👤",
+      "interrogation": "يُبدي استياءً واضحاً من التحقيق ويتمسك بحقوقه الدبلوماسية.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما طبيعة الخلاف بينك وبين ماير؟",
+          "answer": "خلاف أكاديمي حول توجه السياسة الخارجية. لا علاقة له بما حدث.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q2",
+          "text": "أين كنت بين الثامنة والنصف والثامنة وخمسة وأربعين؟",
+          "answer": "في جناحي بالطابع الخامس عشر أتحدث هاتفياً مع برلين. المكالمة مسجلة ومؤكدة.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": true,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_hassan",
+      "name": "حسن الطاهر",
+      "age": 41,
+      "role": "مشتبه به",
+      "description": "مستشار وفد دولة مجاورة، كان ماير يعارض اتفاقية يعمل حسن على إبرامها. ظهر في كاميرا الطابع السابع وقت الجريمة.",
+      "imageEmoji": "👤",
+      "interrogation": "متعاون بشكل لافت ويُقدم معلومات إضافية غير مطلوبة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل كنت تعلم أن ماير كان يعارض الاتفاقية؟",
+          "answer": "نعم، وكنا نناقش ذلك بشكل دبلوماسي. موته يُعقّد مفاوضاتنا بالفعل.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "medium",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_elena",
+      "name": "إيلينا فاسيليفا",
+      "age": 38,
+      "role": "مشتبه بها",
+      "description": "مترجمة المؤتمر الرسمية. كانت حاضرة في كل جلسات ماير وتعرف تفاصيل محادثاته السرية. ظهرت في كاميرا الطابع الثالث وقت الجريمة.",
+      "imageEmoji": "👤",
+      "interrogation": "إجاباتها سريعة ودقيقة ومتسقة بشكل يشير إلى إعداد مسبق.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل أخبرك ماير بشيء حساس قبيل وفاته؟",
+          "answer": "أخبرني أنه يشك في تسريب معلومات من داخل الوفد. لم يذكر اسماً.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "تقرير الطب الشرعي",
+      "description": "الوفاة بين الثامنة والنصف والثامنة وخمسة وأربعين مساءً. طعنة دقيقة خلف الأذن اليسرى تستلزم معرفة تشريحية أو تدريباً خاصاً.",
+      "type": "physical",
+      "emoji": "🩺",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "سجل مدة لقطات كاميرات المصعد",
+      "description": "مدد لقطات المشتبه بهم الأربعة: ديتر 24 ثانية، حسن 22 ثانية، إيلينا 26 ثانية، إنغريد 8 ثوانٍ فقط — بفارق 14 إلى 18 ثانية عن المتوسط الطبيعي.",
+      "type": "digital",
+      "emoji": "📹",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "آثار الحذاء على السلّم الخلفي",
+      "description": "آثار حذاء نسائي مقاس 37 على درجات السلّم الخلفي بين الطابع التاسع والثاني عشر — متطابقة مع حذاء إنغريد.",
+      "type": "physical",
+      "emoji": "👠",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "وثائق مشفرة على هاتف إنغريد",
+      "description": "ملفات مشفرة تُثبت تواصل إنغريد مع جهة استخباراتية منافسة على مدى عامين، وتضمنت معلومات حساسة نقلتها من اجتماعات ماير السرية.",
+      "type": "digital",
+      "emoji": "📱",
+      "revealOrder": 4,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev5",
+      "title": "إفادة ماير الأخيرة",
+      "description": "في آخر اجتماع له قبل يوم واحد، قال ماير لمساعده الثاني: 'من بجانبك دائماً هو الأخطر دائماً.'",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 5,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 4,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

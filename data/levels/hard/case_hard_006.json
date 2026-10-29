@@ -1,0 +1,198 @@
+{
+  "id": "case_witness_006",
+  "title": "الوجه المألوف",
+  "location": "متحف وطني، أثينا، اليونان",
+  "date": "2026/07/30",
+  "shortDesc": "مقتل مدير متحف بعد حفل افتتاح. شاهد يصف القاتل بدقة مذهلة من تفاصيل وجهه حتى لون أزراره — ودقته المفرطة هذه تُثبت أنه رأى الجاني قبل الجريمة وليس خلالها، مما يجعله شريكاً لا شاهداً.",
+  "thumbnailEmoji": "🎭",
+  "difficulty": "hard",
+  "estimatedMinutes": 35,
+  "isNew": true,
+  "requiredPoints": 300,
+  "rewardPoints": 400,
+  "fullStory": "في حفل افتتاح معرض الآثار الإغريقية الكبير بالمتحف الوطني في أثينا، عُثر على مدير المتحف ليونيداس باباداكيس (60 عاماً) مقتولاً في مستودع القطع الأثرية خلف قاعة العرض الرئيسية.\n\nوقت الجريمة بين التاسعة والربع والتاسعة والنصف مساءً، خلال فترة انشغال الضيوف بالعرض الموسيقي.\n\nتقدّم شاهد واحد — أحد العاملين في المتحف — وأدلى بوصف مذهل الدقة: طول الجاني بالسنتيمتر، لون شعره وتسريحته، لون بدلته وأزرارها الثلاثة، حتى طريقة مشيه. المحقق النفسي الذي استمع للشهادة توقف وقال جملة واحدة: 'هذا الشخص لم يرَ الجاني خلال الجريمة — رآه قبلها.'",
+  "hint": "الشاهد الذي يرى جانياً يمر بسرعة في ممر مظلم لا يتذكر لون الأزرار ولا عدد خطواته. الدقة المفرطة في وصف شخص بهذه التفاصيل تعني وقتاً كافياً للمراقبة المتأنية — مما يعني أن الشاهد كان على علم مسبق بالجاني أو رآه في موقف مختلف.",
+  "correctSuspectId": "char_nikos",
+  "solutionExplanation": "القاتل هو نيكوس كريستوف مساعد مدير المتحف، والشاهد ثيوس ميتاكساس متواطئ معه.\n\nالثغرة القاتلة:\nالمحقق النفسي أوضح أن الإنسان العادي لا يتذكر هذه التفاصيل من مشهد عابر في ممر مظلم خلال ثوانٍ. الوصف الدقيق لعدد الأزرار وتسريحة الشعر ولون البدلة يُشير إلى وقت مراقبة مريح وإضاءة كافية.\n\nثيوس رأى نيكوس قبل الجريمة في غرفة الاستراحة حين كانا يُدبّران الخطة معاً — وحين طُلب منه أن يشهد، استرجع ما رآه في غرفة الاستراحة لا في الممر.\n\nالدليل الحاسم: كاميرا المدخل الخلفي سجّلت نيكوس وثيوس يدخلان غرفة الاستراحة معاً في الثامنة والنصف — قبل الجريمة بثلاثة أرباع الساعة. لم يتذكر ثيوس هذا التفصيل حين سُئل.",
+  "characters": [
+    {
+      "id": "char_leonidas",
+      "name": "ليونيداس باباداكيس",
+      "age": 60,
+      "role": "الضحية",
+      "description": "مدير المتحف الوطني، مقتول في مستودع القطع الأثرية. كان يعلم بعملية تهريب آثار تجري داخل المتحف.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "medium",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_nikos",
+      "name": "نيكوس كريستوف",
+      "age": 38,
+      "role": "مشتبه به",
+      "description": "مساعد مدير المتحف. يُدير شبكة تهريب آثار سرية. كان الضحية على وشك كشفه.",
+      "imageEmoji": "👤",
+      "interrogation": "يعتمد على شهادة ثيوس كدرعه الرئيسية — ولا يعلم أن المحقق اكتشف ثغرة الدقة المفرطة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت بين التاسعة والربع والتاسعة والنصف؟",
+          "answer": "في قاعة العرض الرئيسية مع الضيوف أتابع العرض الموسيقي.",
+          "isLie": true,
+          "lieHint": "لا أحد من الضيوف تذكر وجوده خلال العرض الموسيقي."
+        },
+        {
+          "id": "q2",
+          "text": "هل تعرف الشاهد ثيوس خارج إطار العمل؟",
+          "answer": "معرفة عمل عادية، نتبادل التحيات فقط.",
+          "isLie": true,
+          "lieHint": "كاميرا المدخل الخلفي سجّلتهما يدخلان غرفة الاستراحة معاً في الثامنة والنصف."
+        },
+        {
+          "id": "q3",
+          "text": "هل كانت لديك علاقة بتجارة الآثار؟",
+          "answer": "أنا أمين متحف — أحمي الآثار لا أتاجر بها.",
+          "isLie": true,
+          "lieHint": "وثائق مشفرة على حاسوبه تُثبت صفقات تهريب متعددة."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "medium",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_theos",
+      "name": "ثيوس ميتاكساس",
+      "age": 33,
+      "role": "مشتبه به",
+      "description": "عامل في المتحف قدّم شهادة بدقة مفرطة. متواطئ مع نيكوس.",
+      "imageEmoji": "👤",
+      "interrogation": "يُكرر الوصف بنفس الكلمات في كل مرة — علامة حفظه مسبقاً لا استرجاعه بشكل طبيعي.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "كيف رأيت هذه التفاصيل الدقيقة في ممر مظلم؟",
+          "answer": "الضوء من قاعة العرض كان يُنير الممر بشكل كافٍ.",
+          "isLie": true,
+          "lieHint": "تقرير الإضاءة الهندسي يُثبت أن الممر كان معتماً في تلك اللحظة."
+        },
+        {
+          "id": "q2",
+          "text": "هل دخلت غرفة الاستراحة مع نيكوس في الثامنة والنصف؟",
+          "answer": "لم أكن قريباً من غرفة الاستراحة أبداً تلك الليلة.",
+          "isLie": true,
+          "lieHint": "الكاميرا تُثبت دخولهما معاً."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "medium",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "شهادة ثيوس التفصيلية",
+      "description": "وصف مفصل بدقة غير طبيعية: طول الجاني، لون بدلته، عدد أزرارها الثلاثة، تسريحة شعره، وطريقة مشيه — كلها من مشهد عابر في ممر مظلم.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "تقرير المحقق النفسي",
+      "description": "يُثبت التقرير استحالة تذكر هذه التفاصيل من مشهد عابر في إضاءة ضعيفة — الدقة المفرطة تعني مشاهدة مسبقة في ظروف مريحة.",
+      "type": "physical",
+      "emoji": "🧠",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "كاميرا المدخل الخلفي",
+      "description": "لقطة تُثبت دخول نيكوس وثيوس معاً لغرفة الاستراحة في الثامنة والنصف — قبل الجريمة بثلاثة أرباع الساعة.",
+      "type": "digital",
+      "emoji": "📹",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "تقرير الإضاءة الهندسي",
+      "description": "يُثبت التقرير أن الممر حيث ادّعى ثيوس رؤية الجاني كان معتماً بالكامل في تلك الفترة — لا إضاءة كافية لرؤية تفاصيل الأزرار أو تسريحة الشعر.",
+      "type": "physical",
+      "emoji": "💡",
+      "revealOrder": 4,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 4,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

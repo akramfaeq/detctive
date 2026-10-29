@@ -1,0 +1,233 @@
+{
+  "id": "case_doctor_004",
+  "title": "الصمت الطبي",
+  "location": "عيادة خاصة، زيورخ، سويسرا",
+  "date": "2026/05/08",
+  "shortDesc": "طبيب قلب شهير وُجد ميتاً في عيادته بجرعة زائدة من دواء قلبه الخاص. التقرير يقول إنه أعطى الجرعة لنفسه بيده اليمنى — والمشكلة أن هذا مستحيل طبياً بسبب شيء في يده اليمنى تحديداً.",
+  "thumbnailEmoji": "💊",
+  "difficulty": "hard",
+  "estimatedMinutes": 35,
+  "isNew": true,
+  "requiredPoints": 300,
+  "rewardPoints": 400,
+  "fullStory": "في عيادته الخاصة في زيورخ، وُجد الدكتور هيلموت كراوس (62 عاماً) ميتاً على كرسيه. الإبرة في يده اليمنى، والجرعة من دواء قلبه الخاص، والباب مغلق من الداخل.\n\nبدا الأمر في البداية انتحاراً أو حادثة طبية عرضية. لكن ممرضته طلبت إعادة التحقيق بعد يومين — وأشارت إلى تفصيلة واحدة يعرفها كل من عمل مع الدكتور كراوس ولم ينتبه إليها المحققون الأوائل.\n\nثلاثة أشخاص كانوا في المبنى ذلك اليوم: الممرضة، والمحاسب الذي جاء لمراجعة الحسابات، وزميل طبيب زار العيادة لساعة واحدة. أحدهم يعلم السر الذي جعل موت الدكتور جريمة لا انتحاراً.",
+  "hint": "الإبرة في اليد اليمنى — هذا هو المفتاح. ليس لأن أحداً لا يحقن نفسه باليد اليمنى، بل لأن الدكتور كراوس تحديداً لم يكن بإمكانه فعل ذلك بسبب حالة طبية يعرفها كل من حوله جيداً.",
+  "correctSuspectId": "char_ernst",
+  "solutionExplanation": "القاتل هو الزميل الطبيب إرنست فوغل.\n\nالثغرة القاتلة:\nالدكتور كراوس كان يعاني من رعشة في اليد اليمنى — حالة عصبية تقدمية كانت تزداد سوءاً منذ عامين وكان يُخفيها عن المرضى. الممرضة وكل من عمل معه يعلمون أنه لم يكن قادراً على إمساك إبرة بيده اليمنى بدقة كافية للحقن الوريدي — كان يُجري كل حقن بيده اليسرى حصراً.\n\nوجود الإبرة في اليد اليمنى يعني أن شخصاً آخر وضعها هناك بعد الجريمة ليوهم بالانتحار.\n\nإرنست كان الزميل الوحيد الذي يعرف الحالة الطبية لكراوس بالتفصيل — كانا يتشاوران سراً. وكان كراوس على وشك كشف أن إرنست نشر أبحاثه العلمية باسمه دون إذنه.\n\nالدليل الإضافي: قفازات طبية في سلة مهملات دورة المياه المجاورة للعيادة تحمل آثار الدواء ذاته.",
+  "characters": [
+    {
+      "id": "char_helmut",
+      "name": "الدكتور هيلموت كراوس",
+      "age": 62,
+      "role": "الضحية",
+      "description": "طبيب قلب شهير يُعاني سراً من رعشة متقدمة في يده اليمنى. وُجد ميتاً بجرعة زائدة والإبرة في يده اليمنى.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_ernst",
+      "name": "الدكتور إرنست فوغل",
+      "age": 54,
+      "role": "مشتبه به",
+      "description": "زميل طبيب وصديق قديم، يعرف الحالة الطبية لكراوس بالتفصيل. زار العيادة لساعة واحدة ذلك اليوم.",
+      "imageEmoji": "👤",
+      "interrogation": "يتظاهر بالحزن ويُقدم نفسه كخبير طبي مساعد — لكنه يتجنب أي سؤال عن اليد اليمنى.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل كنت تعلم بالرعشة في يد الدكتور كراوس اليمنى؟",
+          "answer": "سمعت أنه يواجه بعض الضغط العصبي لكن لم أكن أعرف التفاصيل.",
+          "isLie": true,
+          "lieHint": "سجلات تشاورهما الطبي السري تُثبت أنه كان يتابع الحالة ويعلم بتفاصيلها الدقيقة."
+        },
+        {
+          "id": "q2",
+          "text": "ماذا فعلت خلال الساعة التي قضيتها في العيادة؟",
+          "answer": "ناقشنا ملفاً بحثياً ثم غادرت قبل الثالثة بربع ساعة.",
+          "isLie": true,
+          "lieHint": "غادر رسمياً لكن العودة عبر الباب الخلفي ممكنة — والباب الخلفي لا كاميرا عليه."
+        },
+        {
+          "id": "q3",
+          "text": "هل نشرت أبحاثاً علمية استخدمت فيها عمل الدكتور كراوس؟",
+          "answer": "أبحاثي مستقلة بالكامل.",
+          "isLie": true,
+          "lieHint": "وثيقة بالمسودة الأصلية للبحث بخط يد كراوس موجودة في درجه المقفل."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_nurse",
+      "name": "أنا شتاينر",
+      "age": 41,
+      "role": "شاهدة",
+      "description": "الممرضة التي طالبت بإعادة التحقيق. تعرف أسرار العيادة الطبية بالكامل.",
+      "imageEmoji": "👤",
+      "interrogation": "صادقة ومتعاونة، هي من فتحت الباب أمام إعادة التحقيق.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما الذي جعلك تطلبين إعادة التحقيق؟",
+          "answer": "الإبرة في اليد اليمنى — الدكتور لم يكن قادراً على الحقن باليد اليمنى منذ عامين بسبب الرعشة. كل من عمل معه يعرف ذلك.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_accountant",
+      "name": "كلاوس هوفمان",
+      "age": 48,
+      "role": "مشتبه به",
+      "description": "المحاسب الذي زار العيادة لمراجعة الحسابات. يعلم بوضع العيادة المالي لكن لا صلة مهنية له بالشأن الطبي.",
+      "imageEmoji": "👤",
+      "interrogation": "إجاباته مالية بحتة ومتسقة مع سجلات الزيارة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل لاحظت شيئاً غير عادي خلال زيارتك؟",
+          "answer": "رأيت الدكتور فوغل يخرج من الممر الجانبي وليس من المدخل الرئيسي حين غادرت.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "تقرير الطب الشرعي الأولي",
+      "description": "جرعة زائدة من دواء القلب. الإبرة في اليد اليمنى. لا آثار مقاومة أو عراك.",
+      "type": "physical",
+      "emoji": "🩺",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "السجل الطبي السري للدكتور كراوس",
+      "description": "ملف طبي سري يُثبت إصابة كراوس برعشة عصبية متقدمة في اليد اليمنى منذ عامين، تمنعه من إجراء أي حقن دقيق بيده اليمنى.",
+      "type": "physical",
+      "emoji": "📋",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "القفازات الطبية في سلة المهملات",
+      "description": "قفازات طبية وُجدت في سلة مهملات دورة المياه المجاورة للعيادة تحمل آثار دقيقة من الدواء المستخدم في الجريمة.",
+      "type": "physical",
+      "emoji": "🧤",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "سجلات التشاور الطبي السري",
+      "description": "رسائل مشفرة بين كراوس وفوغل تُثبت أن فوغل كان يتابع حالة الرعشة بالتفصيل ويعلم باستحالة الحقن باليد اليمنى.",
+      "type": "digital",
+      "emoji": "📱",
+      "revealOrder": 4,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev5",
+      "title": "مسودة البحث العلمي المسروق",
+      "description": "وثيقة بخط يد كراوس تُثبت أنه أعد بحثاً علمياً اكتشف أن فوغل نشره باسمه — وكان يعتزم رفع قضية قانونية.",
+      "type": "physical",
+      "emoji": "📄",
+      "revealOrder": 5,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 4,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

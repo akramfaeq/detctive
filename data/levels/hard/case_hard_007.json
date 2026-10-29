@@ -1,0 +1,191 @@
+{
+  "id": "case_house_007",
+  "title": "البيت الفارغ",
+  "location": "منزل ريفي معزول، توسكانا، إيطاليا",
+  "date": "2026/08/19",
+  "shortDesc": "جريمة في منزل مغلق من الداخل — المفتاح الوحيد لم يتحرك وكل النوافذ موصدة. لكن المحقق يكتشف أن السؤال الخاطئ كان يُطرح طوال الوقت: المهم ليس كيف دخل القاتل بل متى خرج.",
+  "thumbnailEmoji": "🏠",
+  "difficulty": "hard",
+  "estimatedMinutes": 35,
+  "isNew": true,
+  "requiredPoints": 300,
+  "rewardPoints": 400,
+  "fullStory": "في منزل ريفي معزول بمنطقة توسكانا الإيطالية، وُجدت المرأة الثرية فيولا مارينو (66 عاماً) مقتولة في غرفة نومها. الباب الرئيسي مقفول من الداخل بالمفتاح الموجود في جيب معطفها، وكل النوافذ موصدة من الداخل، ولا آثار كسر.\n\nثلاثة أشخاص كانوا في المنطقة تلك الليلة: ابنها الذي وصل صباحاً ليجدها، والجارة التي أبلغت عن أضواء غير معتادة، والعامل الذي يُصلح السياج.\n\nكل محقق تعامل مع القضية سأل: 'كيف دخل القاتل؟' حتى تساءل المحقق الجديد: 'ومتى خرج؟'",
+  "hint": "الباب مقفل من الداخل والمفتاح في جيب الضحية — هذا يعني أن القاتل لم يخرج من الباب. لكن ماذا لو لم يخرج قط؟ اسأل: من كان في المنزل قبل أن يُكتشف الجثة وادّعى أنه وجد الباب مقفولاً؟",
+  "correctSuspectId": "char_marco",
+  "solutionExplanation": "القاتل هو ماركو مارينو ابن الضحية.\n\nالثغرة القاتلة:\nكل التحقيق انصبّ على 'كيف دخل القاتل' — وهو سؤال خاطئ. ماركو لم يدخل بعد الجريمة، كان بالداخل قبلها.\n\nالسيناريو الحقيقي: ماركو دخل المنزل في المساء بمفتاحه الاحتياطي الذي ادّعى أنه فقده منذ أشهر، قتل والدته، ثم وضع المفتاح في جيب معطفها، وأغلق الباب من الداخل باستخدام القفل الداخلي الإضافي الذي لا يحتاج مفتاحاً، ثم غادر من النافذة الخلفية التي تُطل على الحديقة الخلفية المظلمة — وأعاد إغلاقها من الخارج بخطاف صغير خصصه لهذا الغرض.\n\nالدليل: خطاف معدني صغير وُجد في التراب تحت النافذة الخلفية. وسجلات هاتفه تُثبت وجوده في المنطقة مساء الجريمة لا صباحها فقط.",
+  "characters": [
+    {
+      "id": "char_viola",
+      "name": "فيولا مارينو",
+      "age": 66,
+      "role": "الضحية",
+      "description": "امرأة ثرية تعيش بمفردها في منزل ريفي معزول. وُجدت مقتولة والمنزل مغلق من الداخل.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفاة ولا يمكن استجوابها.",
+      "questions": [],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "purple",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_marco",
+      "name": "ماركو مارينو",
+      "age": 39,
+      "role": "مشتبه به",
+      "description": "ابن الضحية الوحيد. ادّعى أنه وصل صباحاً ووجد الباب مقفولاً. يدّعي فقدان مفتاحه الاحتياطي منذ أشهر.",
+      "imageEmoji": "👤",
+      "interrogation": "يلعب دور الابن الحزين المذعور — لكنه متقن الهدوء أكثر مما ينبغي.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى وصلت للمنزل بالضبط؟",
+          "answer": "وصلت الساعة الثامنة صباحاً — وجدت الباب مقفولاً فاستدعيت الشرطة.",
+          "isLie": true,
+          "lieHint": "سجلات هاتفه تُثبت أن إشارته كانت قريبة من المنزل منذ العاشرة مساءً."
+        },
+        {
+          "id": "q2",
+          "text": "هل فقدت مفتاحك الاحتياطي فعلاً؟",
+          "answer": "نعم، فقدته قبل ثلاثة أشهر وأبلغت والدتي بذلك.",
+          "isLie": true,
+          "lieHint": "والدته أخبرت الجارة الأسبوع الماضي أنها لم تسمع بفقدان مفتاحه."
+        },
+        {
+          "id": "q3",
+          "text": "هل فحصت النافذة الخلفية حين وصلت؟",
+          "answer": "لا، توجهت مباشرة للباب الرئيسي.",
+          "isLie": true,
+          "lieHint": "خطاف معدني وُجد في التراب تحت النافذة الخلفية — آثار أصابع عليه."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_neighbor",
+      "name": "لوتشيا فيراري",
+      "age": 58,
+      "role": "شاهدة",
+      "description": "الجارة التي أبلغت عن أضواء غير معتادة في المنزل مساءً.",
+      "imageEmoji": "👤",
+      "interrogation": "صادقة ومتعاونة، شهادتها تُناقض رواية ماركو الزمنية.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى لاحظت الأضواء غير المعتادة؟",
+          "answer": "بين العاشرة والعاشرة والنصف مساءً — ضوء يتحرك في الطابق العلوي كأنه مصباح يدوي.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "long",
+        "clothColor": "brown",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الباب المقفول والمفتاح في جيب الضحية",
+      "description": "الباب الرئيسي مقفول من الداخل والمفتاح في جيب معطف فيولا. جميع النوافذ موصدة من الداخل. لا آثار كسر.",
+      "type": "physical",
+      "emoji": "🔒",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "الخطاف المعدني تحت النافذة الخلفية",
+      "description": "خطاف معدني صغير وُجد في التراب تحت النافذة الخلفية — يسمح بإغلاق النافذة من الخارج. عليه آثار أصابع جزئية.",
+      "type": "physical",
+      "emoji": "🪝",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "سجلات إشارة هاتف ماركو",
+      "description": "البيانات تُثبت أن إشارة هاتف ماركو كانت في نطاق 500 متر من المنزل بين العاشرة مساءً والحادية عشرة — لا صباحاً فقط كما ادّعى.",
+      "type": "digital",
+      "emoji": "📡",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "شهادة الجارة عن الأضواء",
+      "description": "شاهدت لوتشيا ضوءاً يتحرك كمصباح يدوي في الطابق العلوي بين العاشرة والعاشرة والنصف مساءً — حين ادّعى ماركو أنه لم يكن هناك.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 4,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 4,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

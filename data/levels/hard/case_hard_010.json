@@ -1,0 +1,240 @@
+{
+  "id": "case_thirdwitness_010",
+  "title": "الشاهد الثالث",
+  "location": "قرية ساحلية صغيرة، دبروفنيك، كرواتيا",
+  "date": "2026/10/18",
+  "shortDesc": "مقتل ملاح ثري في قاربه. شاهدان يتناقضان في كل تفصيل — ويؤكد كل منهما أن الآخر كاذب. المحقق يكتشف أن التناقض نفسه هو الدليل: المتفقان يكذبان، والمتناقضان يقولان الحقيقة — لأن الحقيقة لها أكثر من وجه.",
+  "thumbnailEmoji": "👁️",
+  "difficulty": "hard",
+  "estimatedMinutes": 40,
+  "isNew": true,
+  "requiredPoints": 300,
+  "rewardPoints": 500,
+  "fullStory": "في الميناء الصغير بمدينة دبروفنيك، وُجد الملاح الثري ستيبان كوفاتش (63 عاماً) مقتولاً داخل قاربه الراسي عند الرصيف.\n\nتقدّم شاهدان: الأول صياد يعمل في الميناء قال إنه رأى رجلاً طويلاً بمعطف بني يدخل القارب الساعة التاسعة والنصف. الثاني نادل في المطعم المطل على الميناء قال إنه رأى رجلاً قصيراً بسترة زرقاء يدخل القارب الساعة التاسعة والخمس.\n\nكل شاهد يتهم الآخر بالكذب. المحقق الذي استمع للاثنين قال: 'كلاهما يرى الحقيقة — والحقيقة أن شخصين دخلا القارب، لا شخصاً واحداً. والمشكلة أن أحدهما الجاني والآخر ضحية ثانية لم نجدها بعد.'",
+  "hint": "لا تحاول إثبات أي الشاهدين كاذب — كلاهما صادق. فكّر: إذا دخل شخصان القارب في توقيتين مختلفين، من منهما خرج ومن لم يخرج؟ وأين الشخص الثاني الذي لم يُعثر عليه في القارب؟",
+  "correctSuspectId": "char_boris",
+  "solutionExplanation": "القاتل هو بوريس فوكيتش، شريك ستيبان التجاري.\n\nالثغرة القاتلة:\nالشاهدان كلاهما صادقان — لأن شخصين مختلفين دخلا القارب في توقيتين مختلفين. الأول الساعة التاسعة والخمس (الرجل القصير بالسترة الزرقاء) هو بوريس الذي دخل وقتل ستيبان. الثاني الساعة التاسعة والنصف (الرجل الطويل بالمعطف البني) هو مساعد ستيبان الذي وصل لاحقاً ووجد الجثة وهرب خوفاً دون إبلاغ الشرطة.\n\nالمحقق ركّز على إيجاد المساعد — حيث وُجد مختبئاً في فندق قريب خائفاً من الاتهام. أكّد أنه وجد ستيبان ميتاً وغادر مذعوراً.\n\nالدليل على بوريس: بصمة كفه على دفة التحكم الداخلية للقارب — في مكان لا يصل إليه إلا من يعرف تصميم هذا الطراز الخاص من القوارب. وبوريس اشترى نفس الطراز قبل عام.",
+  "characters": [
+    {
+      "id": "char_stjepan",
+      "name": "ستيبان كوفاتش",
+      "age": 63,
+      "role": "الضحية",
+      "description": "ملاح ثري وُجد مقتولاً داخل قاربه. كان يمتلك وثائق تُثبت أن شريكه يسرق من الشركة المشتركة.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "medium",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_boris",
+      "name": "بوريس فوكيتش",
+      "age": 55,
+      "role": "مشتبه به",
+      "description": "الشريك التجاري. قصير القامة، كان يرتدي سترة زرقاء تلك الليلة. يعرف تصميم قارب ستيبان جيداً لأنه اشترى نفس الطراز.",
+      "imageEmoji": "👤",
+      "interrogation": "ينفي التواجد قرب الميناء بالكامل — لكن بصمته في مكان يكشف معرفته العميقة بالقارب.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت الساعة التاسعة والخمس مساءً؟",
+          "answer": "في منزلي بالكامل تلك الليلة، لم أغادر.",
+          "isLie": true,
+          "lieHint": "النادل رأى رجلاً قصيراً بسترة زرقاء — وبوريس كان يرتدي سترة زرقاء تلك الليلة حسب شهادة زوجته."
+        },
+        {
+          "id": "q2",
+          "text": "هل تعرف تصميم قارب ستيبان من الداخل؟",
+          "answer": "زرت القارب مرات قليلة كضيف فقط.",
+          "isLie": true,
+          "lieHint": "اشترى نفس طراز القارب قبل عام ويعرف تصميمه الداخلي بدقة — بما فيها مكان دفة التحكم الداخلية."
+        },
+        {
+          "id": "q3",
+          "text": "هل اكتشف ستيبان أنك تسرق من الشركة؟",
+          "answer": "اتهامات باطلة — حساباتنا نظيفة.",
+          "isLie": true,
+          "lieHint": "وثيقة على حاسوب ستيبان تُثبت اكتشافه الاختلاسات قبل ثلاثة أيام."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "medium",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "blue",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_assistant",
+      "name": "إيفان ميلاتش",
+      "age": 28,
+      "role": "مشتبه به",
+      "description": "مساعد ستيبان الشخصي. الرجل الطويل بالمعطف البني الذي رآه الصياد. هرب بعد اكتشاف الجثة دون إبلاغ الشرطة.",
+      "imageEmoji": "👤",
+      "interrogation": "خائف ومرتبك لكن صادق في روايته — لم يره أحد يغادر القارب بعجلة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "لماذا لم تُبلّغ الشرطة فور اكتشافك الجثة؟",
+          "answer": "ذعرت وفكرت أنني سأتهم بالجريمة لأنني آخر من دخل القارب. ندمت على قراري.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q2",
+          "text": "هل لاحظت أي شيء غير طبيعي حين وصلت للقارب؟",
+          "answer": "الباب الداخلي لم يكن مقفلاً بالكامل — وهو أمر غير معتاد. ستيبان كان دائماً يُقفله.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_fisherman",
+      "name": "ماريو بلافيتش",
+      "age": 62,
+      "role": "شاهد",
+      "description": "صياد يعمل في الميناء، رأى الرجل الطويل بالمعطف البني يدخل القارب الساعة التاسعة والنصف.",
+      "imageEmoji": "👤",
+      "interrogation": "صادق وواثق من روايته.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل رأيت أي شخص آخر يقترب من القارب قبل التاسعة والنصف؟",
+          "answer": "لا، لاحظت القارب فقط حين مررت في طريق عودتي الساعة التاسعة والنصف.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "medium",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "blue",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "شهادتا الشاهدين المتناقضتان",
+      "description": "الصياد: رجل طويل بمعطف بني الساعة التاسعة والنصف. النادل: رجل قصير بسترة زرقاء الساعة التاسعة والخمس. تناقض كامل في الوصف والتوقيت.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "بصمة كف على دفة التحكم الداخلية",
+      "description": "بصمة كف كاملة وُجدت على دفة التحكم الداخلية في مكان لا يصل إليه إلا من يعرف تصميم هذا الطراز الخاص — تعود لبوريس فوكيتش.",
+      "type": "physical",
+      "emoji": "🖐️",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "وثيقة شراء القارب المتطابق",
+      "description": "يُثبت سجل الملكية أن بوريس اشترى قبل عام قارباً من نفس الطراز النادر — وبالتالي يعرف تصميمه الداخلي بدقة.",
+      "type": "physical",
+      "emoji": "⛵",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "وثيقة الاختلاسات على حاسوب ستيبان",
+      "description": "ملف يُثبت أن ستيبان اكتشف اختلاسات بوريس قبل ثلاثة أيام من الجريمة وكان يستعد لرفع قضية.",
+      "type": "digital",
+      "emoji": "💻",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev5",
+      "title": "شهادة زوجة بوريس",
+      "description": "أكّدت الزوجة أن بوريس غادر المنزل الساعة الثامنة والنصف مساءً بسترته الزرقاء — وعاد الساعة العاشرة وكان يبدو مضطرباً.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 5,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 4,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

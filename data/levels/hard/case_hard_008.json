@@ -1,0 +1,191 @@
+{
+  "id": "case_translator_008",
+  "title": "المترجم الميت",
+  "location": "سفارة دولة أوروبية، طوكيو، اليابان",
+  "date": "2026/09/14",
+  "shortDesc": "مقتل مترجم في السفارة وعلى مكتبه ترجمة وثيقة سرية. الترجمة تبدو احترافية — لكن خطأ واحداً متعمداً في كلمة أصيلة يُحدد من أعد الترجمة وهو ليس المترجم المقتول.",
+  "thumbnailEmoji": "📖",
+  "difficulty": "hard",
+  "estimatedMinutes": 35,
+  "isNew": true,
+  "requiredPoints": 300,
+  "rewardPoints": 400,
+  "fullStory": "في السفارة الأوروبية بطوكيو، وُجد المترجم الرسمي هينريك لانغ (45 عاماً) مقتولاً في غرفة العمل السرية. على مكتبه ترجمة يابانية كاملة لوثيقة دبلوماسية بالغة الحساسية.\n\nثلاثة أشخاص كانوا في مبنى السفارة ليلة الجريمة: المستشار الأول، والمستشار الثاني الذي يدّعي معرفته باليابانية، والحارس الأمني.\n\nالوثيقة المترجمة على المكتب كانت الدليل — لكن المحقق الذي يتحدث اليابانية لاحظ في الكلمة الثانية عشرة تحديداً استخداماً لمصطلح ياباني لا يستخدمه إلا شخص تعلّم اليابانية في مدرسة بعينها في كيوتو.",
+  "hint": "الترجمة كُتبت من قِبل القاتل لا الضحية — القاتل احتاج أن يُوحي بأن هينريك كان يعمل تلك الليلة. ابحث في الكلمة الثانية عشرة: أي مدرسة في اليابان تُعلّم هذا المصطلح القديم تحديداً؟ ومن درس فيها؟",
+  "correctSuspectId": "char_advisor2",
+  "solutionExplanation": "القاتل هو المستشار الثاني كلاوس فيبر.\n\nالثغرة القاتلة:\nفي الكلمة الثانية عشرة من الترجمة، استُخدم مصطلح ياباني قديم وغير رسمي لا يظهر في أي قاموس معاصر — وهو مصطلح تُعلّمه مدرسة لغات قديمة في أحياء كيوتو التقليدية اشتُهرت به قبل عقود ثم توقفت.\n\nهينريك لانغ تعلّم اليابانية في طوكيو وأوساكا — ولم يدرس في كيوتو قط. كلاوس فيبر قضى ثلاث سنوات في كيوتو في شبابه وهذه المعلومة موجودة في ملفه الشخصي.\n\nكلاوس قتل هينريك لأنه اكتشف أنه يسرّب وثائق السفارة، ثم ترجم الوثيقة ووضعها على مكتب الضحية ليوهم بأنه كان يعمل ليلة الجريمة — لكن مصطلحه المدرسي القديم خانه.",
+  "characters": [
+    {
+      "id": "char_henrik",
+      "name": "هينريك لانغ",
+      "age": 45,
+      "role": "الضحية",
+      "description": "مترجم السفارة الرسمي، وُجد مقتولاً في غرفة العمل السرية. تعلّم اليابانية في طوكيو وأوساكا.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_advisor2",
+      "name": "كلاوس فيبر",
+      "age": 42,
+      "role": "مشتبه به",
+      "description": "المستشار الثاني في السفارة. يدّعي معرفة أساسية باليابانية. قضى ثلاث سنوات في كيوتو في شبابه.",
+      "imageEmoji": "👤",
+      "interrogation": "يتحدث عن اليابانية بتواضع مصطنع — ولا يعلم أن المصطلح القديم في الترجمة كشفه.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين تعلمت اليابانية؟",
+          "answer": "تعلمت أساسيات بسيطة ذاتياً. لا أدّعي إتقانها.",
+          "isLie": true,
+          "lieHint": "سجلاته تُثبت ثلاث سنوات كاملة في كيوتو بما فيها دراسة في مدرسة اللغات القديمة."
+        },
+        {
+          "id": "q2",
+          "text": "هل أعددت الترجمة الموجودة على مكتب هينريك؟",
+          "answer": "بالطبع لا، هذا عمل هينريك.",
+          "isLie": true,
+          "lieHint": "المصطلح في الكلمة الثانية عشرة لا يعرفه إلا من درس في مدرسة كيوتو القديمة."
+        },
+        {
+          "id": "q3",
+          "text": "هل كنت تعلم أن هينريك يسرّب وثائق السفارة؟",
+          "answer": "ادعاء خطير لا أعرف عنه شيئاً.",
+          "isLie": true,
+          "lieHint": "ملف مشفر على حاسوبه يحتوي أدلة جمعها على هينريك."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_advisor1",
+      "name": "فريدريك هاوسر",
+      "age": 55,
+      "role": "مشتبه به",
+      "description": "المستشار الأول. لا يتحدث اليابانية. إجاباته متسقة مع سجلات المبنى.",
+      "imageEmoji": "👤",
+      "interrogation": "صادق ومتعاون — واضح أن لا علاقة له باليابانية.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت وقت الجريمة؟",
+          "answer": "في مكتبي أُراجع تقارير أمس. نظام الدخول الإلكتروني يُثبت ذلك.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": true,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الترجمة الموجودة على مكتب الضحية",
+      "description": "ترجمة يابانية كاملة لوثيقة دبلوماسية سرية — تبدو احترافية لكن الكلمة الثانية عشرة تحتوي مصطلحاً قديماً غير رسمي.",
+      "type": "physical",
+      "emoji": "📄",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "تقرير خبير اللغة اليابانية",
+      "description": "يُثبت الخبير أن المصطلح في الكلمة الثانية عشرة حصري على مدرسة لغات قديمة في أحياء كيوتو التقليدية — ولا يظهر في أي منهج تعليمي معاصر.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "الملف الشخصي لكلاوس فيبر",
+      "description": "يُثبت الملف الرسمي للسفارة أن كلاوس قضى ثلاث سنوات في كيوتو بما فيها دراسة في مدرسة اللغات القديمة الشهيرة.",
+      "type": "physical",
+      "emoji": "📋",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "ملف الأدلة المشفرة على حاسوب كلاوس",
+      "description": "ملف مشفر يُثبت أن كلاوس كان يجمع أدلة على تسريب هينريك للوثائق ويخطط لاستخدامها.",
+      "type": "digital",
+      "emoji": "💻",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 4,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

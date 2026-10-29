@@ -1,0 +1,260 @@
+{
+  "id": "case_live_002",
+  "title": "اللقطة الحية",
+  "location": "استوديو تلفزيوني، مدريد، إسبانيا",
+  "date": "2026/03/22",
+  "shortDesc": "مذيعة شهيرة تُقتل خلال فترة استراحة بث مباشر. القاتل ظهر في خلفية الكاميرا لثانيتين فقط — لكن التحديد الدقيق للحظة لا يعتمد على الصورة بل على ما يُسمع في تلك الثانيتين بالضبط.",
+  "thumbnailEmoji": "📡",
+  "difficulty": "hard",
+  "estimatedMinutes": 35,
+  "isNew": true,
+  "requiredPoints": 300,
+  "rewardPoints": 400,
+  "fullStory": "في أثناء برنامج حواري مباشر شهير على قناة 'إسبانيا 24'، توقف البث بشكل مفاجئ لاستراحة تقنية طارئة استمرت سبع دقائق. حين عاد البث، لاحظ المشاهدون غياب المذيعة كارمن فيلاس (44 عاماً) عن الكاميرا.\n\nعُثر على كارمن في ممر الاستوديو الخلفي مخنوقة. وقت الوفاة بين الدقيقة الثانية والرابعة من الاستراحة التقنية.\n\nأربعة أشخاص كانوا في مبنى الاستوديو: المخرج، وضيف البرنامج، وميسرة الاستوديو، والمصور الأول. كل واحد ادّعى أنه كان في موقع مختلف خلال الاستراحة. لكن المحقق الذي راجع تسجيل البث المحفوظ لاحظ أنه في الثانية 47 من الاستراحة، وبينما الكاميرا تعرض شاشة 'توقف تقني'، تسرّب صوت خافت من الميكروفون المفتوح — ولم ينتبه إليه أحد لأن الصوت الخارجي كان يغطيه.",
+  "hint": "المفتاح ليس في الصورة بل في الصوت. في الثانية 47 من الاستراحة، الميكروفون المفتوح في الاستوديو التقط صوتاً خافتاً. هذا الصوت يُحدد من كان في ممر الاستوديو الخلفي — لأنه صوت شيء يخص شخصاً بعينه ولا يخطئ.",
+  "correctSuspectId": "char_rodrigo",
+  "solutionExplanation": "القاتل هو المخرج رودريغو مارتيز.\n\nالثغرة القاتلة:\nفي الثانية 47 من تسجيل الاستراحة التقنية، وبينما الكاميرا تعرض شاشة التوقف، التقط الميكروفون المفتوح في الاستوديو صوتاً خافتاً جداً: رنين جرس هاتف محمول — نغمة رنين مخصصة وفريدة تعزف مقطعاً من سيمفونية بيتهوفن التاسعة.\n\nالمحقق تحقق من هاتف كل مشتبه به. هاتف رودريغو وحده يحمل هذه النغمة المخصصة — نغمة اشتراها قبل ثلاثة أشهر من متجر رقمي مدفوع. الصوت التُقط في الثانية 47 من موقع الممر الخلفي حيث وُجدت الجثة — ما يعني أن هاتفه كان هناك في تلك اللحظة.\n\nادّعى رودريغو أنه كان في غرفة التحكم طوال الاستراحة — لكن غرفة التحكم تقع في الجهة المعاكسة تماماً للممر الخلفي.\n\nالدافع: كارمن كانت تعلم أن رودريغو يزوّر أرقام المشاهدة لبيع إعلانات وهمية وكانت على وشك الإفصاح.",
+  "characters": [
+    {
+      "id": "char_carmen",
+      "name": "كارمن فيلاس",
+      "age": 44,
+      "role": "الضحية",
+      "description": "مذيعة تلفزيونية شهيرة، وُجدت مخنوقة في الممر الخلفي للاستوديو خلال استراحة البث المباشر.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفاة ولا يمكن استجوابها.",
+      "questions": [],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "purple",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_rodrigo",
+      "name": "رودريغو مارتيز",
+      "age": 47,
+      "role": "مشتبه به",
+      "description": "مخرج البرنامج منذ ست سنوات. يدّعي أنه كان في غرفة التحكم طوال الاستراحة. يمتلك نغمة رنين مخصصة فريدة على هاتفه.",
+      "imageEmoji": "👤",
+      "interrogation": "يُبدي ثقة بالنفس ويُصر على أن غرفة التحكم تُثبت وجوده — لكنه لا يعرف أن الميكروفون كان مفتوحاً.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل غادرت غرفة التحكم في أي لحظة خلال الاستراحة السبع دقائق؟",
+          "answer": "أبداً، بقيت طوال الوقت أُدير الاستراحة التقنية مع فريق الصوت.",
+          "isLie": true,
+          "lieHint": "نغمة رنين هاتفه المخصصة التُقطت في الثانية 47 من الممر الخلفي — على بُعد 40 متراً من غرفة التحكم."
+        },
+        {
+          "id": "q2",
+          "text": "هل علمت أن الميكروفون الرئيسي للاستوديو ظل مفتوحاً خلال الاستراحة؟",
+          "answer": "لا، المفروض أن فريق الصوت يُغلقه فور بدء الاستراحة.",
+          "isLie": true,
+          "lieHint": "هو من أعطى أمر الاستراحة التقنية وكان يعلم أن الميكروفون يحتاج إغلاقاً يدوياً."
+        },
+        {
+          "id": "q3",
+          "text": "هل كانت كارمن تعلم بشيء يخصك مهنياً؟",
+          "answer": "لا شيء خارج عن المعتاد. علاقتنا مهنية عادية.",
+          "isLie": true,
+          "lieHint": "رسالة بريد إلكتروني في هاتف كارمن تذكر 'أرقام مزورة وإعلانات وهمية' موجهة إلى محامٍ."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_pablo",
+      "name": "بابلو إيغليسياس",
+      "age": 39,
+      "role": "مشتبه به",
+      "description": "ضيف البرنامج، سياسي ناشئ. كانت كارمن على وشك إذاعة فضيحة تتعلق بتمويل حملته الانتخابية.",
+      "imageEmoji": "👤",
+      "interrogation": "عصبي ومتوتر لكن إجاباته متسقة مع شهادة طاقم الاستقبال.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت خلال الاستراحة؟",
+          "answer": "في غرفة الضيوف في الطابع الأرضي مع مساعدي. يمكنه التأكيد.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_sofia",
+      "name": "صوفيا لوبيز",
+      "age": 29,
+      "role": "مشتبه بها",
+      "description": "ميسرة الاستوديو. كانت كارمن تُطالب بفصلها بعد خطأ مهني ارتكبته في أسبوع سابق.",
+      "imageEmoji": "👤",
+      "interrogation": "خائفة لكن صادقة — إجاباتها تتسق مع كاميرا مدخل الاستوديو.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت خلال الاستراحة؟",
+          "answer": "في مستودع المعدات أُحضر كابل احتياطي طلبه فريق الصوت. الكاميرا في المدخل تُثبت ذلك.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "medium",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_miguel",
+      "name": "ميغيل سانشيز",
+      "age": 35,
+      "role": "مشتبه به",
+      "description": "المصور الأول للبرنامج. كان مديناً لكارمن بمبلغ مالي كبير وتطالبه بإعادته.",
+      "imageEmoji": "👤",
+      "interrogation": "متعاون ومنفتح، إجاباته مدعومة بسجل الأجهزة في الاستوديو.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت لحظة الجريمة؟",
+          "answer": "أمام الكاميرا الرئيسية في الاستوديو أُجري معايرة للعدسة. الجهاز يسجل كل تعديل بتوقيت دقيق.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "medium",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "blue",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "تسجيل الاستراحة التقنية الكامل",
+      "description": "تسجيل محفوظ يُظهر شاشة التوقف التقني. في الثانية 47 يُسمع صوت خافت جداً من الميكروفون المفتوح — يبدو كنغمة رنين هاتف قصيرة.",
+      "type": "digital",
+      "emoji": "📼",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "تحليل النغمة الصوتية",
+      "description": "تحليل الصوت بواسطة برنامج متخصص يُثبت أن النغمة تُطابق مقطعاً من سيمفونية بيتهوفن التاسعة — نغمة رنين مخصصة نادرة الاستخدام.",
+      "type": "digital",
+      "emoji": "🎵",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "سجل متجر النغمات الرقمي",
+      "description": "سجل الشراء يُثبت أن نغمة سيمفونية بيتهوفن التاسعة المخصصة اشتراها رودريغو قبل ثلاثة أشهر — وهو المشتبه به الوحيد الذي يمتلك هذه النغمة تحديداً.",
+      "type": "digital",
+      "emoji": "🧾",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "رسالة البريد الإلكتروني على هاتف كارمن",
+      "description": "رسالة موجهة لمحامٍ تُشير إلى 'أرقام مشاهدة مزورة وعقود إعلانية وهمية' — ولم تُرسل بعد.",
+      "type": "digital",
+      "emoji": "📧",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev5",
+      "title": "مخطط الاستوديو",
+      "description": "مخطط هندسي يُثبت أن غرفة التحكم تبعد 40 متراً عن الممر الخلفي مكان الجريمة — وأن النغمة الملتقطة بالميكروفون كانت من الممر لا من غرفة التحكم بحسب شدة الصوت.",
+      "type": "physical",
+      "emoji": "🗺️",
+      "revealOrder": 5,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 4,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}
