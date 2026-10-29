@@ -1,0 +1,161 @@
+{
+  "id": "case_dead_009",
+  "title": "الشريك الأعمى",
+  "location": "مدينة وارسو، بولندا",
+  "date": "2026/09/18",
+  "shortDesc": "عالمة جنائية توفيت قبل ثلاثة أشهر — لكن مجرماً فرّ من العدالة وُجد ميتاً هذا الشهر. شريك العالمة المتوفاة نفّذ عملاً اعتقد أنه مشروع دون أن يعلم أنه كان الخطوة الأخيرة في خطة انتقام مدروسة.",
+  "thumbnailEmoji": "🤝",
+  "difficulty": "hard",
+  "estimatedMinutes": 30,
+  "isNew": true,
+  "requiredPoints": 200,
+  "rewardPoints": 350,
+  "fullStory": "قبل ثلاثة أشهر، توفيت عالمة الجنائيات البولندية الدكتورة زوزانا كوفالسكا (49 عاماً) في حادثة. كانت تعمل على قضية فرار مجرم خطير اسمه تاديوس كراجيفسكي من العدالة.\n\nهذا الشهر وُجد تاديوس ميتاً في مخبئه السري بعد أن كشفته الشرطة بمعلومة مجهولة المصدر.\n\nالتحقيق كشف أن زميل زوزانا ومساعدها البحثي توماس سلّم دون علم ملفاً لجهة حكومية يعتقد أنه طلب روتيني لإتمام إجراءات قضية — لكن الملف احتوى في صفحة داخلية مخفية إحداثيات مخبأ تاديوس التي جمعتها زوزانا قبل وفاتها.",
+  "hint": "توماس بريء تماماً — لكن زوزانا خطّطت لاستخدامه كوسيلة آمنة لتسليم المعلومة بعد وفاتها. لماذا لم تُسلّم المعلومة مباشرة وهي حية؟",
+  "correctSuspectId": "char_zuzanna_deceased",
+  "solutionExplanation": "الجانية هي الدكتورة زوزانا كوفالسكا — المتوفاة منذ ثلاثة أشهر.\n\nالثغرة القاتلة:\nزوزانا كانت تعرف مخبأ تاديوس لكنها تعرضت لتهديدات خطيرة حين حاولت تسليم المعلومة مباشرة — تاديوس كان يراقبها.\n\nقبيل وفاتها رتّبت طريقة ذكية: أخفت الإحداثيات في صفحة داخلية من ملف روتيني أوكلت توماس بتسليمه بعد ثلاثة أشهر لإتمام إجراءات رسمية. توماس لم يعرف شيئاً — سلّم الملف كطلب إداري عادي.\n\nالشرطة فتحت الملف وجدت الإحداثيات وأدركت قيمتها — وأمسكت بتاديوس في مخبئه.\n\nتاديوس حين فهم ما حدث حاول الهرب، وفي المواجهة مع الشرطة لقي حتفه.\n\nالدليل: الصفحة الداخلية المخفية في الملف وخط يد زوزانا عليها، ومذكرتها تُثبت قرارها المتعمد.",
+  "characters": [
+    {
+      "id": "char_zuzanna_deceased",
+      "name": "الدكتورة زوزانا كوفالسكا (متوفاة)",
+      "age": 49,
+      "role": "الجانية المتوفاة",
+      "description": "عالمة جنائيات بولندية توفيت في حادثة. خبّأت معلومة حاسمة في ملف روتيني لتُسلَّم بعد وفاتها.",
+      "imageEmoji": "👤",
+      "interrogation": "الجانية متوفاة ولا يمكن استجوابها.",
+      "questions": [],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_tadeusz",
+      "name": "تاديوس كراجيفسكي (الضحية)",
+      "age": 50,
+      "role": "الضحية",
+      "description": "مجرم خطير فرّ من العدالة. وُجد ميتاً في مواجهة مع الشرطة بعد كشف مخبئه.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_tomasz",
+      "name": "توماس فيشنيفسكي",
+      "age": 32,
+      "role": "وكيل بريء",
+      "description": "مساعد زوزانا البحثي. سلّم الملف دون علم بمحتواه الحقيقي.",
+      "imageEmoji": "👤",
+      "interrogation": "مذعور حين اكتشف دوره غير المقصود.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "لماذا سلّمت الملف بعد ثلاثة أشهر من وفاة زوزانا؟",
+          "answer": "تركت لي قائمة بإجراءات روتينية يجب إتمامها — هذا الملف كان ضمنها. لم أشك في شيء.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q2",
+          "text": "هل فحصت الملف قبل تسليمه؟",
+          "answer": "نظرت في الصفحات الرئيسية — لم أُلاحظ شيئاً غير عادي في الصفحة الداخلية.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الصفحة الداخلية المخفية في الملف",
+      "description": "صفحة مُدرجة بين أوراق الملف الروتيني تحتوي إحداثيات مخبأ تاديوس بخط يد زوزانا.",
+      "type": "physical",
+      "emoji": "📄",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "مذكرة زوزانا السرية",
+      "description": "مذكرة تُثبت قرارها المتعمد باستخدام توماس كوسيلة آمنة للتسليم بعد وفاتها — خوفاً من مراقبة تاديوس لها.",
+      "type": "physical",
+      "emoji": "📔",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "سجل التهديدات ضد زوزانا",
+      "description": "تقارير تُثبت أن زوزانا تعرضت لتهديدات حين حاولت تسليم المعلومة مباشرة — مما أجبرها على اختيار هذا الطريق الملتوي.",
+      "type": "physical",
+      "emoji": "⚠️",
+      "revealOrder": 3,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

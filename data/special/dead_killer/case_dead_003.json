@@ -1,0 +1,181 @@
+{
+  "id": "case_dead_003",
+  "title": "الدواء القديم",
+  "location": "منزل عائلي، كوبنهاغن، الدنمارك",
+  "date": "2026/03/11",
+  "shortDesc": "طبيب متقاعد توفي قبل أسبوعين — لكن مريضه المقرب وُجد ميتاً هذا الأسبوع بجرعة زائدة من دوائه. التحقيق يكشف أن الطبيب الراحل غيّر تعليمات الجرعة في الملف الطبي قبل وفاته بثلاثة أيام.",
+  "thumbnailEmoji": "💊",
+  "difficulty": "easy",
+  "estimatedMinutes": 15,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 150,
+  "fullStory": "قبل أسبوعين، توفي الطبيب الدنماركي المتقاعد الدكتور سفين هانسن (74 عاماً) بوفاة طبيعية هادئة في منزله. كان يُعالج عدداً من المرضى القدامى عبر زياراتهم البيتية.\n\nهذا الأسبوع وُجد مريضه القديم بيورن راسموسن (68 عاماً) ميتاً بجرعة زائدة من دواء القلب الذي يتناوله منذ سنوات. زوجته أكّدت أنها أعطته جرعته المعتادة بحسب التعليمات المكتوبة في ملفه الطبي.\n\nلكن الصيدلاني الذي راجع الملف الطبي لاحظ أن تعليمات الجرعة تغيّرت قبل وفاة الدكتور بثلاثة أيام فقط — رُفعت الجرعة بشكل طفيف جداً يصعب ملاحظته لكنه مميت على المدى القصير.",
+  "hint": "الجرعة رُفعت بشكل طفيف جداً — من يُلاحظ فرق نصف حبة في دواء اعتاد عليه سنوات؟ لكن على قلب ضعيف هذا الفرق كافٍ. لماذا غيّر الدكتور الجرعة قبيل وفاته مباشرة؟",
+  "correctSuspectId": "char_sven_deceased",
+  "solutionExplanation": "الجاني هو الدكتور سفين هانسن — المتوفى منذ أسبوعين.\n\nالثغرة القاتلة:\nبيورن كان يعلم بسر خطير عن الدكتور سفين — سر يتعلق بخطأ طبي فادح ارتكبه سفين قبل سنوات وأودى بحياة مريض وأخفاه. كان بيورن يبتزه صامتاً بهذا السر منذ سنوات.\n\nحين شعر سفين باقتراب أجله، قرر أن ينتقم بطريقة لا تترك أثراً واضحاً: رفع جرعة دواء بيورن رفعاً طفيفاً في الملف الطبي — زيادة تبدو منطقية طبياً لكنها مميتة لقلب بهذا الضعف على مدى أسابيع.\n\nبيورن مات وزوجته تظن أنها أعطته الجرعة الصحيحة — والدكتور رحل قبل أن يرى نتيجة فعله.\n\nالدليل: سجل تعديلات الملف الطبي يُثبت أن سفين وحده عدّل الجرعة قبل ثلاثة أيام من وفاته، ويوميات بيورن تكشف قصة الابتزاز.",
+  "characters": [
+    {
+      "id": "char_sven_deceased",
+      "name": "الدكتور سفين هانسن (متوفى)",
+      "age": 74,
+      "role": "الجاني المتوفى",
+      "description": "طبيب متقاعد توفي بوفاة طبيعية. غيّر جرعة دواء مريضه قبيل وفاته بثلاثة أيام.",
+      "imageEmoji": "👤",
+      "interrogation": "الجاني متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_bjorn",
+      "name": "بيورن راسموسن (الضحية)",
+      "age": 68,
+      "role": "الضحية",
+      "description": "مريض قديم للدكتور سفين. وُجد ميتاً بجرعة زائدة من دوائه.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_wife",
+      "name": "إينغريد راسموسن",
+      "age": 65,
+      "role": "شاهدة",
+      "description": "زوجة الضحية. أعطته جرعته بحسب التعليمات المكتوبة.",
+      "imageEmoji": "👤",
+      "interrogation": "مفجوعة وتشعر بالذنب رغم أنها لم تُخطئ.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل لاحظت أي تغيير في الجرعة مؤخراً؟",
+          "answer": "لا، اتبعت ما هو مكتوب في الملف الطبي بالضبط كما فعلت دائماً.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_pharmacist",
+      "name": "لارس نيلسن",
+      "age": 45,
+      "role": "شاهد",
+      "description": "الصيدلاني الذي لاحظ تغيير الجرعة في الملف الطبي.",
+      "imageEmoji": "👤",
+      "interrogation": "دقيق في الملاحظة وصادق.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما الذي لاحظته في الملف الطبي؟",
+          "answer": "الجرعة تغيّرت قبل وفاة الدكتور بثلاثة أيام — زيادة طفيفة تبدو عادية لكن على قلب بهذا الضعف تُشكّل خطراً حقيقياً.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "سجل تعديلات الملف الطبي",
+      "description": "يُثبت السجل أن الدكتور سفين عدّل جرعة دواء بيورن قبل ثلاثة أيام من وفاته — التعديل طفيف لكنه مميت على المدى القريب.",
+      "type": "digital",
+      "emoji": "📋",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "يوميات بيورن السرية",
+      "description": "يوميات تكشف أن بيورن كان يبتز الدكتور سفين بسر خطأ طبي قديم منذ سنوات — ابتزاز صامت أطال أمده كثيراً.",
+      "type": "physical",
+      "emoji": "📔",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "تقرير الطب الشرعي",
+      "description": "يُثبت أن الوفاة بسبب جرعة دواء أعلى من المعتادة — الجرعة المكتوبة في الملف الطبي لا الجرعة التاريخية للمريض.",
+      "type": "physical",
+      "emoji": "🩺",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

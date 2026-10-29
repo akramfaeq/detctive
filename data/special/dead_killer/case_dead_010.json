@@ -1,0 +1,211 @@
+{
+  "id": "case_dead_010",
+  "title": "الوهم الحي",
+  "location": "جزيرة معزولة، بحر الأدرياتيك، كرواتيا",
+  "date": "2026/10/21",
+  "shortDesc": "تاجر سلاح وُجد ميتاً على جزيرة معزولة — وكل الأدلة تُشير إلى أن القاتل هو شريكه الذي مات قبل عام في حريق مشبوه. التحقيق يكشف أن الشريك 'المتوفى' زيّف موته وعاد للانتقام.",
+  "thumbnailEmoji": "👻",
+  "difficulty": "hard",
+  "estimatedMinutes": 35,
+  "isNew": true,
+  "requiredPoints": 200,
+  "rewardPoints": 400,
+  "fullStory": "على جزيرة معزولة في بحر الأدرياتيك، وُجد تاجر الأسلحة الدولي فيكتور مارتيش (62 عاماً) مقتولاً في فيلته الخاصة. لا أحد يعيش على الجزيرة سواه، ولا طريق وصول إلا بالزورق.\n\nالتحقيق المبدئي أشار إلى أن القاتل كان على دراية كاملة بتصميم الفيلا الداخلي ومواضع الكاميرات الأمنية. الطريقة كانت احترافية للغاية.\n\nحين راجع المحققون ملف فيكتور القديم وجدوا اسماً واحداً يتطابق مع كل هذه المعطيات: دراغو بيليتش، شريكه السابق الذي 'مات' في حريق مبنى قبل عام بالضبط — حريق لم يُعثر فيه على جثة واضحة بسبب شدة الاشتعال.",
+  "hint": "حريق لم يُعثر فيه على جثة واضحة — هذا هو مفتاح القضية. من مات في الحريق؟ وهل كان دراغو فعلاً بين الضحايا؟ ابحث في سجلات الهوية والصور الطبية ما قبل الحريق وبعده.",
+  "correctSuspectId": "char_drago_alive",
+  "solutionExplanation": "الجاني هو دراغو بيليتش — الذي يعتقد الجميع أنه مات قبل عام.\n\nالثغرة القاتلة:\nالحريق كان مدبّراً. دراغو وضع جثة شخص آخر في المبنى قبل الحريق — شخص بنفس بنيته الجسدية جنده من ضحايا صفقاته. الجثة احترقت بما يكفي لمنع التعرف البصري، وتقرير الوفاة صدر استناداً لوجود دراغو في المبنى وفق شهادات مدبّرة.\n\nدراغو اختفى بهوية جديدة وعاش عاماً كاملاً يخطّط لانتقامه من فيكتور الذي خانه في صفقة وكاد يُسلّمه للإنتربول.\n\nالثغرة: الطبيب الشرعي الذي فحص جثة الحريق وصف كسراً قديماً في عظمة اليد اليسرى — لكن السجلات الطبية لدراغو تُثبت أن الكسر كان في يده اليمنى لا اليسرى. الجثة لم تكن جثته.\n\nالدليل الحاسم: بصمة كف وُجدت على طاولة في فيلا فيكتور لا تنتمي لأي شخص حي في قواعد البيانات — لكنها تتطابق مع بصمة دراغو المحفوظة من قبل الحريق.",
+  "characters": [
+    {
+      "id": "char_drago_alive",
+      "name": "دراغو بيليتش (المُعتقد توفّيه)",
+      "age": 55,
+      "role": "الجاني الحي",
+      "description": "شريك فيكتور السابق الذي يُعتقد أنه مات في حريق قبل عام. زيّف موته وعاش عاماً يخطّط للانتقام.",
+      "imageEmoji": "👤",
+      "interrogation": "مجهول الوجود — هويته الجديدة تحت التحقيق.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "medium",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_victor",
+      "name": "فيكتور مارتيش (الضحية)",
+      "age": 62,
+      "role": "الضحية",
+      "description": "تاجر أسلحة دولي وُجد مقتولاً في فيلته على جزيرة معزولة.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_forensic",
+      "name": "ماريا هوركات",
+      "age": 44,
+      "role": "خبيرة",
+      "description": "الطبيبة الشرعية التي كشفت التناقض في عظمة الكسر.",
+      "imageEmoji": "👤",
+      "interrogation": "دقيقة ومتخصصة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما الذي لاحظته في تقرير حريق العام الماضي؟",
+          "answer": "الطبيب الشرعي وصف كسراً قديماً في عظمة اليد اليسرى — لكن السجلات الطبية لدراغو تُثبت أن كسره كان في اليد اليمنى. الجثة لم تكن جثته.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_investigator",
+      "name": "إيفان بوتريتش",
+      "age": 50,
+      "role": "شاهد",
+      "description": "محقق الإنتربول الذي تابع ملف دراغو قبل الحريق.",
+      "imageEmoji": "👤",
+      "interrogation": "متعاون ويمتلك معلومات حيوية.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل كانت هناك شكوك في وقت الحريق؟",
+          "answer": "نعم — لم نعثر على أسنان سليمة لتحديد الهوية وشهود الحادثة كانوا مقرّبين من دراغو. لكن لم يكن لدينا دليل كافٍ للاعتراض.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "medium",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "بصمة الكف على طاولة الفيلا",
+      "description": "بصمة كف وُجدت على طاولة فيلا فيكتور — لا تتطابق مع أي شخص حي في قواعد البيانات لكنها تتطابق تطابقاً تاماً مع بصمة دراغو المحفوظة قبل الحريق.",
+      "type": "physical",
+      "emoji": "🖐️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "التناقض في عظمة الكسر",
+      "description": "تقرير الحريق يصف كسراً قديماً في اليد اليسرى — لكن السجلات الطبية الرسمية لدراغو تُثبت أن كسره كان في اليد اليمنى. الجثة المحترقة لم تكن جثته.",
+      "type": "physical",
+      "emoji": "🦴",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "معرفة دراغو بتصميم الفيلا",
+      "description": "المحقق يُثبت أن دراغو زار الفيلا شخصياً قبل عام من الحريق — ويعرف تصميمها الداخلي ومواضع الكاميرات بالكامل.",
+      "type": "physical",
+      "emoji": "🗺️",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "شهود الحريق المشبوهون",
+      "description": "كل شهود حريق العام الماضي كانوا من مقرّبي دراغو — لا شاهد مستقل واحد أكّد رؤيته داخل المبنى.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev5",
+      "title": "وثائق الخيانة التي دفعت دراغو للانتقام",
+      "description": "مستندات تُثبت أن فيكتور أبلغ الإنتربول سراً عن دراغو مقابل صفقة حماية لنفسه — الخيانة التي دفعت دراغو لتزوير موته والانتقام.",
+      "type": "digital",
+      "emoji": "📁",
+      "revealOrder": 5,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

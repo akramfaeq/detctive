@@ -1,0 +1,169 @@
+{
+  "id": "case_dead_008",
+  "title": "التوقيت المبرمج",
+  "location": "مصنع كيميائي، دوسلدورف، ألمانيا",
+  "date": "2026/08/22",
+  "shortDesc": "مهندس كيميائي توفي قبل ستة أشهر — لكن مدير المصنع الذي أهانه وُجد ميتاً هذا الشهر بانفجار في مختبره الخاص. التحقيق يكشف أن المهندس المتوفى برمج خللاً كيميائياً دقيقاً في خلطة معينة يظهر بعد ستة أشهر بالضبط.",
+  "thumbnailEmoji": "⚗️",
+  "difficulty": "hard",
+  "estimatedMinutes": 30,
+  "isNew": true,
+  "requiredPoints": 200,
+  "rewardPoints": 350,
+  "fullStory": "قبل ستة أشهر، توفي مهندس الكيمياء الألماني هانس بيكر (58 عاماً) بنوبة قلبية مفاجئة. كان يعمل في مصنع كيميائي كبير وطُرد بإهانة من مديره كلاوس هارتمان قبل ثلاثة أشهر من وفاته.\n\nهذا الشهر وُجد كلاوس ميتاً في مختبره الخاص إثر انفجار صغير حين كان يحضّر خلطة كيميائية يعتمدها يومياً منذ سنوات.\n\nخبير الكيمياء الجنائية الذي فحص بقايا الانفجار وجد شيئاً غريباً: المادة الكيميائية المتسببة في الانفجار لم تكن موجودة في الخلطة الأصلية — بل نتجت عن تفاعل تراكمي يحدث تلقائياً بعد ستة أشهر من إضافة مادة محددة لمخزون المصنع.",
+  "hint": "ستة أشهر بالضبط — ليست صدفة. مهندس كيميائي يعرف التفاعلات التراكمية يمكنه إضافة مادة لا تُشكّل خطراً فورياً لكنها تتحول لقنبلة موقوتة بعد وقت محدد. من أضاف المادة للمخزون؟",
+  "correctSuspectId": "char_hans_deceased",
+  "solutionExplanation": "الجاني هو هانس بيكر — المتوفى منذ ستة أشهر.\n\nالثغرة القاتلة:\nهانس كان عبقري الكيمياء التراكمية — تخصصه الدقيق. قبل مغادرة المصنع بعد طرده، أضاف كمية دقيقة جداً من مادة كيميائية بطيئة التفاعل لمخزون الخلطة التي يعتمدها كلاوس يومياً في مختبره الشخصي.\n\nهذه المادة لا رائحة لها ولا لون ولا طعم — وتحتاج ستة أشهر من التراكم لتصل لتركيز يُحدث انفجاراً صغيراً عند التسخين. كلاوس كان يسخّن الخلطة في كل مرة.\n\nهانس مات في الشهر الثالث — قبل أن يرى نتيجة عمله بثلاثة أشهر. لكن المادة استمرت في تراكمها وحدها حتى أكملت مهمتها.\n\nالدليل: سجل مخزن المصنع يُثبت إضافة مادة غير مُدرجة في يوم مغادرة هانس الأخير، والتحليل الكيميائي يُثبت أن مصدرها مخزن المصنع.",
+  "characters": [
+    {
+      "id": "char_hans_deceased",
+      "name": "هانس بيكر (متوفى)",
+      "age": 58,
+      "role": "الجاني المتوفى",
+      "description": "مهندس كيميائي متخصص في التفاعلات التراكمية. توفي قبل ستة أشهر بعد طرده بإهانة.",
+      "imageEmoji": "👤",
+      "interrogation": "الجاني متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_klaus",
+      "name": "كلاوس هارتمان (الضحية)",
+      "age": 55,
+      "role": "الضحية",
+      "description": "مدير المصنع الذي طرد هانس بإهانة. وُجد ميتاً في انفجار مختبره الخاص.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_chemist",
+      "name": "أنا شولتز",
+      "age": 42,
+      "role": "خبيرة",
+      "description": "خبيرة الكيمياء الجنائية التي كشفت آلية الجريمة.",
+      "imageEmoji": "👤",
+      "interrogation": "متخصصة ودقيقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما الذي تسبب في الانفجار؟",
+          "answer": "مادة كيميائية تراكمت على مدى ستة أشهر في الخلطة اليومية — تفاعل بطيء محسوب بدقة يصل لحدة انفجارية عند التسخين بعد هذه المدة بالضبط.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "تقرير الكيمياء الجنائية",
+      "description": "يُثبت أن الانفجار نتج عن تفاعل تراكمي لمادة أُضيفت للخلطة قبل ستة أشهر بالضبط — ليس حادثة عرضية.",
+      "type": "physical",
+      "emoji": "🧪",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "سجل مخزن المصنع",
+      "description": "يُثبت السجل إضافة مادة كيميائية غير مُدرجة في يوم مغادرة هانس الأخير من المصنع — التوقيت يتطابق مع آخر يوم عمل له.",
+      "type": "digital",
+      "emoji": "📋",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "أبحاث هانس في التفاعلات التراكمية",
+      "description": "أوراق بحثية نشرها هانس تُثبت تخصصه الدقيق في هذا النوع من التفاعلات — وقدرته على حساب التوقيت بدقة متناهية.",
+      "type": "physical",
+      "emoji": "📚",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "شهادات زملاء الطرد",
+      "description": "شهادات زملاء هانس تُثبت أنه غادر المصنع بإهانة شديدة وأقسم علناً أنه لن ينسى.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

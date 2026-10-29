@@ -1,0 +1,176 @@
+{
+  "id": "case_dead_007",
+  "title": "الوكيل المجهول",
+  "location": "مدينة ليون، فرنسا",
+  "date": "2026/07/15",
+  "shortDesc": "محقق خاص توفي قبل شهرين — لكن مدير شركة وُجد ميتاً هذا الأسبوع. التحقيق يكشف أن المحقق المتوفى وكّل شخصاً قبل وفاته لتسليم ملف معين لجهة معينة بعد شهرين — دون أن يُخبره بمحتوى الملف ولا بنتيجته.",
+  "thumbnailEmoji": "🕵️",
+  "difficulty": "hard",
+  "estimatedMinutes": 30,
+  "isNew": true,
+  "requiredPoints": 200,
+  "rewardPoints": 350,
+  "fullStory": "قبل شهرين، توفي المحقق الخاص الفرنسي المخضرم أنطوان لوغران (66 عاماً) بسرطان سريع. قبل وفاته بأسبوع، طلب من صديقه القديم بيير دوفور تسليم ملف مختوم لعنوان محدد بعد شهرين بالضبط.\n\nبيير نفّذ الطلب الأسبوع الماضي دون أن يعلم ما يحتوي الملف. بعد يومين وُجد مدير شركة الاستيراد جيرار بونيه ميتاً في مكتبه. الشرطة تشير لانهيار نفسي بعد كشف وثائق مالية مدمّرة أرسلتها جهة مجهولة للنيابة.\n\nالوثائق المُرسلة للنيابة تطابق محتوى الملف الذي سلّمه بيير.",
+  "hint": "بيير وكيل بريء لا يعلم شيئاً — لكن أنطوان المحقق المخضرم كان يعلم تماماً ما يحتوي الملف وأين سيصل وما ستكون نتيجته. اختار الموت قبل أن يرى نتيجة عمله.",
+  "correctSuspectId": "char_antoine_deceased",
+  "solutionExplanation": "الجاني هو المحقق أنطوان لوغران — المتوفى منذ شهرين.\n\nالثغرة القاتلة:\nأنطوان قضى سنواته الأخيرة يجمع أدلة على جرائم جيرار بونيه — احتيال مالي ضخم أودى بحياة عشرات الضحايا من صغار المستثمرين.\n\nحين علم أنطوان بمرضه، قرر أن يُنهي المهمة من وراء القبر. وثّق كل شيء في الملف المختوم وأوكل بيير الغريء بتسليمه — بدون إخباره بشيء لحماية بيير من الانتقام.\n\nالشهرين كانا مقصودَين: وقت كافٍ بعد وفاته لإثبات أنه لم يتصرف بدافع شخصي، ووقت كافٍ لجيرار ليرتاح ويظن أن الخطر زال.\n\nجيرار تلقى الوثائق من النيابة ورأى عمره ينهار — انهار نفسياً وجسدياً.\n\nالدليل: مذكرة أنطوان السرية تُثبت قراره المتعمد، وتعليماته لبيير كانت مكتوبة بدقة لا تترك مجالاً للصدفة.",
+  "characters": [
+    {
+      "id": "char_antoine_deceased",
+      "name": "أنطوان لوغران (متوفى)",
+      "age": 66,
+      "role": "الجاني المتوفى",
+      "description": "محقق خاص مخضرم توفي بسرطان. وكّل صديقه لتسليم ملف مدمّر بعد شهرين من وفاته.",
+      "imageEmoji": "👤",
+      "interrogation": "الجاني متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_gerard",
+      "name": "جيرار بونيه (الضحية)",
+      "age": 59,
+      "role": "الضحية",
+      "description": "مدير شركة استيراد. وُجد ميتاً بانهيار نفسي وجسدي بعد وصول الوثائق للنيابة.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_pierre",
+      "name": "بيير دوفور",
+      "age": 62,
+      "role": "وكيل بريء",
+      "description": "صديق أنطوان القديم. سلّم الملف دون علم بمحتواه.",
+      "imageEmoji": "👤",
+      "interrogation": "مذعور من اكتشاف دوره غير المقصود في الأحداث.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ماذا أخبرك أنطوان عن الملف قبل وفاته؟",
+          "answer": "قال فقط أنه 'عمل حياته الأخير' وأنه يثق بي لتسليمه في الموعد. لم يُخبرني بشيء آخر.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q2",
+          "text": "هل فتحت الملف قبل تسليمه؟",
+          "answer": "لا، احترمت رغبته — كان مختوماً بختم شمعي شخصي.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الملف المختوم وتعليمات التسليم",
+      "description": "ملف مختوم بختم شمعي مع تعليمات مكتوبة بخط أنطوان تُحدد موعد التسليم والعنوان بدقة — كُتبت قبل وفاته بأسبوع.",
+      "type": "physical",
+      "emoji": "📁",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "مذكرة أنطوان السرية",
+      "description": "مذكرة وُجدت في منزله بعد وفاته تُثبت أنه كان يعلم تماماً بمحتوى الملف وبنتيجته المتوقعة على جيرار — اختار التوقيت بعناية.",
+      "type": "physical",
+      "emoji": "📔",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "سنوات التحقيق في ملفات أنطوان",
+      "description": "أرشيف ضخم في مكتبه يُثبت أنه قضى سنوات يجمع أدلة على جرائم جيرار — عمل منهجي وصبور على مدى خمس سنوات.",
+      "type": "physical",
+      "emoji": "🗃️",
+      "revealOrder": 3,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "قائمة ضحايا الاحتيال المالي",
+      "description": "قائمة بعشرات الضحايا من صغار المستثمرين الذين خسروا مدخراتهم في مخطط جيرار — الدافع الحقيقي لأنطوان.",
+      "type": "physical",
+      "emoji": "📋",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

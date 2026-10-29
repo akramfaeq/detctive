@@ -1,0 +1,203 @@
+{
+  "id": "case_dead_001",
+  "title": "الوصية القاتلة",
+  "location": "مكتب محاماة، إدنبره، اسكتلندا",
+  "date": "2026/01/22",
+  "shortDesc": "رجل أعمال توفي قبل ثلاثة أشهر — لكن شريكه وُجد ميتاً الأسبوع الماضي. التحقيق يكشف أن الميت الأول وضع في وصيته آلية انتقام صامتة أُطلقت فور توقيع الشريك على عقد معين.",
+  "thumbnailEmoji": "📜",
+  "difficulty": "easy",
+  "estimatedMinutes": 15,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 150,
+  "fullStory": "قبل ثلاثة أشهر، توفي رجل الأعمال الاسكتلندي دونالد كيرك (69 عاماً) بنوبة قلبية طبيعية. ترك وراءه ثروة طائلة وشريكاً تجارياً اسمه إدوارد مارش.\n\nالأسبوع الماضي وُجد إدوارد مارش (64 عاماً) ميتاً في مكتبه. وقت وفاته يتزامن تماماً مع توقيعه على عقد بيع حصته في الشركة المشتركة — العقد الذي طالما حاول دونالد منعه قبل وفاته.\n\nالمحامي الذي فتح وصية دونالد بعد وفاته لاحظ بنداً غريباً لم يفهمه في البداية: 'في حال توقيع الطرف الثاني على عقد التنازل رقم 7، يُفتح المظروف المختوم رقم 3 ويُرسل محتواه فوراً إلى الجهات المختصة.'",
+  "hint": "المظروف المختوم رقم 3 — ما الذي يحتويه؟ دونالد كان يعرف سراً خطيراً عن شريكه ووضعه في وصيته كقنبلة موقوتة تنفجر حين يتصرف إدوارد بطريقة معينة.",
+  "correctSuspectId": "char_donald_deceased",
+  "solutionExplanation": "الجاني هو دونالد كيرك — المتوفى منذ ثلاثة أشهر.\n\nالثغرة القاتلة:\nدونالد كان يعلم أن إدوارد اختلس أموالاً ضخمة من الشركة وورّطه في صفقات مزورة. جمع الأدلة وأودعها في مظروف مختوم لدى محاميه مع تعليمات صريحة: إذا وقّع إدوارد على عقد بيع حصته — وهو ما كان سيفعله فور موت دونالد — يُرسل المظروف للجهات القانونية فوراً.\n\nإدوارد وقّع العقد لأنه ظن أنه في أمان بعد موت دونالد. لكن المظروف أُرسل في نفس اليوم لمكتب النيابة العامة — وحين علم إدوارد بذلك في مساء نفس اليوم، تناول جرعة مميتة من حبوبه بنفسه.\n\nدونالد لم يقتله مباشرة — لكنه وضع الفخ بدقة متناهية وأطلقه من وراء القبر.",
+  "characters": [
+    {
+      "id": "char_donald_deceased",
+      "name": "دونالد كيرك (متوفى)",
+      "age": 69,
+      "role": "الجاني المتوفى",
+      "description": "رجل أعمال توفي بنوبة قلبية قبل ثلاثة أشهر. وضع في وصيته آلية انتقام مدروسة ضد شريكه.",
+      "imageEmoji": "👤",
+      "interrogation": "الجاني متوفى ولا يمكن استجوابه — لكن وصيته تتحدث.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_edward",
+      "name": "إدوارد مارش (الضحية)",
+      "age": 64,
+      "role": "الضحية",
+      "description": "الشريك التجاري لدونالد. وُجد ميتاً فور إرسال المظروف المختوم للنيابة. مات بجرعة زائدة من حبوبه الخاصة.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_lawyer",
+      "name": "أنغوس ماكفي",
+      "age": 55,
+      "role": "شاهد",
+      "description": "المحامي المنفّذ للوصية. فتح المظروف وأرسله بموجب التعليمات.",
+      "imageEmoji": "👤",
+      "interrogation": "صادق ومتعاون — نفّذ بنود الوصية بأمانة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما الذي احتواه المظروف المختوم رقم 3؟",
+          "answer": "وثائق تُثبت اختلاسات ضخمة وصفقات مزورة بتوقيع إدوارد مارش — أرسلتها للنيابة فور توقيعه على عقد التنازل كما نصّت الوصية.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q2",
+          "text": "هل كان دونالد يعلم أن هذا سيقتل إدوارد؟",
+          "answer": "لا أستطيع قراءة نواياه — لكن الوصية كانت دقيقة بشكل مثير للريبة.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_secretary",
+      "name": "هيلين براون",
+      "age": 48,
+      "role": "شاهدة",
+      "description": "سكرتيرة إدوارد. آخر من رآه حياً.",
+      "imageEmoji": "👤",
+      "interrogation": "صادقة ومفجوعة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "كيف كان حال إدوارد فور توقيعه على العقد؟",
+          "answer": "كان سعيداً جداً — ثم تلقّى اتصالاً من مكتب المحامي وانهار فجأة. أغلق مكتبه وطلب مني المغادرة.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "البند الغريب في وصية دونالد",
+      "description": "بند ينص على إرسال المظروف المختوم رقم 3 فور توقيع الشريك على عقد التنازل رقم 7 — توقيت محسوب بدقة مثيرة للريبة.",
+      "type": "physical",
+      "emoji": "📜",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "محتوى المظروف المختوم",
+      "description": "وثائق تُثبت اختلاسات ضخمة وصفقات مزورة موقّعة من إدوارد — كان دونالد يجمعها سراً لسنوات.",
+      "type": "physical",
+      "emoji": "📁",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "توقيت وفاة إدوارد",
+      "description": "توفي إدوارد بجرعة زائدة من حبوبه في نفس مساء إرسال المظروف للنيابة — فاصل ساعتين فقط بين التوقيعين.",
+      "type": "physical",
+      "emoji": "⏱️",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "مذكرات دونالد السرية",
+      "description": "مذكرات وُجدت في خزنته تُثبت أنه كان يعلم بنوايا إدوارد وخطّط للانتقام منه بهذه الطريقة بدقة على مدى سنتين.",
+      "type": "physical",
+      "emoji": "📔",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

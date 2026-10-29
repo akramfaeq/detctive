@@ -1,0 +1,154 @@
+{
+  "id": "case_dead_006",
+  "title": "المفتاح الأخير",
+  "location": "مكتب شركة تقنية، أمستردام، هولندا",
+  "date": "2026/06/09",
+  "shortDesc": "مبرمج توفي قبل شهر في حادثة — لكن شريكه وُجد ميتاً هذا الأسبوع. التحقيق يكشف أن المبرمج المتوفى برمج نظاماً يُطلق تلقائياً مفتاح تشفير يفتح ملفات تُدمّر شريكه فور انتهاء مهلة شهر بدون مدخل معين.",
+  "thumbnailEmoji": "🔐",
+  "difficulty": "medium",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 100,
+  "rewardPoints": 200,
+  "fullStory": "قبل شهر، توفي المبرمج الهولندي النابغة لوكاس فان دير بيرغ (35 عاماً) في حادثة سير مشبوهة. كان يعمل مع شريكه ريك هوغنبوم في شركة تقنية ناشئة واعدة.\n\nهذا الأسبوع وُجد ريك ميتاً في مكتبه. وقبل وفاته بساعتين تلقّى ملفات مشفّرة عبر نظام آلي أُطلقت تلقائياً — احتوت على أدلة تُثبت أن ريك كان يسرق تقنية لوكاس وباعها لمنافسين مقابل ملايين.\n\nالصدمة والخوف من الفضيحة أودت بحياة ريك بنوبة قلبية.",
+  "hint": "لوكاس برمج نظام 'القنبلة الحية' — إذا لم يُدخل رمزه الشخصي كل شهر، تُطلق الملفات تلقائياً. وفاته أوقفت الإدخال وفتحت القنبلة. هل كانت وفاته حادثة فعلاً؟",
+  "correctSuspectId": "char_lukas_deceased",
+  "solutionExplanation": "الجاني هو لوكاس فان دير بيرغ — المتوفى منذ شهر.\n\nالثغرة القاتلة:\nلوكاس برمج نظام deadman's switch — نظام يتطلب منه إدخال رمز خاص مرة كل شهر. إذا لم يُدخل الرمز في الموعد، يُطلق النظام تلقائياً ملفات مشفّرة تحتوي كل الأدلة على سرقة ريك.\n\nلوكاس كان يعلم بسرقة ريك لكنه لم يجد طريقة آمنة للكشف عنه دون أن يتعرض للانتقام. النظام كان ضمانته الحية — وحين مات لوكاس في حادثة السير التي رتّبها ريك على الأرجح، انتهت المهلة وانطلقت القنبلة.\n\nريك قتل من يظن أنه أزاح به العقبة — فإذا بالعقبة تقتله بعد شهر من الجبر.\n\nالدليل: الكود المصدري للنظام في حاسوب لوكاس يُثبت برمجته المتعمدة، وسجل تاريخ حادثة السير يتزامن مع أول محاولة ريك للوصول لملفات لوكاس المشفرة.",
+  "characters": [
+    {
+      "id": "char_lukas_deceased",
+      "name": "لوكاس فان دير بيرغ (متوفى)",
+      "age": 35,
+      "role": "الجاني المتوفى",
+      "description": "مبرمج نابغة توفي في حادثة سير. برمج نظام انتقام آلي يُطلق بعد شهر من غيابه.",
+      "imageEmoji": "👤",
+      "interrogation": "الجاني متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_rick",
+      "name": "ريك هوغنبوم (الضحية)",
+      "age": 38,
+      "role": "الضحية",
+      "description": "شريك لوكاس. سرق تقنيته وباعها. وُجد ميتاً بنوبة قلبية بعد تلقّيه الملفات.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_investor",
+      "name": "آنا دي فريس",
+      "age": 44,
+      "role": "شاهدة",
+      "description": "مستثمرة في الشركة. تلقّت نسخة من الملفات أيضاً.",
+      "imageEmoji": "👤",
+      "interrogation": "مصدومة ومتعاونة تماماً.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ماذا احتوت الملفات التي وصلتك؟",
+          "answer": "أدلة تفصيلية على بيع ريك لتقنية لوكاس لمنافسين — عقود وتحويلات ومراسلات كاملة.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الكود المصدري لنظام الانتقام الآلي",
+      "description": "كود برمجي في حاسوب لوكاس يُثبت أنه بنى نظام deadman's switch — يُطلق الملفات تلقائياً إذا لم يُدخل رمزه الشهري.",
+      "type": "digital",
+      "emoji": "💻",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "الملفات المُطلَقة تلقائياً",
+      "description": "أدلة كاملة على سرقة ريك للتقنية — عقود وتحويلات مالية ومراسلات مشفّرة أُطلقت فور انتهاء مهلة شهر.",
+      "type": "digital",
+      "emoji": "📁",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "سجل محاولات ريك لاختراق ملفات لوكاس",
+      "description": "يُثبت أن ريك حاول الوصول لملفات لوكاس المشفرة فور وفاته — ولم ينجح لأن مفتاح التشفير كان محمياً بشكل خاص.",
+      "type": "digital",
+      "emoji": "🔒",
+      "revealOrder": 3,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

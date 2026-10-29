@@ -1,0 +1,177 @@
+{
+  "id": "case_dead_004",
+  "title": "شاهد الزور",
+  "location": "محكمة جنائية، بروكسل، بلجيكا",
+  "date": "2026/04/14",
+  "shortDesc": "قاضٍ متقاعد توفي قبل شهر — لكن شهادة مسجّلة بصوته أُطلقت في محكمة بعد وفاته وأدانت رجلاً بريئاً. التحقيق يكشف أن الشهادة كانت مزوّرة ومُعدّة مسبقاً من الميت نفسه.",
+  "thumbnailEmoji": "⚖️",
+  "difficulty": "medium",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 100,
+  "rewardPoints": 200,
+  "fullStory": "قبل شهر، توفي القاضي البلجيكي المتقاعد أرماند ديبوا (77 عاماً) بوفاة طبيعية هادئة. كان يُعرف بعدالته وحياده على مدى مسيرته القضائية.\n\nبعد وفاته بثلاثة أسابيع، قُدّمت شهادة مسجّلة بصوته في قضية جنائية مفتوحة — شهادة سجّلها قبل وفاته وأودعها لدى محاميه لتُقدَّم بعد رحيله حسب تعليماته.\n\nالشهادة تُدين رجلاً اسمه لوسيان فيرهاغن بتفاصيل دقيقة جداً. لكن المحامي الذي تدافع عن لوسيان اكتشف في تحليل الصوت أن الشهادة تحتوي قطعاً صوتية ملتقطة من مقابلات قديمة للقاضي رُكّبت بعناية لتصنع اعترافاً كاملاً لم يُقله قط.",
+  "hint": "الشهادة مزوّرة من تسجيلات قديمة — لكن من صنعها؟ القاضي المتوفى وضعها في تعليماته لمحاميه قبل وفاته. هل كان القاضي هو من زوّر شهادته الخاصة أم أن شخصاً آخر تلاعب بها بعد وفاته؟",
+  "correctSuspectId": "char_armand_deceased",
+  "solutionExplanation": "الجاني هو القاضي أرماند ديبوا — المتوفى منذ شهر.\n\nالثغرة القاتلة:\nأرماند صنع الشهادة المزورة بنفسه قبل وفاته بأسابيع. استعان بخبير صوتيات لتركيب مقاطع من مقابلاته القديمة لتبدو شهادة متماسكة ضد لوسيان.\n\nلماذا؟ لوسيان كان المسؤول عن وفاة حفيد أرماند في حادثة تهريب منذ سنوات — لكن الأدلة لم تكن كافية للإدانة. أرماند قرر أن يستغل رحيله لإيداع شهادة مزورة تُدين لوسيان بعد أن يكون هو في قبره وخارج متناول المساءلة.\n\nالدليل الحاسم: تحليل الطيف الصوتي يُثبت وجود قطع دقيقة بين المقاطع لا تُلاحظ إلا بمعدات متخصصة — والتسجيلات الأصلية القديمة التي أُخذت منها القطع وُجدت في منزل أرماند.",
+  "characters": [
+    {
+      "id": "char_armand_deceased",
+      "name": "القاضي أرماند ديبوا (متوفى)",
+      "age": 77,
+      "role": "الجاني المتوفى",
+      "description": "قاضٍ متقاعد توفي قبل شهر. صنع شهادة مزوّرة قبل وفاته وأودعها لتُقدَّم بعد رحيله.",
+      "imageEmoji": "👤",
+      "interrogation": "الجاني متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_lucien",
+      "name": "لوسيان فيرهاغن",
+      "age": 52,
+      "role": "متهم بريء",
+      "description": "رجل أعمال أُدين بشهادة مزورة. لديه دوافع واضحة للتشكيك في الشهادة.",
+      "imageEmoji": "👤",
+      "interrogation": "يُصرّ على براءته ويدّعي أن الشهادة مصطنعة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما علاقتك بالقاضي أرماند؟",
+          "answer": "لا علاقة مباشرة — لكن حفيده توفي في حادثة كنت طرفاً فيها تجارياً لا جنائياً.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_audio_expert",
+      "name": "مارين دوبوا",
+      "age": 38,
+      "role": "خبيرة",
+      "description": "خبيرة تحليل صوتي اكتشفت التزوير في الشهادة.",
+      "imageEmoji": "👤",
+      "interrogation": "متخصصة ودقيقة في تقديم نتائجها.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما الذي كشفه تحليل الطيف الصوتي؟",
+          "answer": "الشهادة مُركّبة من مقاطع قديمة بفواصل دقيقة جداً لا تُلاحظ بالاستماع العادي — لكن الطيف الصوتي يكشف القطع بوضوح.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الشهادة الصوتية المسجّلة",
+      "description": "تسجيل بصوت القاضي أرماند يُدين لوسيان بتفاصيل دقيقة — قُدّمت في المحكمة وفق تعليماته لمحاميه.",
+      "type": "digital",
+      "emoji": "🎙️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "تقرير تحليل الطيف الصوتي",
+      "description": "يُثبت التقرير أن الشهادة مُركّبة من مقاطع صوتية ملتقطة من مقابلات قديمة — فواصل دقيقة لا تُلاحظ إلا بمعدات متخصصة.",
+      "type": "digital",
+      "emoji": "🔬",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "التسجيلات الأصلية القديمة في منزل أرماند",
+      "description": "تسجيلات مقابلات قديمة للقاضي وُجدت في منزله مع ملاحظات تُشير لأجزاء بعينها — تُثبت أنه هو من جمع المواد لصنع الشهادة المزورة.",
+      "type": "physical",
+      "emoji": "🗃️",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "رسالة أرماند لحفيده",
+      "description": "رسالة شخصية وُجدت في منزله تُثبت دافعه: انتقام من لوسيان لمسؤوليته في وفاة حفيده.",
+      "type": "physical",
+      "emoji": "💌",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

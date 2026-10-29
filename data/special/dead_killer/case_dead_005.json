@@ -1,0 +1,154 @@
+{
+  "id": "case_dead_005",
+  "title": "الصورة الأخيرة",
+  "location": "منزل مصور فوتوغرافي، برشلونة، إسبانيا",
+  "date": "2026/05/20",
+  "shortDesc": "مصور فوتوغرافي توفي قبل ثلاثة أسابيع — لكن تاجر مخدرات وُجد ميتاً هذا الأسبوع. التحقيق يكشف أن المصور التقط صورة قبل وفاته تحتوي دليلاً مدمّراً للتاجر ونشرتها عائلته دون علم بمحتواها.",
+  "thumbnailEmoji": "📷",
+  "difficulty": "medium",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 100,
+  "rewardPoints": 200,
+  "fullStory": "قبل ثلاثة أسابيع، توفي المصور الفوتوغرافي الإسباني خوسيه مارتينيز (51 عاماً) في حادثة سير. تركت عائلته إرثه الفوتوغرافي ينشره بالكامل على حساباته في تكريم لذكراه.\n\nهذا الأسبوع وُجد تاجر مخدرات معروف اسمه مانويل فلوريس ميتاً في منزله بطريقة تُشير لصراع داخلي في عصابته.\n\nالتحقيق كشف أن أحد الصور التي نشرتها العائلة في حساب خوسيه احتوت في خلفيتها — دون قصد واضح — وجه مانويل مع شخص آخر في صفقة مشبوهة كان يُخفيها عن رفاقه في العصابة. حين رأى رفاقه الصورة، قتلوه.",
+  "hint": "خوسيه مات في حادثة سير — لكن هل كانت حادثة فعلاً؟ ومتى التقط الصورة التي تحتوي الدليل؟ هل كان يعلم بمحتواها؟",
+  "correctSuspectId": "char_jose_deceased",
+  "solutionExplanation": "الجاني هو خوسيه مارتينيز — المتوفى منذ ثلاثة أسابيع.\n\nالثغرة القاتلة:\nخوسيه التقط الصورة عمداً في الليلة التي سبقت حادثة السير — كان يعلم أن مانويل يُخطط للتخلص منه بسبب معرفته بأسرار العصابة.\n\nخطّط خوسيه لحمايته بعد رحيله: التقط الصورة وتركها بين مئات الصور الأخرى مع تعليمات لعائلته بنشر كل شيء. لم يُخبر عائلته بشيء لحمايتهم.\n\nحين نشرت العائلة الصور في تكريمه، وصلت الصورة المدمّرة لرفاق مانويل الذين لم يكن يعلمون بخيانته لهم في تلك الصفقة.\n\nالدليل: هاتف خوسيه يُثبت أنه بحث عن معلومات عن العصابة في الأسابيع قبل وفاته، ومذكرة وُجدت في درجه تُشير إلى الصورة وتفاصيلها.",
+  "characters": [
+    {
+      "id": "char_jose_deceased",
+      "name": "خوسيه مارتينيز (متوفى)",
+      "age": 51,
+      "role": "الجاني المتوفى",
+      "description": "مصور فوتوغرافي توفي في حادثة سير. التقط صورة تحتوي دليلاً مدمّراً وتركها لعائلته للنشر.",
+      "imageEmoji": "👤",
+      "interrogation": "الجاني متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "medium",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_manuel",
+      "name": "مانويل فلوريس (الضحية)",
+      "age": 44,
+      "role": "الضحية",
+      "description": "تاجر مخدرات معروف. وُجد ميتاً بعد انكشاف خيانته لرفاقه في الصورة.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "medium",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_wife",
+      "name": "إيزابيل مارتينيز",
+      "age": 47,
+      "role": "شاهدة",
+      "description": "زوجة المصور المتوفى. نشرت صوره دون علم بمحتواها.",
+      "imageEmoji": "👤",
+      "interrogation": "مفجوعة ولا تعلم شيئاً عن القضية.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل أوصاك خوسيه بنشر صوره بعد وفاته؟",
+          "answer": "نعم، كان دائماً يقول إن أعماله يجب أن تعيش بعده — طلب منا نشر كل شيء في تكريمه.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الصورة المنشورة على حساب خوسيه",
+      "description": "صورة فوتوغرافية تُظهر في خلفيتها مانويل مع شخص مجهول في لقاء سري — نُشرت بين مئات الصور في تكريم المصور المتوفى.",
+      "type": "digital",
+      "emoji": "📸",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "المذكرة في درج خوسيه",
+      "description": "مذكرة تُشير إلى الصورة وتصفها بـ'الضمانة' — مع تعليمات لعائلته بنشر كل الصور دون استثناء.",
+      "type": "physical",
+      "emoji": "📝",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "سجل بحث هاتف خوسيه",
+      "description": "يُثبت أنه بحث عن معلومات عن عصابة مانويل وأسماء أعضائها في الأسابيع قبل وفاته — لم يكن الالتقاط عرضياً.",
+      "type": "digital",
+      "emoji": "📱",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}

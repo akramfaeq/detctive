@@ -1,0 +1,169 @@
+{
+  "id": "case_dead_002",
+  "title": "الرسالة المتأخرة",
+  "location": "منزل عائلي، فيينا، النمسا",
+  "date": "2026/02/18",
+  "shortDesc": "كاتبة شهيرة توفيت قبل شهرين — لكن زوجها وُجد ميتاً الأسبوع الماضي. التحقيق يكشف أنها برمجت رسالة إلكترونية ترسل تلقائياً بعد وفاتها بشهرين تحمل اعترافاً يُدمّر حياته.",
+  "thumbnailEmoji": "📧",
+  "difficulty": "easy",
+  "estimatedMinutes": 15,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 150,
+  "fullStory": "قبل شهرين، توفيت الكاتبة النمساوية الشهيرة إيلزه فاغنر (58 عاماً) بعد صراع مع مرض عضال. تركت وراءها زوجها كلاوس فاغنر (61 عاماً) وثروة أدبية ضخمة.\n\nالأسبوع الماضي وُجد كلاوس ميتاً في منزلهما. التقرير الأولي يُشير لنوبة قلبية — حتى راجع المحققون هاتفه فوجدوا رسالة إلكترونية وصلته قبل ساعتين من وفاته بالضبط.\n\nالرسالة أُرسلت من بريد إيلزه المتوفاة — وكانت مجدولة للإرسال في هذا اليوم بالذات قبل وفاتها بثلاثة أشهر. محتواها: اعتراف كامل بأن كلاوس كان يزوّر توقيعها على عقود أدبية ويسرق عائداتها لسنوات.",
+  "hint": "إيلزه برمجت الرسالة وهي على فراش الموت — كانت تعلم بخيانة زوجها وقررت أن تنتقم منه بعد رحيلها. الصدمة النفسية من الاعتراف المفاجئ أودت بحياته.",
+  "correctSuspectId": "char_ilse_deceased",
+  "solutionExplanation": "الجانية هي إيلزه فاغنر — المتوفاة منذ شهرين.\n\nالثغرة القاتلة:\nإيلزه اكتشفت تزوير زوجها وهي على فراش الموت. بدلاً من المواجهة المباشرة التي كانت ستُضعف صورتها الأدبية، برمجت رسالة إلكترونية تُرسل تلقائياً بعد شهرين — بعد أن تكون قد دُفنت وأُقيمت جنازتها وهدأت العواصف.\n\nالرسالة احتوت اعترافاً تفصيلياً بكل عقد زوّر توقيعها فيه، مع نسخ من المستندات الأصلية. أُرسلت في نفس الوقت لمحاميها ولوسائل الإعلام ولمكتب النيابة.\n\nكلاوس تلقّى الرسالة ورأى نسخها في كل مكان في لحظة واحدة — الصدمة الكاملة أصابته بنوبة قلبية حادة.\n\nالدليل: سجل جدولة الرسائل على حاسوب إيلزه يُثبت أنها أنشأت الرسالة وجدولتها قبل ثلاثة أشهر من وفاتها.",
+  "characters": [
+    {
+      "id": "char_ilse_deceased",
+      "name": "إيلزه فاغنر (متوفاة)",
+      "age": 58,
+      "role": "الجانية المتوفاة",
+      "description": "كاتبة شهيرة توفيت بمرض عضال قبل شهرين. برمجت رسالة انتقامية تُرسل تلقائياً بعد وفاتها.",
+      "imageEmoji": "👤",
+      "interrogation": "الجانية متوفاة ولا يمكن استجوابها.",
+      "questions": [],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "long",
+        "clothColor": "purple",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_klaus",
+      "name": "كلاوس فاغنر (الضحية)",
+      "age": 61,
+      "role": "الضحية",
+      "description": "زوج الكاتبة المتوفاة. وُجد ميتاً بنوبة قلبية بعد تلقيه رسالة زوجته المجدولة.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_publisher",
+      "name": "هانز مولر",
+      "age": 52,
+      "role": "شاهد",
+      "description": "ناشر أعمال إيلزه. تلقّى نسخة من الرسالة في نفس اللحظة.",
+      "imageEmoji": "👤",
+      "interrogation": "مصدوم ومتعاون.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ماذا احتوت الرسالة التي وصلتك من إيلزه؟",
+          "answer": "اعتراف مفصّل بتزوير كلاوس لتوقيعها مع نسخ من العقود المزورة — أُرسلت لي وللمحامي ولوسائل الإعلام في نفس اللحظة.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الرسالة الإلكترونية المجدولة",
+      "description": "رسالة من بريد إيلزه وصلت لكلاوس وللمحامي ووسائل الإعلام في نفس اللحظة — مجدولة للإرسال في هذا اليوم بالذات.",
+      "type": "digital",
+      "emoji": "📧",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "سجل جدولة الرسائل على حاسوب إيلزه",
+      "description": "يُثبت السجل أن إيلزه أنشأت الرسالة وجدولتها قبل ثلاثة أشهر من وفاتها — وهي لا تزال قادرة على الكتابة.",
+      "type": "digital",
+      "emoji": "💻",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "العقود الأدبية المزورة",
+      "description": "نسخ من عقود أدبية تحمل توقيعاً مزوراً لإيلزه — يُثبت تحليل الخط أنها لم تُوقّع عليها.",
+      "type": "physical",
+      "emoji": "📄",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "مذكرة إيلزه الأخيرة",
+      "description": "مذكرة كتبتها قبيل وفاتها تُثبت أنها اكتشفت التزوير وقررت الانتقام بهذه الطريقة الصامتة.",
+      "type": "physical",
+      "emoji": "📔",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 2
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 1
+    }
+  }
+}
