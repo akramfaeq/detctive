@@ -1,0 +1,176 @@
+{
+  "id": "case_footprints_009",
+  "title": "لغز آثار القدمين المتطابقة",
+  "location": "حديقة قصر تاريخي، ستوكهولم، السويد",
+  "date": "2026/10/23",
+  "shortDesc": "مقتل حارس ليلي فوق الثلج في ستوكهولم. يؤكد البستاني أنه لم يقترب من الموقع إطلاقاً، غير أن بصمات حذائه الفريدة على الثلج تُكذّب أقواله.",
+  "thumbnailEmoji": "❄️",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "في ليلة ثلجية باردة بمدينة ستوكهولم، عُثر على جثة الحارس الليلي غوستاف لارسون (50 عاماً) ملقاةً فوق طبقة الثلج الكثيفة في الحديقة الخلفية للقصر التاريخي، وقد فارق الحياة متأثراً بإصابة بالغة.\n\nلم يكن ثمة سوى مسار واحد من آثار الأقدام الواضحة فوق الثلج، يتجه نحو الجثة ثم يعود بالاتجاه ذاته نحو سور الحديقة الخلفي.\n\nاستجوبت الشرطة البستاني لارس أندرسون، الذي يمتلك مفتاح البوابة الخلفية وكانت بينه وبين الحارس خلافات سابقة. نفى لارس تواجده في مسرح الجريمة كلياً، وأكّد أنه لم يطأ الثلج تلك الليلة، مشيراً إلى أن آثار الأقدام الوحيدة على الثلج لا صلة له بها وأنه كان نائماً في غرفته طوال الليل.",
+  "hint": "قارن نقش نعل حذاء البستاني الشتوي مع القوالب الجبسية المأخوذة من آثار الأقدام العميقة على الثلج في مسرح الجريمة.",
+  "correctSuspectId": "char_lars",
+  "solutionExplanation": "القاتل الحقيقي هو البستاني لارس أندرسون.\n\nالثغرة القاتلة:\nأكّد لارس بثقة تامة أنه لم يقترب من الحديقة الخلفية ولم يطأها طوال الليل. غير أن الفحص الجنائي أثبت أن القوالب الجبسية المأخوذة من آثار الأقدام الوحيدة على الثلج تتطابق تماماً مع بصمات نعل حذاء لارس الشتوي الموجود في خزانة ملابسه، بما في ذلك تطابق المسافة بين الخطوات وعمق الغمس الناتج عن وزنه.\n\nأما سبب عدم تمكنه من محو آثاره فهو أن الثلج كان كثيفاً جداً وهطل بغزارة في وقت الجريمة ثم توقف فجأة، ما جعل الآثار ثابتة وواضحة لا يمكن تعديلها دون ترك آثار إضافية تدل على التلاعب. وقد أثبت التطابق الكامل بين بصمة الحذاء والآثار الوحيدة على الثلج أن لارس هو من ارتكب الجريمة.",
+  "characters": [
+    {
+      "id": "char_gustaf",
+      "name": "غوستاف لارسون",
+      "age": 50,
+      "role": "الضحية",
+      "description": "حارس ليلي للقصر، عُثر عليه مقتولاً فوق الثلج.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_lars",
+      "name": "لارس أندرسون",
+      "age": 45,
+      "role": "مشتبه به",
+      "description": "بستاني القصر، يمتلك مفتاح البوابة الخلفية. يؤكد أنه لم يطأ الثلج أو يقترب من مكان الجريمة ليلاً.",
+      "imageEmoji": "👤",
+      "interrogation": "يبدو متوتراً ويتجنب الحديث عن حذائه الشتوي الخاص.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل غادرتَ غرفتك أو اقتربتَ من الحديقة الخلفية ليلة أمس؟",
+          "answer": "لا إطلاقاً، بقيتُ نائماً في غرفتي طوال الليل ولم أطأ الثلج الخارجي قط.",
+          "isLie": true,
+          "lieHint": "آثار أقدامه تتطابق تماماً مع المسار الوحيد فوق الثلج في مسرح الجريمة."
+        },
+        {
+          "id": "q2",
+          "text": "هل تمتلك حذاءً شتوياً بنعل مطاطي منقوش بنقش مربعات؟",
+          "answer": "لديّ حذاء شتوي عادي، ولا أظن أن نقشه مميز إلى هذا الحد.",
+          "isLie": true,
+          "lieHint": "نقش الحذاء يتطابق كلياً مع البصمات المأخوذة من مسرح الجريمة."
+        },
+        {
+          "id": "q3",
+          "text": "ما طبيعة علاقتك بالحارس غوستاف؟",
+          "answer": "علاقة عمل عادية وهادئة، ولا توجد بيننا أي خلافات شخصية.",
+          "isLie": true,
+          "lieHint": "شهود عيان رصدوا شجاراً حاداً بينهما قبل أيام من الحادثة."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_freja",
+      "name": "فريا لوند",
+      "age": 33,
+      "role": "مشتبه بها",
+      "description": "مرشدة سياحية في القصر، حضرت صباحاً ولاحظت آثار الأقدام على الثلج.",
+      "imageEmoji": "👤",
+      "interrogation": "إفادتها هادئة وتساعد الشرطة في تحديد مكان الآثار.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى لاحظتِ آثار الأقدام على الثلج لأول مرة؟",
+          "answer": "لاحظتُها صباح اليوم أثناء توجهي لفتح باب الجناح الشرقي.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "long",
+        "clothColor": "purple",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "قوالب بصمات الأقدام على الثلج",
+      "description": "قوالب جبسية لآثار أقدام عميقة وواضحة على الثلج، تُظهر تفاصيل نقش النعل المطاطي بدقة متناهية.",
+      "type": "physical",
+      "emoji": "🥾",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "حذاء البستاني لارس",
+      "description": "حذاء شتوي ثقيل عُثر عليه في غرفة البستاني، نعله المطاطي يحمل نقوشاً مربعة فريدة تتطابق بنسبة مئة بالمئة مع قوالب الجبس المأخوذة من مسرح الجريمة.",
+      "type": "physical",
+      "emoji": "👞",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "إفادة البستاني لارس",
+      "description": "تأكيد البستاني القاطع بأنه لم يطأ الثلج الخارجي ولم يقترب من الحديقة طوال الليل.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 3,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

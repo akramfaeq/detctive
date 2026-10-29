@@ -1,0 +1,176 @@
+{
+  "id": "case_mud_005",
+  "title": "لغز بصمة الطين المفقودة",
+  "location": "مكتب شركة عقارات، تورونتو، كندا",
+  "date": "2026/09/28",
+  "shortDesc": "مقتل مدير شركة عقارات في ليلة ممطرة. يؤكد المحاسب أنه لم يقترب من المكتب ليلاً ولم يطأ تربة الحديقة المبتلة، غير أن حذاءه يحمل دليلاً دامغاً.",
+  "thumbnailEmoji": "🌧️",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "في ليلة ممطرة غزيرة بمدينة تورونتو الكندية، عُثر على جثة جوليان فليتشر (48 عاماً)، مدير إحدى كبرى شركات العقارات المحلية، مقتولاً داخل مكتبه الخاص في الساعة العاشرة مساءً.\n\nأظهرت التحقيقات الأوّلية أن القاتل ضرب الضحية بأصيص زهور معدني ثقيل على رأسه. لم تكن هناك آثار كسر على الباب الرئيسي، غير أن النافذة المطلة على الحديقة الخلفية كانت مفتوحة جزئياً.\n\nاستدعت الشرطة المحاسب الرئيسي للشركة دانيال، الذي كان على خلاف مالي حاد مع الضحية بسبب اختلاس مكتشف. نفى دانيال تواجده في المبنى ليلاً، وأكّد أنه غادر في الخامسة مساءً عبر الباب الرئيسي وسار مباشرةً على الرصيف المعبّد نحو سيارته، دون أن يطأ تربة الحديقة الخلفية المبتلة بمياه الأمطار.",
+  "hint": "قارن نوع الطين العالق على حذاء المحاسب بنوع السماد العضوي الخاص بتربة حديقة المكتب الخلفية.",
+  "correctSuspectId": "char_daniel",
+  "solutionExplanation": "القاتل الحقيقي هو المحاسب دانيال.\n\nالثغرة القاتلة:\nادّعى دانيال أنه لم يعد إلى المكتب ليلاً وأنه لم يطأ حديقة المكتب الخلفية المبتلة إطلاقاً، بل سلك الرصيف الخرساني المعبّد فحسب.\n\nغير أن الفحص الجنائي أثبت وجود آثار طين أسود مخلوط بنوع نادر من السماد العضوي المستورد، عالقة في حواف حذاء دانيال وعلى سجادة المكتب المحاذية للنافذة. وهذا النوع من السماد رُشّ حصراً في حديقة المكتب الخلفية قبل الحادثة بيوم واحد فحسب. وجود هذا الطين المميز على حذاء دانيال يُثبت أنه تسلّل ليلاً عبر الحديقة المبتلة واقتحم المكتب من النافذة لارتكاب جريمته وإخفاء اختلاساته.",
+  "characters": [
+    {
+      "id": "char_julian",
+      "name": "جوليان فليتشر",
+      "age": 48,
+      "role": "الضحية",
+      "description": "مدير شركة عقارات، عُثر عليه مقتولاً داخل مكتبه بضربة على الرأس.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_daniel",
+      "name": "دانيال ريد",
+      "age": 36,
+      "role": "مشتبه به",
+      "description": "المحاسب الرئيسي للشركة، يواجه اتهامات باختلاس أموال. يؤكد أنه غادر المبنى مساءً ولم يقترب من الحديقة الخلفية.",
+      "imageEmoji": "👤",
+      "interrogation": "يُحاول إظهار الثقة ويُصرّ على أنه سلك الرصيف الخرساني المعبّد فقط.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنتَ في الساعة التاسعة مساءً ليلة الجريمة؟",
+          "answer": "كنتُ في المنزل أتابع التلفاز بمفردي بعد أن غادرتُ العمل في الخامسة مساءً.",
+          "isLie": true,
+          "lieHint": "تسلّل إلى المكتب عبر الحديقة الخلفية في الساعة التاسعة مساءً."
+        },
+        {
+          "id": "q2",
+          "text": "هل اقتربتَ من الحديقة الخلفية أو النافذة المفتوحة للمكتب؟",
+          "answer": "لا إطلاقاً، لم أطأ الحديقة الترابية قط؛ مشيتُ مباشرةً على الرصيف الخرساني المعبّد نحو سيارتي.",
+          "isLie": true,
+          "lieHint": "حذاؤه يحمل الطين والسماد الخاص بتربة الحديقة الخلفية."
+        },
+        {
+          "id": "q3",
+          "text": "ما سبب وجود عجز مالي في حسابات الشركة التي تُشرف عليها؟",
+          "answer": "أخطاء برمجية بسيطة في النظام المحاسبي، كنّا نعمل على تصحيحها.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_sara",
+      "name": "سارة ويليامز",
+      "age": 29,
+      "role": "مشتبه بها",
+      "description": "سكرتيرة المدير، كانت آخر من تحدث مع الضحية هاتفياً عند الثامنة والنصف مساءً.",
+      "imageEmoji": "👤",
+      "interrogation": "إفادتها متعاونة ومتسقة مع سجلات المكالمات.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "عمّ تحدثتِ مع جوليان في آخر مكالمة؟",
+          "answer": "كان غاضباً جداً بعد اكتشافه وثائق الاختلاس، وطلب مني تحضير ملف المحاسب لصباح اليوم التالي.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "long",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "حذاء المحاسب دانيال",
+      "description": "حذاء عُثر عليه في منزل المحاسب، يلتصق بنعله طين أسود رطب مخلوط بسماد عضوي نادر.",
+      "type": "physical",
+      "emoji": "👞",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "تقرير تحليل عينات التربة",
+      "description": "أثبت تحليل المختبر الجنائي أن الطين العالق بحذاء المحاسب يتطابق بنسبة مئة بالمئة مع تربة حديقة المكتب الخلفية المخصّبة بالسماد النادر.",
+      "type": "physical",
+      "emoji": "🧪",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "تقرير الأحوال الجوية",
+      "description": "تُثبت هيئة الأرصاد الجوية أن الأمطار الغزيرة بدأت في الساعة السابعة مساءً، مما يعني أن تربة الحديقة تحوّلت إلى طين رطب بعد هذا التوقيت فقط.",
+      "type": "physical",
+      "emoji": "🌧️",
+      "revealOrder": 3,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

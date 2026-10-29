@@ -1,0 +1,176 @@
+{
+  "id": "case_painting_007",
+  "title": "لغز اللوحة المزيفة",
+  "location": "مرسم فني في حي مونمارتر، باريس، فرنسا",
+  "date": "2026/10/21",
+  "shortDesc": "مقتل تاجر لوحات داخل مرسمه بباريس. يدّعي الرسام المشتبه به أنه أتمّ رسم اللوحة في ذلك اليوم وغادر قبل الجريمة بربع ساعة، غير أن جفاف الألوان الزيتية يُفنّد روايته.",
+  "thumbnailEmoji": "🎨",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "في حي مونمارتر الشهير بالفن في باريس، عُثر عند الساعة السادسة مساءً على جثة تاجر اللوحات أندريه دوبوا (55 عاماً) مقتولاً بضربة على الرأس داخل مرسمه الخاص.\n\nعلى الحامل الخشبي وسط المرسم، كانت تقف لوحة زيتية ضخمة تُجسّد غروب الشمس فوق نهر السين، وتحمل توقيع الرسام جاك لوران.\n\nأفاد الرسام جاك بأنه كان متواجداً مع الضحية في المرسم وأتمّ رسم تلك اللوحة بالكامل في ذلك المساء، ووقّع عليها في الساعة الخامسة والنصف، ثم تقاضى جزءاً من أتعابه وغادر تاركاً الضحية مع مشترٍ مجهول.",
+  "hint": "افحص تقرير التحليل الكيميائي لطبقات الألوان الزيتية على اللوحة؛ كم من الوقت تحتاجه الألوان الزيتية السميكة لتجفّ تماماً؟",
+  "correctSuspectId": "char_jacques",
+  "solutionExplanation": "القاتل الحقيقي هو الرسام جاك لوران.\n\nالثغرة القاتلة:\nادّعى جاك أنه رسم اللوحة ووقّع عليها قبل ربع ساعة فقط من وقوع الجريمة، ليبرر تواجده في المرسم ويُغطّي على دافعه في سرقة أموال الضحية.\n\nغير أن تقرير المختبر الجنائي وفحص لزوجة الألوان أثبت أن طبقات الزيت السميكة على اللوحة جافة تماماً وصلبة بالكامل. الألوان الزيتية السميكة من هذا النوع تستلزم ما بين أسبوع وعشرة أيام على الأقل لتجفّ وتفقد رطوبتها. هذا يُثبت أن اللوحة كانت مرسومة منذ فترة طويلة وجُلبت من المخزن، وأن قصة رسمها ذلك اليوم كانت كذبة اختلقها جاك لتبرير وجوده في المرسم وقت قتل التاجر وسرقة أمواله.",
+  "characters": [
+    {
+      "id": "char_andre",
+      "name": "أندريه دوبوا",
+      "age": 55,
+      "role": "الضحية",
+      "description": "تاجر لوحات وقطع أثرية شهير بباريس، عُثر عليه مقتولاً داخل مرسمه وسُرقت خزينته.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": true,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_jacques",
+      "name": "جاك لوران",
+      "age": 41,
+      "role": "مشتبه به",
+      "description": "رسام محلي، يدّعي أنه أتمّ رسم اللوحة الزيتية للضحية في المرسم وقدّمها له قبل الجريمة بربع ساعة.",
+      "imageEmoji": "👤",
+      "interrogation": "يتحدث بتباهٍ عن سرعته في الرسم، ويُصرّ على أنه أنهى اللوحة ذلك المساء.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى أنهيتَ رسم اللوحة الزيتية الموجودة في المرسم؟",
+          "answer": "أنهيتُها ووقّعتُ اسمي عليها فوراً في الساعة الخامسة والنصف مساءً قبل أن أغادر بربع ساعة.",
+          "isLie": true,
+          "lieHint": "الألوان الزيتية السميكة جافة تماماً وتستلزم عشرة أيام للوصول إلى هذه الصلابة."
+        },
+        {
+          "id": "q2",
+          "text": "هل أخذتَ أي مبالغ مالية من خزينة الضحية؟",
+          "answer": "أخذتُ فقط أتعابي المستحقة مقابل رسم اللوحة ذلك اليوم.",
+          "isLie": true,
+          "lieHint": "سرق الخزينة كاملةً بعد قتله للضحية."
+        },
+        {
+          "id": "q3",
+          "text": "هل كان هناك شخص آخر في المرسم حين غادرتَ؟",
+          "answer": "رأيتُ رجلاً يرتدي معطفاً يدخل المرسم في اللحظة التي كنتُ أغادر فيها.",
+          "isLie": true,
+          "lieHint": "اختلق وجود شخص مجهول لتحويل مسار التحقيق."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_chloe",
+      "name": "كلوي بيران",
+      "age": 28,
+      "role": "مشتبه بها",
+      "description": "مساعدة التاجر، هي من اكتشفت الجثة عند الساعة السادسة مساءً واستدعت الشرطة.",
+      "imageEmoji": "👤",
+      "interrogation": "إفادتها صادقة ومتسقة مع التحقيقات.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل سبق أن رأيتِ هذه اللوحة في المرسم؟",
+          "answer": "نعم، رأيتُها في مخزن المرسم الخلفي منذ نحو أسبوعين.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "purple",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "اللوحة الزيتية المعروضة",
+      "description": "لوحة زيتية كبيرة بأسلوب الانطباعية، تحمل توقيع الرسام جاك وتاريخ اليوم.",
+      "type": "physical",
+      "emoji": "🎨",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "تقرير التحليل الكيميائي للألوان",
+      "description": "يُؤكد تقرير المختبر أن طبقات الزيت السميكة على اللوحة جافة تماماً وصلبة، مما يُثبت استحالة رسمها خلال الأيام السبعة الماضية على الأقل.",
+      "type": "physical",
+      "emoji": "🧪",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "شهادة المساعدة كلوي",
+      "description": "أكّدت المساعدة أنها شاهدت اللوحة ذاتها في مخزن المرسم الخلفي منذ أكثر من عشرة أيام.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 3,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

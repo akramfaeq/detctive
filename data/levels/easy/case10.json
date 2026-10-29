@@ -1,0 +1,176 @@
+{
+  "id": "case_flight_010",
+  "title": "لغز تذكرة السفر المزورة",
+  "location": "مكتب مصرفي، زيورخ، سويسرا",
+  "date": "2026/10/24",
+  "shortDesc": "مقتل مدير بنك في زيورخ. يدّعي المدير المالي أنه أقلعت طائرته في الثامنة مساءً وعرض تذكرته دليلاً على غيابه، غير أن سجلات المطار تُثبت أن الطائرة أقلعت دونه.",
+  "thumbnailEmoji": "✈️",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "في ليلة شتوية بمدينة زيورخ السويسرية، عُثر على مدير البنك المحلي هانز ميلر (56 عاماً) مقتولاً داخل مكتبه إثر تعرضه لضربة بآلة حادة في الساعة الثالثة فجراً.\n\nاستدعت الشرطة المدير المالي للبنك توماس بيرغر، المشتبه به الرئيسي في قضايا اختلاس كبرى. قدّم توماس تذكرة طيران رسمية وبطاقة صعود لرحلة متجهة إلى لندن بتوقيت إقلاع الثامنة مساءً، مؤكداً أنه غادر سويسرا وكان في فندقه بلندن وقت الجريمة.\n\nطلبت الشرطة التحقق الفوري من سجلات المطار الإلكترونية وسجلات شركة الطيران للتأكد من صعوده الطائرة فعلاً.",
+  "hint": "افحص سجلات نظام مسح بطاقات الصعود عند بوابة المغادرة، وتحقق مما إذا كانت بطاقة توماس قد مُسحت فعلاً وما إذا كانت الطائرة أقلعت بوجوده على متنها.",
+  "correctSuspectId": "char_thomas",
+  "solutionExplanation": "القاتل الحقيقي هو المدير المالي توماس بيرغر.\n\nالثغرة القاتلة:\nادّعى توماس أنه صعد طائرة الثامنة مساءً إلى لندن ليمنح نفسه عذر غياب قاطعاً وقت ارتكاب الجريمة.\n\nغير أن تقرير سجلات المطار الإلكترونية كشف الحقيقة كاملةً: نعم، مُسحت بطاقة توماس عند بوابة المغادرة ودخل منطقة الانتظار، غير أن سجلات شركة الطيران تُثبت أنه لم يُسجَّل ضمن ركاب الطائرة عند الإقلاع، ولم يُسجَّل وصوله إلى لندن في أي مطار بريطاني. كما أثبتت كاميرات المطار الداخلية أنه عاد من بوابة المغادرة قبيل الإقلاع وغادر المطار براً، ما يعني أنه استخدم بطاقة الصعود فقط لإيهام المحققين بأنه سافر، في حين توجّه سراً نحو البنك لتنفيذ جريمته.",
+  "characters": [
+    {
+      "id": "char_hans",
+      "name": "هانز ميلر",
+      "age": 56,
+      "role": "الضحية",
+      "description": "مدير البنك، عُثر عليه مقتولاً داخل مكتبه.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": true,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_thomas",
+      "name": "توماس بيرغر",
+      "age": 43,
+      "role": "مشتبه به",
+      "description": "المدير المالي للبنك، يدّعي أنه سافر إلى لندن مساء أمس ويعرض تذكرة طيران رسمية.",
+      "imageEmoji": "👤",
+      "interrogation": "يُلوّح بتذكرة الطيران بثقة بالغة ويُحاول إنهاء التحقيق بسرعة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى غادرتَ الأراضي السويسرية ليلة أمس؟",
+          "answer": "غادرتُ على رحلة الثامنة مساءً المتجهة إلى لندن تماماً، وأملك تذكرة الطيران وبطاقة الصعود دليلاً على ذلك.",
+          "isLie": true,
+          "lieHint": "مسح البطاقة لا يعني صعود الطائرة؛ سجلات شركة الطيران تُثبت غيابه عن قائمة الركاب عند الإقلاع."
+        },
+        {
+          "id": "q2",
+          "text": "هل كنتَ متواجداً في زيورخ بعد منتصف الليل؟",
+          "answer": "هذا مستحيل، كنتُ في فندقي بلندن نائماً.",
+          "isLie": true,
+          "lieHint": "كاميرات المطار تُثبت أنه غادر المطار براً قبيل إقلاع الطائرة، وكاميرات المدينة رصدت وجوده بالقرب من البنك."
+        },
+        {
+          "id": "q3",
+          "text": "ما طبيعة العجز المالي المكتشف في حسابات قسمك؟",
+          "answer": "مجرد عمليات تحويل روتينية قيد المراجعة، ولا تمثل أي عجز حقيقي.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_anna",
+      "name": "آنا شميد",
+      "age": 29,
+      "role": "مشتبه بها",
+      "description": "مسؤولة الحسابات في البنك، اكتشفت الجريمة صباحاً حين حضرت للعمل.",
+      "imageEmoji": "👤",
+      "interrogation": "إفادتها هادئة ومتسقة مع توقيت حضور الموظفين.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى حضرتِ إلى مبنى البنك صباح اليوم؟",
+          "answer": "حضرتُ في الساعة الثامنة والنصف صباحاً ووجدتُ باب مكتب المدير موارباً والأنوار مطفأة.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "long",
+        "clothColor": "purple",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "بطاقة صعود توماس",
+      "description": "بطاقة صعود رسمية باسم توماس بيرغر لرحلة لندن بتوقيت إقلاع الثامنة مساءً.",
+      "type": "physical",
+      "emoji": "🎫",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "سجلات المطار وشركة الطيران",
+      "description": "يُثبت تقرير شركة الطيران أن توماس لم يُسجَّل ضمن الركاب عند الإقلاع، ولم يصل إلى لندن قط. وتُظهر كاميرات المطار أنه غادر المطار براً قبيل الإقلاع.",
+      "type": "digital",
+      "emoji": "🖥️",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "إفادة توماس الأولى",
+      "description": "تأكيد المدير المالي المتكرر بأنه سافر إلى لندن وكان خارج البلاد طوال الليلة الماضية.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 3,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "cases": [
+    {
+      "id": "case_midnight_001",
+      "title": "جريمة منتصف الليل",
+      "location": "مكتب استثماري، دبي",
+      "shortDesc": "رجل أعمال عُثر عليه مقتولاً داخل مكتبه عند منتصف الليل. ينفي المشتبه بهم التواجد بالظلام، لكن انقطاع التيار الكهربائي يفضح كذبتهم.",
+      "thumbnailEmoji": "🕵️‍♂️",
+      "difficulty": "easy",
+      "estimatedMinutes": 10,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_clock_002",
+      "title": "لغز الساعة المكسورة",
+      "location": "شقة في منطقة كنسينغتون، لندن",
+      "shortDesc": "عُثر على رجل أعمال متقاعد مقتولاً في شقته بلندن، وبجانبه ساعة جدارية أثرية مكسورة متوقفة عند الساعة 9:15. يدعي المتهم الرئيسي أنه غادر المدينة في الساعة 8:00 مساءً.",
+      "thumbnailEmoji": "🕰️",
+      "difficulty": "easy",
+      "estimatedMinutes": 10,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_coffee_003",
+      "title": "فنجان القهوة الأخير",
+      "location": "مرسم فني في مدينة روما، إيطاليا",
+      "shortDesc": "عُثر على ناقد فني مشهور مقتولاً بالسم داخل مرسمه المغلق. بجانب الجثة فنجان قهوة محلى بالسكر، والمساعد تؤكد أنه أعده بناءً على طلب الضحية.",
+      "thumbnailEmoji": "☕",
+      "difficulty": "easy",
+      "estimatedMinutes": 10,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_museum_004",
+      "title": "سرقة تمثال الماتادور المغلق",
+      "location": "متحف الفنون التاريخية، مدريد",
+      "shortDesc": "سرقة تمثال أثري ناضر من قاعة مغلقة، والعثور على الحارس مقيداً. يصر الحارس على أنه سمع دقات الساعة الرنانة وقت الاقتحام، لكن سر الساعة يفضح ادعاءه.",
+      "thumbnailEmoji": "🏛️",
+      "difficulty": "easy",
+      "estimatedMinutes": 10,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_mud_005",
+      "title": "لغز بصمة الطين المفقودة",
+      "location": "مكتب شركة عقارات، تورونتو، كندا",
+      "shortDesc": "مقتل مدير شركة عقارات في ليلة ممطرة بغزارة. يدعي المحاسب أنه لم يقترب من المكتب ليلاً ولم يطأ تربة الحديقة المبتلة، لكن حذاءه يحمل دليلاً قاتلاً.",
+      "thumbnailEmoji": "🌧️",
+      "difficulty": "easy",
+      "estimatedMinutes": 10,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_parcel_006",
+      "title": "لغز الطرد المشبوه",
+      "location": "مكتب شركة استيراد، سيدني، أستراليا",
+      "shortDesc": "استلام طرد سام أدى لمصرع مدير شركة. يدعي شريكه أنه أرسل العينة البريدية قبل يومين وكان مسافراً، لكن ختم التتبع الإلكتروني يكشف الحقيقة.",
+      "thumbnailEmoji": "📦",
+      "difficulty": "easy",
+      "estimatedMinutes": 10,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_painting_007",
+      "title": "لغز اللوحة المزيفة",
+      "location": "مرسم فني في حي مونمارتر، باريس، فرنسا",
+      "shortDesc": "مقتل تاجر لوحات داخل مرسمه بباريس. يدعي الرسام المشتبه به أنه رسم اللوحة اليوم قبل الجريمة بـ 15 دقيقة وغادر، لكن جفاف الألوان يفضحه.",
+      "thumbnailEmoji": "🎨",
+      "difficulty": "easy",
+      "estimatedMinutes": 10,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_camera_008",
+      "title": "عطل في الكاميرا الأمنية",
+      "location": "مستودع إلكترونيات، طوكيو، اليابان",
+      "shortDesc": "مقتل مدير مستودع في طوكيو. يدعي أمين المستودع أن الكاميرات انقطعت تماماً بسبب عطل كهربائي ليلي، لكن السجل الرقمي للسيرفر يكشف التلاعب المتعمد.",
+      "thumbnailEmoji": "📹",
+      "difficulty": "easy",
+      "estimatedMinutes": 10,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_footprints_009",
+      "title": "لغز آثار القدمين المتطابقة",
+      "location": "حديقة قصر تاريخي، ستوكهولم، السويد",
+      "shortDesc": "مقتل حارس على الثلج بستوكهولم. يدعي البستاني أنه لم يقترب من الموقع مطلقاً، لكن بصمات حذائه الفريدة على الثلج تكذب أقواله.",
+      "thumbnailEmoji": "❄️",
+      "difficulty": "easy",
+      "estimatedMinutes": 10,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_flight_010",
+      "title": "لغز تذكرة السفر المزورة",
+      "location": "مكتب مصرفي، زيورخ، سويسرا",
+      "shortDesc": "مقتل مدير بنك في زيورخ. يدعي المدير المالي أنه كان مسافراً خارج البلاد وعرض تذكرته، لكن سجلات بوابات المطار تفضح كذبه.",
+      "thumbnailEmoji": "✈️",
+      "difficulty": "easy",
+      "estimatedMinutes": 10,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    }
+  ]
+}

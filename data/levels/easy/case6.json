@@ -1,0 +1,176 @@
+{
+  "id": "case_parcel_006",
+  "title": "لغز الطرد المشبوه",
+  "location": "مكتب شركة استيراد، سيدني، أستراليا",
+  "date": "2026/10/12",
+  "shortDesc": "استلام طرد سام أدى إلى وفاة مدير شركة. يدّعي شريكه أنه شحن العينة البريدية قبل يومين من فرع بريدي مركزي وكان مسافراً، غير أن بيانات التتبع الإلكتروني تُثبت خلاف ذلك.",
+  "thumbnailEmoji": "📦",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "في صباح يوم الاثنين بمدينة سيدني الأسترالية، تلقّت الشرطة بلاغاً بوفاة مفاجئة لمدير شركة الاستيراد والتصدير ريتشارد ميلر (52 عاماً) داخل مكتبه، فور فتحه طرداً بريدياً صغيراً احتوى على مادة كيميائية طيّارة سامة عالية التركيز.\n\nتوجّهت الشبهات نحو شريكه السابق ومنافسه التجاري هاريسون، الذي كانت بينهما دعوى قضائية ضخمة على وشك البتّ فيها.\n\nخلال التحقيق، نفى هاريسون التهمة جملةً وتفصيلاً، وادّعى أنه كان في رحلة عمل إلى مدينة ملبورن منذ صباح الأحد. وأكّد أنه شحن طرداً يحتوي عينات تجارية عادية إلى الضحية عبر مكتب البريد المركزي بسيدني قبل يومين كاملين، أي يوم السبت. استناداً إلى ذلك، رأى أنه لا صلة له بما حدث، إذ كان بعيداً عن المدينة وقت وصول الطرد.",
+  "hint": "افحص بيانات التتبع الإلكتروني المطبوعة على ملصق الطرد البريدي بدقة، ولا سيما رقم الرمز الشريطي وتاريخ الإيداع المسجّل في نظام البريد.",
+  "correctSuspectId": "char_harrison",
+  "solutionExplanation": "القاتل الحقيقي هو الشريك المنافس هاريسون.\n\nالثغرة القاتلة:\nادّعى هاريسون أنه أودع الطرد يوم السبت من الفرع البريدي المركزي البعيد، ثم غادر مسافراً إلى ملبورن، ليمنح نفسه عذر غياب تاماً يوم الجريمة (الاثنين).\n\nغير أن الفحص الرقمي لملصق التتبع والرمز الشريطي المطبوع على الطرد أثبت أن الطرد أُودع شخصياً في الجهاز الآلي لمكتب البريد الفرعي القريب من مكتب الضحية في الساعة التاسعة والربع صباحاً من يوم الاثنين نفسه، أي يوم الجريمة. وبما أن نظام البريد يُسجّل بصمة الجهاز الآلي وموقعه وتوقيت الإيداع بدقة متناهية، ولا يمكن التلاعب بهذه البيانات، فقد ثبت أن هاريسون لم يكن في ملبورن صباح ذلك اليوم، بل كان حاضراً بنفسه بالقرب من مكتب الضحية ليضمن وصول الطرد السام قبيل الجلسة القضائية.",
+  "characters": [
+    {
+      "id": "char_richard",
+      "name": "ريتشارد ميلر",
+      "age": 52,
+      "role": "الضحية",
+      "description": "مدير شركة استيراد وتصدير، عُثر عليه متوفياً في مكتبه بسبب مادة سامة طيّارة احتواها طرد بريدي.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": true,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_harrison",
+      "name": "هاريسون فليتشر",
+      "age": 44,
+      "role": "مشتبه به",
+      "description": "شريك سابق ومنافس تجاري للضحية. يدّعي أنه شحن الطرد قبل يومين من الفرع المركزي وكان مسافراً إلى ملبورن ليلة الجريمة.",
+      "imageEmoji": "👤",
+      "interrogation": "يُبرز تذاكر سفره إلى ملبورن بثقة، ويُصرّ على أن الطرد أُرسل يوم السبت.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى وأين شحنتَ الطرد البريدي إلى الضحية؟",
+          "answer": "شحنتُه صباح يوم السبت من الفرع البريدي المركزي قبل أن أستعد لرحلتي.",
+          "isLie": true,
+          "lieHint": "بيانات الرمز الشريطي تُثبت أن الطرد أُودع صباح الاثنين من الفرع الفرعي القريب من مكتب الضحية."
+        },
+        {
+          "id": "q2",
+          "text": "هل كنتَ متواجداً في سيدني صباح يوم الاثنين يوم الجريمة؟",
+          "answer": "لا إطلاقاً، كنتُ في ملبورن منذ مساء الأحد ويمكنني إثبات تواجدي بالفندق هناك ظهر الاثنين.",
+          "isLie": true,
+          "lieHint": "بيانات إيداع الطرد تُثبت وجوده بالقرب من مكتب الضحية صباح الاثنين شخصياً."
+        },
+        {
+          "id": "q3",
+          "text": "ما طبيعة الدعوى القضائية بينك وبين الضحية؟",
+          "answer": "خلاف مالي حول ملكية العلامة التجارية، وكانت الجلسة ستُعقد هذا الأسبوع.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_olivia",
+      "name": "أوليفيا سميث",
+      "age": 31,
+      "role": "مشتبه بها",
+      "description": "موظفة الاستقبال التي تسلّمت الطرد من ساعي البريد وأوصلته إلى مديرها.",
+      "imageEmoji": "👤",
+      "interrogation": "إفادتها صادقة ومتطابقة مع سجل الدخول والمستلمات.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى وصل الطرد إلى المكتب بالضبط؟",
+          "answer": "وصل في الساعة العاشرة صباح الاثنين عبر خدمة التوصيل السريع.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "long",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "غلاف الطرد البريدي",
+      "description": "الغلاف الكرتوني للطرد يحمل ملصق التتبع والرمز الشريطي الذي يُسجّل بيانات الإيداع بدقة.",
+      "type": "physical",
+      "emoji": "📦",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "تقرير التتبع الرقمي لهيئة البريد",
+      "description": "كشف النظام الإلكتروني للهيئة أن الطرد أُودع شخصياً في الجهاز الآلي للفرع الفرعي القريب من مكتب الضحية في الساعة التاسعة والربع صباح الاثنين.",
+      "type": "digital",
+      "emoji": "🖥️",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "تذكرة قطار ملبورن",
+      "description": "تذكرة قطار موثّقة باسم هاريسون تُشير إلى رحلة مسائية يوم الأحد، وهو ما استغلّه للادعاء بأنه كان بعيداً عن سيدني منذ ذلك اليوم.",
+      "type": "physical",
+      "emoji": "🎫",
+      "revealOrder": 3,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}
