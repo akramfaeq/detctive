@@ -1,0 +1,124 @@
+{
+  "cases": [
+    {
+      "id": "case_blind_001",
+      "title": "الشاهد الذي رأى كل شيء",
+      "location": "فيلا خاصة في ضواحي فيينا، النمسا",
+      "shortDesc": "الشاهد الوحيد على جريمة القتل كفيف — وأدلى بتفصيل بصري واحد يستحيل أن يعرفه بنفسه.",
+      "thumbnailEmoji": "👁️",
+      "difficulty": "medium",
+      "estimatedMinutes": 20,
+      "evidenceCount": 5,
+      "isNew": true,
+      "requiredPoints": 150
+    },
+    {
+      "id": "case_deadmsg_002",
+      "title": "رسالة الميت",
+      "location": "منزل مؤرخ متقاعد، براغ، جمهورية التشيك",
+      "shortDesc": "كتب الضحية بدمه كلمة واحدة قبل وفاته — تبدو هراءً لكنها تشير بدقة إلى القاتل.",
+      "thumbnailEmoji": "🩸",
+      "difficulty": "medium",
+      "estimatedMinutes": 20,
+      "evidenceCount": 5,
+      "isNew": true,
+      "requiredPoints": 150
+    },
+    {
+      "id": "case_fire_003",
+      "title": "الحريق الذي لا يكذب",
+      "location": "مستودع تجاري، إسطنبول، تركيا",
+      "shortDesc": "حريق ضخم أودى بحياة مدير المستودع — لكن ترتيب احتراق الغرف يُثبت أن النار بدأت من المكان الخطأ.",
+      "thumbnailEmoji": "🔥",
+      "difficulty": "medium",
+      "estimatedMinutes": 20,
+      "evidenceCount": 5,
+      "isNew": true,
+      "requiredPoints": 150
+    },
+    {
+      "id": "case_poison_004",
+      "title": "السم البطيء",
+      "location": "منزل عائلي فاخر، جنيف، سويسرا",
+      "shortDesc": "وفاة تبدو طبيعية لرجل أعمال ثري — حتى كشف التحليل الجنائي عن سم تراكمي أُضيف لطعامه يومياً على مدى أسابيع.",
+      "thumbnailEmoji": "☠️",
+      "difficulty": "medium",
+      "estimatedMinutes": 20,
+      "evidenceCount": 5,
+      "isNew": true,
+      "requiredPoints": 150
+    },
+    {
+      "id": "case_elevator_005",
+      "title": "الطابق الخطأ",
+      "location": "برج سكني فاخر، دبي، الإمارات",
+      "shortDesc": "المشتبه به يُثبت وجوده في الطابق الثامن بكاميرا المصعد — لكن انعكاس مرآة المصعد يكشف أنه ضغط على طابقين لا طابق واحد.",
+      "thumbnailEmoji": "🛗",
+      "difficulty": "medium",
+      "estimatedMinutes": 20,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 150
+    },
+    {
+      "id": "case_watch_006",
+      "title": "الساعة الذكية لا تكذب",
+      "location": "نادي رياضي خاص، سيول، كوريا الجنوبية",
+      "shortDesc": "المشتبه به يُثبت وجوده في مدينة أخرى بصور موثّقة — لكن GPS ساعته الذكية وضربات قلبه يروون قصة مختلفة تماماً.",
+      "thumbnailEmoji": "⌚",
+      "difficulty": "medium",
+      "estimatedMinutes": 20,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 150
+    },
+    {
+      "id": "case_photo_007",
+      "title": "السيلفي الأخير",
+      "location": "منتجع جبلي فاخر، غرناطة، إسبانيا",
+      "shortDesc": "آخر صورة التقطتها الضحية قبل مقتلها بدقائق — وفي زاويتها السفلى ظل حذاء يكشف هوية من كان مختبئاً في الغرفة.",
+      "thumbnailEmoji": "📸",
+      "difficulty": "medium",
+      "estimatedMinutes": 20,
+      "evidenceCount": 5,
+      "isNew": true,
+      "requiredPoints": 150
+    },
+    {
+      "id": "case_distance_008",
+      "title": "المسافة المستحيلة",
+      "location": "مكتب محاماة، ميلانو، إيطاليا",
+      "shortDesc": "المشتبه به كان في روما الثانية ظهراً والجريمة في ميلانو الثانية والنصف — لكن هامش نصف ساعة يخفي وسيلة نقل لم يتوقعها أحد.",
+      "thumbnailEmoji": "🚄",
+      "difficulty": "medium",
+      "estimatedMinutes": 20,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 150
+    },
+    {
+      "id": "case_twins_009",
+      "title": "وجهان لجاني واحد",
+      "location": "مكتب شركة مالية، أمستردام، هولندا",
+      "shortDesc": "توأمان متطابقان كل منهما يتهم الآخر — والـ DNA لا يُفرّق بينهما. لكن نقطة حبر وأثر دم يحسمان القضية.",
+      "thumbnailEmoji": "👥",
+      "difficulty": "medium",
+      "estimatedMinutes": 20,
+      "evidenceCount": 5,
+      "isNew": true,
+      "requiredPoints": 150
+    },
+    {
+      "id": "case_negatives_010",
+      "title": "الصورة التي تُدين وتُبرئ",
+      "location": "استوديو تصوير، بودابست، المجر",
+      "shortDesc": "المشتبه به يُقدّم فيلم تصوير كدليل براءته — لكن موضع القمر في إحدى الصور يُثبت أنها التُقطت بعد الجريمة لا قبلها.",
+      "thumbnailEmoji": "🎞️",
+      "difficulty": "medium",
+      "estimatedMinutes": 20,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 150
+    }
+  ]
+}
