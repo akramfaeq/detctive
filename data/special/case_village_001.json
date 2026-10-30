@@ -1,0 +1,210 @@
+{
+  "id": "case_village_001",
+  "title": "وصية شيخ القرية",
+  "location": "قرية النخيل المعزولة، جبال الأطلس، المغرب",
+  "date": "2026/03/12",
+  "shortDesc": "عُثر على شيخ القرية مقتولاً في داره ليلة إعلان وصيته. ابنه يقسم أنه لم يغادر بيته طوال الليل، لكن رائحة بخور الداشري تكشف كذبته.",
+  "thumbnailEmoji": "🏡",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "في قرية النخيل المعزولة المتشبثة بجبال الأطلس، كان شيخ القرية الحاج إبراهيم الورزازي (72 عاماً) على موعد مع ليلة مصيرية. أعلن لأبنائه الثلاثة أنه بصدد تحديث وصيته لصالح المسجد والفقراء، مما أشعل فتيل الخلاف بين أبنائه.\n\nفي صباح اليوم التالي، وجده خادمه القديم مصطفى ملقىً بلا حراك على أرضية مكتبته. أثبت الطب الشرعي أن سبب الوفاة كان ضربة على الرأس بجسم ثقيل بين الساعة 11 ليلاً ومنتصف الليل.\n\nالابن الأكبر طارق أكد أنه لم يغادر داره المجاورة طوال الليل، وأن زوجته شاهدة على ذلك. غير أن ثياب زوجته كانت تفوح منها رائحة بخور الداشري الفريدة التي لا يُحرقها في القرية كلها سوى الحاج إبراهيم في مكتبته.",
+  "hint": "الشاهد الذي يؤكد براءة المشتبه به قد يكون هو المفتاح لإدانته.",
+  "correctSuspectId": "char_tarek",
+  "solutionExplanation": "القاتل الحقيقي هو الابن الأكبر طارق الورزازي.\n\nالثغرة القاتلة:\nأكدت زوجة طارق أنه لم يغادر البيت، لكن ثيابها كانت تفوح منها رائحة بخور الداشري النادر الذي لا يحرقه إلا الحاج إبراهيم في مكتبته. هذا يعني أنها كانت في المكتبة تلك الليلة، وبما أنها شاهدة زور لصالح زوجها، فذلك يثبت أنهما كانا معاً في مكان الجريمة. طارق ذهب لإقناع والده بالتراجع عن الوصية فشجار الأمر وانتهى بالجريمة، فيما بقيت زوجته حارسةً عند الباب.",
+  "characters": [
+    {
+      "id": "char_ibrahim",
+      "name": "الحاج إبراهيم الورزازي",
+      "age": 72,
+      "role": "الضحية",
+      "description": "شيخ القرية المحترم. كان ينوي تغيير وصيته لصالح المسجد والفقراء. عُثر عليه مقتولاً في مكتبته.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_tarek",
+      "name": "طارق الورزازي",
+      "age": 45,
+      "role": "مشتبه به",
+      "description": "الابن الأكبر للضحية. يسكن في الدار المجاورة. كان الأكثر رفضاً لتغيير الوصية.",
+      "imageEmoji": "👤",
+      "interrogation": "طارق يتظاهر بالحزن ويتمسك بأن زوجته تشهد له بعدم مغادرته البيت.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت ليلة وفاة والدك بين الساعة 10 و12 ليلاً؟",
+          "answer": "كنت في بيتي طوال الوقت، وزوجتي فاطمة معي تستطيع تأكيد ذلك.",
+          "isLie": true,
+          "lieHint": "ثياب زوجته تفوح منها رائحة بخور الداشري الخاص بمكتبة الضحية."
+        },
+        {
+          "id": "q2",
+          "text": "كيف كانت علاقتك بوالدك في الأيام الأخيرة؟",
+          "answer": "علاقتنا طبيعية، كنا نختلف أحياناً لكن هذا شأن عائلي.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q3",
+          "text": "هل علمت بنية والدك تغيير الوصية؟",
+          "answer": "نعم علمت، لكنني احترمت قراره.",
+          "isLie": true,
+          "lieHint": "شهود من القرية سمعوه يتشاجر مع والده بشأن الوصية قبل يومين."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_fatima",
+      "name": "فاطمة الورزازي",
+      "age": 40,
+      "role": "مشتبه بها",
+      "description": "زوجة طارق. تؤكد أن زوجها لم يغادر البيت تلك الليلة. ثيابها تفوح منها رائحة بخور نادر.",
+      "imageEmoji": "👤",
+      "interrogation": "فاطمة متماسكة لكن يلاحظ المحقق اضطراباً خفياً حين يُذكر البخور.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل غادرت بيتك ليلة الحادثة؟",
+          "answer": "لا، كنت في البيت طوال الليل أنا وزوجي.",
+          "isLie": true,
+          "lieHint": "رائحة بخور الداشري في ثيابها تثبت وجودها في مكتبة الضحية."
+        },
+        {
+          "id": "q2",
+          "text": "من أين جاءت رائحة البخور في ثيابك؟",
+          "answer": "ربما من زيارتي لبيت الحاج قبل يومين.",
+          "isLie": true,
+          "lieHint": "رائحة الداشري تتلاشى خلال ساعات، لا يمكن أن تبقى يومين."
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "green",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_mustafa",
+      "name": "مصطفى البشير",
+      "age": 60,
+      "role": "شاهد",
+      "description": "خادم الحاج إبراهيم القديم. أول من اكتشف الجثة صباحاً. يعرف سر البخور جيداً.",
+      "imageEmoji": "👤",
+      "interrogation": "مصطفى حزين وصادق. يؤكد أن الحاج لا يحرق الداشري إلا في مكتبته وقت الكتابة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما الذي لاحظته حين اكتشفت الجثة؟",
+          "answer": "كانت رائحة البخور لا تزال في الهواء عند دخولي، وهذا يعني أنه أُحرق ليلاً.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "dark",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "تقرير الطب الشرعي",
+      "description": "وفاة بضربة على الرأس بجسم ثقيل بين الساعة 11 ليلاً ومنتصف الليل. لا آثار دخيل من الخارج.",
+      "type": "physical",
+      "emoji": "🧪",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "رائحة بخور الداشري في ثياب فاطمة",
+      "description": "بخور الداشري نادر جداً ولا يستخدمه في القرية كلها سوى الحاج إبراهيم في مكتبته، ورائحته تتلاشى خلال 6 ساعات فقط.",
+      "type": "physical",
+      "emoji": "🪔",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "شهادة جيران القرية",
+      "description": "سمع جيران طارق شجاراً حاداً بينه وبين والده قبل يومين من الجريمة بشأن الوصية الجديدة.",
+      "type": "testimonial",
+      "emoji": "👥",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}
