@@ -1,0 +1,218 @@
+{
+  "id": "case_village_008",
+  "title": "جرس الكنيسة",
+  "location": "قرية مار جريس، وادي قاديشا، لبنان",
+  "date": "2026/11/01",
+  "shortDesc": "وُجد الأب القسيس الوحيد في قرية مار جريس ميتاً عند أسفل برج الجرس. الجميع سمع الجرس يُقرع منتصف الليل، لكن القسيس كان يرقد ميتاً منذ ساعات.",
+  "thumbnailEmoji": "⛪",
+  "difficulty": "hard",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 350,
+  "fullStory": "في قرية مار جريس الصغيرة المتشبثة بجبال قاديشا، كان الأب بولس (70 عاماً) روح الكنيسة ووصيّها. في صباح عيد القديسين، وُجد جثةً عند أسفل درج البرج الداخلي.\n\nالغريب أن سكان القرية جميعاً سمعوا جرس الكنيسة يُقرع ثلاث مرات عند منتصف الليل — كالمعتاد في الأعياد — لكن الطب الشرعي حدد وقت الوفاة بين الساعة التاسعة والحادية عشرة مساءً. فمن قرع الجرس في منتصف الليل إذاً؟\n\nالتحقيق كشف أن الجرس يمكن قرعه بحبل يمتد من الطابق الأرضي دون الحاجة لصعود البرج. وأن شماس الكنيسة أنطون، الوحيد الذي يملك مفتاح الكنيسة غير مفتاح الأب بولس، كان متواجداً في منزله حين قُرع الجرس — حسب شهادة زوجته فقط.",
+  "hint": "من يستطيع الدخول للكنيسة ليلاً؟ ومن يستفيد من توقيت الجرس؟",
+  "correctSuspectId": "char_antoun",
+  "solutionExplanation": "القاتل هو الشماس أنطون خوري.\n\nالثغرة القاتلة:\nأنطون يملك المفتاح الوحيد للكنيسة غير مفتاح الضحية. قرع الجرس منتصف الليل كان خدعة ذكية لإيهام أهل القرية بأن الأب بولس كان حياً حتى منتصف الليل، مما كان سيصرف الشبهات عنه. لكن الطب الشرعي دحض هذا الادعاء بتحديد وقت الوفاة قبل منتصف الليل بساعتين. أنطون عاد للكنيسة بعد رحيل الأب بولس، قتله في نزاع على وصية الكنيسة، ثم قرع الجرس من الطابق الأرضي قبل مغادرته لخلق ذريعة زمنية. شهادة زوجته لصالحه تسقط لأنها شاهد مصلحة.",
+  "characters": [
+    {
+      "id": "char_bulos",
+      "name": "الأب بولس",
+      "age": 70,
+      "role": "الضحية",
+      "description": "قسيس قرية مار جريس منذ أربعين عاماً. وُجد ميتاً عند أسفل درج برج الجرس.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": true,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_antoun",
+      "name": "أنطون خوري",
+      "age": 48,
+      "role": "مشتبه به",
+      "description": "شماس الكنيسة. يملك مفتاحاً احتياطياً. كان يطمع في إدارة أموال الكنيسة.",
+      "imageEmoji": "👤",
+      "interrogation": "أنطون يبدو صادقاً ومعتزاً بخدمته للكنيسة، ويستند دائماً لشهادة زوجته.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت منذ التاسعة مساءً حتى منتصف الليل؟",
+          "answer": "في بيتي مع زوجتي. سمعنا جرس منتصف الليل معاً وبقيت في المنزل.",
+          "isLie": true,
+          "lieHint": "زوجته الشاهد الوحيد وهي شاهدة مصلحة. لا يوجد شاهد مستقل."
+        },
+        {
+          "id": "q2",
+          "text": "هل تعلم أنه يمكن قرع الجرس من الطابق الأرضي؟",
+          "answer": "نعم، لكن هذا ما كان يفعله الأب بولس وحده.",
+          "isLie": true,
+          "lieHint": "أنطون بحكم عمله الطويل يعرف كل تفاصيل الكنيسة أكثر من أي أحد."
+        },
+        {
+          "id": "q3",
+          "text": "هل كان بينك وبين الأب بولس خلاف حول إدارة الكنيسة؟",
+          "answer": "خلافات بسيطة في الرأي، لا أكثر. كنا نحل كل شيء بالحوار.",
+          "isLie": true,
+          "lieHint": "مجلس أبرشية المنطقة سجّل شكوى رسمية تقدم بها أنطون ضد الأب بولس قبل شهر."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_mariana",
+      "name": "مريانا خوري",
+      "age": 44,
+      "role": "شاهدة",
+      "description": "زوجة الشماس أنطون. الشاهد الوحيد على وجوده في المنزل طوال الليل.",
+      "imageEmoji": "👤",
+      "interrogation": "تؤكد بإصرار أن زوجها كان بجانبها طوال الليل ولم يغادر البيت.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل غادر زوجك المنزل في أي وقت بين التاسعة ومنتصف الليل؟",
+          "answer": "لا أبداً، كنا معاً طوال الوقت. سمعنا الجرس معاً وقلت له: هذا دأب الأب بولس في الأعياد.",
+          "isLie": true,
+          "lieHint": "شاهد مستقل رأى شخصاً يخرج من الكنيسة نحو الحادية عشرة ليلاً."
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_elias_shepherd",
+      "name": "إلياس الراعي",
+      "age": 22,
+      "role": "شاهد",
+      "description": "شاب يسكن قرب الكنيسة. رأى شخصاً يخرج منها في وقت حرج.",
+      "imageEmoji": "👤",
+      "interrogation": "شاب بسيط وصادق. يؤكد رؤيته دون تردد.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ماذا رأيت ليلة الجريمة؟",
+          "answer": "رأيت شخصاً يخرج من باب الكنيسة الجانبي نحو الحادية عشرة ليلاً. لم أتبين وجهه في الظلام لكنه كان يرتدي معطفاً داكناً.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "تقرير الطب الشرعي",
+      "description": "حُددت وفاة الأب بولس بين الساعة التاسعة والحادية عشرة مساءً، أي قبل قرع الجرس منتصف الليل بساعتين على الأقل.",
+      "type": "physical",
+      "emoji": "🧪",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "آلية قرع الجرس من الأسفل",
+      "description": "تحقيق ميداني أثبت أن جرس الكنيسة يمكن تحريكه بالحبل الأرضي دون الحاجة للصعود للبرج، وهو ما يعني أن القارع لم يلزمه الصعود.",
+      "type": "physical",
+      "emoji": "🔔",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "شكوى أنطون الرسمية في الأبرشية",
+      "description": "وثيقة رسمية مسجلة في مجلس الأبرشية تثبت أن أنطون تقدم بشكوى رسمية ضد الأب بولس بشأن صلاحيات إدارة أموال الكنيسة.",
+      "type": "document",
+      "emoji": "📋",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "شهادة إلياس الراعي",
+      "description": "شاهد مستقل رأى شخصاً يخرج من الباب الجانبي للكنيسة نحو الحادية عشرة ليلاً، وهو وقت يدحض رواية أنطون بالبقاء في المنزل.",
+      "type": "testimonial",
+      "emoji": "👁️",
+      "revealOrder": 4,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

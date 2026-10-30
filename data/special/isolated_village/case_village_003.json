@@ -1,0 +1,176 @@
+{
+  "id": "case_village_003",
+  "title": "نار الحداد",
+  "location": "قرية الحجر، شمال الأردن",
+  "date": "2026/01/20",
+  "shortDesc": "احترق حداد القرية داخل ورشته ليلاً. يدعي صبيه أنه أغلق الفرن ورأى سيده بصحة جيدة حين غادر، لكن درجة حرارة رماد الفرن تفضح كذبه.",
+  "thumbnailEmoji": "🔥",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "في قرية الحجر الباردة شمال الأردن، كان الحداد ناصر أبو غزال (55 عاماً) يعمل وحده في ورشته كعادته كل ليلة. في الساعة الثانية فجراً، رأى أحد السكان ألسنة اللهب تخرج من الورشة فأيقظ الجميع.\n\nحين أُخمد الحريق، وُجد ناصر متفحماً داخل الورشة. أكد صبيه كريم أنه غادر الورشة في الساعة التاسعة مساءً بعد أن أغلق فرن الحدادة جيداً ورأى سيده بصحة تامة.\n\nغير أن خبير الحرائق قاس درجة حرارة رماد الفرن وأثبت أن الفرن أُشعل من جديد بعد منتصف الليل — وهو ما يستحيل أن يفعله رجل ميت بالضربة التي وُجدت آثارها على جمجمته قبل الحريق.",
+  "hint": "الفرن المغلق لا يُشعل نفسه — من أعاد إشعاله بعد منتصف الليل؟",
+  "correctSuspectId": "char_karim",
+  "solutionExplanation": "القاتل الحقيقي هو كريم سالم، صبي الحداد.\n\nالثغرة القاتلة:\nأكد كريم أنه أغلق الفرن وغادر الساعة التاسعة. لكن خبير الحرائق أثبت أن الفرن أُشعل مجدداً بعد منتصف الليل بكميات وقود كبيرة غير عادية، وهذا لا يحدث من تلقاء نفسه. كما وُجدت آثار ضربة على جمجمة الضحية سابقة للحريق. كريم عاد في منتصف الليل، قتل ناصر بعد شجار على الأجر المتأخر، ثم أشعل الفرن لإخفاء الجريمة بجعلها تبدو كحادث.",
+  "characters": [
+    {
+      "id": "char_naser",
+      "name": "ناصر أبو غزال",
+      "age": 55,
+      "role": "الضحية",
+      "description": "حداد القرية المعروف. عُثر عليه متفحماً في ورشته بعد حريق ليلي.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_karim",
+      "name": "كريم سالم",
+      "age": 22,
+      "role": "مشتبه به",
+      "description": "صبي الحداد. يعمل معه منذ 3 سنوات وبينهما خلاف على أجر متأخر منذ شهرين.",
+      "imageEmoji": "👤",
+      "interrogation": "كريم يبدو هادئاً جداً لشخص فقد عمله ومعلمه، ويصر على أنه غادر مبكراً.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى غادرت الورشة ليلة الحريق؟",
+          "answer": "غادرت في التاسعة مساءً بالضبط بعد أن أطفأت الفرن وقفلت الباب.",
+          "isLie": true,
+          "lieHint": "رماد الفرن يثبت أنه أُشعل من جديد بعد منتصف الليل."
+        },
+        {
+          "id": "q2",
+          "text": "هل كان بينك وبين ناصر خلافات مالية؟",
+          "answer": "لا، كانت علاقتنا ممتازة دائماً.",
+          "isLie": true,
+          "lieHint": "جيران الورشة شهدوا شجاراً بينهما على الأجر قبل أسبوع."
+        },
+        {
+          "id": "q3",
+          "text": "أين كنت بين منتصف الليل والساعة الثانية فجراً؟",
+          "answer": "نائم في بيتي، ولا أحد غيري في الغرفة.",
+          "isLie": true,
+          "lieHint": "لا يوجد شاهد يؤكد وجوده في البيت تلك الليلة."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_umm_naser",
+      "name": "أم ناصر",
+      "age": 75,
+      "role": "شاهدة",
+      "description": "والدة الضحية. تسكن بجوار الورشة. سمعت أصواتاً في منتصف الليل.",
+      "imageEmoji": "👤",
+      "interrogation": "عجوز صادقة تؤكد أنها سمعت صوت شجار وأبواباً تُفتح بعد منتصف الليل.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل سمعت أي شيء غير عادي تلك الليلة؟",
+          "answer": "نعم، استيقظت على صوت باب الورشة يُفتح بقوة نحو الساعة الواحدة بعد منتصف الليل، وسمعت صوتاً كأنه شجار.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "tan",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "تقرير خبير الحرائق",
+      "description": "درجة حرارة رماد الفرن تثبت أنه أُشعل من جديد بعد منتصف الليل بكميات وقود أكبر من المعتاد، وهو ما لا يحدث من تلقاء نفسه.",
+      "type": "physical",
+      "emoji": "🔥",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "أثر الضربة على الجمجمة",
+      "description": "وجد الطبيب الشرعي آثار ضربة قاتلة بجسم معدني على جمجمة الضحية سابقة للحريق بفارق لا يقل عن ساعة.",
+      "type": "physical",
+      "emoji": "🦴",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "شهادة أم ناصر",
+      "description": "الجارة العجوز سمعت صوت باب الورشة يُفتح وشجاراً خفيفاً نحو الساعة الواحدة فجراً.",
+      "type": "testimonial",
+      "emoji": "👂",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

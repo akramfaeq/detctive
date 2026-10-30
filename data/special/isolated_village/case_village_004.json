@@ -1,0 +1,176 @@
+{
+  "id": "case_village_004",
+  "title": "اختفاء تاجر التوابل",
+  "location": "قرية المضيق، جبال الريف، المغرب",
+  "date": "2026/02/14",
+  "shortDesc": "اختفى تاجر التوابل الوحيد في القرية بعد ليلة سوق أسبوعي. بعد أسبوع وُجد جثة في الوادي. شريكه يدعي أنه رآه يغادر القرية صباحاً، لكن حذاء الضحية يقول عكس ذلك.",
+  "thumbnailEmoji": "🌿",
+  "difficulty": "medium",
+  "estimatedMinutes": 15,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 200,
+  "fullStory": "في قرية المضيق المتشبثة بجبال الريف، كان التاجر حمزة البوزيدي (48 عاماً) يُعدّ العمود الفقري للسوق الأسبوعي. في ليلة السوق الماضية، جمع حمزة عائداته وأغلق دكانه كالمعتاد.\n\nأكد شريكه في التجارة رشيد أنه رأى حمزة يحمل حقيبته ويسير نحو مخرج القرية في الصباح الباكر، مشيراً إلى أنه ربما سافر لمدينة قريبة كما يفعل أحياناً. لكن بعد أسبوع وُجدت جثته في الوادي المجاور للقرية.\n\nالأدلة الجنائية أثبتت أنه قُتل في الليلة ذاتها لاختفائه لا في الصباح، والطين الأحمر المميز للوادي الداخلي — الذي لا يمر به طريق مخرج القرية — وُجد على حذاء شريكه رشيد.",
+  "hint": "الطريق الذي يسلكه القاتل يختلف عن الطريق الذي يدعي سلوكه.",
+  "correctSuspectId": "char_rashed",
+  "solutionExplanation": "القاتل الحقيقي هو رشيد المنصوري، الشريك التجاري.\n\nالثغرة القاتلة:\nادعى رشيد أنه رأى حمزة يغادر نحو مخرج القرية صباحاً، لكن الطب الشرعي أثبت أن الوفاة كانت ليلاً. والأهم أن الطين الأحمر المميز للوادي الداخلي — الذي لا يقع على أي طريق معتاد — وُجد على حذاء رشيد. هذا الوادي هو مكان الجريمة، وإثبات وجود رشيد فيه يدحض روايته بالكامل. كان رشيد يختلس من الصندوق المشترك منذ أشهر وخاف أن يكتشفه حمزة في حسابات نهاية الشهر.",
+  "characters": [
+    {
+      "id": "char_hamza",
+      "name": "حمزة البوزيدي",
+      "age": 48,
+      "role": "الضحية",
+      "description": "تاجر التوابل الرئيسي في القرية. وُجدت جثته في الوادي بعد أسبوع من اختفائه.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_rashed",
+      "name": "رشيد المنصوري",
+      "age": 44,
+      "role": "مشتبه به",
+      "description": "الشريك التجاري لحمزة منذ 10 سنوات. كان يختلس من الحسابات المشتركة.",
+      "imageEmoji": "👤",
+      "interrogation": "رشيد واثق من نفسه ويتمسك بروايته عن رؤية حمزة يغادر صباحاً.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى رأيت حمزة آخر مرة؟",
+          "answer": "رأيته صباح اليوم التالي للسوق يحمل حقيبته ويسير نحو الطريق الخارجي.",
+          "isLie": true,
+          "lieHint": "الطب الشرعي يثبت أن الوفاة كانت ليلة السوق لا في الصباح."
+        },
+        {
+          "id": "q2",
+          "text": "هل زرت وادي القرية الداخلي مؤخراً؟",
+          "answer": "لا، ليس لي سبب للذهاب إلى هناك.",
+          "isLie": true,
+          "lieHint": "الطين الأحمر المميز للوادي الداخلي موجود على حذائه."
+        },
+        {
+          "id": "q3",
+          "text": "كيف كانت الحسابات المالية بينكما؟",
+          "answer": "نظيفة تماماً، كنا نراجعها معاً كل شهر.",
+          "isLie": true,
+          "lieHint": "دفتر الحسابات يكشف اختلاسات منتظمة على مدى ثلاثة أشهر."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_aicha",
+      "name": "عائشة البوزيدي",
+      "age": 45,
+      "role": "مشتبه بها",
+      "description": "زوجة الضحية. ترثه في حال وفاته. تبدو مضطربة منذ ليلة الاختفاء.",
+      "imageEmoji": "👤",
+      "interrogation": "عائشة حزينة وتطالب بمعرفة الحقيقة، إفادتها متسقة ومنطقية.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل لاحظت شيئاً غير عادي ليلة السوق؟",
+          "answer": "زوجي لم يعد للبيت تلك الليلة وهذا غير معتاد، فهو دائماً يعود بعد إغلاق الدكان مباشرة.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "تقرير الطب الشرعي",
+      "description": "وقت الوفاة يعود لليلة السوق بين الساعة 11 ليلاً ومنتصف الليل، وليس الصباح كما ادعى الشاهد.",
+      "type": "physical",
+      "emoji": "🧪",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "الطين الأحمر على حذاء رشيد",
+      "description": "الطين الأحمر المميز موجود فقط في الوادي الداخلي الذي يبعد عن أي طريق معتاد، ووُجد بكميات واضحة على حذاء رشيد.",
+      "type": "physical",
+      "emoji": "👟",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "دفتر الحسابات المشترك",
+      "description": "أرقام مزورة بخط مختلف تثبت اختلاسات منتظمة من الحساب المشترك خلال الأشهر الثلاثة الماضية.",
+      "type": "document",
+      "emoji": "📒",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

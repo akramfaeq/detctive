@@ -1,0 +1,218 @@
+{
+  "id": "case_village_007",
+  "title": "القابلة الأخيرة",
+  "location": "قرية العيون، الجبل الأخضر، عُمان",
+  "date": "2026/06/22",
+  "shortDesc": "وُجدت القابلة الوحيدة في القرية مقتولةً في بيتها. ثلاث عائلات كانت لها أسرار عندها. الجاني الحقيقي يخبئه خيط حرير من ثوب عُماني نادر.",
+  "thumbnailEmoji": "🌿",
+  "difficulty": "hard",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 350,
+  "fullStory": "في قرية العيون المنعزلة بالجبل الأخضر العُماني، كانت القابلة الحاجة زُليخة (68 عاماً) تحتفظ بأسرار كل عائلة في القرية منذ خمسين عاماً. في صباح أحد أيام يونيو، وجدها جيرانها ملقاةً في غرفة مجلسها.\n\nثلاث عائلات كانت لها أسرار خطيرة عند زُليخة تعلمها بحكم عملها: العائلة الأولى تخفي مولوداً غير شرعي، والثانية فيها طفل مبادل عند الولادة قبل عشرين عاماً، والثالثة كانت قد طلبت منها زُليخة إجراء عملية غير قانونية رفضتها.\n\nوُجد في قبضة الضحية خيط حرير أحمر مقطوع من ثوب نسائي، والثوب العُماني المطرز بهذا الخيط الأحمر النادر يُصنع من قِبَل خياطة واحدة فقط في القرية — وآخر زبونة له كانت امرأة من العائلة الثالثة.",
+  "hint": "ما الذي يمسكه الميت في قبضته وعلى من يدل؟",
+  "correctSuspectId": "char_maryam",
+  "solutionExplanation": "القاتلة الحقيقية هي مريم الهاشمية من العائلة الثالثة.\n\nالثغرة القاتلة:\nالخيط الأحمر في قبضة زُليخة مقطوع من ثوب عُماني مطرز نادر الصنع. الخياطة الوحيدة في القرية التي تصنع هذا النوع أكدت أن آخر ثوب مطرز بهذا الحرير بيع لمريم الهاشمية قبل شهرين. وحين فُتش بيت مريم وُجد الثوب بخيط مقطوع من ذيله يطابق الخيط الذي وُجد في قبضة الضحية. مريم ذهبت لإسكات زُليخة خوفاً من أن تكشف العملية غير القانونية التي رفضتها.",
+  "characters": [
+    {
+      "id": "char_zulaikha",
+      "name": "الحاجة زُليخة",
+      "age": 68,
+      "role": "الضحية",
+      "description": "قابلة القرية منذ خمسين عاماً. تحتفظ بأسرار كل عائلة. وُجدت مقتولةً في مجلسها.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفاة ولا يمكن استجوابها.",
+      "questions": [],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "tan",
+        "hairColor": "white",
+        "hairStyle": "long",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_maryam",
+      "name": "مريم الهاشمية",
+      "age": 34,
+      "role": "مشتبه بها",
+      "description": "امرأة من العائلة الثالثة. طلبت من زُليخة عملية غير قانونية فرفضتها. تملك ثوباً عُمانياً نادراً.",
+      "imageEmoji": "👤",
+      "interrogation": "مريم هادئة وتجيب باختصار. تنكر زيارة زُليخة مؤخراً.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى زرت الحاجة زُليخة آخر مرة؟",
+          "answer": "منذ أشهر، ليس لي سبب لزيارتها.",
+          "isLie": true,
+          "lieHint": "جارة زُليخة رأت امرأة بثوب عُماني أحمر يدخل بيتها صباح الجريمة."
+        },
+        {
+          "id": "q2",
+          "text": "هل لا تزال تملكين ثوبك العُماني المطرز باللون الأحمر؟",
+          "answer": "نعم في خزانتي، أرتديه في المناسبات فقط.",
+          "isLie": true,
+          "lieHint": "الثوب موجود لكنه يحمل خيطاً مقطوعاً من ذيله يطابق ما وُجد في قبضة الضحية."
+        },
+        {
+          "id": "q3",
+          "text": "هل طلبت يوماً من زُليخة شيئاً غير عادي؟",
+          "answer": "لا، علاقتي بها علاقة احترام فقط.",
+          "isLie": true,
+          "lieHint": "سجل زُليخة الخاص يذكر رفضها طلباً من مريم قبل أربعة أشهر."
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "red",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_salha",
+      "name": "سالحة البلوشية",
+      "age": 45,
+      "role": "مشتبه بها",
+      "description": "من العائلة الأولى التي تخفي مولوداً غير شرعي. كانت تخشى كشف زُليخة للسر.",
+      "imageEmoji": "👤",
+      "interrogation": "سالحة متوترة جداً لكن إفادتها عن تواجدها في حقلها صباح الجريمة مدعومة بشهود.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت صباح يوم الجريمة؟",
+          "answer": "كنت في الحقل من الفجر حتى الظهر، وزوجي وأختي كانا معي.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "dark",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "blue",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_khayyata",
+      "name": "الخياطة أم سعيد",
+      "age": 55,
+      "role": "شاهدة",
+      "description": "الخياطة الوحيدة في القرية التي تصنع الثوب العُماني المطرز. تعرف زبائنها جيداً.",
+      "imageEmoji": "👤",
+      "interrogation": "هادئة ومتعاونة، تؤكد أن آخر ثوب بالحرير الأحمر بيع لمريم الهاشمية.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "من آخر من اشترى ثوباً بهذا الحرير الأحمر المميز؟",
+          "answer": "مريم الهاشمية، قبل شهرين تقريباً. هذا الحرير نادر وأنا من أجلبه خصيصاً.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "tan",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "purple",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "خيط الحرير الأحمر في قبضة الضحية",
+      "description": "خيط حرير أحمر مميز عُثر عليه في قبضة الضحية، مقطوع بعنف من ثوب نسائي.",
+      "type": "physical",
+      "emoji": "🧵",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "ثوب مريم المقطوع الخيط",
+      "description": "ثوب عُماني في خزانة مريم يحمل خيطاً مقطوعاً من ذيله يطابق تماماً في النسيج واللون الخيط الموجود في قبضة الضحية.",
+      "type": "physical",
+      "emoji": "👘",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "سجل زُليخة الخاص",
+      "description": "دفتر سري يسجل زُليخة فيه طلبات غير عادية. يذكر رفضها طلباً من امرأة تبدأ بحرف الميم قبل أربعة أشهر.",
+      "type": "document",
+      "emoji": "📔",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "شاهدة عيان عند باب البيت",
+      "description": "جارة زُليخة رأت امرأة ترتدي ثوباً عُمانياً أحمر مميزاً تدخل بيت القابلة صباح الجريمة.",
+      "type": "testimonial",
+      "emoji": "👁️",
+      "revealOrder": 4,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

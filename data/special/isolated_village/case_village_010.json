@@ -1,0 +1,218 @@
+{
+  "id": "case_village_010",
+  "title": "الخريطة المنسية",
+  "location": "قرية وادي السر، جبال الحجاز، السعودية",
+  "date": "2026/03/28",
+  "shortDesc": "عُثر على عالم الآثار القادم للقرية ميتاً في الليلة الأولى من وصوله. يحمل خريطة قيل إنها تدل على كنز مدفون تحت قرية وادي السر. خمسة من أهل القرية عرفوا بها — والقاتل تركت خريطته أثراً لا يُمحى.",
+  "thumbnailEmoji": "🗺️",
+  "difficulty": "hard",
+  "estimatedMinutes": 25,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 350,
+  "fullStory": "وصل عالم الآثار الدكتور فارس العمري (45 عاماً) لقرية وادي السر حاملاً خريطة قديمة يؤمن بأنها تحدد موقع كنز أثري نفيس مدفون تحت أرض القرية. أقام في بيت المضافة ليلته الأولى وأظهر الخريطة لبعض وجهاء القرية.\n\nفي الصباح الباكر وُجد الدكتور فارس ميتاً في غرفته والخريطة مفقودة. باب الغرفة لم يُكسر — أي أن الضحية فتحه بإرادته أو أن للقاتل مفتاحاً.\n\nالخريطة الأصلية كانت مرسومة بحبر هندي لا يجف إلا بعد 24 ساعة. كل من لمس الخريطة تلك الليلة — وهم خمسة وجهاء — كان من المفترض أن تبقى آثار الحبر على أصابعه. المحقق وجد حبراً هندياً لا يزال على إصبع واحد فقط من بين الخمسة.",
+  "hint": "الحبر الذي لا يجف يختبئ في الأصابع — من بين الخمسة لم يغسل يديه جيداً؟",
+  "correctSuspectId": "char_mukhtar",
+  "solutionExplanation": "القاتل هو المختار سعد الغامدي، عمدة القرية.\n\nالثغرة القاتلة:\nالخريطة مرسومة بحبر هندي لا يجف إلا بعد 24 ساعة، وكل من لمسها كان سيحمل أثره على أصابعه. فحص أصابع الخمسة كشف أن المختار يحمل بقعة حبر هندي صغيرة داخل طية إبهامه الأيمن — حبر من نوع الخريطة بالضبط. غسل يديه لكنه أغفل الطية الداخلية. المختار يعرف من أجداده أن الخريطة حقيقية ويريد الكنز لنفسه، وخشي أن يُفقده الدكتور فارس السيطرة عليه.",
+  "characters": [
+    {
+      "id": "char_fares",
+      "name": "الدكتور فارس العمري",
+      "age": 45,
+      "role": "الضحية",
+      "description": "عالم آثار من جدة. وصل للقرية حاملاً خريطة قديمة. وُجد ميتاً في بيت المضافة ليلته الأولى.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "khaki",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_mukhtar",
+      "name": "سعد الغامدي",
+      "age": 62,
+      "role": "مشتبه به",
+      "description": "عمدة القرية. أجداده ذكروا الخريطة في رواياتهم. يحمل حبراً هندياً في طية إبهامه الأيمن.",
+      "imageEmoji": "👤",
+      "interrogation": "رجل وقور يتكلم بثقة ويحاول إبعاد الشبهات بالإشارة لغرباء القرية.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل لمست الخريطة التي أحضرها الدكتور فارس؟",
+          "answer": "رأيتها من بعيد فقط حين عرضها. لم أمسها.",
+          "isLie": true,
+          "lieHint": "بقعة حبر هندي صغيرة موجودة داخل طية إبهامه الأيمن تطابق حبر الخريطة."
+        },
+        {
+          "id": "q2",
+          "text": "هل تعلم شيئاً عن الكنز الذي تشير إليه الخريطة؟",
+          "answer": "أساطير قروية قديمة، لا أصدق مثل هذه الخرافات.",
+          "isLie": true,
+          "lieHint": "ابنه يؤكد أنه سمع والده يحكي قصة الكنز مراراً بتفاصيل دقيقة."
+        },
+        {
+          "id": "q3",
+          "text": "أين كنت بعد منتصف الليل؟",
+          "answer": "في بيتي نائماً، لم أغادره منذ عودتي من المضافة مساءً.",
+          "isLie": true,
+          "lieHint": "حارس القرية رأى شخصاً يتحرك نحو بيت المضافة بعد منتصف الليل."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_guard",
+      "name": "حارس الليل عبد الله",
+      "age": 35,
+      "role": "شاهد",
+      "description": "حارس القرية الليلي. رأى حركة مريبة في الليل.",
+      "imageEmoji": "👤",
+      "interrogation": "يؤدي واجبه بأمانة ويصف ما رآه دون إضافة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل رأيت أحداً يتحرك ليلة الجريمة؟",
+          "answer": "نعم، رأيت شخصاً يسير نحو بيت المضافة بعد منتصف الليل. كان يمشي ببطء وحذر كأنه يتجنب الضوضاء. لم أتبين وجهه لكنه كان يرتدي ثوباً أبيض.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_forensic",
+      "name": "المحقق الجنائي",
+      "age": 40,
+      "role": "شاهد",
+      "description": "المحقق الجنائي المسؤول عن فحص الأدلة المادية.",
+      "imageEmoji": "👤",
+      "interrogation": "يشرح النتائج الفنية بدقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ماذا كشف الفحص الجنائي لأصابع المشتبه بهم؟",
+          "answer": "فحصنا أصابع الخمسة جميعاً تحت الضوء المكثف. أربعة منهم أيديهم نظيفة تماماً. الخامس — السيد سعد الغامدي — يحمل بقعة صغيرة من الحبر الهندي داخل طية إبهامه الأيمن، وهو حبر يطابق تماماً نوع الحبر المستخدم في رسم الخريطة.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الحبر الهندي في طية إبهام المختار",
+      "description": "بقعة حبر هندي لا تزال في طية إبهامه الأيمن تطابق بالتحليل الكيميائي حبر الخريطة المفقودة بالضبط.",
+      "type": "physical",
+      "emoji": "🖊️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "شهادة حارس الليل",
+      "description": "حارس القرية رأى شخصاً بثوب أبيض — زي العمدة المعتاد — يتجه نحو بيت المضافة بعد منتصف الليل.",
+      "type": "testimonial",
+      "emoji": "🌙",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "رواية ابن العمدة عن الكنز",
+      "description": "ابن المختار أكد للمحققين أن والده كان يحكي قصة الكنز بتفاصيل دقيقة جداً، كأنه يؤمن بها ويعرف مكانه.",
+      "type": "testimonial",
+      "emoji": "💬",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "خاصية الحبر الهندي",
+      "description": "تقرير فني يثبت أن الحبر الهندي المستخدم في رسم الخريطة لا يجف إلا بعد 24 ساعة، وأي شخص لمس الخريطة ليلتها سيحمل أثره على أصابعه.",
+      "type": "physical",
+      "emoji": "🔬",
+      "revealOrder": 4,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

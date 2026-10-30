@@ -1,0 +1,203 @@
+{
+  "id": "case_village_009",
+  "title": "عام الجفاف",
+  "location": "قرية الصمود، صحراء النقب، فلسطين",
+  "date": "2026/08/10",
+  "shortDesc": "في أشد صيف على القرية منذ عقود، وُجد صاحب الخزان المائي الوحيد مقتولاً. أربعة يحتاجون ماءه وكل واحد منهم عنده دافع — لكن بصمة واحدة في الرمل تحسم القضية.",
+  "thumbnailEmoji": "🏜️",
+  "difficulty": "hard",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 350,
+  "fullStory": "في صيف قياسي بقرية الصمود المعزولة في النقب، كان داود الصمودي (60 عاماً) يملك الخزان الاحتياطي الوحيد الذي يكفي القرية في موسم الجفاف. وُجد مقتولاً داخل غرفة الخزان المغلقة في الساعات الأولى من الصباح.\n\nأربعة أشخاص كان لهم نزاع مع داود على الماء: المزارع الذي تحتضر مزروعاته، والنجار الذي رفض داود بيعه الماء بسبب دين قديم، وأرملة رفضت دفع ضعف السعر، والعامل الغريب الذي جاء للقرية قبل أسبوع يبحث عن عمل.\n\nباب غرفة الخزان ذو أرضية رملية ناعمة. التحقيق الجنائي وجد بصمات قدمين واضحتين: بصمة الضحية وبصمة أخرى بحذاء مميز بضربة مسمار في كعبه الأيسر.",
+  "hint": "الرمل لا يكذب — ابحث عن الحذاء بالمسمار في الكعب.",
+  "correctSuspectId": "char_najjar",
+  "solutionExplanation": "القاتل هو النجار سليمان عودة.\n\nالثغرة القاتلة:\nالبصمة في الرمل تُظهر حذاءً بمسمار بارز في كعبه الأيسر — وهي علامة مميزة جداً. عند فحص أحذية المشتبه بهم الأربعة، وُجد حذاء النجار سليمان يحمل مساراً واضحاً لمسمار بارز في الكعب الأيسر يطابق الأثر تماماً. سليمان ذهب ليأخذ الماء بالقوة بعد أن رفض داود بيعه بسبب دين قديم، وحين واجهه داود بالسلاح الخشبي الموجود في الغرفة تطورت المواجهة.",
+  "characters": [
+    {
+      "id": "char_daoud",
+      "name": "داود الصمودي",
+      "age": 60,
+      "role": "الضحية",
+      "description": "مالك الخزان الاحتياطي الوحيد في القرية. وُجد مقتولاً داخل غرفة الخزان.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_najjar",
+      "name": "سليمان عودة",
+      "age": 50,
+      "role": "مشتبه به",
+      "description": "نجار القرية. رفض داود بيعه الماء بسبب دين قديم. حذاؤه القديم به مسمار في الكعب.",
+      "imageEmoji": "👤",
+      "interrogation": "سليمان عدواني في كلامه ويعترف بكرهه لداود لكن ينكر تواجده عند الخزان.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل ذهبت لغرفة الخزان ليلة الجريمة؟",
+          "answer": "لا، بيتي بعيد عن الخزان ولم أقترب منه منذ أسابيع.",
+          "isLie": true,
+          "lieHint": "بصمة حذائه المميز بالمسمار موجودة في رمل الغرفة."
+        },
+        {
+          "id": "q2",
+          "text": "هل حذاؤك به مسمار في الكعب الأيسر؟",
+          "answer": "كل الأحذية القديمة فيها مسامير، هذا لا يعني شيئاً.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q3",
+          "text": "ما طبيعة خلافك مع داود؟",
+          "answer": "رفض بيعي الماء بحجة دين قديم أنا نازع فيه أصلاً.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "dark",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_farmer",
+      "name": "خالد النخلاوي",
+      "age": 42,
+      "role": "مشتبه به",
+      "description": "مزارع تحتضر مزروعاته. أشد المحتاجين للماء في القرية. ينكر ذهابه للخزان.",
+      "imageEmoji": "👤",
+      "interrogation": "خالد يائس ومنهك، لكن إفادته عن مكان تواجده تدعمها شهادات أبنائه.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت الساعات الأولى من الصباح؟",
+          "answer": "في حقلي مع أبنائي نحاول إنقاذ ما تبقى من المحصول. أبنائي الثلاثة معي.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_investigator_help",
+      "name": "خبير الآثار الجنائي",
+      "age": 38,
+      "role": "شاهد",
+      "description": "المحقق الجنائي المتخصص في تحليل بصمات الأقدام.",
+      "imageEmoji": "👤",
+      "interrogation": "يشرح النتائج الجنائية بدقة ووضوح.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ماذا كشف تحليل البصمات في غرفة الخزان؟",
+          "answer": "وجدنا بصمتين فقط: بصمة الضحية وبصمة حذاء به مسمار بارز في الكعب الأيسر. هذا النمط نادر جداً ويستطيع التعرف على الحذاء بدقة عالية.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "بصمة الحذاء بالمسمار في الرمل",
+      "description": "بصمة واضحة في رمل غرفة الخزان تُظهر حذاءً بمسمار بارز في الكعب الأيسر — خاصية نادرة ومميزة.",
+      "type": "physical",
+      "emoji": "👟",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "حذاء النجار سليمان",
+      "description": "فحص حذاء سليمان أظهر مساراً واضحاً لمسمار بارز في كعبه الأيسر يطابق تماماً البصمة الموجودة في غرفة الخزان.",
+      "type": "physical",
+      "emoji": "🔩",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "سجل الديون عند داود",
+      "description": "دفتر داود يثبت أن سليمان مدين بمبلغ كبير منذ ثلاث سنوات ورفض داود بيعه الماء حتى السداد.",
+      "type": "document",
+      "emoji": "📒",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

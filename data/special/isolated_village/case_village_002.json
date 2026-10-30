@@ -1,0 +1,176 @@
+{
+  "id": "case_village_002",
+  "title": "بئر القرية المسمومة",
+  "location": "قرية الصخرة، الريف السوري",
+  "date": "2026/04/03",
+  "shortDesc": "مات راعٍ بعد شربه من البئر الرئيسية للقرية. الجميع يشير للمزارع المجاور الذي خسر أرضه، لكن سجل المياه يكشف أن التسميم كان قبل نزاعه بأسبوع.",
+  "thumbnailEmoji": "🪣",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "في قرية الصخرة المنعزلة، كانت بئر الماء العامة شريان الحياة الوحيد. في صباح يوم الثلاثاء، وُجد الراعي سالم الحمدان (38 عاماً) ميتاً بالقرب من البئر، وبجانبه وعاء ماء فارغ.\n\nأشار سكان القرية بالإجماع إلى المزارع خالد النعيم الذي كان يخوض نزاعاً مع سالم على حدود الأرض. غير أن الطبيب الشرعي حدد وقت التسميم قبل أسبوع من الجريمة، وسجلات المياه المحلية أثبتت أن النزاع الرسمي بين سالم وخالد لم يبدأ إلا قبل خمسة أيام فقط.\n\nالمشتبه به الحقيقي شخص آخر كان له دافع قديم يسبق النزاع كله — شقيق الضحية الذي كان يطمع في الأرض الموروثة.",
+  "hint": "توقيت التسميم هو مفتاح القضية — من كان عنده دافع قبل أسبوع؟",
+  "correctSuspectId": "char_youssef",
+  "solutionExplanation": "القاتل الحقيقي هو يوسف الحمدان، شقيق الضحية.\n\nالثغرة القاتلة:\nحدد الطب الشرعي أن السم أُضيف إلى البئر قبل أسبوع من الوفاة، أي قبل أن تبدأ المشاحنة بين سالم وخالد بيومين كاملين. بالتالي لا يمكن أن يكون خالد هو المسموم لأنه لم يكن عنده دافع بعد. أما يوسف فكان يخطط منذ أشهر للاستيلاء على نصيب أخيه من الأرض الموروثة، وبوفاة سالم دون ذرية تنتقل الأرض إليه مباشرة بحسب قانون القرية.",
+  "characters": [
+    {
+      "id": "char_salem",
+      "name": "سالم الحمدان",
+      "age": 38,
+      "role": "الضحية",
+      "description": "راعٍ بسيط يملك قطعة أرض موروثة. عُثر عليه ميتاً بالقرب من البئر العامة.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_youssef",
+      "name": "يوسف الحمدان",
+      "age": 42,
+      "role": "مشتبه به",
+      "description": "شقيق الضحية الأكبر. يرث الأرض في حال وفاة سالم دون ذرية. يتظاهر بالحزن الشديد.",
+      "imageEmoji": "👤",
+      "interrogation": "يوسف يحاول توجيه الشبهات نحو خالد النعيم باستمرار ويبالغ في إدانته.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت قبل أسبوع من وفاة أخيك؟",
+          "answer": "كنت في القرية طوال الوقت، لا أذهب لمكان.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q2",
+          "text": "من يرث أرض أخيك بعد وفاته؟",
+          "answer": "لا أعرف، هذا شأن القضاء.",
+          "isLie": true,
+          "lieHint": "يعرف تماماً أن الأرض تؤول إليه بحسب قانون القرية لكون سالم بلا ذرية."
+        },
+        {
+          "id": "q3",
+          "text": "لماذا تصر على اتهام خالد النعيم؟",
+          "answer": "لأن الجميع يعرف خلافه مع أخي على الأرض.",
+          "isLie": true,
+          "lieHint": "الخلاف مع خالد بدأ بعد تاريخ التسميم بيومين."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_khalid",
+      "name": "خالد النعيم",
+      "age": 50,
+      "role": "مشتبه به",
+      "description": "مزارع يجاور أرض الضحية. كان بينهما نزاع على الحدود لكنه بدأ بعد تاريخ التسميم.",
+      "imageEmoji": "👤",
+      "interrogation": "خالد غاضب من الاتهامات ويثبت بشدة أن نزاعه مع سالم بدأ متأخراً.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى بدأ خلافك مع سالم على الأرض؟",
+          "answer": "قبل خمسة أيام فقط حين أقام الجدار على حدود أرضي، وعندي وثائق رسمية تثبت التاريخ.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "dark",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "blue",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "تقرير الطب الشرعي",
+      "description": "السم أُضيف للبئر قبل 7 أيام من وفاة الضحية، أي قبل يومين من بدء النزاع الرسمي مع خالد النعيم.",
+      "type": "physical",
+      "emoji": "🧪",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "وثيقة الميراث",
+      "description": "بحسب عرف القرية الموثق، تنتقل أرض سالم لشقيقه يوسف مباشرةً في حال وفاته دون ذرية.",
+      "type": "document",
+      "emoji": "📜",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "سجل النزاع الرسمي مع خالد",
+      "description": "وثيقة رسمية تثبت أن النزاع بين سالم وخالد على حدود الأرض سُجّل رسمياً قبل 5 أيام فقط من الوفاة.",
+      "type": "document",
+      "emoji": "📋",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

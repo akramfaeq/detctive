@@ -1,0 +1,124 @@
+{
+  "cases": [
+    {
+      "id": "case_village_001",
+      "title": "وصية شيخ القرية",
+      "location": "قرية النخيل المعزولة، جبال الأطلس، المغرب",
+      "shortDesc": "عُثر على شيخ القرية مقتولاً في داره ليلة إعلان وصيته. ابنه يقسم أنه لم يغادر بيته طوال الليل، لكن رائحة بخور الداشري تكشف كذبته.",
+      "thumbnailEmoji": "🏡",
+      "difficulty": "easy",
+      "estimatedMinutes": 10,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_village_002",
+      "title": "بئر القرية المسمومة",
+      "location": "قرية الصخرة، الريف السوري",
+      "shortDesc": "مات راعٍ بعد شربه من البئر الرئيسية للقرية. الجميع يشير للمزارع المجاور الذي خسر أرضه، لكن سجل المياه يكشف أن التسميم كان قبل نزاعه بأسبوع.",
+      "thumbnailEmoji": "🪣",
+      "difficulty": "easy",
+      "estimatedMinutes": 10,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_village_003",
+      "title": "نار الحداد",
+      "location": "قرية الحجر، شمال الأردن",
+      "shortDesc": "احترق حداد القرية داخل ورشته ليلاً. يدعي صبيه أنه أغلق الفرن ورأى سيده بصحة جيدة حين غادر، لكن درجة حرارة رماد الفرن تفضح كذبه.",
+      "thumbnailEmoji": "🔥",
+      "difficulty": "easy",
+      "estimatedMinutes": 10,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_village_004",
+      "title": "اختفاء تاجر التوابل",
+      "location": "قرية المضيق، جبال الريف، المغرب",
+      "shortDesc": "اختفى تاجر التوابل الوحيد في القرية بعد ليلة سوق أسبوعي. بعد أسبوع وُجد جثة في الوادي. شريكه يدعي أنه رآه يغادر القرية صباحاً، لكن حذاؤه يقول عكس ذلك.",
+      "thumbnailEmoji": "🌿",
+      "difficulty": "medium",
+      "estimatedMinutes": 15,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_village_005",
+      "title": "سر المعلم",
+      "location": "قرية الزيتون، جنوب فلسطين",
+      "shortDesc": "وُجد معلم القرية الوحيد مقتولاً في مدرسته يوم عطلة. يدعي ناظر المدرسة أنه لم يكن هناك، لكن شمعة واحدة تكشف أنه كذب.",
+      "thumbnailEmoji": "🏫",
+      "difficulty": "medium",
+      "estimatedMinutes": 15,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_village_006",
+      "title": "ليلة الحصاد",
+      "location": "قرية السنابل، سهل البقاع، لبنان",
+      "shortDesc": "في ليلة احتفال الحصاد السنوي، وُجد أحد المزارعين الكبار مقتولاً في حقله. كل أهل القرية كانوا في الاحتفال — ما عدا شخص واحد غاب لساعة كاملة.",
+      "thumbnailEmoji": "🌾",
+      "difficulty": "medium",
+      "estimatedMinutes": 15,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_village_007",
+      "title": "القابلة الأخيرة",
+      "location": "قرية العيون، الجبل الأخضر، عُمان",
+      "shortDesc": "وُجدت القابلة الوحيدة في القرية مقتولةً في بيتها. ثلاث عائلات كانت لها أسرار عندها. الجاني الحقيقي يخبئه خيط حرير من ثوب عُماني نادر.",
+      "thumbnailEmoji": "🌿",
+      "difficulty": "hard",
+      "estimatedMinutes": 20,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_village_008",
+      "title": "جرس الكنيسة",
+      "location": "قرية مار جريس، وادي قاديشا، لبنان",
+      "shortDesc": "وُجد الأب القسيس الوحيد في قرية مار جريس ميتاً عند أسفل برج الجرس. الجميع سمع الجرس يُقرع منتصف الليل، لكن القسيس كان يرقد ميتاً منذ ساعات.",
+      "thumbnailEmoji": "⛪",
+      "difficulty": "hard",
+      "estimatedMinutes": 20,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_village_009",
+      "title": "عام الجفاف",
+      "location": "قرية الصمود، صحراء النقب، فلسطين",
+      "shortDesc": "في أشد صيف على القرية منذ عقود، وُجد صاحب الخزان المائي الوحيد مقتولاً. أربعة يحتاجون ماءه وكل واحد منهم عنده دافع — لكن بصمة واحدة في الرمل تحسم القضية.",
+      "thumbnailEmoji": "🏜️",
+      "difficulty": "hard",
+      "estimatedMinutes": 20,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_village_010",
+      "title": "الخريطة المنسية",
+      "location": "قرية وادي السر، جبال الحجاز، السعودية",
+      "shortDesc": "عُثر على عالم الآثار القادم للقرية ميتاً في الليلة الأولى من وصوله. يحمل خريطة قيل إنها تدل على كنز مدفون تحت القرية. خمسة من أهل القرية عرفوا بها — والقاتل تركت خريطته أثراً لا يُمحى.",
+      "thumbnailEmoji": "🗺️",
+      "difficulty": "hard",
+      "estimatedMinutes": 25,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 0
+    }
+  ]
+}

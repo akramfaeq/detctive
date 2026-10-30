@@ -1,0 +1,176 @@
+{
+  "id": "case_village_005",
+  "title": "سر المعلم",
+  "location": "قرية الزيتون، جنوب فلسطين",
+  "date": "2026/05/07",
+  "shortDesc": "وُجد معلم القرية الوحيد مقتولاً في مدرسته يوم عطلة. يدعي ناظر المدرسة أنه لم يكن هناك، لكن شمعة واحدة تكشف أنه كذب.",
+  "thumbnailEmoji": "🏫",
+  "difficulty": "medium",
+  "estimatedMinutes": 15,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 200,
+  "fullStory": "في قرية الزيتون المنعزلة، كان المعلم عمر الخالدي (40 عاماً) الشخص الوحيد الذي يحمل شهادة جامعية. وُجد مقتولاً في فصله الدراسي يوم الجمعة — يوم العطلة الرسمية.\n\nناظر المدرسة أبو رامي أكد أنه مرّ بجوار المدرسة يوم الجمعة في الساعة العاشرة صباحاً ولم يلحظ أي ضوء أو حركة، وأن الباب كان موصداً. غير أن جارة المدرسة رأت ضوءاً في إحدى الغرف مساءً.\n\nالأدلة الجنائية حددت وقت الوفاة بين الثانية ظهراً والرابعة عصراً. والشمعة الموجودة على مكتب الضحية — وهي نوع مميز لا يبيعه في القرية سوى دكان أبو رامي — كانت قد احترقت نحو ثلاث ساعات بالضبط، أي أُشعلت نحو الساعة الواحدة ظهراً.",
+  "hint": "الشمعة لا تكذب — متى أُشعلت ومن الذي يبيع هذا النوع تحديداً؟",
+  "correctSuspectId": "char_abu_rami",
+  "solutionExplanation": "القاتل الحقيقي هو أبو رامي، ناظر المدرسة.\n\nالثغرة القاتلة:\nادعى أبو رامي أن المدرسة كانت مظلمة وموصدة حين مرّ صباحاً. لكن الشمعة على مكتب المعلم هي من النوع الذي لا يبيعه في القرية إلا دكانه هو، واحتراقها الجزئي يثبت أنها أُشعلت نحو الساعة الواحدة ظهراً — أي بعد مروره المزعوم. وهذا يعني أن أبا رامي عاد للمدرسة في وقت الجريمة. كان المعلم قد اكتشف أن أبا رامي يزور درجات الطلاب لقاء رشاوى من أهاليهم.",
+  "characters": [
+    {
+      "id": "char_omar",
+      "name": "عمر الخالدي",
+      "age": 40,
+      "role": "الضحية",
+      "description": "المعلم الوحيد في القرية. وُجد مقتولاً في فصله يوم العطلة. كان يحقق في تلاعب بالدرجات.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_abu_rami",
+      "name": "أبو رامي",
+      "age": 58,
+      "role": "مشتبه به",
+      "description": "ناظر المدرسة وصاحب الدكان الوحيد في القرية. يتحكم في كل شيء ويعرف أسرار الجميع.",
+      "imageEmoji": "👤",
+      "interrogation": "أبو رامي هادئ ومسيطر على نفسه، يتكلم ببطء ويزن كل كلمة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى كان آخر وجودك في المدرسة؟",
+          "answer": "مررت بجانبها صباح الجمعة في العاشرة، والباب كان مغلقاً ولا ضوء فيها.",
+          "isLie": true,
+          "lieHint": "الشمعة أُشعلت في الساعة الواحدة ظهراً وهو الوقت الذي تقع فيه الجريمة."
+        },
+        {
+          "id": "q2",
+          "text": "من يبيع هذا النوع من الشمع في القرية؟",
+          "answer": "هذا النوع شائع، ربما يجلبه الناس من المدينة.",
+          "isLie": true,
+          "lieHint": "الجميع في القرية يعرف أن هذا النوع حصري في دكانه فقط."
+        },
+        {
+          "id": "q3",
+          "text": "هل كان بينك وبين المعلم خلاف مؤخراً؟",
+          "answer": "لا، كنا نعمل بتناغم تام طوال السنوات الماضية.",
+          "isLie": true,
+          "lieHint": "المعلم أبلغ عدة أهالي أنه يحقق في تلاعب بدرجات أبنائهم."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_umm_ahmad",
+      "name": "أم أحمد",
+      "age": 50,
+      "role": "شاهدة",
+      "description": "جارة المدرسة. رأت ضوءاً في غرفة الفصل مساء يوم الجمعة.",
+      "imageEmoji": "👤",
+      "interrogation": "امرأة صادقة ومباشرة، تؤكد ما رأته عيناها.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ماذا رأيت يوم الجمعة؟",
+          "answer": "رأيت ضوءاً خافتاً في نافذة الفصل بعد الظهر، ظننت المعلم ينجز أعمالاً إضافية.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "blue",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الشمعة المحترقة جزئياً",
+      "description": "شمعة على مكتب الضحية احترق منها ما يعادل ثلاث ساعات، مما يعني أنها أُشعلت نحو الساعة الواحدة ظهراً.",
+      "type": "physical",
+      "emoji": "🕯️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "نوع الشمعة حصري في دكان أبو رامي",
+      "description": "استفسار من سكان القرية أكد أن هذا النوع من الشمع لا يُباع إلا في دكان أبو رامي ولا يُجلب من المدينة عادةً.",
+      "type": "testimonial",
+      "emoji": "🏪",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "ملاحظات المعلم السرية",
+      "description": "دفتر مخفي يسجل فيه المعلم أسماء أهالٍ دفعوا لأبو رامي لرفع درجات أبنائهم مع مبالغ وتواريخ.",
+      "type": "document",
+      "emoji": "📓",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

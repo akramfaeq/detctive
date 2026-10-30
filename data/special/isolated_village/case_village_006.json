@@ -1,0 +1,176 @@
+{
+  "id": "case_village_006",
+  "title": "ليلة الحصاد",
+  "location": "قرية السنابل، سهل البقاع، لبنان",
+  "date": "2026/09/15",
+  "shortDesc": "في ليلة احتفال الحصاد السنوي، وُجد أحد المزارعين الكبار مقتولاً في حقله. كل أهل القرية كانوا في الاحتفال — ما عدا شخص واحد غاب لساعة كاملة.",
+  "thumbnailEmoji": "🌾",
+  "difficulty": "medium",
+  "estimatedMinutes": 15,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 200,
+  "fullStory": "في قرية السنابل يحتفل الجميع كل عام بعيد الحصاد في ليلة كبيرة. هذا العام، في وسط الاحتفال، اختفى المزارع الكبير جرجس نصر (65 عاماً) من الحفلة. اعتقد الجميع أنه ذهب للتحقق من حقله كعادته.\n\nبعد ساعتين وجده ابنه مقتولاً بضربة بمنجل في منتصف حقله. كل أهل القرية يشهدون لبعضهم بالتواجد في الحفلة — باستثناء ابن أخيه وسيم الذي غاب لمدة ساعة كاملة بين الساعة التاسعة والعاشرة بدعوى قضاء الحاجة.\n\nالطب الشرعي حدد وقت الوفاة بين 9 و10 مساءً، والمنجل المستخدم يعود لأدوات حقل وسيم الشخصية المميزة بعلامة صدأ خاصة.",
+  "hint": "من كان غائباً عن الاحتفال في وقت الجريمة بالضبط؟ والأداة من أين جاءت؟",
+  "correctSuspectId": "char_waseem",
+  "solutionExplanation": "القاتل الحقيقي هو وسيم نصر، ابن أخي الضحية.\n\nالثغرة القاتلة:\nوسيم هو الوحيد الغائب عن الاحتفال في فترة الجريمة بالضبط (9-10 مساءً). والمنجل المستخدم في القتل يحمل علامة الصدأ المميزة لأدواته الشخصية. كان جرجس قد أبلغ كاتب القرية أنه ينوي تعديل عقد الشراكة في الأرض لصالح ابنه المباشر وإقصاء وسيم الذي كان يُهمل حصته.",
+  "characters": [
+    {
+      "id": "char_gerges",
+      "name": "جرجس نصر",
+      "age": 65,
+      "role": "الضحية",
+      "description": "كبير مزارعي القرية وصاحب الأرض الأوسع. وُجد مقتولاً في حقله ليلة الحصاد.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_waseem",
+      "name": "وسيم نصر",
+      "age": 35,
+      "role": "مشتبه به",
+      "description": "ابن أخي الضحية وشريكه في الأرض. كان سيُقصى من عقد الشراكة الجديد.",
+      "imageEmoji": "👤",
+      "interrogation": "وسيم عصبي ويبرر غيابه بقضاء الحاجة، ويرفض الخوض في موضوع عقد الشراكة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت بين الساعة 9 و10 مساءً؟",
+          "answer": "ذهبت لقضاء الحاجة خارج موقع الحفلة، هذا لا يستغرق ساعة كاملة لكنني تجولت قليلاً.",
+          "isLie": true,
+          "lieHint": "لا يوجد شاهد رآه خلال ساعة كاملة والحقل المجاور للحفلة."
+        },
+        {
+          "id": "q2",
+          "text": "هل تعرف أن عمك كان ينوي تعديل عقد الشراكة؟",
+          "answer": "سمعت إشاعات، لكنه لم يخبرني شيئاً رسمياً.",
+          "isLie": true,
+          "lieHint": "كاتب القرية يؤكد أن جرجس أبلغ وسيم شخصياً قبل أسبوع."
+        },
+        {
+          "id": "q3",
+          "text": "أين منجلك الشخصي ذو الصدأ المميز؟",
+          "answer": "في مخزني، لم أستخدمه منذ أسابيع.",
+          "isLie": true,
+          "lieHint": "المنجل المستخدم في الجريمة يطابق تماماً وصف منجله بعلامة الصدأ."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "green",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_elias",
+      "name": "إلياس نصر",
+      "age": 30,
+      "role": "شاهد",
+      "description": "ابن الضحية المباشر. كان في الحفلة طوال الوقت ويشهد له العشرات.",
+      "imageEmoji": "👤",
+      "interrogation": "حزين وغاضب، يؤكد أن وسيم اختفى ساعة كاملة ويطالب بالتحقيق معه.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل لاحظت غياب أحد أثناء الحفلة؟",
+          "answer": "نعم، وسيم اختفى لمدة ساعة كاملة. سألت عنه وقال الجيران إنه خرج لكن لا أحد رآه يعود.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "المنجل المميز بالصدأ",
+      "description": "المنجل المستخدم في الجريمة يحمل نمط صدأ مميز فريد يطابق تماماً منجل وسيم الذي يعرفه أهل القرية.",
+      "type": "physical",
+      "emoji": "⚔️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "شهادة أهل الحفلة",
+      "description": "أكد جميع الحضور تواجدهم طوال الوقت ما عدا وسيم الذي لم يره أحد لمدة ساعة كاملة تزامنت مع وقت الجريمة.",
+      "type": "testimonial",
+      "emoji": "👥",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "إفادة كاتب القرية",
+      "description": "أكد كاتب القرية أن جرجس طلب منه تحضير تعديل عقد الشراكة لإقصاء وسيم وأبلغ وسيم بذلك شخصياً قبل أسبوع.",
+      "type": "document",
+      "emoji": "📜",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}
