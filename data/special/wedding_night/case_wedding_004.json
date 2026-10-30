@@ -1,0 +1,176 @@
+{
+  "id": "case_wedding_004",
+  "title": "المصوّر الأخير",
+  "location": "فندق ريتز كارلتون، طوكيو، اليابان",
+  "date": "2026/11/11",
+  "shortDesc": "وُجد مصوّر حفل الزفاف ميتاً في غرفة التصوير بعد نهاية الحفل. كاميرته محطمة — لكن الذاكرة الاحتياطية تحتوي على صورة تكشف الجاني.",
+  "thumbnailEmoji": "📷",
+  "difficulty": "medium",
+  "estimatedMinutes": 15,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 200,
+  "fullStory": "في حفل زفاف فاخر بفندق ريتز كارلتون طوكيو، كان المصوّر الاحترافي كينجي ياماموتو (42 عاماً) يوثّق كل لحظة. بعد انتهاء الحفل ومغادرة الضيوف، وجده موظف الفندق ميتاً في غرفة التصوير المؤقتة.\n\nكاميرته الرئيسية كانت محطمة بالكامل وبطاقة الذاكرة مكسورة. لكن كينجي كان يستخدم كاميرا احتياطية صغيرة لم يعلم بها أحد — وفيها صورة التقطها بالخطأ قبل موته بدقائق تظهر شخصاً يفتح درج مكتبه الخاص.\n\nالمحقق وجد أن كينجي كان يعرف سراً خطيراً عن أحد ضيوف الحفل — كان قد صوّره في مكان لا يجب أن يكون فيه قبل أسبوع من الزفاف.",
+  "hint": "الكاميرا الاحتياطية التي لم يعلم بها أحد — ماذا التقطت؟",
+  "correctSuspectId": "char_hiroshi",
+  "solutionExplanation": "القاتل هو هيروشي تاناكا، شريك العمل لوالد العروس.\n\nالثغرة القاتلة:\nالصورة في الكاميرا الاحتياطية تظهر هيروشي يفتح درج مكتب كينجي الخاص في غرفة التصوير — كان يبحث عن صور تدينه. كينجي كان قد صوّره بالخطأ أثناء اجتماع سري مع منافسي شركة والد العروس قبل أسبوع. هيروشي عرف أن كينجي سيسلّم الصور وقرر إسكاته وتحطيم الكاميرا، لكنه لم يعلم بالكاميرا الاحتياطية.",
+  "characters": [
+    {
+      "id": "char_kenji",
+      "name": "كينجي ياماموتو",
+      "age": 42,
+      "role": "الضحية",
+      "description": "المصوّر الاحترافي للحفل. وُجد ميتاً في غرفة التصوير بعد انتهاء الحفل.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_hiroshi",
+      "name": "هيروشي تاناكا",
+      "age": 55,
+      "role": "مشتبه به",
+      "description": "شريك عمل والد العروس. يخفي اجتماعاً سرياً مع المنافسين. يبدو هادئاً أكثر مما ينبغي.",
+      "imageEmoji": "👤",
+      "interrogation": "يجيب بإيجاز شديد ويتجنب الأسئلة المتعلقة بعلاقته مع المصوّر.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل كنت تعرف المصوّر كينجي من قبل؟",
+          "answer": "لا، رأيته لأول مرة في الحفل.",
+          "isLie": true,
+          "lieHint": "كينجي صوّره قبل أسبوع في اجتماع سري دون علمه."
+        },
+        {
+          "id": "q2",
+          "text": "هل دخلت غرفة التصوير في أي وقت أثناء الحفل؟",
+          "answer": "لا، لم يكن لي سبب للذهاب إلى هناك.",
+          "isLie": true,
+          "lieHint": "الكاميرا الاحتياطية تظهره داخل الغرفة يفتح درج المكتب."
+        },
+        {
+          "id": "q3",
+          "text": "أين كنت في الساعة الأخيرة من الحفل؟",
+          "answer": "في صالة الحفل مع بقية الضيوف طوال الوقت.",
+          "isLie": true,
+          "lieHint": "عدة ضيوف لاحظوا غيابه لأكثر من نصف ساعة."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_yuki",
+      "name": "يوكي ساتو",
+      "age": 30,
+      "role": "مشتبه بها",
+      "description": "منسّقة حفل الزفاف. كانت تتعامل مع المصوّر طوال اليوم ولديها مفتاح غرفة التصوير.",
+      "imageEmoji": "👤",
+      "interrogation": "مهنية وهادئة، تؤكد أنها أغلقت الغرفة آخر مرة في نهاية الحفل.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى أغلقت غرفة التصوير آخر مرة؟",
+          "answer": "في نهاية الحفل مباشرة، وكينجي كان لا يزال يرتب معداته.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "صورة الكاميرا الاحتياطية",
+      "description": "صورة في الكاميرا الاحتياطية الصغيرة التقطت تلقائياً تظهر هيروشي يفتح درج مكتب المصوّر بحثاً عن شيء.",
+      "type": "physical",
+      "emoji": "📸",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "صور الاجتماع السري",
+      "description": "في ذاكرة الكاميرا الاحتياطية صور أخرى تظهر هيروشي في اجتماع سري مع منافسي شركة والد العروس قبل أسبوع.",
+      "type": "physical",
+      "emoji": "🤝",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "شهادة غياب هيروشي",
+      "description": "ثلاثة ضيوف لاحظوا غياب هيروشي عن صالة الحفل لأكثر من نصف ساعة في الوقت المقدر للجريمة.",
+      "type": "testimonial",
+      "emoji": "👥",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

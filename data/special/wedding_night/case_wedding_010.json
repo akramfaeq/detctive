@@ -1,0 +1,218 @@
+{
+  "id": "case_wedding_010",
+  "title": "العروس الثانية",
+  "location": "جزيرة بالي، إندونيسيا",
+  "date": "2026/02/14",
+  "shortDesc": "في حفل زفاف رومانسي بجزيرة بالي، تلقّت العروس رسالة مجهولة تقول إن عريسها متزوج بالفعل في بلد آخر. قبل أن تقرر، وُجد العريس ميتاً — والعروس الأولى المزعومة وصلت للجزيرة في نفس اليوم.",
+  "thumbnailEmoji": "🌺",
+  "difficulty": "hard",
+  "estimatedMinutes": 25,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 350,
+  "fullStory": "في منتجع فاخر ببالي، كان زفاف ناتاليا سيلفا (28 عاماً) ومارتن فولر (40 عاماً) استثنائياً. في صباح يوم الزفاف، تلقّت ناتاليا رسالة مجهولة تزعم أن مارتن متزوج من امرأة تدعى أنيسا في ماليزيا ولم يطلّقها.\n\nقبل أن تواجه مارتن، وُجد ميتاً في غرفته صباحاً. وفي نفس اليوم، ظهرت في المنتجع امرأة تدعى أنيسا يوسف وأكدت أنها زوجة مارتن الشرعية وأنها أرسلت الرسالة لناتاليا.\n\nلكن المحقق لاحظ شيئاً غريباً: أنيسا لم تُبدِ أي حزن على موت زوجها المزعوم — بل بدت مرتاحة. وفي حقيبتها وثائق طلاق موقّعة من مارتن لكن بتاريخ قبل ثلاثة أشهر فقط.",
+  "hint": "الزوجة التي لا تحزن على زوجها الميت — ولماذا جاءت إلى بالي بالضبط في هذا اليوم؟",
+  "correctSuspectId": "char_anissa",
+  "solutionExplanation": "القاتلة هي أنيسا يوسف، الزوجة السابقة.\n\nالثغرة القاتلة:\nأنيسا وصلت لبالي في نفس يوم الجريمة — ليس صدفة. وثائق الطلاق في حقيبتها تثبت أنها كانت تعلم بزواج مارتن الجديد وأنه طلّقها بشكل قانوني. لكنها أرادت الانتقام لأنها بموجب عقد الزواج الأول يجب أن تحصل على تعويض مالي ضخم عند الطلاق — ومارتن رفض الدفع. جاءت أرسلت الرسالة لإثارة الفوضى ثم قتلت مارتن. عدم حزنها الواضح وحقيبة السفر المرتّبة وكأنها جاءت لمهمة محددة كانت الدليل الأول.",
+  "characters": [
+    {
+      "id": "char_martin",
+      "name": "مارتن فولر",
+      "age": 40,
+      "role": "الضحية",
+      "description": "العريس. طلّق زوجته الأولى قبل ثلاثة أشهر لكنه رفض دفع التعويض المالي. وُجد ميتاً صباح الزفاف.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_anissa",
+      "name": "أنيسا يوسف",
+      "age": 38,
+      "role": "مشتبه بها",
+      "description": "الزوجة السابقة لمارتن. وصلت لبالي في يوم الجريمة. لم تُبدِ أي حزن. ترفض دفع تعويض الطلاق.",
+      "imageEmoji": "👤",
+      "interrogation": "هادئة ومسيطرة على نفسها بشكل لافت. تدّعي أنها جاءت فقط لتحذير ناتاليا.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "لماذا جئت لبالي تحديداً في هذا اليوم؟",
+          "answer": "جئت لتحذير ناتاليا من أن مارتن متزوج بي، أردت إنقاذها.",
+          "isLie": true,
+          "lieHint": "وثائق الطلاق في حقيبتها تثبت أنها تعرف أن زواجهما انتهى قانونياً."
+        },
+        {
+          "id": "q2",
+          "text": "لماذا لا تبدين حزينة على وفاة مارتن؟",
+          "answer": "علاقتنا انتهت منذ زمن، مشاعري تجاهه ماتت قبله.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q3",
+          "text": "هل كان مارتن يرفض دفع تعويض الطلاق؟",
+          "answer": "كان بيننا خلاف قانوني عادي، أمور من هذا القبيل تحدث.",
+          "isLie": true,
+          "lieHint": "وثائق قانونية تثبت أن مارتن رفض دفع تعويضاً يبلغ مليون دولار وأن أنيسا كانت تخسر القضية."
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "red",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_natalia",
+      "name": "ناتاليا سيلفا",
+      "age": 28,
+      "role": "مشتبه بها",
+      "description": "العروس. تلقّت رسالة تزعم أن عريسها متزوج. لم تقرر بعد ماذا تفعل حين وُجد مارتن ميتاً.",
+      "imageEmoji": "👤",
+      "interrogation": "مصدومة ومرتبكة. تتعاون بالكامل وإفادتها صادقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ماذا كنت تخططين للقيام به بعد الرسالة؟",
+          "answer": "كنت سأواجه مارتن فوراً قبل الحفل، لكن حين ذهبت لغرفته وجدته ميتاً.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_hotel_staff",
+      "name": "موظف الاستقبال راهول",
+      "age": 30,
+      "role": "شاهد",
+      "description": "موظف استقبال المنتجع. سجّل وصول أنيسا وتوقيت دخولها.",
+      "imageEmoji": "👤",
+      "interrogation": "دقيق ومتعاون. يؤكد توقيت وصول أنيسا.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى وصلت أنيسا يوسف للمنتجع بالضبط؟",
+          "answer": "وصلت في الساعة السادسة صباحاً بحقيبة صغيرة كأنها جاءت لمهمة قصيرة. حجزت غرفة ليوم واحد فقط.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "وثائق الطلاق في حقيبة أنيسا",
+      "description": "وثائق طلاق موقّعة من مارتن بتاريخ قبل ثلاثة أشهر تثبت أن أنيسا تعرف تماماً أن زواجهما انتهى قانونياً — أي أن ادعاءها بأنها لا تزال زوجته كان كذباً.",
+      "type": "document",
+      "emoji": "📄",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "ملف القضية المالية الخاسرة",
+      "description": "وثائق قانونية تثبت أن أنيسا كانت تطالب بمليون دولار تعويض طلاق وأن مارتن كان يكسب القضية.",
+      "type": "document",
+      "emoji": "⚖️",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "الحجز ليوم واحد فقط",
+      "description": "أنيسا حجزت غرفة في المنتجع ليوم واحد فقط ووصلت الساعة السادسة صباحاً — قبل اكتشاف الجريمة بساعتين.",
+      "type": "document",
+      "emoji": "🏨",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "غياب الحزن وسيطرة مثيرة للاهتمام",
+      "description": "ملاحظات المحقق النفسية: أنيسا لم تُبدِ أي صدمة أو حزن حقيقي عند إخبارها بالوفاة، وبدت مستعدة لكل سؤال كأنها تعرف بالضبط ما سيُسأل.",
+      "type": "behavioral",
+      "emoji": "🧠",
+      "revealOrder": 4,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

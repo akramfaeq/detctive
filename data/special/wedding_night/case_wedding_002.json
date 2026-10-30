@@ -1,0 +1,184 @@
+{
+  "id": "case_wedding_002",
+  "title": "نخب الموت",
+  "location": "قصر شاتو دو فلور، بوردو، فرنسا",
+  "date": "2026/09/20",
+  "shortDesc": "في زفاف عائلة أرستقراطية فرنسية، سقط العريس مغشياً عليه بعد نخب الزفاف. السم كان في كأسه وحده — لكن من صبّ النبيذ؟",
+  "thumbnailEmoji": "🥂",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "في قصر شاتو دو فلور العريق ببوردو، كان زفاف إيميلي دوبوا وفيليكس لوران حدثاً اجتماعياً كبيراً. في لحظة النخب الرسمية، رفع الجميع كؤوسهم وشرب فيليكس، ثم سقط على الفور.\n\nأثبت التحليل الكيميائي وجود سم في كأس فيليكس وحده. النبيذ جاء من نفس الزجاجة لكن لم يتأثر أحد غيره.\n\nثلاثة أشخاص لمسوا كأس فيليكس قبل النخب: النادل الجديد الذي وزّع الكؤوس، والد العروس الذي رتّب الكؤوس على الطاولة، وأخو العريس الأكبر الذي أحضر كأس فيليكس من الطاولة ووضعه في يده. المحقق لاحظ أن أخا العريس كان الوريث الوحيد لثروة العائلة لو مات فيليكس.",
+  "hint": "من وضع الكأس في يد العريس مباشرة؟",
+  "correctSuspectId": "char_armand",
+  "solutionExplanation": "القاتل هو أرمان لوران، أخو العريس الأكبر.\n\nالثغرة القاتلة:\nأرمان هو الوحيد الذي أحضر كأس فيليكس بيده ووضعه مباشرة في يده. هذه اللحظة كانت كافية لإضافة السم للكأس. كأس فيليكس كان مميزاً بنقش اسمه عليه — لذا أرمان كان يعرف أيها بالضبط. دافعه كان الوراثة: بموت فيليكس قبل إتمام الزواج رسمياً تعود الثروة الكاملة له.",
+  "characters": [
+    {
+      "id": "char_felix",
+      "name": "فيليكس لوران",
+      "age": 32,
+      "role": "الضحية",
+      "description": "العريس. سقط مغشياً عليه بعد شرب نخب الزفاف. نجا بأعجوبة بعد علاج طارئ.",
+      "imageEmoji": "👤",
+      "interrogation": "ما زال في المستشفى لكن يتكلم. يؤكد أن أخاه هو من أحضر له الكأس.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "من أعطاك كأسك قبل النخب؟",
+          "answer": "أخي أرمان، أحضره من الطاولة ووضعه في يدي مباشرة وقال تفضل.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_armand",
+      "name": "أرمان لوران",
+      "age": 38,
+      "role": "مشتبه به",
+      "description": "أخو العريس الأكبر والوريث الوحيد لثروة العائلة في حال وفاة فيليكس. أحضر كأس أخيه بيده.",
+      "imageEmoji": "👤",
+      "interrogation": "يتظاهر بالقلق الشديد على أخيه ويقترح نظريات عن النادل.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "لماذا أحضرت كأس أخيك بنفسك؟",
+          "answer": "أردت أن أكون جزءاً من اللحظة، أخي الوحيد يتزوج.",
+          "isLie": true,
+          "lieHint": "لم يفعل هذا في أي مناسبة عائلية سابقة قط."
+        },
+        {
+          "id": "q2",
+          "text": "هل تعلم أنك الوريث الوحيد لو مات فيليكس؟",
+          "answer": "هذا لا علاقة له بالموضوع، أنا أحب أخي.",
+          "isLie": true,
+          "lieHint": "طلب مؤخراً من محامي العائلة الاطلاع على وثيقة الميراث."
+        },
+        {
+          "id": "q3",
+          "text": "هل لمست محتوى الكأس قبل إعطائه لأخيك؟",
+          "answer": "بالطبع لا، فقط حملته من قاعدته.",
+          "isLie": true,
+          "lieHint": "كاميرا خفية صغيرة تظهر أصابعه داخل الكأس لثانية."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_waiter",
+      "name": "بيير النادل",
+      "age": 24,
+      "role": "مشتبه به",
+      "description": "النادل الجديد الذي وزّع الكؤوس. يعمل في القصر منذ أسبوع فقط.",
+      "imageEmoji": "👤",
+      "interrogation": "خائف ومضطرب لكن إفادته واضحة ومتسقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "كيف وزّعت الكؤوس على الطاولة؟",
+          "answer": "وضعتها جميعاً على الصينية ثم على الطاولة بالترتيب. لم أميز بين الكؤوس.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "لقطة الكاميرا الخفية",
+      "description": "كاميرا أمنية صغيرة في القاعة تظهر أصابع أرمان داخل كأس فيليكس لثانية واحدة قبل تسليمه.",
+      "type": "physical",
+      "emoji": "📹",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "طلب الاطلاع على وثيقة الميراث",
+      "description": "سجل محامي العائلة يثبت أن أرمان طلب الاطلاع على وثيقة الميراث قبل أسبوع من الزفاف.",
+      "type": "document",
+      "emoji": "📜",
+      "revealOrder": 2,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "شهادة العريس",
+      "description": "فيليكس يؤكد أن أخاه أرمان هو من أحضر له الكأس مباشرة ووضعه في يده.",
+      "type": "testimonial",
+      "emoji": "🗣️",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

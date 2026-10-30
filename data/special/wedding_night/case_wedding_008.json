@@ -1,0 +1,218 @@
+{
+  "id": "case_wedding_008",
+  "title": "منسّقة الأحلام",
+  "location": "برج خليفة، دبي، الإمارات",
+  "date": "2026/12/31",
+  "shortDesc": "في ليلة رأس السنة، وُجدت منسّقة أفخم زفاف في تاريخ دبي ميتة في غرفة التحكم. الحفل استمر وكأن شيئاً لم يحدث — والقاتل كان بين الضيوف يرقص.",
+  "thumbnailEmoji": "🌆",
+  "difficulty": "hard",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 350,
+  "fullStory": "في ليلة رأس السنة بأحد أعلى طوابق برج خليفة، كان زفاف عمر الراشدي وليلى المنصوري حدثاً استثنائياً بتكلفة خمسة ملايين دولار. المنسّقة سارة ميتشل (39 عاماً) كانت تدير كل شيء من غرفة التحكم.\n\nفي منتصف ليلة رأس السنة وسط الألعاب النارية، وجد أحد موظفي الفندق سارة ميتة في غرفة التحكم. الباب كان مقفلاً من الداخل بمفتاح رقمي — ورمز الدخول يعرفه أربعة أشخاص فقط.\n\nسارة كانت تحتفظ بملف سري عن كل عميل — وفي ملف عمر الراشدي معلومات تدمّر سمعته التجارية بالكامل. اكتشفت المحققة لاحقاً أن سارة طلبت من عمر مبلغاً ضخماً مقابل صمتها قبل أسبوع من الزفاف.",
+  "hint": "غرفة التحكم مقفلة من الداخل — لكن الرمز الرقمي يعرفه أربعة. ومن كان يبتزّ من؟",
+  "correctSuspectId": "char_omar",
+  "solutionExplanation": "القاتل هو عمر الراشدي، العريس.\n\nالثغرة القاتلة:\nعمر يملك رمز الدخول لغرفة التحكم. وسارة كانت تبتزّه بمعلومات من ملفها السري. الغرفة المقفلة من الداخل كانت حيلة ذكية — سارة نفسها أقفلتها للحماية حين أحست بالخطر، لكن عمر استخدم الرمز الرقمي للدخول قبل أن تقفل. أثناء الألعاب النارية الصاخبة، لم يسمع أحد ما جرى. كاميرا خفية في الممر تظهره يدخل غرفة التحكم ثم يخرج منها في دقيقتين خلال الألعاب النارية.",
+  "characters": [
+    {
+      "id": "char_sara",
+      "name": "سارة ميتشل",
+      "age": 39,
+      "role": "الضحية",
+      "description": "منسّقة الحفل المشهورة. كانت تبتز عمر بمعلومات من ملفها السري. وُجدت ميتة في غرفة التحكم.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفاة ولا يمكن استجوابها.",
+      "questions": [],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_omar",
+      "name": "عمر الراشدي",
+      "age": 40,
+      "role": "مشتبه به",
+      "description": "العريس ورجل الأعمال الثري. كان يتعرض للابتزاز من سارة. يملك رمز دخول غرفة التحكم.",
+      "imageEmoji": "👤",
+      "interrogation": "يبدو مسيطراً على نفسه تماماً. يدّعي أنه كان في صالة الحفل طوال الوقت.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل غادرت صالة الحفل خلال الألعاب النارية؟",
+          "answer": "لا، كنت مع زوجتي وضيوفي أتابع الألعاب النارية طوال الوقت.",
+          "isLie": true,
+          "lieHint": "كاميرا الممر تظهره يخرج ويعود في دقيقتين خلال الألعاب."
+        },
+        {
+          "id": "q2",
+          "text": "هل كانت لديك خلافات مع منسّقة الحفل سارة؟",
+          "answer": "علاقة مهنية بحتة، لم يكن بيننا أي خلاف شخصي.",
+          "isLie": true,
+          "lieHint": "سجل مكالمات يظهر اتصالاً حاداً بينهما قبل أسبوع من الزفاف."
+        },
+        {
+          "id": "q3",
+          "text": "هل تعرف الرمز الرقمي لغرفة التحكم؟",
+          "answer": "نعم، أعطتني إياه سارة للطوارئ، لكنني لم أستخدمه.",
+          "isLie": true,
+          "lieHint": "سجل الدخول الرقمي يظهر استخداماً لرمزه تحديداً خلال الألعاب النارية."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_layla",
+      "name": "ليلى المنصوري",
+      "age": 35,
+      "role": "مشتبه بها",
+      "description": "العروس. تملك رمز الدخول أيضاً. لا تعلم بأسرار زوجها.",
+      "imageEmoji": "👤",
+      "interrogation": "صادمة بالخبر. تؤكد أنها كانت مع ضيفاتها طوال الحفل.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت خلال الألعاب النارية؟",
+          "answer": "في وسط صالة الحفل مع عائلتي وصديقاتي، لا أعرف كيف يمكنني إثبات ذلك أكثر من هذا.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_assistant",
+      "name": "ماركو الخبير التقني",
+      "age": 28,
+      "role": "شاهد",
+      "description": "المسؤول عن غرفة التحكم التقني. يملك رمز الدخول.",
+      "imageEmoji": "👤",
+      "interrogation": "يتعاون بالكامل ويشرح سجل الدخول الرقمي بدقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ماذا يظهر سجل الدخول الرقمي؟",
+          "answer": "يظهر السجل دخولاً باستخدام رمز السيد عمر الراشدي تحديداً خلال فترة الألعاب النارية، ومدة الدخول كانت دقيقتين فقط.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "سجل الدخول الرقمي",
+      "description": "سجل النظام يثبت استخدام رمز عمر الراشدي للدخول لغرفة التحكم خلال الألعاب النارية بالضبط.",
+      "type": "digital",
+      "emoji": "🔐",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "كاميرا الممر",
+      "description": "كاميرا أمنية في الممر تظهر عمر يخرج من صالة الحفل ويعود في غضون دقيقتين خلال الألعاب النارية.",
+      "type": "physical",
+      "emoji": "📹",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "سجل المكالمة الحادة",
+      "description": "مكالمة طويلة وحادة بين عمر وسارة قبل أسبوع من الزفاف تدوم 18 دقيقة.",
+      "type": "digital",
+      "emoji": "📞",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "الملف السري في حاسوب سارة",
+      "description": "ملف مشفر في حاسوب سارة يحتوي على معلومات تجارية سرية تضر بسمعة عمر الراشدي.",
+      "type": "digital",
+      "emoji": "💻",
+      "revealOrder": 4,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

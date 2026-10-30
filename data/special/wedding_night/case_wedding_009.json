@@ -1,0 +1,218 @@
+{
+  "id": "case_wedding_009",
+  "title": "فخ الميراث",
+  "location": "قصر الهيرست، كاليفورنيا، الولايات المتحدة",
+  "date": "2026/10/31",
+  "shortDesc": "في حفل زفاف هاليوين بقصر الهيرست الأسطوري، وُجد والد العروس ميتاً في مكتبته ليلة الحفل. ترك وصية تمنح كل شيء لابنته — لكن التوقيع مزوّر ووقت التوقيع مستحيل.",
+  "thumbnailEmoji": "🎃",
+  "difficulty": "hard",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 350,
+  "fullStory": "في ليلة هاليوين بقصر الهيرست التاريخي بكاليفورنيا، كان حفل زفاف فيكتوريا هيرست وتشارلز والتون تحفةً بصرية. في منتصف الحفل، وُجد إدوارد هيرست (72 عاماً)، والد العروس الملياردير، ميتاً في مكتبته.\n\nالأغرب: وُجدت بجانبه وصية موقّعة تمنح فيكتوريا كل الثروة وتحرم أخاها روبرت تماماً — والوصية موقّعة بتاريخ اليوم ذاته. لكن طبيب إدوارد أكد أن يده كانت مشلولة منذ أسبوع بسبب جلطة دماغية بسيطة ولا يستطيع التوقيع.\n\nثلاثة أشخاص كان لهم وصول للمكتبة: فيكتوريا التي ذهبت للتحقق من والدها في بداية الحفل، روبرت الذي أكد أنه لم يدخل المكتبة أصلاً، والمحامي الخاص للعائلة الذي جاء لتوثيق الوصية.",
+  "hint": "التوقيع مستحيل بيد مشلولة — من يستفيد من هذه الوصية المزوّرة؟",
+  "correctSuspectId": "char_victoria",
+  "solutionExplanation": "القاتلة هي فيكتوريا هيرست، العروس.\n\nالثغرة القاتلة:\nالوصية مزوّرة لأن إدوارد لا يستطيع التوقيع بيد مشلولة. فيكتوريا هي الوحيدة المستفيدة من الوصية المزوّرة، وهي من ذهبت للمكتبة في بداية الحفل. زوّرت توقيع والدها وقتلته قبل أن يستيقظ. المحقق وجد في حقيبتها قلماً من نفس نوع الحبر الذي كُتبت به الوصية — وهو نوع نادر لا يُباع في كاليفورنيا إلا في متجر واحد، وسجل المبيعات يظهر أنها اشترته قبل أسبوع.",
+  "characters": [
+    {
+      "id": "char_edward",
+      "name": "إدوارد هيرست",
+      "age": 72,
+      "role": "الضحية",
+      "description": "الملياردير والد العروس. يده مشلولة بسبب جلطة. وُجد ميتاً في مكتبته.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_victoria",
+      "name": "فيكتوريا هيرست",
+      "age": 30,
+      "role": "مشتبه بها",
+      "description": "العروس والمستفيدة الوحيدة من الوصية المزوّرة. ذهبت للمكتبة في بداية الحفل.",
+      "imageEmoji": "👤",
+      "interrogation": "تبدو محطمة الأعصاب وتبكي بشكل مبالغ فيه.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "لماذا ذهبت للمكتبة في بداية حفل زفافك؟",
+          "answer": "أردت أن أرى والدي وأطمئن عليه قبل بدء الحفل، علاقتنا كانت قريبة جداً.",
+          "isLie": true,
+          "lieHint": "شهود يقولون إن علاقتها بوالدها كانت متوترة بسبب خلاف على الميراث."
+        },
+        {
+          "id": "q2",
+          "text": "هل اشتريت قلماً من نوع خاص مؤخراً؟",
+          "answer": "لا، لا أتذكر شراء أي قلم.",
+          "isLie": true,
+          "lieHint": "سجل مبيعات المتجر النادر يظهر شراءها قلماً بنفس الحبر قبل أسبوع."
+        },
+        {
+          "id": "q3",
+          "text": "هل كنت تعلمين بشلل يد والدك؟",
+          "answer": "نعم علمت، لكن ربما تعافى جزئياً ووقّع.",
+          "isLie": true,
+          "lieHint": "طبيب إدوارد يؤكد قطعياً أن الشلل كامل ولا يمكنه التوقيع إطلاقاً."
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "long",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_robert",
+      "name": "روبرت هيرست",
+      "age": 35,
+      "role": "مشتبه به",
+      "description": "أخو العروس. يخسر كل شيء بموجب الوصية المزوّرة. يؤكد أنه لم يدخل المكتبة.",
+      "imageEmoji": "👤",
+      "interrogation": "غاضب ويطعن في الوصية. إفادته عن تواجده في الحفل مدعومة بشهود.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت طوال الحفل؟",
+          "answer": "في صالة الحفل طوال الوقت، عشرات الضيوف يمكنهم تأكيد ذلك.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_doctor",
+      "name": "الدكتور فيليبس",
+      "age": 55,
+      "role": "شاهد",
+      "description": "الطبيب الخاص بإدوارد هيرست. يؤكد استحالة توقيعه.",
+      "imageEmoji": "👤",
+      "interrogation": "دقيق وعلمي في إفادته.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل كان إدوارد قادراً على التوقيع؟",
+          "answer": "مستحيل قطعاً. الجلطة أثّرت على المنطقة الحركية في دماغه والشلل في يده اليمنى كامل. لا يستطيع حتى حمل قلم.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "شهادة الطبيب باستحالة التوقيع",
+      "description": "الطبيب الخاص يؤكد قطعياً أن شلل إدوارد كامل وأنه لا يستطيع حمل قلم أو التوقيع.",
+      "type": "testimonial",
+      "emoji": "🩺",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "سجل شراء القلم النادر",
+      "description": "سجل مبيعات المتجر الوحيد في كاليفورنيا الذي يبيع هذا النوع من الحبر يظهر أن فيكتوريا اشترته قبل أسبوع.",
+      "type": "document",
+      "emoji": "🖊️",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "القلم في حقيبة فيكتوريا",
+      "description": "قلم من نفس نوع الحبر المستخدم في الوصية وُجد في حقيبة فيكتوريا.",
+      "type": "physical",
+      "emoji": "👜",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "الخلاف على الميراث",
+      "description": "شهود يؤكدون أن علاقة فيكتوريا بوالدها كانت متوترة جداً بسبب خلاف على توزيع الميراث قبل الزفاف.",
+      "type": "testimonial",
+      "emoji": "💬",
+      "revealOrder": 4,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "id": "case_wedding_007",
+  "title": "العروستان التوأم",
+  "location": "جزيرة سانتوريني، اليونان",
+  "date": "2026/05/18",
+  "shortDesc": "في زفاف مزدوج لتوأمتين في سانتوريني، وُجدت إحداهما ميتة في غرفتها ليلة الزفاف. كلا العريسين يدّعي أنه كان مع زوجته — لكن لا أحد يعرف أي العروستين هي الضحية في البداية.",
+  "thumbnailEmoji": "👯",
+  "difficulty": "hard",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 350,
+  "fullStory": "في منتجع فاخر بسانتوريني، احتفلت عائلة باباداكيس بزفاف مزدوج للتوأمتين إيلينا وكاليوبي. كلتاهما ترتديان فستاناً أبيض متطابقاً وتشتركان في نفس الملامح تماماً.\n\nفي الصباح الباكر، وُجدت إحدى التوأمتين ميتة في غرفة الزوجية. المشكلة الأولى: لم يستطع أحد في البداية تحديد أيهما الضحية حتى فحص الطبيب الشرعي وشامة صغيرة خلف أذن اليسرى — كانت الضحية إيلينا.\n\nعريس إيلينا، ميكاليس، أكد أنه كان معها طوال الليل. لكن عريس كاليوبي، ثيودوروس، قال إنه رأى ميكاليس في الممر الخارجي منتصف الليل وحده. والأخطر أن إيلينا كانت على وشك إعلان اكتشافها أن ميكاليس تزوّجها فقط للاستيلاء على حصتها من ثروة العائلة.",
+  "hint": "من رأى العريس خارج الغرفة في الوقت الحرج؟ ولماذا كان هناك؟",
+  "correctSuspectId": "char_michalis",
+  "solutionExplanation": "القاتل هو ميكاليس بيتراكيس، عريس الضحية.\n\nالثغرة القاتلة:\nثيودوروس رأى ميكاليس في الممر وحده منتصف الليل، مما يدحض روايته بأنه كان مع إيلينا طوال الوقت. ميكاليس علم أن إيلينا اكتشفت دوافعه المالية وستكشفه صباح اليوم التالي أمام العائلة. استغل التشابه التام بين التوأمتين كخطة — أراد أن يجعل التحقيق مربكاً من البداية. وُجدت في هاتفه رسائل تثبت أنه كان يخطط للحصول على الثروة عبر الزواج منذ البداية.",
+  "characters": [
+    {
+      "id": "char_elena",
+      "name": "إيلينا باباداكيس",
+      "age": 29,
+      "role": "الضحية",
+      "description": "إحدى التوأمتين. وُجدت ميتة في غرفة الزوجية. كانت على وشك كشف دوافع زوجها.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفاة ولا يمكن استجوابها.",
+      "questions": [],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_michalis",
+      "name": "ميكاليس بيتراكيس",
+      "age": 33,
+      "role": "مشتبه به",
+      "description": "عريس الضحية. يدّعي أنه كان معها طوال الليل. تزوّجها بدوافع مالية.",
+      "imageEmoji": "👤",
+      "interrogation": "يبدو محطماً ومصدوماً لكن تفاصيل روايته تتغير قليلاً مع كل سؤال.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل غادرت الغرفة في أي وقت بعد منتصف الليل؟",
+          "answer": "لا أبداً، كنا معاً طوال الليل ولم أغادر الغرفة.",
+          "isLie": true,
+          "lieHint": "ثيودوروس رآه في الممر وحده منتصف الليل بوضوح تام."
+        },
+        {
+          "id": "q2",
+          "text": "هل كانت إيلينا تشك في دوافعك من الزواج؟",
+          "answer": "لا، كان حبنا حقيقياً وكانت تثق بي تماماً.",
+          "isLie": true,
+          "lieHint": "رسائل إيلينا لأختها تظهر أنها اكتشفت حقيقته وكانت تخطط للمواجهة."
+        },
+        {
+          "id": "q3",
+          "text": "ما وضعك المالي قبل الزواج؟",
+          "answer": "كنت أعمل بشكل جيد ولم أكن محتاجاً.",
+          "isLie": true,
+          "lieHint": "سجلاته المالية تظهر ديوناً ضخمة وبحثاً عن عروس ثرية منذ سنتين."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_theodoros",
+      "name": "ثيودوروس كاراماليس",
+      "age": 31,
+      "role": "شاهد",
+      "description": "عريس كاليوبي. رأى ميكاليس في الممر وحده منتصف الليل.",
+      "imageEmoji": "👤",
+      "interrogation": "يتحدث بثقة ويؤكد روايته. لا دافع له للكذب.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى بالضبط رأيت ميكاليس في الممر؟",
+          "answer": "رأيته حوالي منتصف الليل وكان وحده في الممر، نظرت إليه وأومأ لي ثم اتجه نحو الدرج.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_kalliopi",
+      "name": "كاليوبي باباداكيس",
+      "age": 29,
+      "role": "شاهدة",
+      "description": "أخت الضحية التوأم. تعلم بمخاوف أختها من ميكاليس.",
+      "imageEmoji": "👤",
+      "interrogation": "حزينة جداً لكن تريد الحقيقة. تكشف رسائل أختها السرية.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل أخبرتك إيلينا بأي مخاوف قبل الزفاف؟",
+          "answer": "نعم، أرسلت لي رسائل تقول إنها اكتشفت شيئاً مقلقاً عن ميكاليس وستواجهه بعد الزفاف.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "شهادة ثيودوروس",
+      "description": "عريس التوأمة الأخرى يؤكد رؤيته ميكاليس في الممر وحده منتصف الليل، مما يدحض روايته.",
+      "type": "testimonial",
+      "emoji": "👁️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "رسائل إيلينا لأختها",
+      "description": "رسائل سرية تثبت أن إيلينا اكتشفت دوافع ميكاليس المالية وكانت تخطط لمواجهته.",
+      "type": "digital",
+      "emoji": "💬",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "السجل المالي لميكاليس",
+      "description": "وثائق تثبت ديوناً ضخمة وبحثاً ممنهجاً عن زوجة ثرية قبل سنتين من زواجه.",
+      "type": "document",
+      "emoji": "💰",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "الشامة خلف الأذن اليسرى",
+      "description": "الطبيب الشرعي حدد هوية الضحية عبر شامة خلف أذنها اليسرى — إيلينا وليس كاليوبي، مما يؤكد أن الضحية هي زوجة ميكاليس.",
+      "type": "physical",
+      "emoji": "🔍",
+      "revealOrder": 4,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "id": "case_wedding_006",
+  "title": "كذبة شاهد العريس",
+  "location": "قلعة بالمورال، اسكتلندا",
+  "date": "2026/08/23",
+  "shortDesc": "في زفاف أرستقراطي باسكتلندا، وُجد شاهد العريس ميتاً في مكتبة القلعة منتصف الليل. العريس يقسم أنه كان معه حتى الحادية عشرة — لكن ساعة الضحية تقول غير ذلك.",
+  "thumbnailEmoji": "🏰",
+  "difficulty": "medium",
+  "estimatedMinutes": 15,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 200,
+  "fullStory": "في قلعة بالمورال الاسكتلندية، احتفل إدوارد كلارك (35 عاماً) بزواجه من ليدي أوليفيا مونتغمري في حفل أسطوري. شاهد العريس وصديقه المقرب ريتشارد هول (36 عاماً) وُجد ميتاً في مكتبة القلعة عند منتصف الليل.\n\nأكد إدوارد أنه كان مع ريتشارد في غرفته يتحدثان حتى الحادية عشرة مساءً، ثم افترقا. لكن ساعة ريتشارد الذكية سجّلت أنه كان يتحرك بسرعة عالية في اتجاه المكتبة عند العاشرة وخمس وأربعين دقيقة — أي قبل الوقت الذي يدّعيه إدوارد بربع ساعة.\n\nريتشارد كان يعرف سراً عن إدوارد — أن العريس مفلس فعلاً وزواجه من ليدي أوليفيا مخطط مالي بحت.",
+  "hint": "الساعة الذكية لا تكذب — متى بالضبط تحرك الضحية نحو المكتبة؟",
+  "correctSuspectId": "char_edward",
+  "solutionExplanation": "القاتل هو إدوارد كلارك، العريس.\n\nالثغرة القاتلة:\nساعة ريتشارد الذكية سجّلت تحركه نحو المكتبة الساعة 10:45 — أي أن إدوارد يكذب حين يقول إنهما كانا معاً حتى الحادية عشرة. إدوارد أرسل ريتشارد للمكتبة بحجة انتظاره هناك، ثم أتبعه وقتله. ريتشارد كان قد أبلغ إدوارد أنه سيكشف حقيقته لليدي أوليفيا صباح اليوم التالي إذا لم يعترف هو بنفسه.",
+  "characters": [
+    {
+      "id": "char_richard",
+      "name": "ريتشارد هول",
+      "age": 36,
+      "role": "الضحية",
+      "description": "شاهد العريس وصديقه المقرب. كان يعرف أن إدوارد مفلس ويتزوج للمال. وُجد ميتاً في المكتبة.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_edward",
+      "name": "إدوارد كلارك",
+      "age": 35,
+      "role": "مشتبه به",
+      "description": "العريس. مفلس فعلاً ويخفي وضعه المالي. يدّعي أنه كان مع ريتشارد حتى الحادية عشرة.",
+      "imageEmoji": "👤",
+      "interrogation": "يبدو حزيناً ومصدوماً لكن يتمسك بروايته بإصرار لافت.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "حتى متى بالضبط كنت مع ريتشارد في غرفتك؟",
+          "answer": "حتى الحادية عشرة تماماً، ثم قال إنه سيذهب لينام.",
+          "isLie": true,
+          "lieHint": "ساعة ريتشارد الذكية تثبت أنه كان يتحرك نحو المكتبة الساعة 10:45."
+        },
+        {
+          "id": "q2",
+          "text": "هل كان ريتشارد يعرف وضعك المالي الحقيقي؟",
+          "answer": "وضعي المالي ممتاز، لا أعرف ما تقصد.",
+          "isLie": true,
+          "lieHint": "سجلات البنك تظهر ديوناً ضخمة وحسابات فارغة."
+        },
+        {
+          "id": "q3",
+          "text": "هل ذهبت للمكتبة في أي وقت تلك الليلة؟",
+          "answer": "لا، ذهبت مباشرة لغرفتي بعد مغادرة ريتشارد.",
+          "isLie": true,
+          "lieHint": "حارس القلعة رأى شخصاً بزي العريس يتجه للمكتبة قرب منتصف الليل."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_olivia",
+      "name": "ليدي أوليفيا مونتغمري",
+      "age": 32,
+      "role": "مشتبه بها",
+      "description": "العروس. لا تعلم بالوضع المالي لزوجها. يحتمل أن ريتشارد أخبرها بالسر.",
+      "imageEmoji": "👤",
+      "interrogation": "مصدومة بالجريمة وتتعاون بالكامل. إفادتها صادقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل تحدث معك ريتشارد عن أي موضوع حساس؟",
+          "answer": "أراد التحدث معي في الصباح عن شيء مهم، لكنه لم يكشف التفاصيل.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "long",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "سجل الساعة الذكية للضحية",
+      "description": "ساعة ريتشارد الذكية سجّلت تحركاً بسرعة عالية نحو المكتبة في الساعة 10:45 — قبل الوقت الذي يدّعيه إدوارد بربع ساعة.",
+      "type": "digital",
+      "emoji": "⌚",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "سجلات البنك المفلس",
+      "description": "وثائق مالية تثبت أن إدوارد مثقل بالديون وحساباته شبه فارغة رغم مظهره الثري.",
+      "type": "document",
+      "emoji": "💸",
+      "revealOrder": 2,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "شهادة حارس القلعة",
+      "description": "حارس القلعة رأى شخصاً بزي العريس يتجه نحو المكتبة قرب منتصف الليل.",
+      "type": "testimonial",
+      "emoji": "🛡️",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

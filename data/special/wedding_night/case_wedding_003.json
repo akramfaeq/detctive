@@ -1,0 +1,184 @@
+{
+  "id": "case_wedding_003",
+  "title": "العروس الهاربة",
+  "location": "كنيسة سانتا ماريا، إشبيلية، إسبانيا",
+  "date": "2026/04/05",
+  "shortDesc": "اختفت العروس من غرفة الاستعداد قبل عشر دقائق من الحفل. تركت فستانها وخرجت — أم أُخرجت؟ رسالة مجهولة في حقيبتها تقلب كل شيء.",
+  "thumbnailEmoji": "👰",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "في كنيسة سانتا ماريا التاريخية بإشبيلية، كانت إيزابيل فيغا على وشك الزواج من رجل الأعمال الثري دييغو مورينو. قبل عشر دقائق من موعد الحفل، دخلت وصيفة الشرف للغرفة فوجدت الفستان على الكرسي والعروس اختفت.\n\nوُجدت في حقيبة إيزابيل رسالة مجهولة مكتوب فيها: 'إذا أردت أن تعرفي الحقيقة عن دييغو، اخرجي من الباب الخلفي الآن'. لكن المحقق شك في أن إيزابيل لم تختفِ طوعاً — بل أُجبرت.\n\nثلاثة أشخاص كانوا يعلمون بوجود الباب الخلفي للكنيسة: وصيفة الشرف كارمن التي رتّبت غرفة الاستعداد، شقيق العريس بابلو الذي جاء للكنيسة مبكراً، وحارس الكنيسة العجوز الذي يعرف كل مداخلها.",
+  "hint": "من كتب الرسالة المجهولة ومن يعرف بالباب الخلفي؟",
+  "correctSuspectId": "char_pablo",
+  "solutionExplanation": "المدبّر هو بابلو مورينو، شقيق العريس.\n\nالثغرة القاتلة:\nبابلو هو من كتب الرسالة المجهولة وأوصلها لحقيبة إيزابيل. أراد إيقاف الزواج لأن دييغو وعده بحصة من شركة العائلة لكنه تراجع بعد خطوبته. خط الرسالة يطابق خطه بعد تحليل جرافولوجي، وآثار حبر من نفس نوع القلم الخاص به وُجدت على المظروف. إيزابيل وُجدت لاحقاً في مقهى قريب مرتبكة لا تعرف ماذا تفعل.",
+  "characters": [
+    {
+      "id": "char_isabel",
+      "name": "إيزابيل فيغا",
+      "age": 27,
+      "role": "الضحية",
+      "description": "العروس المختفية. وُجدت في مقهى قريب مرتبكة بعد تلقيها رسالة مجهولة.",
+      "imageEmoji": "👤",
+      "interrogation": "خائفة ومرتبكة، تصف كيف أثرت الرسالة عليها وقررت الخروج لمعرفة الحقيقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ماذا كان في الرسالة بالضبط؟",
+          "answer": "كتب فيها أن دييغو يخفي عني شيئاً خطيراً وأن أخرج من الباب الخلفي إذا أردت أن أعرف.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_pablo",
+      "name": "بابلو مورينو",
+      "age": 35,
+      "role": "مشتبه به",
+      "description": "شقيق العريس. وصل للكنيسة مبكراً جداً. لديه خلاف مالي مع أخيه بسبب حصة الشركة.",
+      "imageEmoji": "👤",
+      "interrogation": "يتظاهر بالقلق ويقترح أن إيزابيل ربما هربت بإرادتها.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "لماذا وصلت للكنيسة قبل الجميع بساعة كاملة؟",
+          "answer": "أردت التأكد من ترتيب الزهور، أنا من اختار شركة التزيين.",
+          "isLie": true,
+          "lieHint": "شركة التزيين تؤكد أنه لم يتواصل معهم ولم يطلب أي ترتيبات."
+        },
+        {
+          "id": "q2",
+          "text": "هل كنت على علم بالباب الخلفي للكنيسة؟",
+          "answer": "لا، لم أعلم بوجوده.",
+          "isLie": true,
+          "lieHint": "صور قديمة تظهره يخرج من نفس الباب في حفل سابق في الكنيسة."
+        },
+        {
+          "id": "q3",
+          "text": "هل تعلم بخلافك المالي مع أخيك على الشركة؟",
+          "answer": "خلاف بسيط حُسم، لا علاقة له بهذا الموضوع.",
+          "isLie": true,
+          "lieHint": "محامي الشركة يؤكد أن النزاع لم يُحسم بعد وأن بابلو غاضب جداً."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_carmen",
+      "name": "كارمن رودريغيز",
+      "age": 26,
+      "role": "مشتبه بها",
+      "description": "وصيفة شرف العروس وصديقتها المقربة. رتّبت غرفة الاستعداد وكانت آخر من رأى إيزابيل.",
+      "imageEmoji": "👤",
+      "interrogation": "مذعورة وتبكي، إفادتها عفوية ومتسقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى رأيت إيزابيل آخر مرة قبل اختفائها؟",
+          "answer": "قبل ربع ساعة من الحفل، كانت تضع المكياج وبدت متوترة قليلاً لكن هذا طبيعي.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "pink",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الرسالة المجهولة",
+      "description": "رسالة مكتوبة بخط يد وُجدت في حقيبة العروس. التحليل الجرافولوجي يطابق خط بابلو مورينو.",
+      "type": "physical",
+      "emoji": "✉️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "آثار حبر القلم الخاص",
+      "description": "آثار حبر على المظروف تطابق نوع القلم الفاخر الخاص ببابلو والذي يستخدمه دائماً.",
+      "type": "physical",
+      "emoji": "🖊️",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "صورة بابلو عند الباب الخلفي",
+      "description": "صورة قديمة من حفل سابق في الكنيسة تظهر بابلو يخرج من نفس الباب الخلفي.",
+      "type": "physical",
+      "emoji": "📸",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

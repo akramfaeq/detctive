@@ -1,0 +1,203 @@
+{
+  "id": "case_wedding_001",
+  "title": "خاتم العروس المسروق",
+  "location": "قاعة أفراح فيلا روزا، توسكانا، إيطاليا",
+  "date": "2026/06/14",
+  "shortDesc": "في حفل زفاف فاخر بتوسكانا، سُرق خاتم الماس النادر من يد العروس أثناء رقصة الافتتاح. الجميع كان في القاعة — لكن الكاميرا الوحيدة كانت تصوّر الكعكة.",
+  "thumbnailEmoji": "💍",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "في فيلا روزا الفاخرة بريف توسكانا، كان زفاف سوفيا مارتيني وألبيرتو كونتي حديث المدينة. الخاتم الذي أهداها إياه ألبيرتو كان قطعة نادرة تعود لعائلته منذ قرنين.\n\nأثناء رقصة الافتتاح، صرخت سوفيا فجأة — الخاتم اختفى من إصبعها. الكاميرا الرسمية كانت تصوّر طاولة الكعكة في تلك اللحظة بالضبط، والكاميرات الأمنية لم تغطِ صالة الرقص.\n\nثلاثة أشخاص اقتربوا من العروس خلال الرقصة: شقيقتها لوتشيا التي عانقتها، صديقتها المقربة جيوفانا التي صافحتها، وعم العريس ماريو الذي قبّل يدها تحية. المحقق لاحظ أن لوتشيا كانت ترتدي قفازات حريرية رغم أن الجو دافئ.",
+  "hint": "من يرتدي قفازات في حفل دافئ ولماذا؟",
+  "correctSuspectId": "char_lucia",
+  "solutionExplanation": "السارقة هي لوتشيا، شقيقة العروس.\n\nالثغرة القاتلة:\nلوتشيا كانت الوحيدة التي ارتدت قفازات حريرية في حفل دافئ — وهي حيلة كلاسيكية لسرقة المجوهرات دون ترك بصمات وبشكل غير مثير للانتباه. حين عانقت أختها أثناء الرقصة، سلّت الخاتم بخبرة من إصبعها. وُجد الخاتم لاحقاً مخبأً داخل حقيبة يدها الصغيرة. دافعها كان الغيرة — كانت تعشق ألبيرتو سراً قبل أن يختار أختها.",
+  "characters": [
+    {
+      "id": "char_sofia",
+      "name": "سوفيا مارتيني",
+      "age": 28,
+      "role": "الضحية",
+      "description": "العروس. فقدت خاتم الماس النادر أثناء رقصة الافتتاح مع زوجها.",
+      "imageEmoji": "👤",
+      "interrogation": "مصدومة وحزينة، تصف اللحظة بدقة وتتذكر كل من اقترب منها.",
+      "questions": [],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_lucia",
+      "name": "لوتشيا مارتيني",
+      "age": 25,
+      "role": "مشتبه بها",
+      "description": "شقيقة العروس الصغرى. ترتدي قفازات حريرية بيضاء رغم الجو الدافئ. كانت تعشق العريس سراً.",
+      "imageEmoji": "👤",
+      "interrogation": "تتظاهر بالصدمة وتساعد في البحث عن الخاتم بحماس مبالغ فيه.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "لماذا ترتدين قفازات في هذا الجو الدافئ؟",
+          "answer": "عندي حساسية في جلدي، دائماً أرتدي قفازات في المناسبات الرسمية.",
+          "isLie": true,
+          "lieHint": "لا يوجد في سجلاتها الطبية أي حساسية جلدية."
+        },
+        {
+          "id": "q2",
+          "text": "ماذا فعلت حين اقتربت من أختك أثناء الرقصة؟",
+          "answer": "فقط عانقتها وباركت لها، كانت لحظة عاطفية.",
+          "isLie": true,
+          "lieHint": "شاهد رأى يدها تتحرك نحو إصبع أختها بشكل غير عادي."
+        },
+        {
+          "id": "q3",
+          "text": "هل يمكننا تفتيش حقيبتك؟",
+          "answer": "بالطبع، ليس عندي ما أخفيه.",
+          "isLie": true,
+          "lieHint": "الخاتم وُجد مخبأً في جيب سري داخل حقيبتها."
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "pink",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_giovanna",
+      "name": "جيوفانا ريتشي",
+      "age": 29,
+      "role": "مشتبه بها",
+      "description": "صديقة العروس المقربة. صافحت العروس أثناء الرقصة. تعمل في مجال المجوهرات.",
+      "imageEmoji": "👤",
+      "interrogation": "هادئة ومتعاونة، تؤكد أنها صافحت العروس فقط بشكل عابر.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "كيف كانت طريقة مصافحتك للعروس؟",
+          "answer": "مصافحة عادية سريعة، لم أمسك يدها أكثر من ثانية.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "red",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_mario",
+      "name": "ماريو كونتي",
+      "age": 65,
+      "role": "مشتبه به",
+      "description": "عم العريس. قبّل يد العروس تحية. كان يعرف قيمة الخاتم جيداً.",
+      "imageEmoji": "👤",
+      "interrogation": "رجل وقور يبدو منزعجاً من الشبهات، إفادته متسقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "كيف تعرف قيمة الخاتم بهذه الدقة؟",
+          "answer": "الخاتم من عائلتنا، أنا من أعطاه لابن أخي ليهديه لعروسه.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": true,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "القفازات الحريرية في الجو الدافئ",
+      "description": "لوتشيا الوحيدة بين جميع ضيفات الحفل التي ترتدي قفازات حريرية في درجة حرارة 28 مئوية.",
+      "type": "physical",
+      "emoji": "🧤",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "الخاتم في حقيبة لوتشيا",
+      "description": "وُجد خاتم الماس مخبأً في جيب سري داخل حقيبة يد لوتشيا الصغيرة.",
+      "type": "physical",
+      "emoji": "👜",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "شهادة شاهد عيان",
+      "description": "أحد الضيوف لاحظ أن يد لوتشيا تحركت نحو إصبع أختها بشكل غير عادي أثناء العناق.",
+      "type": "testimonial",
+      "emoji": "👁️",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

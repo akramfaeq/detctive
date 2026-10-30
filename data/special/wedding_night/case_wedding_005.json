@@ -1,0 +1,184 @@
+{
+  "id": "case_wedding_005",
+  "title": "عقد الزواج المزوّر",
+  "location": "منتجع سنتوسا، سنغافورة",
+  "date": "2026/07/07",
+  "shortDesc": "بعد حفل زفاف فاخر في سنغافورة، اكتشف رجل الأعمال الثري أن عقد الزواج الذي وقّعه استُبدل بنسخة مزوّرة تمنح زوجته كامل ثروته. المحامي يقسم أنه لم يغير شيئاً.",
+  "thumbnailEmoji": "📋",
+  "difficulty": "medium",
+  "estimatedMinutes": 15,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 200,
+  "fullStory": "في منتجع سنتوسا الفاخر، تزوّج رجل الأعمال ويليام تان (58 عاماً) من نادين تشن (32 عاماً) في حفل أسطوري. قبل الحفل بساعة، وقّع ويليام على عقد الزواج أمام محاميه ثم تركه على الطاولة ليذهب للاستعداد.\n\nبعد الحفل، اكتشف ويليام أن العقد الذي وقّعه استُبدل بنسخة تمنح نادين 100% من ثروته في حال الطلاق بدلاً من 20% المتفق عليه. التوقيعات مطابقة تماماً — مزوّرة باحتراف.\n\nثلاثة أشخاص كان لهم وصول للعقد في تلك الساعة: المحامي ريموند لي الذي وضعه على الطاولة، مساعدة المحامي سيندي التي رتّبت الأوراق، ووالد العروس ديفيد تشن الذي دخل الغرفة بحجة تهنئة ويليام.",
+  "hint": "التوقيعات مزوّرة باحتراف — من يملك هذه المهارة أو يعرف من يملكها؟",
+  "correctSuspectId": "char_david",
+  "solutionExplanation": "المدبّر هو ديفيد تشن، والد العروس.\n\nالثغرة القاتلة:\nديفيد دخل الغرفة بحجة التهنئة وكان الوحيد الذي بقي لوحده مع الأوراق لدقيقتين حين خرج المحامي للرد على اتصال. ديفيد يملك خلفية في الطباعة والوثائق من عمله السابق، وشقيقه متخصص في تزوير الوثائق — وُجدت رسائل بينهما تتحدث عن 'الورقة' قبل أسبوع من الزفاف. هدفه ضمان مستقبل ابنته مالياً.",
+  "characters": [
+    {
+      "id": "char_william",
+      "name": "ويليام تان",
+      "age": 58,
+      "role": "الضحية",
+      "description": "رجل أعمال ثري. اكتشف أن عقد زواجه استُبدل بنسخة مزوّرة تضر بمصالحه.",
+      "imageEmoji": "👤",
+      "interrogation": "غاضب لكن هادئ. يؤكد أنه وقّع نسخة واحدة فقط ولم يلاحظ أي تعديل.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "كم من الوقت تركت العقد على الطاولة قبل الحفل؟",
+          "answer": "نحو ساعة كاملة، ذهبت للاستعداد ولم أعد إليه إلا بعد الحفل.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_david",
+      "name": "ديفيد تشن",
+      "age": 60,
+      "role": "مشتبه به",
+      "description": "والد العروس. يملك خلفية في الطباعة. دخل غرفة العقد بحجة التهنئة وبقي لوحده مع الأوراق.",
+      "imageEmoji": "👤",
+      "interrogation": "هادئ جداً ويبدو واثقاً من نفسه. يتحدث عن حبه لابنته كثيراً.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "لماذا دخلت غرفة العقد قبل الحفل؟",
+          "answer": "أردت تهنئة ويليام شخصياً قبل الزفاف، لحظة عاطفية بيننا.",
+          "isLie": true,
+          "lieHint": "ويليام لم يكن في الغرفة حين دخل ديفيد — كان قد خرج للاستعداد."
+        },
+        {
+          "id": "q2",
+          "text": "هل لديك علاقة بمجال تزوير الوثائق؟",
+          "answer": "لا، أنا رجل أعمال شريف طوال حياتي.",
+          "isLie": true,
+          "lieHint": "سجل عمله السابق يظهر خبرة في طباعة الوثائق الرسمية."
+        },
+        {
+          "id": "q3",
+          "text": "هل تواصلت مع شقيقك مؤخراً؟",
+          "answer": "تواصل عائلي عادي، لا أكثر.",
+          "isLie": true,
+          "lieHint": "رسائل مشفرة بينهما تتحدث عن 'الورقة' و'الترتيب' قبل أسبوع."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_raymond",
+      "name": "ريموند لي",
+      "age": 45,
+      "role": "مشتبه به",
+      "description": "محامي ويليام. هو من وضع العقد على الطاولة وخرج للرد على اتصال تاركاً الغرفة.",
+      "imageEmoji": "👤",
+      "interrogation": "مضطرب ويشعر بالذنب لأنه ترك الغرفة، لكن إفادته صادقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "لماذا تركت العقد وخرجت؟",
+          "answer": "تلقيت اتصالاً عاجلاً من موكل آخر، خرجت لدقيقتين فقط ولم أتوقع أن يدخل أحد.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الرسائل المشفرة مع شقيق ديفيد",
+      "description": "رسائل مستردة من هاتف ديفيد تتحدث عن 'الورقة' و'الترتيب النهائي' قبل أسبوع من الزفاف.",
+      "type": "digital",
+      "emoji": "📱",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "سجل عمل ديفيد في الطباعة",
+      "description": "وثائق تثبت أن ديفيد عمل لسنوات في مجال طباعة الوثائق الرسمية وأنه يملك خبرة في هذا المجال.",
+      "type": "document",
+      "emoji": "🖨️",
+      "revealOrder": 2,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "شهادة المحامي عن وقت الغياب",
+      "description": "المحامي ريموند يؤكد أن ديفيد دخل الغرفة وبقي لوحده مع الأوراق نحو دقيقتين خلال غيابه.",
+      "type": "testimonial",
+      "emoji": "⏱️",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}
