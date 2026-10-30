@@ -1,0 +1,124 @@
+{
+  "cases": [
+    {
+      "id": "case_wedding_001",
+      "title": "خاتم العروس المسروق",
+      "location": "قاعة أفراح فيلا روزا، توسكانا، إيطاليا",
+      "shortDesc": "في حفل زفاف فاخر بتوسكانا، سُرق خاتم الماس النادر من يد العروس أثناء رقصة الافتتاح. الجميع كان في القاعة — لكن الكاميرا الوحيدة كانت تصوّر الكعكة.",
+      "thumbnailEmoji": "💍",
+      "difficulty": "easy",
+      "estimatedMinutes": 10,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_wedding_002",
+      "title": "نخب الموت",
+      "location": "قصر شاتو دو فلور، بوردو، فرنسا",
+      "shortDesc": "في زفاف عائلة أرستقراطية فرنسية، سقط العريس مغشياً عليه بعد نخب الزفاف. السم كان في كأسه وحده — لكن من صبّ النبيذ؟",
+      "thumbnailEmoji": "🥂",
+      "difficulty": "easy",
+      "estimatedMinutes": 10,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_wedding_003",
+      "title": "العروس الهاربة",
+      "location": "كنيسة سانتا ماريا، إشبيلية، إسبانيا",
+      "shortDesc": "اختفت العروس من غرفة الاستعداد قبل عشر دقائق من الحفل. تركت فستانها وخرجت — أم أُخرجت؟ رسالة مجهولة في حقيبتها تقلب كل شيء.",
+      "thumbnailEmoji": "👰",
+      "difficulty": "easy",
+      "estimatedMinutes": 10,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_wedding_004",
+      "title": "المصوّر الأخير",
+      "location": "فندق ريتز كارلتون، طوكيو، اليابان",
+      "shortDesc": "وُجد مصوّر حفل الزفاف ميتاً في غرفة التصوير بعد نهاية الحفل. كاميرته محطمة — لكن الذاكرة الاحتياطية تحتوي على صورة تكشف الجاني.",
+      "thumbnailEmoji": "📷",
+      "difficulty": "medium",
+      "estimatedMinutes": 15,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_wedding_005",
+      "title": "عقد الزواج المزوّر",
+      "location": "منتجع سنتوسا، سنغافورة",
+      "shortDesc": "بعد حفل زفاف فاخر في سنغافورة، اكتشف رجل الأعمال الثري أن عقد الزواج الذي وقّعه استُبدل بنسخة مزوّرة تمنح زوجته كامل ثروته. المحامي يقسم أنه لم يغير شيئاً.",
+      "thumbnailEmoji": "📋",
+      "difficulty": "medium",
+      "estimatedMinutes": 15,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_wedding_006",
+      "title": "كذبة شاهد العريس",
+      "location": "قلعة بالمورال، اسكتلندا",
+      "shortDesc": "في زفاف أرستقراطي باسكتلندا، وُجد شاهد العريس ميتاً في مكتبة القلعة منتصف الليل. العريس يقسم أنه كان معه حتى الحادية عشرة — لكن ساعة الضحية تقول غير ذلك.",
+      "thumbnailEmoji": "🏰",
+      "difficulty": "medium",
+      "estimatedMinutes": 15,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_wedding_007",
+      "title": "العروستان التوأم",
+      "location": "جزيرة سانتوريني، اليونان",
+      "shortDesc": "في زفاف مزدوج لتوأمتين في سانتوريني، وُجدت إحداهما ميتة في غرفتها ليلة الزفاف. كلا العريسين يدّعي أنه كان مع زوجته — لكن لا أحد يعرف أي العروستين هي الضحية في البداية.",
+      "thumbnailEmoji": "👯",
+      "difficulty": "hard",
+      "estimatedMinutes": 20,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_wedding_008",
+      "title": "منسّقة الأحلام",
+      "location": "برج خليفة، دبي، الإمارات",
+      "shortDesc": "في ليلة رأس السنة، وُجدت منسّقة أفخم زفاف في تاريخ دبي ميتة في غرفة التحكم. الحفل استمر وكأن شيئاً لم يحدث — والقاتل كان بين الضيوف يرقص.",
+      "thumbnailEmoji": "🌆",
+      "difficulty": "hard",
+      "estimatedMinutes": 20,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_wedding_009",
+      "title": "فخ الميراث",
+      "location": "قصر الهيرست، كاليفورنيا، الولايات المتحدة",
+      "shortDesc": "في حفل زفاف هاليوين بقصر الهيرست الأسطوري، وُجد والد العروس ميتاً في مكتبته ليلة الحفل. ترك وصية تمنح كل شيء لابنته — لكن التوقيع مزوّر ووقت التوقيع مستحيل.",
+      "thumbnailEmoji": "🎃",
+      "difficulty": "hard",
+      "estimatedMinutes": 20,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_wedding_010",
+      "title": "العروس الثانية",
+      "location": "جزيرة بالي، إندونيسيا",
+      "shortDesc": "في حفل زفاف رومانسي بجزيرة بالي، تلقّت العروس رسالة مجهولة تقول إن عريسها متزوج بالفعل في بلد آخر. قبل أن تقرر، وُجد العريس ميتاً — والعروس الأولى المزعومة وصلت للجزيرة في نفس اليوم.",
+      "thumbnailEmoji": "🌺",
+      "difficulty": "hard",
+      "estimatedMinutes": 25,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 0
+    }
+  ]
+}
