@@ -1,17 +1,13 @@
 {
-  "lastUpdate": 1700000001,
+  "lastUpdate": 1730793600,
   "version": "1.0.0",
-  "totalCases": 0,
-  "levels": {
-    "easy":   { "count": 0 },
-    "medium": { "count": 0 },
-    "hard":   { "count": 0 }
-  },
-  "special": {
-    "closed_room": { "count": 0 },
-    "travel":      { "count": 0 },
-    "murder":      { "count": 0 },
-    "theft":       { "count": 0 },
-    "missing":     { "count": 0 }
-  }
+  "specialTypes": [
+    "arkanum",
+    "closed_room",
+    "dead_killer",
+    "isolated_village",
+    "travel",
+    "wedding_night"
+  ],
+  "notes": "زيادة lastUpdate = التطبيق يجلب كل شي من جديد. الأنواع الخاصة تُحكم من specialTypes"
 }
