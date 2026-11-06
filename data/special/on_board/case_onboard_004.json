@@ -1,0 +1,184 @@
+{
+  "id": "case_onboard_004",
+  "title": "قطار الرصاصة",
+  "location": "شينكانسن، بين طوكيو وأوساكا، اليابان",
+  "date": "2026/04/18",
+  "shortDesc": "في قطار الشينكانسن الفائق السرعة، اختفت حقيبة تحتوي على بيانات سرية لشركة تقنية كبيرة. صاحبها ادّعى سرقتها — لكن كاميرات القطار تكشف أنه وضعها بيده في مكان ما.",
+  "thumbnailEmoji": "🚄",
+  "difficulty": "medium",
+  "estimatedMinutes": 15,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 200,
+  "fullStory": "على متن شينكانسن من طوكيو لأوساكا، أبلغ المهندس كنجي ماتسودا (38 عاماً) عن سرقة حقيبته التي تحتوي على بيانات سرية لمشروع تقني ضخم. الرحلة 2.5 ساعة والقطار لم يتوقف إلا في محطة واحدة.\n\nكاميرات القطار السرية التي لا يعلم بها الركاب رصدت كنجي يضع الحقيبة تحت مقعد مختلف بنفسه قبل الوصول لأوساكا. لكن حين وصل القطار كانت الحقيبة اختفت فعلاً من ذلك المكان.\n\nالمحقق أدرك أن كنجي دبّر عملية تسريب متقنة — الشخص الذي كان يجلس في ذلك المقعد غادر القطار في المحطة الوسطى.",
+  "hint": "الكاميرا تكذّب كنجي — فمن وضع الحقيبة ومن أخذها؟",
+  "correctSuspectId": "char_kenji_m",
+  "solutionExplanation": "المدبّر هو كنجي ماتسودا نفسه بالتواطؤ مع شخص مجهول.\n\nالثغرة القاتلة:\nكاميرا القطار السرية تظهر كنجي يضع حقيبته تحت مقعد 14C بنفسه — وهو مقعد كان يجلس فيه شخص غادر في المحطة الوسطى. هذا يثبت أن كنجي دبّر عملية التسريب بنفسه وأن 'السرقة' كانت خطة مدبّرة لتسريب البيانات لمنافس مقابل مبلغ مالي ضخم.",
+  "characters": [
+    {
+      "id": "char_kenji_m",
+      "name": "كنجي ماتسودا",
+      "age": 38,
+      "role": "مشتبه به",
+      "description": "مهندس تقني يدّعي سرقة حقيبته. الكاميرا تثبت أنه وضعها بنفسه تحت مقعد آخر.",
+      "imageEmoji": "👤",
+      "interrogation": "يؤدي دور الضحية بإتقان ويبدو غاضباً من السرقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كانت حقيبتك طوال الرحلة؟",
+          "answer": "تحت مقعدي طوال الوقت حتى لاحظت اختفاءها قرب الوصول.",
+          "isLie": true,
+          "lieHint": "الكاميرا السرية تظهره يضعها تحت مقعد 14C بنفسه."
+        },
+        {
+          "id": "q2",
+          "text": "هل تعرف من كان يجلس في مقعد 14C؟",
+          "answer": "لا أعرف، لم أنتبه للركاب الآخرين.",
+          "isLie": true,
+          "lieHint": "سجل تذاكر المحطة الوسطى يظهر شخصاً اشترى تذكرته في نفس اليوم بترتيب مريب."
+        },
+        {
+          "id": "q3",
+          "text": "ما قيمة البيانات التي كانت في الحقيبة؟",
+          "answer": "بيانات روتينية، مهمة للعمل لكن ليست سرية للغاية.",
+          "isLie": true,
+          "lieHint": "مدير الشركة يؤكد أن البيانات بالغة السرية وتتعلق بمشروع بمليارات الدولارات."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_train_officer",
+      "name": "المحقق ياماشيتا",
+      "age": 45,
+      "role": "شاهد",
+      "description": "محقق شركة السكك الحديدية. يشرح ما كشفته الكاميرات السرية.",
+      "imageEmoji": "👤",
+      "interrogation": "دقيق ومهني، يعرض الأدلة بترتيب.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ماذا أظهرت كاميرات القطار السرية؟",
+          "answer": "الكاميرا في العربة رقم 3 تظهر بوضوح كنجي ماتسودا يأخذ حقيبته ويضعها تحت مقعد 14C بنفسه في الساعة 11:42 صباحاً — قبل 20 دقيقة من الوصول لأوساكا.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_conductor",
+      "name": "المشرف هاياشي",
+      "age": 50,
+      "role": "شاهد",
+      "description": "مشرف القطار. يعرف تفاصيل كل راكب ومحطات التوقف.",
+      "imageEmoji": "👤",
+      "interrogation": "منضبط ومتعاون، يقدم معلومات دقيقة عن الرحلة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "من كان يجلس في مقعد 14C وأين نزل؟",
+          "answer": "مقعد 14C حُجز باسم مستعار ونزل صاحبه في محطة ناغويا الوسطى — وكان يحمل حقيبة إضافية لم تكن معه حين ركب.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "لقطة الكاميرا السرية",
+      "description": "كاميرا سرية في العربة 3 تظهر كنجي يضع حقيبته بنفسه تحت مقعد 14C قبل 20 دقيقة من الوصول.",
+      "type": "physical",
+      "emoji": "📹",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "الراكب المجهول في 14C",
+      "description": "مقعد 14C حُجز باسم مستعار وصاحبه نزل في المحطة الوسطى حاملاً حقيبة إضافية لم تكن معه.",
+      "type": "document",
+      "emoji": "🎫",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "قيمة البيانات الحقيقية",
+      "description": "مدير الشركة يؤكد أن البيانات بالغة السرية وتتعلق بمشروع تقني بمليارات الدولارات لم يُعلن عنه بعد.",
+      "type": "testimonial",
+      "emoji": "💰",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

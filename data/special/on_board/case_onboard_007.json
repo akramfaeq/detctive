@@ -1,0 +1,218 @@
+{
+  "id": "case_onboard_007",
+  "title": "الطائرة الخاصة",
+  "location": "طائرة خاصة، بين نيويورك وميامي، الولايات المتحدة",
+  "date": "2026/05/29",
+  "shortDesc": "على متن طائرة خاصة بخمسة ركاب فقط، وُجد مدير صندوق استثماري ميتاً في مقعده بعد ساعة من الإقلاع. أربعة مشتبه بهم ولا مكان يهرب منه أحد — لكن الهاتف المحذوف يحتفظ بكل شيء.",
+  "thumbnailEmoji": "🛩️",
+  "difficulty": "hard",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 350,
+  "fullStory": "على متن طائرة خاصة من نيويورك لميامي، كان مدير صندوق الاستثمار برادلي هوبر (60 عاماً) يسافر مع أربعة شركاء. بعد ساعة من الإقلاع، لاحظت المضيفة أنه لا يتحرك.\n\nالطبيب الشرعي اللاحق أكد التسميم. الطعام والمشروبات جاءت من نفس المصدر لكن أحداً غيره لم يتأثر — السم كان في كبسولة دوائه الخاصة التي أخذها بنفسه.\n\nأربعة ركاب: شريكه القانوني ليوناردو الذي كان يجلس بجانبه، محاسبة الصندوق غريس التي جلست خلفه، مستشاره المالي ويلسون الذي نام طوال الرحلة، وابن أخيه تايلر الذي كان مدعواً للسفر في اللحظة الأخيرة. برادلي أخذ كبسولته من علبته الخاصة — لكن من فتح العلبة قبله؟",
+  "hint": "الكبسولة من علبته الخاصة — من كان عنده وصول للعلبة قبل الإقلاع؟",
+  "correctSuspectId": "char_taylor",
+  "solutionExplanation": "القاتل هو تايلر هوبر، ابن أخي الضحية.\n\nالثغرة القاتلة:\nتايلر دُعي للسفر في اللحظة الأخيرة — وهو من ساعد برادلي في حمل حقيبته للطائرة. لقطة كاميرا مطار نيويورك تظهره يفتح الحقيبة ويتلاعب بشيء فيها قبل الصعود. علبة الكبسولات وُجدت في الحقيبة وليس في جيب برادلي. تايلر كان المستفيد الوحيد من وصية برادلي بعد أن طرد الشركاء الآخرين منها في تعديل أخير.",
+  "characters": [
+    {
+      "id": "char_bradley",
+      "name": "برادلي هوبر",
+      "age": 60,
+      "role": "الضحية",
+      "description": "مدير صندوق استثماري ضخم. وُجد ميتاً بعد تناوله كبسولة دوائية مسمومة.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_taylor",
+      "name": "تايلر هوبر",
+      "age": 28,
+      "role": "مشتبه به",
+      "description": "ابن أخي الضحية. دُعي للسفر في اللحظة الأخيرة. ساعد برادلي في حمل حقيبته. المستفيد الوحيد من الوصية.",
+      "imageEmoji": "👤",
+      "interrogation": "يتظاهر بالصدمة ويبكي بشكل لافت ومبالغ فيه.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل لمست حقيبة برادلي قبل الصعود للطائرة؟",
+          "answer": "فقط حملتها له، لم أفتحها أو أتلاعب بأي شيء فيها.",
+          "isLie": true,
+          "lieHint": "كاميرا مطار نيويورك تظهره يفتح الحقيبة ويتلاعب بشيء قبل الصعود."
+        },
+        {
+          "id": "q2",
+          "text": "هل تعلم أنك المستفيد الوحيد من وصية برادلي؟",
+          "answer": "لم أكن أعلم بتفاصيل وصيته، هذه أمور خاصة به.",
+          "isLie": true,
+          "lieHint": "محامي برادلي يؤكد أنه أبلغ تايلر شخصياً بالتعديل الأخير للوصية قبل أسبوع."
+        },
+        {
+          "id": "q3",
+          "text": "لماذا دُعيت للسفر في اللحظة الأخيرة؟",
+          "answer": "عمي يحبني ويريدني قريباً منه دائماً.",
+          "isLie": true,
+          "lieHint": "الشركاء الآخرون يؤكدون أن برادلي لم يذكر أنه سيأتي بتايلر حتى لحظة الصعود."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_leonardo",
+      "name": "ليوناردو سانتوس",
+      "age": 52,
+      "role": "مشتبه به",
+      "description": "الشريك القانوني لبرادلي. كان يجلس بجانبه مباشرة. خُرج من الوصية في التعديل الأخير.",
+      "imageEmoji": "👤",
+      "interrogation": "غاضب وصريح، يؤكد أنه فقد مستحقاته من الوصية ولكنه لم يقتل برادلي.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "كيف تعاملت مع قرار إخراجك من الوصية؟",
+          "answer": "كنت غاضباً بالطبع لكنني كنت سأطعن قانونياً وليس بهذه الطريقة.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_grace",
+      "name": "غريس تشن",
+      "age": 45,
+      "role": "مشتبه بها",
+      "description": "محاسبة الصندوق. تجلس خلف الضحية. كانت تعلم بمشاكل مالية في الصندوق.",
+      "imageEmoji": "👤",
+      "interrogation": "هادئة ومتعاونة. إفادتها منطقية وموثقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل لاحظتِ أي شيء غير عادي على متن الطائرة؟",
+          "answer": "رأيت تايلر يقف قريباً من مقعد عمه لفترة وجيزة قبل أن يأخذ برادلي الكبسولة.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "كاميرا مطار نيويورك",
+      "description": "لقطة واضحة تظهر تايلر يفتح حقيبة برادلي ويتلاعب بشيء داخلها قبل الصعود للطائرة بدقائق.",
+      "type": "physical",
+      "emoji": "📹",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "إبلاغ تايلر بالوصية",
+      "description": "محامي برادلي يؤكد أنه أبلغ تايلر شخصياً بأنه المستفيد الوحيد من الوصية المعدّلة قبل أسبوع.",
+      "type": "testimonial",
+      "emoji": "📜",
+      "revealOrder": 2,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "شهادة غريس على تحرك تايلر",
+      "description": "غريس لاحظت تايلر يقف قريباً من مقعد برادلي لفترة وجيزة قبل أن يتناول برادلي الكبسولة مباشرة.",
+      "type": "testimonial",
+      "emoji": "👁️",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "علبة الكبسولات في الحقيبة",
+      "description": "علبة الدواء وُجدت في حقيبة برادلي وليس في جيبه — مما يعني أن شخصاً آخر أحضرها له من الحقيبة وعنده وصول إليها.",
+      "type": "physical",
+      "emoji": "💊",
+      "revealOrder": 4,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

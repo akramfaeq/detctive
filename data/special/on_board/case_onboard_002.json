@@ -1,0 +1,176 @@
+{
+  "id": "case_onboard_002",
+  "title": "الرحلة 447",
+  "location": "طيران الخليج، رحلة دبي - لندن",
+  "date": "2026/03/22",
+  "shortDesc": "في منتصف رحلة من دبي للندن، وُجد راكب في درجة الأعمال ميتاً في مقعده. الطيارة في الجو — لا مفر لأحد. لكن السم لم يكن في الطعام.",
+  "thumbnailEmoji": "✈️",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "على ارتفاع 35 ألف قدم فوق أوروبا، لاحظت المضيفة نادية أن الراكب كريم العمراني (50 عاماً) في مقعد B4 لم يتحرك منذ ساعتين. حين اقتربت منه وجدته ميتاً.\n\nالطبيب الموجود على متن الطائرة أكد أن سبب الوفاة سم سريع المفعول. الطعام والمشروبات جاءت من نفس المطبخ للجميع ولم يتأثر أحد غيره.\n\nثلاثة ركاب كانوا على تماس مباشر مع كريم: جارته في المقعد B5 سوزان التي بدّلت مقعدها مرتين، الراكب أمامه الذي طلب من كريم تعديل مسند ظهره، ورجل من الصف الخلفي مرّ بجانبه مرتين متوجهاً للحمام. المحقق لاحظ أن قنينة المياه الخاصة بكريم كانت مختلفة عن قناني مياه الطائرة.",
+  "hint": "السم لم يكن في طعام الطائرة — إذاً من أين جاء؟",
+  "correctSuspectId": "char_susan",
+  "solutionExplanation": "القاتلة هي سوزان هارت، الجارة في المقعد B5.\n\nالثغرة القاتلة:\nقنينة المياه الخاصة بكريم كانت مختلفة عن قناني الطائرة — أي أنها أُبدلت. سوزان بدّلت مقعدها مرتين وكانت الأقرب لكريم طوال الرحلة. حين بدّلت مقعدها المرة الثانية للعودة لمقعدها الأصلي B5، أبدلت قنينة مياه كريم بقنينة مسمومة. دافعها: كريم كان شاهداً في قضية فساد ستشهد ضدها.",
+  "characters": [
+    {
+      "id": "char_karim",
+      "name": "كريم العمراني",
+      "age": 50,
+      "role": "الضحية",
+      "description": "راكب في درجة الأعمال. شاهد في قضية فساد كبيرة. وُجد ميتاً في مقعده.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_susan",
+      "name": "سوزان هارت",
+      "age": 44,
+      "role": "مشتبه بها",
+      "description": "جارة الضحية في مقعد B5. بدّلت مقعدها مرتين. متورطة في قضية الفساد التي يشهد فيها كريم.",
+      "imageEmoji": "👤",
+      "interrogation": "هادئة ومتعاونة بشكل مبالغ، تبدو مستعدة للأسئلة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "لماذا بدّلت مقعدك مرتين؟",
+          "answer": "المقعد الأول كان قريباً من محرك الطائرة والضوضاء تزعجني، ثم فضّلت العودة لمقعدي الأصلي.",
+          "isLie": true,
+          "lieHint": "مسؤول درجة الأعمال لا يتذكر أي شكوى من الضوضاء."
+        },
+        {
+          "id": "q2",
+          "text": "هل كنت تعرفين كريم العمراني قبل الرحلة؟",
+          "answer": "لا، التقينا لأول مرة على متن الطائرة.",
+          "isLie": true,
+          "lieHint": "سجلات قضية الفساد تظهر اسمها واسمه في نفس الملف."
+        },
+        {
+          "id": "q3",
+          "text": "هل لمستِ أي شيء على طاولة كريم؟",
+          "answer": "لا بالطبع، لا أتدخل في أشياء الآخرين.",
+          "isLie": true,
+          "lieHint": "قنينة مياه كريم كانت مختلفة عن قناني الطائرة — أي أنها أُبدلت."
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_nadia",
+      "name": "نادية المضيفة",
+      "age": 30,
+      "role": "شاهدة",
+      "description": "مضيفة الطائرة التي اكتشفت الضحية. لاحظت قنينة المياه المختلفة.",
+      "imageEmoji": "👤",
+      "interrogation": "محترفة وملاحِظة، تصف التفاصيل بدقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ماذا لاحظت على طاولة كريم؟",
+          "answer": "لاحظت أن قنينة المياه بجانبه ليست من قناني شركة الطيران، شكلها ومارك مختلف تماماً.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "blue",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "قنينة المياه المختلفة",
+      "description": "قنينة المياه بجانب الضحية ليست من قناني الطائرة — أُبدلت بأخرى تحتوي على سم سريع المفعول.",
+      "type": "physical",
+      "emoji": "🧴",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "سجل قضية الفساد",
+      "description": "وثائق تثبت أن سوزان هارت وكريم العمراني في نفس ملف قضية فساد وأن كريم كان سيشهد ضدها.",
+      "type": "document",
+      "emoji": "📁",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "تبديل المقعد المريب",
+      "description": "سجل تبديل المقاعد يثبت أن سوزان بدّلت مقعدها مرتين وكانت الوحيدة الأقرب لكريم في المرة الثانية.",
+      "type": "document",
+      "emoji": "💺",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

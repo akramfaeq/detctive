@@ -1,0 +1,218 @@
+{
+  "id": "case_onboard_008",
+  "title": "سفينة الشحن",
+  "location": "سفينة شحن، المحيط الهندي، بين مومباي وسنغافورة",
+  "date": "2026/09/14",
+  "shortDesc": "على متن سفينة شحن في المحيط الهندي، وُجد أحد البحارة ميتاً داخل حاوية مقفلة. رمز القفل يعرفه ثلاثة فقط — والجثة داخل حاوية لا علاقة له بعمله.",
+  "thumbnailEmoji": "🚢",
+  "difficulty": "hard",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 350,
+  "fullStory": "على متن سفينة الشحن العملاقة 'أوشن ستار' في المحيط الهندي، وُجد البحار رافائيل موريرا (34 عاماً) ميتاً داخل حاوية شحن مقفلة بقفل رقمي. الحاوية تحتوي على بضاعة إلكترونية فاخرة وليس لرافائيل أي علاقة بها.\n\nرمز القفل يعرفه ثلاثة فقط: ربان السفينة كاپتن لوك الذي كان في جسر القيادة، مسؤول الشحن أليخاندرو الذي ادّعى أنه لم يفتح الحاوية، ورافائيل نفسه الضحية.\n\nرافائيل كان يحقق بسرية في تهريب بضاعة مزورة داخل الحاوية — وأرسل رسالة لصديقه قبل وفاته تقول إنه 'وجد الدليل وسيكشفه عند الوصول'.",
+  "hint": "من يملك رمز القفل ومن لديه دافع لإسكات رافائيل؟",
+  "correctSuspectId": "char_alejandro",
+  "solutionExplanation": "القاتل هو أليخاندرو روميرو، مسؤول الشحن.\n\nالثغرة القاتلة:\nأليخاندرو يملك رمز القفل وهو المسؤول عن محتوى الحاوية. رافائيل أرسل رسالة تقول إنه وجد دليلاً على التهريب — والتهريب تحت إشراف أليخاندرو مباشرة. سجل فتح القفل الرقمي يظهر فتحه الساعة 2 صباحاً برمز أليخاندرو — رغم أنه ادّعى أنه لم يفتح الحاوية. رافائيل دُعي للداخل بحجة ما ثم أُغلق عليه.",
+  "characters": [
+    {
+      "id": "char_rafael",
+      "name": "رافائيل موريرا",
+      "age": 34,
+      "role": "الضحية",
+      "description": "بحار على متن السفينة. كان يحقق في تهريب مخفي. وُجد ميتاً في حاوية شحن مقفلة.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "orange",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_alejandro",
+      "name": "أليخاندرو روميرو",
+      "age": 48,
+      "role": "مشتبه به",
+      "description": "مسؤول الشحن. يملك رمز القفل. يشرف على محتوى الحاويات. ينفي فتح الحاوية.",
+      "imageEmoji": "👤",
+      "interrogation": "عدواني في ردوده ويتهم الربان.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل فتحت حاوية الشحن رقم A7 ليلة الجريمة؟",
+          "answer": "لا، لم أفتحها منذ أيام. آخر مرة كانت في ميناء مومباي.",
+          "isLie": true,
+          "lieHint": "سجل القفل الرقمي يظهر فتحه برمز أليخاندرو الساعة 2 صباحاً."
+        },
+        {
+          "id": "q2",
+          "text": "هل كنت تعلم أن رافائيل يحقق في محتوى الحاوية؟",
+          "answer": "لا، ما كان له علاقة بالحاويات أصلاً.",
+          "isLie": true,
+          "lieHint": "رسالة رافائيل الأخيرة تذكر أنه وجد دليلاً على التهريب داخل الحاوية."
+        },
+        {
+          "id": "q3",
+          "text": "ماذا تعرف عن البضاعة داخل الحاوية A7؟",
+          "answer": "إلكترونيات موثقة رسمياً، كل شيء نظيف وقانوني.",
+          "isLie": true,
+          "lieHint": "فحص لاحق للحاوية كشف عن بضاعة مهربة مخبأة بين الإلكترونيات."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "green",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_captain_luc",
+      "name": "كابتن لوك دوبوا",
+      "age": 56,
+      "role": "مشتبه به",
+      "description": "ربان السفينة. يملك رمز القفل. يدّعي أنه كان في جسر القيادة طوال الليل.",
+      "imageEmoji": "👤",
+      "interrogation": "رجل واثق بسلطته ويؤكد أن سجلات جسر القيادة تثبت تواجده.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل يمكن التحقق من تواجدك في الجسر طوال الليل؟",
+          "answer": "نعم، سجلات الجسر الإلكترونية تسجل كل حركة وكل قرار — أنا لم أغادره.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_rafael_friend",
+      "name": "ماركوس سيلفا",
+      "age": 32,
+      "role": "شاهد",
+      "description": "صديق رافائيل على متن السفينة. تلقى رسالته الأخيرة.",
+      "imageEmoji": "👤",
+      "interrogation": "حزين ويريد العدالة لصديقه. يكشف محتوى الرسالة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ماذا قال رافائيل في رسالته الأخيرة؟",
+          "answer": "أرسل لي: 'وجدت ما كنت أبحث عنه في A7، سأكشفه عند وصولنا لسنغافورة. إذا حدث لي شيء أخبر السلطات'. هذا كان آخر ما سمعته منه.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "blue",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "سجل القفل الرقمي",
+      "description": "سجل نظام القفل الرقمي يثبت فتح الحاوية A7 برمز أليخاندرو روميرو الساعة 2:14 صباحاً — رغم نفيه.",
+      "type": "digital",
+      "emoji": "🔐",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "رسالة رافائيل الأخيرة",
+      "description": "رسالة أرسلها رافائيل لصديقه تقول إنه وجد دليلاً في الحاوية A7 وسيكشفه عند الوصول لسنغافورة.",
+      "type": "digital",
+      "emoji": "📱",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "البضاعة المهربة داخل الحاوية",
+      "description": "فحص لاحق للحاوية A7 كشف عن بضاعة مهربة مخبأة بمهارة بين الإلكترونيات الرسمية.",
+      "type": "physical",
+      "emoji": "📦",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "سجلات جسر القيادة",
+      "description": "سجلات الجسر الإلكترونية تثبت أن الربان لوك لم يغادر الجسر طوال الليل — مما يزيل الشبهة عنه.",
+      "type": "digital",
+      "emoji": "⚓",
+      "revealOrder": 4,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

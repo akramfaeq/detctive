@@ -1,0 +1,176 @@
+{
+  "id": "case_onboard_006",
+  "title": "عبّارة منتصف الليل",
+  "location": "عبّارة بين هلسنكي وستوكهولم، بحر البلطيق",
+  "date": "2026/10/03",
+  "shortDesc": "في رحلة عبّارة ليلية بين فنلندا والسويد، وُجد دبلوماسي فنلندي ميتاً في جناحه الخاص. جواز سفره اختفى — وفي بحر البلطيق لا مكان يهرب منه أحد.",
+  "thumbnailEmoji": "⛴️",
+  "difficulty": "medium",
+  "estimatedMinutes": 15,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 200,
+  "fullStory": "على متن عبّارة فنلندية ليلية، وُجد الدبلوماسي أنتي كوسكينن (55 عاماً) ميتاً في جناحه الفاخر. جواز سفره الدبلوماسي الذي يحتوي على معلومات حساسة كان مفقوداً.\n\nثلاثة أشخاص كانوا في نفس الطابق الفاخر: الصحفية الروسية إيرينا التي رفضت إعطاء اسمها الكامل لأمن العبّارة، رجل الأعمال السويدي إريك الذي كان يتصفح هاتفه في الممر وقت الجريمة، والمترجمة الفنلندية هيلي التي كانت ترافق الدبلوماسي في مهمة رسمية.\n\nالمحقق لاحظ أن هيلي كانت تعرف رقم جناح الدبلوماسي رغم أن التوزيع لم يُعلن رسمياً — وأن في حقيبتها ورقة بنفس الرقم.",
+  "hint": "من يعرف رقم الجناح قبل الإعلان عنه — وكيف عرف؟",
+  "correctSuspectId": "char_heili",
+  "solutionExplanation": "القاتلة هي هيلي ماكينن، المترجمة.\n\nالثغرة القاتلة:\nهيلي كانت تعرف رقم جناح الدبلوماسي رغم أن التوزيع لم يُعلن رسمياً — ووُجدت في حقيبتها ورقة بالرقم مكتوباً عليها. هذا يثبت أنها خططت مسبقاً وليس أنها ذهبت للجناح بالصدفة. هيلي كانت عميلة مزدوجة تعمل لصالح جهة أجنبية وكُلّفت بسرقة جواز السفر الدبلوماسي الذي يحتوي على شفرات وصول حساسة.",
+  "characters": [
+    {
+      "id": "char_antti",
+      "name": "أنتي كوسكينن",
+      "age": 55,
+      "role": "الضحية",
+      "description": "دبلوماسي فنلندي رفيع. وُجد ميتاً في جناحه الفاخر وجواز سفره الدبلوماسي مفقود.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_heili",
+      "name": "هيلي ماكينن",
+      "age": 32,
+      "role": "مشتبه بها",
+      "description": "مترجمة رسمية ترافق الدبلوماسي. تعرف رقم جناحه قبل الإعلان. عميلة مزدوجة.",
+      "imageEmoji": "👤",
+      "interrogation": "واثقة من نفسها جداً وتجيب بسرعة دون تردد — كأنها حفظت الإجابات.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "كيف عرفتِ رقم جناح الدبلوماسي؟",
+          "answer": "أخبرني به هو شخصياً حين صعدنا العبّارة.",
+          "isLie": true,
+          "lieHint": "ورقة بالرقم وُجدت في حقيبتها مكتوبة بخطها قبل الصعود."
+        },
+        {
+          "id": "q2",
+          "text": "هل دخلتِ جناح الدبلوماسي ليلة الجريمة؟",
+          "answer": "لا، آخر مرة رأيته كانت في مطعم العبّارة.",
+          "isLie": true,
+          "lieHint": "كاميرا الممر تظهر شخصاً بنفس قامتها وملابسها يدخل الجناح."
+        },
+        {
+          "id": "q3",
+          "text": "هل لديكِ علاقات مع جهات أجنبية؟",
+          "answer": "أنا مترجمة حكومية، علاقاتي كلها رسمية.",
+          "isLie": true,
+          "lieHint": "الاستخبارات الفنلندية تحقق معها منذ شهرين بشبهة عمالة مزدوجة."
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "long",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_irina",
+      "name": "إيرينا فولكوفا",
+      "age": 40,
+      "role": "مشتبه بها",
+      "description": "صحفية روسية رفضت تقديم اسمها الكامل لأمن العبّارة. حضورها مثير للريبة.",
+      "imageEmoji": "👤",
+      "interrogation": "متحفظة في ردودها لكن إفادتها عن تواجدها في المطعم مدعومة بشهود.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "لماذا رفضتِ تقديم اسمك الكامل لأمن العبّارة؟",
+          "answer": "كصحفية أحمي هويتي في بعض السفرات، هذا حقي القانوني.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الورقة بخط هيلي قبل الصعود",
+      "description": "ورقة في حقيبة هيلي مكتوب عليها رقم جناح الدبلوماسي بخطها — وقد كُتبت قبل صعود العبّارة رسمياً.",
+      "type": "physical",
+      "emoji": "📝",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "كاميرا الممر",
+      "description": "كاميرا في ممر الطابق الفاخر تظهر شخصاً بنفس قامة هيلي وملابسها يدخل جناح الدبلوماسي ليلة الجريمة.",
+      "type": "physical",
+      "emoji": "📹",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "ملف الاستخبارات عن هيلي",
+      "description": "وثيقة من الاستخبارات الفنلندية تثبت أن هيلي تحت التحقيق منذ شهرين بشبهة عمالة مزدوجة لجهة أجنبية.",
+      "type": "document",
+      "emoji": "🕵️",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

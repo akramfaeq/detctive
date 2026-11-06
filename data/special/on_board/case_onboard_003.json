@@ -1,0 +1,176 @@
+{
+  "id": "case_onboard_003",
+  "title": "الكابينة المقفلة",
+  "location": "سفينة كوين ماري 2، المحيط الأطلسي",
+  "date": "2026/07/10",
+  "shortDesc": "في الليلة الثالثة من رحلة عبور الأطلسي، وُجد مدير شركة استثمارية ميتاً في كابينته. النافذة مفتوحة — لكن في وسط المحيط لا مكان لأحد يهرب إليه.",
+  "thumbnailEmoji": "🚢",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "على متن سفينة كوين ماري 2 في منتصف الأطلسي، كان المدير التنفيذي آرثر ويلسون (62 عاماً) يسافر مع فريق عمله الصغير. في الليلة الثالثة، وُجد ميتاً في كابينته الفاخرة ونافذتها مفتوحة على البحر.\n\nالطبيب أكد أنه ضُرب بجسم ثقيل وأن الوفاة كانت قبل منتصف الليل. معاونه الشخصي ريتشارد كان آخر من رآه حياً في الساعة العاشرة. وكيلته ماريا ادّعت أنها كانت في صالة الألعاب، وشريكه في الشركة توماس قال إنه كان في غرفته.\n\nالمحقق وجد على حافة النافذة المفتوحة خيطاً من صوف أزرق — نفس لون الكنزة التي يرتديها توماس.",
+  "hint": "النافذة المفتوحة في وسط المحيط — ماذا يخبئ من فتحها؟",
+  "correctSuspectId": "char_thomas",
+  "solutionExplanation": "القاتل هو توماس غرين، الشريك في الشركة.\n\nالثغرة القاتلة:\nخيط الصوف الأزرق على حافة النافذة يطابق كنزة توماس التي كان يرتديها تلك الليلة. فتح النافذة كان محاولة لإيهام المحققين بأن القاتل هرب منها — لكن في وسط المحيط هذا مستحيل. توماس دخل كابينة آرثر بعد مغادرة ريتشارد، قتله في نزاع على صفقة كانت ستضر بمصالحه المالية، ثم فتح النافذة لصرف الأنظار.",
+  "characters": [
+    {
+      "id": "char_arthur",
+      "name": "آرثر ويلسون",
+      "age": 62,
+      "role": "الضحية",
+      "description": "مدير تنفيذي لشركة استثمارية. وُجد ميتاً في كابينته ونافذتها مفتوحة.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_thomas",
+      "name": "توماس غرين",
+      "age": 55,
+      "role": "مشتبه به",
+      "description": "شريك آرثر في الشركة. يرتدي كنزة زرقاء. لديه خلاف مالي على صفقة كبيرة.",
+      "imageEmoji": "👤",
+      "interrogation": "يتكلم بثقة ويدّعي أنه كان في كابينته طوال الليل.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت بين العاشرة ومنتصف الليل؟",
+          "answer": "في كابينتي أقرأ ثم نمت مبكراً، لم أغادرها.",
+          "isLie": true,
+          "lieHint": "خيط من كنزته الزرقاء وُجد على حافة نافذة كابينة الضحية."
+        },
+        {
+          "id": "q2",
+          "text": "هل كان بينك وبين آرثر خلاف على صفقة ما؟",
+          "answer": "نختلف أحياناً في الرأي، هذا طبيعي في العمل.",
+          "isLie": true,
+          "lieHint": "وثائق الشركة تثبت خلافاً حاداً على صفقة بملايين الدولارات."
+        },
+        {
+          "id": "q3",
+          "text": "لماذا كانت نافذة كابينة آرثر مفتوحة برأيك؟",
+          "answer": "ربما فتحها هو للهواء، لا أعلم.",
+          "isLie": true,
+          "lieHint": "معاون آرثر يؤكد أنه كان يشتكي من البرد ولا يفتح النوافذ أبداً."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "blue",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_richard",
+      "name": "ريتشارد بيلي",
+      "age": 35,
+      "role": "شاهد",
+      "description": "المعاون الشخصي للضحية. آخر من رآه حياً. يؤكد أن آرثر كان يشتكي من البرد.",
+      "imageEmoji": "👤",
+      "interrogation": "حزين ومتعاون، يصف آخر لقاء له مع آرثر.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما آخر شيء قاله لك آرثر؟",
+          "answer": "أخبرني بأنه يشعر بالبرد الشديد وطلب مني إحضار بطانية إضافية، لم يكن ليفتح النافذة أبداً.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "خيط الصوف الأزرق على النافذة",
+      "description": "خيط صوف أزرق على حافة النافذة المفتوحة يطابق تماماً نسيج ولون الكنزة التي يرتديها توماس.",
+      "type": "physical",
+      "emoji": "🧵",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "شهادة المعاون عن البرد",
+      "description": "ريتشارد يؤكد أن آرثر كان يشتكي من البرد ولم يكن ليفتح النافذة — أي أن شخصاً آخر فتحها.",
+      "type": "testimonial",
+      "emoji": "🥶",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "وثائق الخلاف المالي",
+      "description": "وثائق الشركة تثبت خلافاً حاداً بين توماس وآرثر على صفقة كانت ستضر بمصالح توماس بشكل كبير.",
+      "type": "document",
+      "emoji": "💼",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

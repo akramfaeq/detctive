@@ -1,0 +1,203 @@
+{
+  "id": "case_onboard_001",
+  "title": "الركاب الثلاثة",
+  "location": "قطار أوريان إكسبريس، بين باريس وفيينا",
+  "date": "2026/01/15",
+  "shortDesc": "في عربة النوم الأولى من قطار أوريان إكسبريس، وُجد تاجر ألماني ثري ميتاً في مقصورته المقفلة. ثلاثة ركاب فقط في نفس العربة — وكلهم يسمعون كل شيء.",
+  "thumbnailEmoji": "🚂",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "في رحلة أوريان إكسبريس الليلية من باريس لفيينا، كان التاجر الألماني هانز مولر (58 عاماً) يسافر وحده في المقصورة رقم 3. في الساعة الثالثة فجراً، أيقظ صراخ امرأة بقية الركاب — وُجد هانز ميتاً ومحفظته المحتوية على عقود تجارية مهمة مفقودة.\n\nالمقصورة كانت مقفلة من الداخل، لكن قفل عربات النوم القديمة يمكن فتحه بمفتاح موحد يملكه مسؤول العربة. ثلاثة ركاب في نفس العربة: المرأة الفرنسية كلود التي أيقظت الجميع، رجل الأعمال البريطاني ستيوارت الذي يدّعي أنه كان نائماً، والسيدة اليابانية ميكو التي قالت إنها سمعت صوت باب يُغلق نحو الثانية فجراً.\n\nالمحقق لاحظ أن ستيوارت كان يشرب قهوة ساخنة حين دخل الممر — في الثالثة فجراً.",
+  "hint": "من يشرب قهوة ساخنة في الثالثة فجراً على متن قطار؟",
+  "correctSuspectId": "char_stewart",
+  "solutionExplanation": "القاتل هو ستيوارت بلاك، رجل الأعمال البريطاني.\n\nالثغرة القاتلة:\nادعى ستيوارت أنه كان نائماً، لكنه كان يحمل قهوة ساخنة حين خرج للممر الساعة الثالثة فجراً — أي أنه لم يكن نائماً بل مستيقظاً ومستعداً. ميكو سمعت صوت باب يُغلق الساعة الثانية — وهو وقت الجريمة. ستيوارت كان يعرف هانز وكان لديه خلاف تجاري معه، والعقود المسروقة تخصه مباشرة.",
+  "characters": [
+    {
+      "id": "char_hans",
+      "name": "هانز مولر",
+      "age": 58,
+      "role": "الضحية",
+      "description": "تاجر ألماني ثري. وُجد ميتاً في مقصورته المقفلة ومحفظته مفقودة.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_stewart",
+      "name": "ستيوارت بلاك",
+      "age": 52,
+      "role": "مشتبه به",
+      "description": "رجل أعمال بريطاني. يدّعي أنه كان نائماً. كان يشرب قهوة ساخنة في الثالثة فجراً.",
+      "imageEmoji": "👤",
+      "interrogation": "يبدو هادئاً بشكل لافت ويتكلم ببطء ودقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل كنت مستيقظاً ليلة الجريمة؟",
+          "answer": "لا، كنت نائماً بعمق حتى سمعت الصراخ.",
+          "isLie": true,
+          "lieHint": "كان يحمل قهوة ساخنة حين خرج للممر — من يُعدّ قهوة وهو نائم؟"
+        },
+        {
+          "id": "q2",
+          "text": "هل كنت تعرف هانز مولر قبل هذه الرحلة؟",
+          "answer": "لا، رأيته لأول مرة في القطار.",
+          "isLie": true,
+          "lieHint": "سجلات غرفة تناول الطعام تظهرهما يتناولان العشاء معاً أول الرحلة."
+        },
+        {
+          "id": "q3",
+          "text": "هل سمعت أي صوت من مقصورة هانز ليلاً؟",
+          "answer": "لا شيء، النوم العميق يمنعني من سماع أي صوت.",
+          "isLie": true,
+          "lieHint": "ميكو سمعت صوت باب يُغلق الساعة الثانية وهو ما يوافق وقت الجريمة."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_claude_f",
+      "name": "كلود دوبوا",
+      "age": 45,
+      "role": "شاهدة",
+      "description": "امرأة فرنسية أيقظت الجميع بصراخها حين اكتشفت الجثة.",
+      "imageEmoji": "👤",
+      "interrogation": "مضطربة وخائفة، تصف ما رأته بدقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "كيف اكتشفت الجثة؟",
+          "answer": "لاحظت أن باب مقصورة هانز مفتوح قليلاً فطرقت وحين لم يجب دفعته ووجدته على الأرض.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "red",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_meiko",
+      "name": "ميكو تاناكا",
+      "age": 38,
+      "role": "شاهدة",
+      "description": "سيدة يابانية نائمة سمعت صوت باب يُغلق الساعة الثانية فجراً.",
+      "imageEmoji": "👤",
+      "interrogation": "هادئة ودقيقة، تؤكد ما سمعته بثقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ماذا سمعت بالضبط ليلة الجريمة؟",
+          "answer": "استيقظت على صوت باب مقصورة يُغلق بهدوء نحو الساعة الثانية فجراً، ثم خطوات خفيفة في الممر.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "القهوة الساخنة في الثالثة فجراً",
+      "description": "ستيوارت كان يحمل فنجان قهوة ساخنة حين خرج للممر — دليل واضح على أنه كان مستيقظاً ومستعداً وليس نائماً.",
+      "type": "physical",
+      "emoji": "☕",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "سجل عشاء هانز وستيوارت معاً",
+      "description": "سجلات عربة الطعام تثبت أن هانز وستيوارت تناولا العشاء معاً أول الرحلة — أي أنهما يعرفان بعضهما.",
+      "type": "document",
+      "emoji": "🍽️",
+      "revealOrder": 2,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "شهادة ميكو عن صوت الباب",
+      "description": "ميكو سمعت صوت باب يُغلق والخطوات في الممر الساعة الثانية فجراً — وهو الوقت المقدر للجريمة.",
+      "type": "testimonial",
+      "emoji": "👂",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

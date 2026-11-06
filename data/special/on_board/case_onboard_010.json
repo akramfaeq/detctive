@@ -1,0 +1,218 @@
+{
+  "id": "case_onboard_010",
+  "title": "المحطة الأخيرة",
+  "location": "سفينة رويال كاريبيان، بين ميامي وجزر الكاريبي",
+  "date": "2026/12/20",
+  "shortDesc": "على متن رحلة كاريبية فاخرة، وُجد مدير تأمين بريطاني ميتاً في يخت صغير تابع للسفينة قبل رسوها بساعة. اليخت مقفل ولا أحد يملك مفتاحه — إلا ثلاثة.",
+  "thumbnailEmoji": "🏝️",
+  "difficulty": "hard",
+  "estimatedMinutes": 25,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 350,
+  "fullStory": "في الرحلة الكاريبية الفاخرة على متن ميجنيفيسنت أوف ذا سيز، اختار مدير التأمين البريطاني فيليب هارت (53 عاماً) هذه الرحلة للاحتفال بتقاعده. قبل ساعة من الرسو، أبلغ طاقم السفينة عن يخت صغير مربوط بجانب السفينة الكبيرة — وبداخله فيليب ميتاً.\n\nاليخت الصغير مملوك للسفينة ويُستخدم لجولات حصرية. مفتاحه يملكه ثلاثة فقط: المدير الترفيهي ماكسيميليان، ضابطة الأمن ليزا، وكبير المضيفين كارلوس.\n\nفيليب كان يحقق بسرية في قضية تزوير بوالص تأمين تورط فيها أحد هؤلاء الثلاثة — وكان قد أبلغ وكيله أنه 'على وشك الإمساك بالدليل الأخير' قبل يوم من الرحلة.",
+  "hint": "من يملك مفتاح اليخت ومن كان فيليب على وشك فضحه في قضية التأمين؟",
+  "correctSuspectId": "char_lisa",
+  "solutionExplanation": "القاتلة هي ليزا فانغ، ضابطة الأمن.\n\nالثغرة القاتلة:\nليزا تملك مفتاح اليخت بحكم منصبها الأمني. والأهم: فيليب متخصص في تأمين الشحن البحري — وليزا قبل انضمامها لطاقم السفينة كانت موظفة في شركة شحن متورطة في قضية تزوير بوالص تأمين بحرية. فيليب اكتشف ماضيها وكان سيرفع تقريراً بعد الرحلة. سجل مفاتيح اليخت يظهر أن مفتاح ليزا استُخدم مساء قبل اكتشاف الجثة.",
+  "characters": [
+    {
+      "id": "char_philip",
+      "name": "فيليب هارت",
+      "age": 53,
+      "role": "الضحية",
+      "description": "مدير تأمين بريطاني في رحلة تقاعده. كان يحقق في تزوير بوالص تأمين بحرية. وُجد ميتاً في اليخت الصغير.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_lisa",
+      "name": "ليزا فانغ",
+      "age": 38,
+      "role": "مشتبه بها",
+      "description": "ضابطة أمن السفينة. تملك مفتاح اليخت. ماضيها في شركة شحن متورطة في تزوير تأمين.",
+      "imageEmoji": "👤",
+      "interrogation": "تتعامل بمهنية عالية وكأنها هي المحققة وليست المشتبه بها.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل استخدمتِ مفتاح اليخت في الليلة الماضية؟",
+          "answer": "لا، لم أقترب من اليخت منذ جولة التفتيش اليومية في الصباح.",
+          "isLie": true,
+          "lieHint": "سجل المفاتيح الإلكتروني يثبت استخدام مفتاحها مساءً."
+        },
+        {
+          "id": "q2",
+          "text": "هل كنت موظفة في شركة شحن قبل انضمامك للسفينة؟",
+          "answer": "عملت في أماكن عدة قبل هذا المنصب، هذا طبيعي.",
+          "isLie": true,
+          "lieHint": "سجل توظيفها يظهر عملها في شركة الشحن المتورطة في قضية التزوير التي كان فيليب يحقق فيها."
+        },
+        {
+          "id": "q3",
+          "text": "هل تحدثتِ مع فيليب هارت أثناء الرحلة؟",
+          "answer": "مواجهات عابرة مثل بقية الركاب، لا أكثر.",
+          "isLie": true,
+          "lieHint": "شاهد رأى ليزا وفيليب في حديث طويل ومتوتر على سطح السفينة مساء اليوم السابق."
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_max",
+      "name": "ماكسيميليان فوغل",
+      "age": 42,
+      "role": "مشتبه به",
+      "description": "المدير الترفيهي. يملك مفتاح اليخت. كان يرتب فعاليات الرحلة.",
+      "imageEmoji": "👤",
+      "interrogation": "ودود ومتعاون بشكل طبيعي. سجل مفتاحه لا يظهر أي استخدام مريب.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى استخدمت مفتاح اليخت آخر مرة؟",
+          "answer": "في ظهر أمس لجولة ترفيهية مع مجموعة من الركاب، وكل شيء موثق في جدول الفعاليات.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_witness_passenger",
+      "name": "الراكبة باتريشيا",
+      "age": 60,
+      "role": "شاهدة",
+      "description": "راكبة لاحظت حواراً متوتراً بين ليزا وفيليب.",
+      "imageEmoji": "👤",
+      "interrogation": "حادة الملاحظة ومتعاونة تماماً.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ماذا لاحظتِ على متن السفينة؟",
+          "answer": "رأيت ضابطة الأمن وذلك الرجل البريطاني في حديث طويل ومتوتر على السطح العلوي مساء أمس. كانت تبدو عليها العصبية الشديدة وهو يشير لورقة في يده.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "blue",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "سجل المفاتيح الإلكتروني",
+      "description": "سجل نظام المفاتيح يثبت استخدام مفتاح ليزا فانغ لفتح اليخت الصغير مساء الليلة السابقة — وهو الوقت المقدر للجريمة.",
+      "type": "digital",
+      "emoji": "🔑",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "ماضي ليزا في شركة الشحن",
+      "description": "سجل توظيف ليزا يكشف عملها في شركة الشحن المتورطة في قضية تزوير بوالص التأمين البحرية التي كان فيليب يحقق فيها.",
+      "type": "document",
+      "emoji": "📋",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "شهادة باتريشيا عن الحوار المتوتر",
+      "description": "الراكبة باتريشيا رأت ليزا وفيليب في حوار طويل ومتوتر على السطح العلوي — وليزا كانت تبدو عليها العصبية الشديدة.",
+      "type": "testimonial",
+      "emoji": "👀",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "رسالة فيليب لوكيله",
+      "description": "رسالة بريد إلكتروني أرسلها فيليب لوكيله قبل يوم من الرحلة تقول إنه 'على وشك الإمساك بالدليل الأخير في القضية'.",
+      "type": "digital",
+      "emoji": "📧",
+      "revealOrder": 4,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

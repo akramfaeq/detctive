@@ -1,0 +1,226 @@
+{
+  "id": "case_onboard_009",
+  "title": "عبور الأطلسي",
+  "location": "رحلة لوفتهانزا، بين فرانكفورت وشيكاغو",
+  "date": "2026/11/19",
+  "shortDesc": "في رحلة عبور أطلسية طويلة، اختفت حقيبة دبلوماسية تحتوي على وثائق سرية دولية. المسافة 9 ساعات والجميع لا يزال على متن الطائرة — لكن الوثائق تبخّرت.",
+  "thumbnailEmoji": "🌍",
+  "difficulty": "hard",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 350,
+  "fullStory": "على متن رحلة لوفتهانزا عبر الأطلسي، كان المبعوث الدولي هيرمان كلاوس (58 عاماً) يحمل حقيبة دبلوماسية تحتوي على وثائق اتفاقية سرية. في منتصف الرحلة لاحظ أن الحقيبة فُتحت والوثائق نُسخت — الأصل لا يزال لكن أحدهم صوّرها.\n\nكاميرات الطائرة السرية التقطت صوراً ضبابية لشخص يفتح قسم الأمتعة العلوي فوق مقعد هيرمان. ثلاثة ركاب في نفس الصف: الأستاذ الجامعي الصيني وانغ الذي نام طوال الرحلة على ما يدّعي، الصحفية البريطانية ريبيكا التي كانت تكتب باستمرار على حاسوبها، والرجل الغامض الذي سجّل اسمه باسم 'إريك مولر' ولا يوجد جواز سفر بهذا الاسم في قاعدة البيانات.\n\nهيرمان لاحظ رائحة عطر فريدة جداً حين عاد لمقعده — عطر الباتشولي النادر.",
+  "hint": "العطر النادر الذي لاحظه هيرمان — من على متن الطائرة يرتديه؟",
+  "correctSuspectId": "char_rebecca",
+  "solutionExplanation": "القاتلة هي ريبيكا هيوز، الصحفية البريطانية — لكنها في الحقيقة عميلة استخباراتية.\n\nالثغرة القاتلة:\nهيرمان لاحظ رائحة عطر الباتشولي النادر حين عاد لمقعده. ريبيكا هي الوحيدة على متن الطائرة التي تعتمد هذا العطر وهو مسجل في ملفها الشخصي لدى شركة الطيران من تفضيلاتها. وما يبدو كتابة على الحاسوب كان في الحقيقة نقل لصور الوثائق عبر تقنية نقل بيانات خاصة. اسم 'إريك مولر' الغامض كان مجرد زميلها المرافق الذي يعمل بهوية مزيفة.",
+  "characters": [
+    {
+      "id": "char_herman",
+      "name": "هيرمان كلاوس",
+      "age": 58,
+      "role": "الضحية",
+      "description": "مبعوث دولي يحمل وثائق اتفاقية سرية. لاحظ أن وثائقه نُسخت وشمّ عطر غريب عند عودته.",
+      "imageEmoji": "👤",
+      "interrogation": "واثق وحاد الملاحظة. يصف ما لاحظه بدقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما الذي لاحظته حين عدت لمقعدك؟",
+          "answer": "شممت رائحة عطر باتشولي قوية — عطر نادر جداً. ثم لاحظت أن الحقيبة في وضع مختلف قليلاً عن الذي تركتها عليه.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_rebecca",
+      "name": "ريبيكا هيوز",
+      "age": 36,
+      "role": "مشتبه بها",
+      "description": "تدّعي أنها صحفية. في الحقيقة عميلة استخباراتية. تعتمد عطر الباتشولي النادر. كانت تنقل البيانات بينما تبدو كاتبة.",
+      "imageEmoji": "👤",
+      "interrogation": "ذكية جداً في إجاباتها ولا ترتبك بسهولة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل غادرت مقعدك في أي وقت أثناء الرحلة؟",
+          "answer": "ذهبت للحمام مرة واحدة فقط في الساعة الرابعة من الرحلة.",
+          "isLie": true,
+          "lieHint": "كاميرا الطائرة تظهر شخصاً يفتح قسم الأمتعة العلوي فوق مقعد هيرمان في الساعة الثالثة."
+        },
+        {
+          "id": "q2",
+          "text": "ما نوع العطر الذي تستخدمينه؟",
+          "answer": "عطر خفيف فرنسي عادي، لا أتذكر اسمه.",
+          "isLie": true,
+          "lieHint": "سجل تفضيلاتها لدى شركة الطيران يذكر صراحة عطر الباتشولي."
+        },
+        {
+          "id": "q3",
+          "text": "ما الذي كنت تكتبينه باستمرار على حاسوبك؟",
+          "answer": "مقال صحفي لعمل طارئ، أنا صحفية والمواعيد النهائية لا ترحم.",
+          "isLie": true,
+          "lieHint": "تحليل حاسوبها يكشف برنامج نقل بيانات مشفر غير اعتيادي يعمل في الخلفية."
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_wang",
+      "name": "وانغ ليانغ",
+      "age": 50,
+      "role": "مشتبه به",
+      "description": "أستاذ جامعي صيني. يدّعي النوم طوال الرحلة. لا يتذكر أي شيء.",
+      "imageEmoji": "👤",
+      "interrogation": "يبدو نعساناً حقاً وإفادته متسقة وعفوية.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل استيقظت في أي وقت أثناء الرحلة؟",
+          "answer": "مرة واحدة فقط لشرب الماء في بداية الرحلة ثم نمت حتى الهبوط.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_tech_analyst",
+      "name": "المحلل التقني فولكر",
+      "age": 42,
+      "role": "شاهد",
+      "description": "محلل تقني من الاستخبارات الألمانية. يحلل حاسوب ريبيكا.",
+      "imageEmoji": "👤",
+      "interrogation": "خبير ويشرح النتائج التقنية بدقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ماذا وجدت في حاسوب ريبيكا؟",
+          "answer": "وجدنا برنامج نقل بيانات مشفراً يعمل في الخلفية أثناء الرحلة. البرنامج يلتقط صور الوثائق القريبة ويرسلها لخادم خارجي عبر شبكة الطائرة.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "رائحة الباتشولي النادر",
+      "description": "هيرمان شمّ رائحة عطر باتشولي نادر عند عودته لمقعده — وسجل تفضيلات ريبيكا لدى شركة الطيران يذكر هذا العطر صراحة.",
+      "type": "testimonial",
+      "emoji": "🌿",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "برنامج نقل البيانات المشفر",
+      "description": "تحليل حاسوب ريبيكا كشف برنامجاً مشفراً يلتقط صور الوثائق القريبة ويرسلها لخادم خارجي.",
+      "type": "digital",
+      "emoji": "💻",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "كاميرا الطائرة عند قسم الأمتعة",
+      "description": "كاميرا سرية تظهر شخصاً يفتح قسم الأمتعة العلوي فوق مقعد هيرمان في الساعة الثالثة — أي حين ادّعت ريبيكا أنها في مقعدها.",
+      "type": "physical",
+      "emoji": "📹",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "هوية 'إريك مولر' المزيفة",
+      "description": "لا يوجد جواز سفر باسم إريك مولر في قاعدة البيانات الدولية — الشخص يعمل بهوية مزيفة وهو مرافق ريبيكا في العملية.",
+      "type": "document",
+      "emoji": "🪪",
+      "revealOrder": 4,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}
