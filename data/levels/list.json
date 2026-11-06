@@ -1,0 +1,124 @@
+{
+  "cases": [
+    {
+      "id": "case_window_001",
+      "title": "النافذة الثالثة",
+      "location": "فندق غراند بلازا، برلين، ألمانيا",
+      "shortDesc": "دبلوماسي مقتول وأربعة مشتبه بهم لكل منهم كاميرا تُثبت وجوده في طابق مختلف — لكن مدة لقطة واحدة بثماني عشرة ثانية تكشف التلاعب.",
+      "thumbnailEmoji": "🪟",
+      "difficulty": "hard",
+      "estimatedMinutes": 35,
+      "evidenceCount": 5,
+      "isNew": true,
+      "requiredPoints": 300
+    },
+    {
+      "id": "case_live_002",
+      "title": "اللقطة الحية",
+      "location": "استوديو تلفزيوني، مدريد، إسبانيا",
+      "shortDesc": "مذيعة مقتولة خلال استراحة بث مباشر — والقاتل لم يُرَ بالصورة لكن نغمة رنين هاتفه المخصصة التُقطت بالميكروفون المفتوح.",
+      "thumbnailEmoji": "📡",
+      "difficulty": "hard",
+      "estimatedMinutes": 35,
+      "evidenceCount": 5,
+      "isNew": true,
+      "requiredPoints": 300
+    },
+    {
+      "id": "case_testimony_003",
+      "title": "الرواية المتكررة",
+      "location": "فيلا خاصة على ضفاف البحيرة، لوزان، سويسرا",
+      "shortDesc": "خمسة شهود يصفون نفس الحادثة بنفس الكلمات الحرفية — والتطابق المستحيل إحصائياً هو الدليل على التنسيق المسبق.",
+      "thumbnailEmoji": "🔄",
+      "difficulty": "hard",
+      "estimatedMinutes": 35,
+      "evidenceCount": 5,
+      "isNew": true,
+      "requiredPoints": 300
+    },
+    {
+      "id": "case_doctor_004",
+      "title": "الصمت الطبي",
+      "location": "عيادة خاصة، زيورخ، سويسرا",
+      "shortDesc": "طبيب وُجد ميتاً بجرعة زائدة والإبرة في يده اليمنى — لكن حالة طبية يعرفها كل من حوله تُثبت أن هذا مستحيل.",
+      "thumbnailEmoji": "💊",
+      "difficulty": "hard",
+      "estimatedMinutes": 35,
+      "evidenceCount": 5,
+      "isNew": true,
+      "requiredPoints": 300
+    },
+    {
+      "id": "case_vault_005",
+      "title": "صندوق الأمانات",
+      "location": "بنك خاص، جنيف، سويسرا",
+      "shortDesc": "سرقة من خزنة تحتاج مفتاحين في آنٍ واحد — وساعة فاخرة تتوقف عند الصدمات الميكانيكية تُثبت من كان بجانبها.",
+      "thumbnailEmoji": "🗝️",
+      "difficulty": "hard",
+      "estimatedMinutes": 35,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 300
+    },
+    {
+      "id": "case_witness_006",
+      "title": "الوجه المألوف",
+      "location": "متحف وطني، أثينا، اليونان",
+      "shortDesc": "شاهد يصف الجاني بدقة مذهلة من وصف ممر مظلم — والدقة المفرطة نفسها تُثبت أنه رآه في ظروف مختلفة تماماً.",
+      "thumbnailEmoji": "🎭",
+      "difficulty": "hard",
+      "estimatedMinutes": 35,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 300
+    },
+    {
+      "id": "case_house_007",
+      "title": "البيت الفارغ",
+      "location": "منزل ريفي معزول، توسكانا، إيطاليا",
+      "shortDesc": "جريمة في منزل مغلق من الداخل — السؤال لم يكن كيف دخل القاتل بل متى خرج، وخطاف صغير في التراب يجيب.",
+      "thumbnailEmoji": "🏠",
+      "difficulty": "hard",
+      "estimatedMinutes": 35,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 300
+    },
+    {
+      "id": "case_translator_008",
+      "title": "المترجم الميت",
+      "location": "سفارة دولة أوروبية، طوكيو، اليابان",
+      "shortDesc": "مترجم مقتول وترجمة على مكتبه كتبها القاتل — كلمة واحدة بمصطلح قديم تكشف في أي مدرسة تعلّم اللغة.",
+      "thumbnailEmoji": "📖",
+      "difficulty": "hard",
+      "estimatedMinutes": 35,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 300
+    },
+    {
+      "id": "case_timing_009",
+      "title": "الساعة الرابعة",
+      "location": "مجمع سكني فاخر، سنغافورة",
+      "shortDesc": "أربعة مشتبه بهم يدّعون نفس وقت المغادرة تقريباً — ونظام وزن السيارات عند البوابة يكشف فارق اثنتي عشرة دقيقة وكيلوغرامين ونصف.",
+      "thumbnailEmoji": "⏰",
+      "difficulty": "hard",
+      "estimatedMinutes": 35,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 300
+    },
+    {
+      "id": "case_thirdwitness_010",
+      "title": "الشاهد الثالث",
+      "location": "قرية ساحلية صغيرة، دبروفنيك، كرواتيا",
+      "shortDesc": "شاهدان يتناقضان في كل تفصيل — والمحقق يكتشف أن كليهما صادق لأن شخصين مختلفين دخلا القارب في توقيتين مختلفين.",
+      "thumbnailEmoji": "👁️",
+      "difficulty": "hard",
+      "estimatedMinutes": 40,
+      "evidenceCount": 5,
+      "isNew": true,
+      "requiredPoints": 300
+    }
+  ]
+}
