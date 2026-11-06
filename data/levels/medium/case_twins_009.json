@@ -1,0 +1,240 @@
+{
+  "id": "case_twins_009",
+  "title": "وجهان لجاني واحد",
+  "location": "مكتب شركة مالية، أمستردام، هولندا",
+  "date": "2026/10/15",
+  "shortDesc": "مقتل مدير مالي في مكتبه. التوأمان المشتبه بهما يدّعي كل منهما أن الآخر هو القاتل. التحليل الجيني لا يُفرّق بينهما — لكن خدشاً صغيراً ونقطة حبر تحسم القضية.",
+  "thumbnailEmoji": "👥",
+  "difficulty": "medium",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 150,
+  "rewardPoints": 200,
+  "fullStory": "في مكتب شركة الاستثمار المالي بأمستردام، عُثر على المدير التنفيذي هنريك فان داين (51 عاماً) مقتولاً بضربة على الرأس.\n\nالمشتبه الرئيسيان هما التوأمان المتطابقان لوكاس ونيلس دي يونغ — اللذان طالما استغلا تطابقهما في تضليل الجهات الرسمية. أحدهما كان في المكتب ليلة الجريمة، والآخر يدّعي أنه كان بعيداً. المشكلة: كلاهما يتهم الآخر، ولا يوجد شاهد رأى وجه القاتل بوضوح.\n\nتحليل الـ DNA لا يُفيد لأنه متطابق بالكامل. المحقق قرر البحث عن شيء أدق من الجينات.",
+  "hint": "الجسد يحمل علامات لا تتطابق حتى بين التوأم المتطابق: الندوب المكتسبة، آثار الحوادث، والتفاصيل اليومية كبقع الحبر. ابحث عمّا يميز يد القاتل عن يد البريء.",
+  "correctSuspectId": "char_lukas",
+  "solutionExplanation": "القاتل هو لوكاس دي يونغ.\n\nالثغرة القاتلة:\nشهد أحد موظفي المكتب أن القاتل كان يحمل قلماً في يده اليسرى لحظة دخوله المكتب — أي أنه أعسر. نيلس أيمن بشكل طبيعي.\n\nالدليل التفصيلي: عند فحص يدَي التوأمين، وُجدت نقطة حبر زرقاء قديمة متجمدة على الإصبع الوسط لليد اليسرى للمشتبه به لوكاس — وهي علامة مميزة لمن يكتب بيده اليسرى ويستخدم القلم بكثرة.\n\nكذلك يحمل لوكاس خدشاً قديماً على مفصل إبهام يده اليسرى ناتجاً عن حادثة قبل سنوات — وهو الجانب الذي استخدمه للضرب، وعليه آثار دم الضحية دقيقة لا تُرى بالعين المجردة لكن المختبر كشفها.",
+  "characters": [
+    {
+      "id": "char_hendrik",
+      "name": "هنريك فان داين",
+      "age": 51,
+      "role": "الضحية",
+      "description": "مدير تنفيذي لشركة استثمارية، اكتشف مخالفات مالية ضخمة تورط فيها التوأمان.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_lukas",
+      "name": "لوكاس دي يونغ",
+      "age": 37,
+      "role": "مشتبه به",
+      "description": "التوأم الأكبر سناً بدقائق. أعسر يكتب ويعمل بيده اليسرى. يتهم أخاه نيلس ارتكاب الجريمة.",
+      "imageEmoji": "👤",
+      "interrogation": "يتكلم بهدوء مدروس ويلتزم بتفاصيل ثابتة في إجاباته — لكنه يضع يده اليسرى تحت الطاولة باستمرار.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل أنت أعسر أم أيمن؟",
+          "answer": "أستخدم يدي اليمنى في معظم الأوقات.",
+          "isLie": true,
+          "lieHint": "نقطة الحبر الدائمة على إصبعه الأوسط الأيسر تكشف عادة الكتابة باليد اليسرى."
+        },
+        {
+          "id": "q2",
+          "text": "أين كنت بين الثامنة والتاسعة مساءً؟",
+          "answer": "كنت في منزلي وحدي لا يمكنني إثبات ذلك لكن نيلس هو من ذهب للمكتب.",
+          "isLie": true,
+          "lieHint": "كاميرا الشارع رصدت شخصاً يستخدم يده اليسرى في إيقاف سيارة أجرة أمام المكتب."
+        },
+        {
+          "id": "q3",
+          "text": "هل يمكننا فحص يدَيك؟",
+          "answer": "بالطبع، لا مشكلة لديّ.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_niels",
+      "name": "نيلس دي يونغ",
+      "age": 37,
+      "role": "مشتبه به",
+      "description": "التوأم الأصغر. أيمن بشكل طبيعي. يتهم أخاه لوكاس بارتكاب الجريمة.",
+      "imageEmoji": "👤",
+      "interrogation": "أكثر انفعالاً من أخيه ويبدو خائفاً من الاتهام.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت بين الثامنة والتاسعة؟",
+          "answer": "كنت في حفل عشاء مع عملاء في مطعم ريفرسايد. عشرة أشخاص يمكنهم التأكيد.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q2",
+          "text": "هل كنت تعلم بمخالفات الشركة التي اكتشفها هنريك؟",
+          "answer": "كنا كلانا متورطَين لكن لوكاس كان العقل المدبر وقرر إسكات هنريك.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_anja",
+      "name": "آنيا فيرهوفن",
+      "age": 29,
+      "role": "شاهدة",
+      "description": "موظفة في المكتب المجاور. رأت القاتل لثوانٍ من خلف زجاج مشفوش.",
+      "imageEmoji": "👤",
+      "interrogation": "تؤكد أنها لم تر الوجه بوضوح لكنها رأت الشخص يحمل شيئاً في يده اليسرى.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ماذا رأيت بالتحديد؟",
+          "answer": "رأيت شخصاً يمشي بسرعة يحمل قلماً أو شيئاً مشابهاً في يده اليسرى. لم أر وجهه.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "short",
+        "clothColor": "purple",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "شهادة آنيا — اليد اليسرى",
+      "description": "شهدت الموظفة المجاورة أن القاتل كان يحمل شيئاً بيده اليسرى — مما يُشير إلى أنه أعسر.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "نقطة الحبر على إصبع لوكاس",
+      "description": "نقطة حبر زرقاء قديمة متجمدة على الإصبع الوسط لليد اليسرى للوكاس — علامة مميزة لمن يكتب بيده اليسرى بكثرة ويستخدمها بشكل دائم.",
+      "type": "physical",
+      "emoji": "🖊️",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "تقرير المختبر الجنائي — آثار الدم",
+      "description": "كشف الفحص المخبري الدقيق عن آثار دم الضحية دقيقة لا تُرى بالعين المجردة على مفصل خدش قديم في إبهام اليد اليسرى للوكاس.",
+      "type": "physical",
+      "emoji": "🔬",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "كاميرا الشارع أمام المكتب",
+      "description": "لقطة تُظهر شخصاً يستخدم يده اليسرى في إيقاف سيارة أجرة أمام مبنى المكتب مساء الجريمة.",
+      "type": "digital",
+      "emoji": "📹",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev5",
+      "title": "تأكيد حضور نيلس في حفل العشاء",
+      "description": "عشرة شهود من عملاء الشركة يُؤكدون حضور نيلس في حفل العشاء طوال الفترة من الثامنة حتى الحادية عشرة مساءً.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 5,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

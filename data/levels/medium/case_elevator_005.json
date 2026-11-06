@@ -1,0 +1,191 @@
+{
+  "id": "case_elevator_005",
+  "title": "الطابق الخطأ",
+  "location": "برج سكني فاخر، دبي، الإمارات",
+  "date": "2026/07/09",
+  "shortDesc": "مقتل مستثمر في شقته بالطابق الثاني والعشرين. المشتبه به يُثبت بكاميرا المصعد أنه كان بالمبنى — لكن الكاميرا تُثبت في آنٍ واحد أنه لا يمكنه ارتكاب الجريمة. أو هكذا يبدو.",
+  "thumbnailEmoji": "🛗",
+  "difficulty": "medium",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 150,
+  "rewardPoints": 200,
+  "fullStory": "في برج 'أفق دبي' الفاخر، عُثر على المستثمر الإماراتي خالد المنصوري (53 عاماً) مقتولاً داخل شقته في الطابق الثاني والعشرين بين الساعة التاسعة والعاشرة مساءً.\n\nتوجّهت الشبهات نحو شريكه التجاري المنفصل ياسر حمدان، الذي كان متواجداً في المبنى تلك الليلة. ادّعى ياسر أنه زار صديقاً في الطابق الثامن فقط ولم يصعد أبداً للطابق الثاني والعشرين.\n\nكاميرا المصعد سجّلت ياسر يضغط على زر الطابق الثامن ويصل إليه. لكن المحقق لاحظ تفصيلة صغيرة في لقطات المصعد قلبت القضية رأساً على عقب.",
+  "hint": "راقب لقطات المصعد بدقة — لا تنظر فقط إلى الطابق الذي ضغط عليه، بل انتبه إلى ما يمكن أن تخبرك به الانعكاسات داخل المصعد.",
+  "correctSuspectId": "char_yasser",
+  "solutionExplanation": "القاتل هو ياسر حمدان.\n\nالثغرة القاتلة:\nفي لقطات المصعد الصاعد، تظهر يد ياسر تضغط على زر الطابق الثامن بوضوح. لكن المحقق لاحظ في الانعكاس الجانبي لمرآة المصعد أن لوحة الأزرار تُظهر ضوء الطابق الثاني والعشرين مضاءً أيضاً إلى جانب الطابق الثامن — وهو ما يعني أن ياسر ضغط على طابقين لا طابق واحد.\n\nخطّط ياسر بذكاء: صعد للطابق الثامن أولاً وزار صديقه لثلاثين دقيقة ليثبت وجوده هناك، ثم استقل المصعد مجدداً للطابق الثاني والعشرين حين كانت الكاميرات في الممر خارج الخدمة بسبب صيانة مجدولة سبق أن اطّلع على جدولها.",
+  "characters": [
+    {
+      "id": "char_khalid",
+      "name": "خالد المنصوري",
+      "age": 53,
+      "role": "الضحية",
+      "description": "مستثمر إماراتي بارز، عُثر عليه مقتولاً في شقته بالطابق الثاني والعشرين.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "medium",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_yasser",
+      "name": "ياسر حمدان",
+      "age": 46,
+      "role": "مشتبه به",
+      "description": "شريك تجاري منفصل عن الضحية. تجمعهما دعوى قضائية حول ملكية شركة مشتركة. ادّعى أنه زار صديقاً في الطابق الثامن فقط.",
+      "imageEmoji": "👤",
+      "interrogation": "واثق من نفسه جداً ويُحيل المحققين دائماً إلى كاميرا المصعد كدليل بريائه.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل صعدت إلى الطابق الثاني والعشرين في أي وقت تلك الليلة؟",
+          "answer": "أبداً. الكاميرا تُثبت أنني ضغطت على الطابق الثامن فقط. يمكنكم مراجعتها.",
+          "isLie": true,
+          "lieHint": "الانعكاس في مرآة المصعد يُظهر ضوءين مضاءين على لوحة الأزرار."
+        },
+        {
+          "id": "q2",
+          "text": "هل كنت تعلم بجدول صيانة كاميرات الممر في الطابق الثاني والعشرين؟",
+          "answer": "لا، لماذا سأعرف بجدول الصيانة في طابق لا أسكن فيه؟",
+          "isLie": true,
+          "lieHint": "وثيقة الصيانة المسربة تُظهر أنها أُرسلت لجميع الشركاء الذين زاروا المبنى خلال الشهر الماضي."
+        },
+        {
+          "id": "q3",
+          "text": "كم من الوقت قضيته في زيارة صديقك بالطابق الثامن؟",
+          "answer": "نحو ساعة تقريباً بين التاسعة والعاشرة.",
+          "isLie": true,
+          "lieHint": "صديقه يؤكد أن الزيارة لم تتجاوز ثلاثين دقيقة وانتهت قبيل التاسعة والنصف."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "medium",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_faris",
+      "name": "فارس النعيمي",
+      "age": 39,
+      "role": "مشتبه به",
+      "description": "مدير الشقة والمسؤول عن سجل الزوار. تربطه علاقة مالية مع الضحية تضمنت قرضاً غير مُسدَّد.",
+      "imageEmoji": "👤",
+      "interrogation": "متعاون لكنه عصبي حين يُسأل عن جدول صيانة كاميرات المبنى.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "من اطّلع على جدول صيانة كاميرات الممرات؟",
+          "answer": "الجدول يُرسل تلقائياً لسجل الزوار المتكررين للمبنى. لا أتحكم في قائمة المستلمين.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "medium",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "لقطات كاميرا المصعد",
+      "description": "تُظهر اللقطات ياسر يضغط على زر الطابق الثامن. لكن في الانعكاس الجانبي لمرآة المصعد، تبدو لوحة الأزرار وعليها ضوءان مضاءان لا ضوء واحد.",
+      "type": "digital",
+      "emoji": "📹",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "جدول صيانة كاميرات الممرات",
+      "description": "وثيقة رسمية تُثبت أن كاميرات ممر الطابق الثاني والعشرين كانت خارج الخدمة بين التاسعة والنصف والعاشرة والنصف مساءً بسبب صيانة مجدولة، وأن الوثيقة أُرسلت لجميع الزوار المتكررين.",
+      "type": "physical",
+      "emoji": "📄",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "شهادة صديق ياسر",
+      "description": "أكّد الصديق في الطابق الثامن أن ياسر زاره لكن الزيارة لم تتجاوز ثلاثين دقيقة وانتهت قبيل التاسعة والنصف — متناقضاً مع ادعاء ياسر بالساعة الكاملة.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "وثائق الدعوى القضائية",
+      "description": "ملف قانوني يُثبت أن ياسر وخالد كانا في معركة قضائية حول ملكية شركة بقيمة عشرة ملايين دولار، وكانت الجلسة الفاصلة مقررة بعد يومين.",
+      "type": "physical",
+      "emoji": "⚖️",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

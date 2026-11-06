@@ -1,0 +1,233 @@
+{
+  "id": "case_poison_004",
+  "title": "السم البطيء",
+  "location": "منزل عائلي فاخر، جنيف، سويسرا",
+  "date": "2026/06/14",
+  "shortDesc": "رجل أعمال ثري توفي بعد مرض مفاجئ استمر ثلاثة أسابيع. الأطباء شخّصوا حالته كفشل كبدي طبيعي — حتى كشف التحليل الجنائي وجود مادة سامة تراكمية أُضيفت إلى طعامه بكميات صغيرة على مدى أسابيع.",
+  "thumbnailEmoji": "☠️",
+  "difficulty": "medium",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 150,
+  "rewardPoints": 200,
+  "fullStory": "في منزله الفاخر على ضفاف بحيرة جنيف، فارق رجل الأعمال الثري بيتر فولمر (58 عاماً) الحياة بعد مرض سريع وصفه الأطباء بفشل كبدي حاد. لم يشكّ أحد في البداية.\n\nلكن ابن أخيه الطبيب طلب إعادة التحليل حين لاحظ أن التدهور الصحي كان تدريجياً جداً ومنتظماً بشكل غير طبيعي. أثبت التحليل الجنائي المعمّق وجود مادة سمية تراكمية نادرة في الكبد — وهي مادة لا تُكتشف إلا بتحليل متخصص.\n\nالمادة أُضيفت على الأرجح إلى طعام أو شراب الضحية يومياً بكميات دقيقة على مدى ثلاثة أسابيع. من كان في موقع يسمح له بذلك؟",
+  "hint": "من يُعدّ طعام وشراب بيتر يومياً دون استثناء؟ ومن يستفيد من موته وكان يعرف أن الكشف عنه صعب؟",
+  "correctSuspectId": "char_claudia",
+  "solutionExplanation": "القاتلة هي زوجة الضحية كلوديا فولمر.\n\nالثغرة القاتلة:\nكلوديا هي الشخص الوحيد الذي يُعدّ الطعام والشراب لبيتر يومياً دون انقطاع، وقد حرصت طوال فترة مرضه على إبعاد الخادمة عن المطبخ بحجة أنها تريد رعايته بنفسها.\n\nالدليل القاطع: عُثر في الجزء الخلفي من درج صيدلانيات كلوديا المغلق على آثار دقيقة من المادة السمية ذاتها المكتشفة في جسد الضحية. المادة نادرة ولا تُستخدم إلا في أبحاث متخصصة — وكلوديا حاصلة على شهادة في الكيمياء الحيوية قبل زواجها.\n\nالدافع: وصية بيتر القديمة تمنحها كل شيء، لكنه كان يخطط لتعديلها لصالح أبنائه من زواجه الأول بعد خلاف عائلي حاد.",
+  "characters": [
+    {
+      "id": "char_peter",
+      "name": "بيتر فولمر",
+      "age": 58,
+      "role": "الضحية",
+      "description": "رجل أعمال ثري توفي بعد مرض تدريجي ثبت لاحقاً أنه تسمم متعمد.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_claudia",
+      "name": "كلوديا فولمر",
+      "age": 44,
+      "role": "مشتبه بها",
+      "description": "زوجة الضحية منذ ست سنوات. حاصلة على شهادة في الكيمياء الحيوية قبل تحولها لربة منزل. كانت تُعدّ طعامه وتُشرف على دوائه بنفسها.",
+      "imageEmoji": "👤",
+      "interrogation": "تُظهر حزناً عميقاً لكنها تتجنب أي سؤال عن خلفيتها الأكاديمية.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل كنت تُعدّين طعام زوجك يومياً بنفسك؟",
+          "answer": "نعم، كنت أحرص على ذلك طوال فترة مرضه. أردت أن أطمئن على ما يأكله.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q2",
+          "text": "هل تعلمين شيئاً عن مادة سامة تراكمية نادرة تُستخدم في الأبحاث الكيميائية؟",
+          "answer": "شهادتي في الكيمياء الحيوية كانت منذ عشرين عاماً. لم أعمل في هذا المجال بعد الزواج.",
+          "isLie": true,
+          "lieHint": "أجرت بحثاً عبر الإنترنت عن هذه المادة تحديداً قبل أسبوعين من بدء مرض زوجها."
+        },
+        {
+          "id": "q3",
+          "text": "هل كنت تعلمين أن زوجك يعتزم تعديل وصيته؟",
+          "answer": "سمعت شيئاً من هذا القبيل لكنه لم يُخبرني بالتفاصيل.",
+          "isLie": true,
+          "lieHint": "المحامي يؤكد أنه أبلغها بقراره قبل بدء مرضه بأسبوع واحد فقط."
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "long",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_felix",
+      "name": "فيليكس فولمر",
+      "age": 32,
+      "role": "مشتبه به",
+      "description": "ابن الضحية من زواجه الأول. علاقته بأبيه متوترة. كان يزوره أسبوعياً خلال فترة مرضه.",
+      "imageEmoji": "👤",
+      "interrogation": "غاضب وصريح ويتهم زوجة أبيه مباشرة دون أدلة كافية.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل كانت لديك فرصة للوصول إلى طعام والدك؟",
+          "answer": "كنت أزوره كل أسبوع لكن كلوديا كانت تُبعدني عن المطبخ دائماً بحجة أنها تريد رعايته.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_rosa",
+      "name": "روزا مارتيز",
+      "age": 55,
+      "role": "شاهدة",
+      "description": "خادمة المنزل منذ خمسة عشر عاماً. أُبعدت عن المطبخ طوال فترة مرض بيتر بأمر من كلوديا.",
+      "imageEmoji": "👤",
+      "interrogation": "تتحدث بصدق وتُفيد بتفاصيل مهمة عن سلوك كلوديا خلال فترة المرض.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما الذي لاحظته خلال فترة مرض السيد بيتر؟",
+          "answer": "السيدة كلوديا كانت تمنعني من دخول المطبخ وتُعدّ كل شيء بنفسها. كان هذا غير معتاد تماماً.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "medium",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "blue",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "تقرير التحليل الجنائي المعمّق",
+      "description": "يُثبت التقرير وجود مادة سامة تراكمية نادرة في كبد الضحية بتركيزات تصاعدية تدل على تناولها يومياً بكميات دقيقة على مدى ثلاثة أسابيع.",
+      "type": "physical",
+      "emoji": "🧪",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "آثار السم في درج كلوديا",
+      "description": "عُثر في الجزء الخلفي من درج صيدلانيات كلوديا المغلق على آثار دقيقة من المادة السامة ذاتها المكتشفة في جسد الضحية.",
+      "type": "physical",
+      "emoji": "🔬",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "سجل بحث كلوديا الإلكتروني",
+      "description": "كشف التحليل الرقمي أن كلوديا أجرت بحثاً مكثفاً عبر الإنترنت عن المادة السامة المكتشفة قبل ثلاثة أسابيع بالضبط من ظهور أعراض المرض على زوجها.",
+      "type": "digital",
+      "emoji": "💻",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "شهادة محامي الوصية",
+      "description": "أكّد المحامي أنه أبلغ كلوديا بقرار زوجها تعديل الوصية قبل أسبوع واحد فقط من ظهور أولى أعراض المرض.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev5",
+      "title": "شهادة روزا الخادمة",
+      "description": "أكّدت الخادمة أن كلوديا أبعدتها عن المطبخ بشكل كامل خلال فترة مرض زوجها، وهو أمر لم يحدث في السنوات الخمس عشرة السابقة.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 5,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

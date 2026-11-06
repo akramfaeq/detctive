@@ -1,0 +1,233 @@
+{
+  "id": "case_photo_007",
+  "title": "السيلفي الأخير",
+  "location": "منتجع جبلي فاخر، غرناطة، إسبانيا",
+  "date": "2026/09/11",
+  "shortDesc": "مقتل مصممة أزياء شهيرة في غرفتها بالمنتجع. التقطت صورة سيلفي قبل مقتلها بدقائق تبدو للوهلة الأولى بريئة — لكن الظل في زاوية الصورة يكشف هوية من كان في الغرفة معها.",
+  "thumbnailEmoji": "📸",
+  "difficulty": "medium",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 150,
+  "rewardPoints": 200,
+  "fullStory": "في منتجع 'سييرا لوكس' الجبلي الفاخر بغرناطة، عُثر على المصممة الإسبانية الشهيرة إيزابيل فيغا (38 عاماً) مقتولة داخل جناحها الفاخر.\n\nالضحية كانت تحضر نهاية الأسبوع مع ثلاثة مقربين: شريكتها في العمل، ومديرها التنفيذي، وصديقها المقرب. كل واحد منهم ادّعى أنه كان في مكان آخر وقت الجريمة.\n\nحين فحص المحققون هاتف إيزابيل، وجدوا آخر صورة سيلفي التقطتها في غرفتها قبل وفاتها بأربع دقائق فقط. الصورة تُظهر وجهها المبتسم — لكن المحقق الذي درس الصورة بتمعن لاحظ ما أغفله الجميع في الزاوية السفلى اليمنى.",
+  "hint": "لا تنظر إلى وجه الضحية في الصورة — انظر إلى الزاوية السفلى اليمنى. ما الذي يمكن أن يتشكّل من ظل جزئي داخل غرفة مضاءة؟",
+  "correctSuspectId": "char_diego",
+  "solutionExplanation": "القاتل هو المدير التنفيذي دييغو سانتوس.\n\nالثغرة القاتلة:\nفي الزاوية السفلى اليمنى من الصورة، يظهر ظل جزئي لحذاء رجالي ذي نعل مميز بنقش هندسي لافت — الحذاء كان ظاهراً جزئياً من وراء باب الخزانة المفتوح خلف إيزابيل.\n\nحين قورن الظل بأحذية الجميع في المنتجع، تبيّن أن نقش النعل يتطابق تماماً مع الحذاء الجلدي الذي يرتديه دييغو — وهو حذاء بنقش هندسي خاص اشتراه من ماركة نادرة.\n\nكان دييغو مختبئاً خلف باب الخزانة حين التقطت إيزابيل صورتها، وخرج بعد لحظات لتنفيذ الجريمة. دافعه: إيزابيل اكتشفت أنه يسرب تصاميمها السرية لمنافسيها مقابل مبالغ طائلة.",
+  "characters": [
+    {
+      "id": "char_isabel",
+      "name": "إيزابيل فيغا",
+      "age": 38,
+      "role": "الضحية",
+      "description": "مصممة أزياء إسبانية شهيرة، عُثر عليها مقتولة في جناحها بالمنتجع.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفاة ولا يمكن استجوابها.",
+      "questions": [],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "purple",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_diego",
+      "name": "دييغو سانتوس",
+      "age": 44,
+      "role": "مشتبه به",
+      "description": "المدير التنفيذي لشركة إيزابيل منذ ست سنوات. ادّعى أنه كان في المطعم الرئيسي للمنتجع وقت الجريمة.",
+      "imageEmoji": "👤",
+      "interrogation": "هادئ محترف لكنه يتجنب النظر إلى صورة الضحية حين تُعرض عليه.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت بين الثامنة والتاسعة مساءً؟",
+          "answer": "كنت في المطعم الرئيسي أتناول العشاء منذ الثامنة إلا ربعاً.",
+          "isLie": true,
+          "lieHint": "النادل يؤكد أنه لم يحضر إلا في الثامنة وخمس وعشرين دقيقة."
+        },
+        {
+          "id": "q2",
+          "text": "هل دخلت جناح إيزابيل في أي وقت خلال اليوم؟",
+          "answer": "دخلت في الخامسة مساءً لمناقشة جدول الأعمال ثم غادرت. لم أعد بعدها.",
+          "isLie": true,
+          "lieHint": "الظل في صورة السيلفي الملتقطة في الثامنة الا دقيقتين يُثبت وجود شخص في الغرفة."
+        },
+        {
+          "id": "q3",
+          "text": "هل تمتلك حذاءً بنقش هندسي مميز على النعل؟",
+          "answer": "لديّ أحذية عديدة لا أتذكر تفاصيل نقوشها.",
+          "isLie": true,
+          "lieHint": "الحذاء موجود في حقيبته وهو حذاء فريد من نوعه."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_lucia",
+      "name": "لوسيا رامون",
+      "age": 36,
+      "role": "مشتبه بها",
+      "description": "شريكة إيزابيل في العمل. كانت بينهما خلافات مالية حول توزيع الأرباح.",
+      "imageEmoji": "👤",
+      "interrogation": "تُظهر حزناً صادقاً وإجاباتها متسقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت بين الثامنة والتاسعة؟",
+          "answer": "كنت في الحمام الحراري للمنتجع. الموظف هناك يمكنه التأكيد.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "medium",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_marco",
+      "name": "ماركو فيلا",
+      "age": 41,
+      "role": "مشتبه به",
+      "description": "صديق إيزابيل المقرب منذ الجامعة. يعلم أسرار حياتها الشخصية والمهنية.",
+      "imageEmoji": "👤",
+      "interrogation": "صادق ومؤلم. يتحدث بحرية عن الخلافات الداخلية في الشركة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل أخبرتك إيزابيل بشيء يقلقها مؤخراً؟",
+          "answer": "قالت لي قبل يومين أنها تشك في أن أحداً في الشركة يسرب تصاميمها السرية لكنها لم تكشف لي عن شكوكها تجاه شخص بعينه.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "صورة السيلفي الأخيرة",
+      "description": "آخر صورة التقطتها الضحية في الثامنة إلا دقيقتين. تظهر في الزاوية السفلى اليمنى جزء من ظل حذاء رجالي بنقش هندسي مميز على النعل يبرز من وراء باب الخزانة.",
+      "type": "digital",
+      "emoji": "📸",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "الحذاء المُضبط في حقيبة دييغو",
+      "description": "حذاء جلدي بنقش هندسي فريد عُثر عليه في حقيبة دييغو. يتطابق النقش تطابقاً تاماً مع الظل الجزئي الظاهر في صورة الضحية.",
+      "type": "physical",
+      "emoji": "👞",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "شهادة النادل في المطعم",
+      "description": "أكّد النادل أن دييغو لم يحضر إلى المطعم إلا في الثامنة وخمس وعشرين دقيقة — بعد الوقت المقدّر للجريمة بعشرين دقيقة.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "وثائق تسريب التصاميم",
+      "description": "ملفات مشفّرة عُثر عليها في هاتف دييغو تحتوي على تصاميم سرية لإيزابيل مرسلة إلى منافسين تجاريين مجهولين.",
+      "type": "digital",
+      "emoji": "💻",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev5",
+      "title": "شهادة ماركو الصديق",
+      "description": "كشف ماركو أن إيزابيل أخبرته قبل يومين بشكوكها في تسريب تصاميمها السرية من داخل الشركة.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 5,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 3,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}
