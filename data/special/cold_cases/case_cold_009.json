@@ -1,0 +1,220 @@
+{
+  "id": "case_cold_009",
+  "title": "المبنى المهدوم",
+  "location": "موسكو، روسيا",
+  "date": "2026/08/22",
+  "originalCrimeYear": 2001,
+  "yearsSinceCrime": 25,
+  "shortDesc": "هدم مبنى سوفيتي قديم كشف غرفة مخفية في قبوه — وفيها أدلة جريمة من عام 2001 ظل مرتكبها حراً خمساً وعشرين عاماً.",
+  "thumbnailEmoji": "🏗️",
+  "difficulty": "hard",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 350,
+  "fullStory": "في أغسطس 2026، أثناء هدم مبنى سوفيتي قديم في موسكو، اكتشف عمال البناء غرفة مخفية خلف جدار إسمنتي في القبو. داخل الغرفة أدوات وملابس ووثائق محفوظة في حاويات مُغلقة منذ عقود.\n\nالوثائق تكشف أن الغرفة كانت تُستخدم لإخفاء أموال اختُلست من شركة دولة عام 2001. الشخص الذي استأجر المبنى عام 2001 وكان يملك وصولاً للقبو: ديمتري فولكوف.\n\nالتحقيق الأصلي عام 2001 أغلق بعد اختفاء الأدلة الرئيسية. ديمتري فولكوف لا يزال حياً، يعيش في سان بطرسبرغ، ويبلغ من العمر 68 عاماً.",
+  "hint": "الغرفة المخفية تحتوي أدلة من 2001 — من كان الوحيد بإمكانه إنشاؤها؟",
+  "correctSuspectId": "char_dmitry",
+  "solutionExplanation": "المجرم هو ديمتري فولكوف، المستأجر السابق.\n\nالثغرة القاتلة:\nديمتري استأجر المبنى عام 2001 وكان الوحيد بإمكانه الوصول للقبو. وثائق الغرفة تحمل توقيعاته وبصمات يده على الحاويات — مطابقة لبصماته في سجلات الشركة القديمة. بناء الجدار الإسمنتي يعود لنفس الفترة حسب تحليل عمر المواد. ديمتري اختلس أموال الشركة وأخفى الأدلة ثم أبلغ عن اختفائها ووجّه الشبهات لموظف آخر.",
+  "characters": [
+    {
+      "id": "char_victim_company",
+      "name": "شركة الدولة — المتضرر",
+      "age": 0,
+      "role": "الضحية",
+      "description": "شركة دولة اختُلست منها أموال عام 2001. موظف بريء اتُّهم في ذلك الوقت.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية مؤسسة — الأدلة المادية تتكلم.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_dmitry",
+      "name": "ديمتري فولكوف",
+      "age": 68,
+      "role": "مشتبه به",
+      "description": "مستأجر المبنى عام 2001. الوحيد بإمكانه الوصول للقبو. بصماته على الحاويات.",
+      "imageEmoji": "👤",
+      "interrogation": "يتظاهر بالتفاجؤ ويدّعي أنه لم يعلم بالغرفة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل كنت تعلم بوجود غرفة مخفية في قبو المبنى؟",
+          "answer": "أبداً، هذا أمر مفاجئ تماماً. ربما صنعها مستأجر قبلي.",
+          "isLie": true,
+          "lieHint": "وثائق الإيجار تثبت أنه كان المستأجر الوحيد للمبنى كاملاً بما في ذلك القبو."
+        },
+        {
+          "id": "q2",
+          "text": "كيف تفسر وجود بصماتك على الحاويات داخل الغرفة؟",
+          "answer": "مستحيل. لم أدخل قبو المبنى في حياتي.",
+          "isLie": true,
+          "lieHint": "تحليل بصمات الحاويات تطابقت مع بصماته في سجلات الشركة القديمة."
+        },
+        {
+          "id": "q3",
+          "text": "من وجّهت إليه الاتهامات عام 2001 في قضية الاختلاس؟",
+          "answer": "اتُّهم موظف بشكل عادل بناءً على الأدلة المتاحة في ذلك الوقت.",
+          "isLie": true,
+          "lieHint": "الموظف المتهم أثبت براءته لاحقاً وديمتري هو من وجّه الشبهات إليه."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "dark",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_worker",
+      "name": "فلاديمير العامل",
+      "age": 45,
+      "role": "شاهد",
+      "description": "عامل البناء الذي اكتشف الغرفة. يصف ما وجده بدقة.",
+      "imageEmoji": "👤",
+      "interrogation": "مباشر وعملي. يصف الاكتشاف بالتفاصيل.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "كيف اكتشفت الغرفة المخفية؟",
+          "answer": "حين هدمنا الجدار الخارجي للقبو لاحظنا جداراً إسمنتياً جديداً نسبياً داخله — لا يتسق مع باقي بناء المبنى السوفيتي القديم. حين كسرناه وجدنا الغرفة محكمة الإغلاق وفيها حاويات مُرتّبة بعناية.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "orange",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_materials_expert",
+      "name": "خبيرة المواد د. أولغا",
+      "age": 48,
+      "role": "شاهدة",
+      "description": "خبيرة تحليل عمر المواد الإنشائية. حددت عمر الجدار الإسمنتي.",
+      "imageEmoji": "👤",
+      "interrogation": "علمية ودقيقة في تحديد التواريخ.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى بُني الجدار الإسمنتي الذي يخفي الغرفة؟",
+          "answer": "تحليل عمر المواد يثبت أن الجدار بُني بين عامَي 2000 و2002 — في الفترة التي كان فيها ديمتري فولكوف المستأجر الوحيد للمبنى.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "بصمات ديمتري على الحاويات",
+      "description": "بصمات أصابع على الحاويات داخل الغرفة تطابق بصمات ديمتري فولكوف في سجلات الشركة القديمة.",
+      "type": "physical",
+      "emoji": "🖐️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "عقد إيجار المبنى كاملاً",
+      "description": "وثائق الإيجار تثبت أن ديمتري استأجر المبنى كاملاً بما في ذلك القبو — كان الوحيد بإمكانية الوصول.",
+      "type": "document",
+      "emoji": "📋",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "تحديد عمر الجدار 2000-2002",
+      "description": "خبيرة المواد تثبت أن الجدار الإسمنتي المخفي بُني في الفترة التي كان فيها ديمتري المستأجر الوحيد.",
+      "type": "physical",
+      "emoji": "🧱",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "توقيعات ديمتري على الوثائق",
+      "description": "وثائق داخل الغرفة تحمل توقيعات تطابق توقيعات ديمتري في سجلات الشركة — مما يثبت علمه بمحتويات الغرفة.",
+      "type": "document",
+      "emoji": "✍️",
+      "revealOrder": 4,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

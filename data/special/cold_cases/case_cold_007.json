@@ -1,0 +1,220 @@
+{
+  "id": "case_cold_007",
+  "title": "الحمض النووي يتكلم",
+  "location": "شيكاغو، الولايات المتحدة",
+  "date": "2026/04/12",
+  "originalCrimeYear": 2001,
+  "yearsSinceCrime": 25,
+  "shortDesc": "تقنية DNA حديثة تثبت خطأ حكم صدر قبل خمس وعشرين عاماً — الرجل المحكوم عليه بالسجن مدى الحياة بريء. والقاتل الحقيقي لا يزال طليقاً يعيش حياة طبيعية.",
+  "thumbnailEmoji": "🧬",
+  "difficulty": "hard",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 350,
+  "fullStory": "في 2026، أثبت تحليل DNA متقدم أن ماركوس جونسون (52 عاماً) المسجون منذ 25 سنة بتهمة قتل جارته ليندا هارت عام 2001 — بريء. الحمض النووي على مسرح الجريمة لا يطابقه.\n\nالمحقق ريان بيكر يُعاد فتح القضية لديه 48 ساعة قبل إطلاق سراح ماركوس — ويجب إيجاد القاتل الحقيقي.\n\nعينة DNA غير معروفة على مسرح الجريمة — حين أدخلت في قاعدة البيانات الجنائية الموسّعة تطابقت مع قريب لأحد الجيران القدامى دخل قاعدة البيانات عام 2020 بتهمة أخرى. القريب: ابن أخ جار الضحية القديم ستيف كالينز.",
+  "hint": "الـDNA طابق قريباً لأحد الجيران — كيف تثبت الصلة بالجريمة الأصلية؟",
+  "correctSuspectId": "char_derek",
+  "solutionExplanation": "القاتل هو ديريك كالينز، ابن أخ الجار القديم.\n\nالثغرة القاتلة:\nعينة DNA ديريك في قاعدة بيانات 2020 طابقت عينة مسرح جريمة 2001. ديريك كان يزور عمه ستيف كثيراً عام 2001 وكان يعرف الضحية. حين استُجوب ادّعى أنه لم يكن في شيكاغو عام 2001 — لكن سجلات مدرسته القديمة تثبت تسجيله في مدرسة شيكاغو حتى يونيو 2001. الجريمة وقعت في مارس 2001.",
+  "characters": [
+    {
+      "id": "char_linda",
+      "name": "ليندا هارت",
+      "age": 38,
+      "role": "الضحية",
+      "description": "قُتلت عام 2001. جارها ماركوس سُجن ظلماً بسببها. الجاني الحقيقي لا يزال طليقاً.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفاة منذ 25 سنة ولا يمكن استجوابها.",
+      "questions": [],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "long",
+        "clothColor": "red",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_derek",
+      "name": "ديريك كالينز",
+      "age": 42,
+      "role": "مشتبه به",
+      "description": "ابن أخ الجار القديم. DNA عينته طابقت مسرح الجريمة. ادّعى أنه لم يكن في شيكاغو عام 2001.",
+      "imageEmoji": "👤",
+      "interrogation": "ينكر بقوة ويدّعي أنه كان في ولاية أخرى وقت الجريمة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت في مارس 2001؟",
+          "answer": "في ميلووكي، انتقلت إلى هناك في 2000 ولم أعد لشيكاغو إلا بعد سنوات.",
+          "isLie": true,
+          "lieHint": "سجلات مدرسة شيكاغو تثبت تسجيله حتى يونيو 2001."
+        },
+        {
+          "id": "q2",
+          "text": "هل كنت تعرف ليندا هارت؟",
+          "answer": "لا، لم أسمع بها قبل هذا التحقيق.",
+          "isLie": true,
+          "lieHint": "صور قديمة تظهره في احتفال جيران شارعها عام 2000."
+        },
+        {
+          "id": "q3",
+          "text": "كيف تفسر تطابق DNA عينتك مع مسرح جريمة 2001؟",
+          "answer": "خطأ مخبري لا بد. التقنية ليست معصومة.",
+          "isLie": true,
+          "lieHint": "التحليل أُعيد ثلاث مرات بمختبرات مختلفة وأعطى نفس النتيجة."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_marcus",
+      "name": "ماركوس جونسون",
+      "age": 52,
+      "role": "شاهد",
+      "description": "السجين البريء. أمضى 25 سنة يعلن براءته. يتذكر تفاصيل مهمة عن عام 2001.",
+      "imageEmoji": "👤",
+      "interrogation": "هادئ بشكل مؤلم. يؤكد أنه كان يرى شاباً يزور الجار كثيراً.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل تتذكر أي شيء مريب قرب بيت ليندا في 2001؟",
+          "answer": "كان شاب يزور ستيف الجار كثيراً ذلك العام. طويل وعنده شعر بني. ما عرفت اسمه لكن رأيته مرات كثيرة.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "dark",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "orange",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_forensic_expert",
+      "name": "خبيرة DNA د. سارة وايت",
+      "age": 45,
+      "role": "شاهدة",
+      "description": "خبيرة الجينات التي أجرت التحليل المتقدم. تشرح النتائج بدقة علمية.",
+      "imageEmoji": "👤",
+      "interrogation": "دقيقة وعلمية. لا تتركها أي مجال للشك.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما درجة اليقين في تطابق DNA ديريك مع مسرح الجريمة؟",
+          "answer": "نسبة 99.9999%. التحليل أُعيد في ثلاثة مختبرات مستقلة. احتمال الخطأ أقل من واحد في المليون. العينة على مسرح الجريمة تطابق ديريك كالينز ولا تطابق ماركوس جونسون.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "تطابق DNA مع ديريك",
+      "description": "تحليل DNA متقدم يطابق عينة مسرح الجريمة 2001 مع ديريك كالينز بنسبة 99.9999% — أُعيد التحليل ثلاث مرات.",
+      "type": "physical",
+      "emoji": "🧬",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "سجل المدرسة — ديريك في شيكاغو 2001",
+      "description": "سجلات مدرسة شيكاغو تثبت تسجيل ديريك فيها حتى يونيو 2001 — يدحض ادعاءه بوجوده في ميلووكي.",
+      "type": "document",
+      "emoji": "🏫",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "صور الاحتفال — ديريك وليندا",
+      "description": "صور قديمة من احتفال جيران الشارع عام 2000 تظهر ديريك في نفس الحفل مع ليندا.",
+      "type": "physical",
+      "emoji": "📸",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "شهادة ماركوس عن الشاب البني",
+      "description": "ماركوس يتذكر شاباً طويلاً بشعر بني يزور الجار كثيراً عام 2001 — وصف يطابق ديريك في ذلك الوقت.",
+      "type": "testimonial",
+      "emoji": "👁️",
+      "revealOrder": 4,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

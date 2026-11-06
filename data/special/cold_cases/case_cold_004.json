@@ -1,0 +1,191 @@
+{
+  "id": "case_cold_004",
+  "title": "اعتراف فراش الموت",
+  "location": "أوساكا، اليابان",
+  "date": "2026/02/28",
+  "originalCrimeYear": 2006,
+  "yearsSinceCrime": 20,
+  "shortDesc": "رجل مسن على فراش الموت اعترف لابنته بجريمة ارتكبها قبل عشرين عاماً — لكن المتهم بها لا يزال حياً في السجن بريئاً. السباق مع الزمن بدأ.",
+  "thumbnailEmoji": "🛏️",
+  "difficulty": "medium",
+  "estimatedMinutes": 15,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 200,
+  "fullStory": "في مستشفى بأوساكا، اعترف هيروشي ماتسوموتو (78 عاماً) لابنته يوكي بأنه قتل تاجراً عام 2006 وأخفى الجريمة — وأن رجلاً بريئاً اسمه كينجي تاكاهاشي سُجن عشرين عاماً بسبب هذه الجريمة وهو لا يزال داخل السجن.\n\nيوكي صُدمت وترددت يومين قبل أن تبلّغ الشرطة. والدها توفي قبل وصول المحققين بساعات. الاعتراف كان شفهياً فقط ولم يُوثَّق.\n\nالتحقيق يجب أن يثبت صحة الاعتراف وأن كينجي بريء — بينما المحقق العتيد الذي أغلق القضية عام 2006 لا يزال حياً ويرفض الاعتراف بخطأه.",
+  "hint": "الاعتراف شفهي والجاني مات — كيف تثبت أن الرجل المسجون بريء؟",
+  "correctSuspectId": "char_hiroshi_m",
+  "solutionExplanation": "الجاني الحقيقي هو هيروشي ماتسوموتو المتوفى.\n\nالثغرة القاتلة:\nهيروشي اعترف بتفاصيل لم تُنشر علناً قط — مكان إخفاء سلاح الجريمة في حديقة بيته القديم. حين حفر المحققون وجدوا السكين المطابق لجرح الضحية. كما أن بصمات دم على ملابس كانت محفوظة في أدلة القضية لم تُطابَق آنذاك — أعادت مطابقتها تطابقت مع هيروشي وليس كينجي.",
+  "characters": [
+    {
+      "id": "char_hiroshi_m",
+      "name": "هيروشي ماتسوموتو",
+      "age": 78,
+      "role": "مشتبه به",
+      "description": "توفي بعد اعترافه شفهياً لابنته. اعترف بتفاصيل لم تُنشر علناً تثبت صحة اعترافه.",
+      "imageEmoji": "👤",
+      "interrogation": "الجاني متوفى — التحقيق يعتمد على الأدلة المادية للتحقق من اعترافه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_kenji_innocent",
+      "name": "كينجي تاكاهاشي",
+      "age": 55,
+      "role": "شاهد",
+      "description": "سُجن ظلماً عشرين عاماً. لا يزال في السجن. يصف ما حدث له ويؤكد براءته.",
+      "imageEmoji": "👤",
+      "interrogation": "هادئ بشكل مؤلم. أمضى عشرين سنة يدّعي البراءة دون أن يُصدّقه أحد.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما الذي يثبت أنك لم تكن في مكان الجريمة؟",
+          "answer": "كنت في مدينة أخرى تلك الليلة عند عائلتي. قلت هذا منذ البداية لكن المحقق رفض التحقق. لدي شهود عاشوا معي تلك الليلة.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "orange",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_yuki_daughter",
+      "name": "يوكي ماتسوموتو",
+      "age": 48,
+      "role": "شاهدة",
+      "description": "ابنة الجاني. سمعت الاعتراف وأبلغت الشرطة بعد تردد. تتذكر كل تفصيل قاله والدها.",
+      "imageEmoji": "👤",
+      "interrogation": "ممزقة بين حب والدها والواجب الأخلاقي. تروي الاعتراف بدقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ماذا قال والدك بالضبط قبل وفاته؟",
+          "answer": "قال إنه قتل الرجل في شجار على دين قديم وأخفى السكين في حديقة بيتنا القديم تحت الشجرة الكبيرة. وقال إن رجلاً بريئاً أخذ عقوبته وهذا ما أرّقه طوال حياته.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_old_detective",
+      "name": "المحقق المتقاعد أوساوا",
+      "age": 72,
+      "role": "مشتبه به",
+      "description": "أغلق القضية عام 2006 بتسرع. يرفض الاعتراف بالخطأ ويدّعي أن الاعتراف ملفق.",
+      "imageEmoji": "👤",
+      "interrogation": "دفاعي جداً. يحاول تقويض مصداقية الاعتراف.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "لماذا لم تتحقق من شهود كينجي في المدينة الأخرى؟",
+          "answer": "تحققنا وكانت الشهادات غير موثوقة في رأيي آنذاك.",
+          "isLie": true,
+          "lieHint": "ملف القضية لا يحتوي أي ذكر للتحقق من شهود كينجي — لم يتحقق أساساً."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "السكين تحت الشجرة",
+      "description": "حفر في حديقة البيت القديم كشف عن سكين مطابق لجرح الضحية — في المكان الذي وصفه هيروشي بدقة.",
+      "type": "physical",
+      "emoji": "🔪",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "إعادة تحليل بصمات الدم",
+      "description": "بصمات دم محفوظة في أدلة القضية أُعيد تحليلها — تطابقت مع هيروشي ولا تطابق كينجي.",
+      "type": "physical",
+      "emoji": "🧬",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "غياب التحقق من شهود كينجي",
+      "description": "ملف القضية الأصلي لا يحتوي أي سجل للتحقق من شهود كينجي في المدينة الأخرى — إهمال جسيم.",
+      "type": "document",
+      "emoji": "📁",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "id": "case_cold_005",
+  "title": "ابن الضحية",
+  "location": "بوينس آيرس، الأرجنتين",
+  "date": "2026/06/10",
+  "originalCrimeYear": 2014,
+  "yearsSinceCrime": 12,
+  "shortDesc": "شاب يكتشف أن وفاة والده قبل اثنا عشر عاماً لم تكن حادث سيارة — بل جريمة قتل متقنة. المؤمن على السيارة يخفي تفاصيل لم تُكشف.",
+  "thumbnailEmoji": "🚗",
+  "difficulty": "medium",
+  "estimatedMinutes": 15,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 200,
+  "fullStory": "في 2026، بدأ ماتياس رودريغيز (30 عاماً) يبحث عن ملف حادث وفاة والده روبيرتو عام 2014 — كان يعمل على رواية شخصية ويريد التفاصيل. والده مات في حادث اصطدام ليلي وأُغلقت القضية.\n\nحين طلب ماتياس تقرير الطب الشرعي الأصلي لاحظ شيئاً غريباً: تقرير الميكانيكي يذكر 'فشل المكابح' لكن تقرير المؤمن على السيارة — الذي فحصها بعد الحادث مباشرة — يذكر أن 'المكابح كانت سليمة تماماً قبل الحادث'.\n\nهذا التناقض فتح باباً لم يُفتح منذ اثنا عشر عاماً. صديق والده غونثالو كان الشخص الوحيد الذي يخدم سيارة والده بانتظام.",
+  "hint": "تقريران متناقضان عن المكابح — أيهما صحيح ومن يستفيد من التناقض؟",
+  "correctSuspectId": "char_gonzalo",
+  "solutionExplanation": "القاتل هو غونثالو فيراريس، صديق الضحية الذي يصلح سيارته.\n\nالثغرة القاتلة:\nغونثالو صلّح سيارة روبيرتو قبل ثلاثة أيام من الحادث. تقرير المؤمن يثبت أن المكابح كانت سليمة حين فحصها قبل الحادث — أي أن الفشل حدث بعد الفحص وقبل الحادث. غونثالو هو الوحيد الذي لمس السيارة في هذه الفترة. كان روبيرتو على وشك اكتشاف أن غونثالو يختلس من حساباتهم المشتركة.",
+  "characters": [
+    {
+      "id": "char_roberto_r",
+      "name": "روبيرتو رودريغيز",
+      "age": 45,
+      "role": "الضحية",
+      "description": "توفي عام 2014 في حادث سيارة ظُن أنه عرضي. كان على وشك اكتشاف اختلاس صديقه.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى منذ 12 سنة ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "blue",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_gonzalo",
+      "name": "غونثالو فيراريس",
+      "age": 58,
+      "role": "مشتبه به",
+      "description": "صديق الضحية الذي يصلح سيارته بانتظام. آخر من لمس السيارة قبل الحادث. كان يختلس من الحسابات المشتركة.",
+      "imageEmoji": "👤",
+      "interrogation": "يتظاهر بالحزن على صديقه القديم ويقول إن الحادث صدمة لا تنسى.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى آخر مرة أجريت صيانة لسيارة روبيرتو؟",
+          "answer": "قبل أسبوع من الحادث تقريباً، صيانة دورية عادية.",
+          "isLie": true,
+          "lieHint": "سجل ورشته يثبت أنه صلّح السيارة قبل ثلاثة أيام فقط من الحادث."
+        },
+        {
+          "id": "q2",
+          "text": "هل لاحظت أي مشكلة في المكابح حين صلّحت السيارة؟",
+          "answer": "المكابح كانت ممتازة، لم أتعامل معها أصلاً.",
+          "isLie": true,
+          "lieHint": "سجل الصيانة يذكر تحديثاً على نظام المكابح في آخر زيارة."
+        },
+        {
+          "id": "q3",
+          "text": "هل كنت تعلم أن روبيرتو يراجع الحسابات المشتركة؟",
+          "answer": "كان يراجعها دورياً كما هو معتاد، لا شيء غير عادي.",
+          "isLie": true,
+          "lieHint": "رسالة بريد إلكتروني من روبيرتو لمحاسبه تطلب مراجعة طارئة للحسابات قبل أسبوع من موته."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_matias",
+      "name": "ماتياس رودريغيز",
+      "age": 30,
+      "role": "شاهد",
+      "description": "ابن الضحية الذي اكتشف التناقض. يروي ما لاحظه في التقارير القديمة.",
+      "imageEmoji": "👤",
+      "interrogation": "حاد الذكاء ومصمم. يشرح التناقض بين التقريرين بدقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "كيف اكتشفت التناقض في التقارير؟",
+          "answer": "تقرير الميكانيكي قال 'فشل المكابح' لكن تقرير المؤمن — الذي فحص السيارة قبل الحادث بيوم — قال إن المكابح سليمة تماماً. إذا كانت سليمة قبل الحادث بيوم ففشلها لاحقاً ليس عرضياً.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "التناقض بين تقريرَي المكابح",
+      "description": "تقرير المؤمن يثبت سلامة المكابح قبل الحادث بيوم — بينما تقرير الميكانيكي يقول فشلت. الفشل إذن متعمد.",
+      "type": "document",
+      "emoji": "📋",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "سجل الصيانة الأخيرة",
+      "description": "سجل ورشة غونثالو يثبت صيانة السيارة قبل ثلاثة أيام من الحادث وتعديلاً في نظام المكابح.",
+      "type": "document",
+      "emoji": "🔧",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "طلب المراجعة الطارئة للحسابات",
+      "description": "رسالة بريد إلكتروني من روبيرتو لمحاسبه تطلب مراجعة طارئة للحسابات — يثبت أنه كان يقترب من اكتشاف الاختلاس.",
+      "type": "digital",
+      "emoji": "📧",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

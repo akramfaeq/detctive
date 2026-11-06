@@ -1,0 +1,178 @@
+{
+  "id": "case_cold_001",
+  "title": "الرسالة المتأخرة",
+  "location": "لشبونة، البرتغال",
+  "date": "2026/01/08",
+  "originalCrimeYear": 2016,
+  "yearsSinceCrime": 10,
+  "shortDesc": "رسالة بريدية وصلت بعد عشر سنوات من كتابتها — كاتبها مات قبل أن يُرسلها، وما فيها يكشف جريمة ظن الجميع أنها مجرد حادث.",
+  "thumbnailEmoji": "✉️",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "في يناير 2026، وصل إلى ماريا سيلفا (45 عاماً) خطاب بريدي من أخيها الراحل خوان الذي توفي في حادث سقوط من شرفته عام 2016. الخطاب كان محشواً في درج قديم في شقته التي بيعت أخيراً والمالك الجديد وجده وأرسله.\n\nفي الخطاب كتب خوان قبل موته بأيام: 'إذا قرأتِ هذا فأنا لم أعد موجوداً. صديقي القديم كارلوس يعرف أنني اكتشفت تزويره لعقود الشركة. خائف منه. إذا حدث لي شيء فهو السبب'.\n\nالشرطة أغلقت القضية عام 2016 كحادث. كارلوس لا يزال يعيش في لشبونة ويدير نفس الشركة.",
+  "hint": "الرسالة تسمي الجاني صراحة — من كتب عنه خوان؟",
+  "correctSuspectId": "char_carlos",
+  "solutionExplanation": "القاتل هو كارلوس مينديز، الشريك التجاري لخوان.\n\nالثغرة القاتلة:\nخوان كتب صراحةً قبل موته أنه يخاف من كارلوس بسبب اكتشافه تزوير عقود. إعادة فتح القضية وفحص عقود الشركة القديمة كشفت تزويراً واسعاً. الطب الشرعي المعاد أيضاً أثبت أن آثار السقوط لا تتسق مع حادث عرضي. كارلوس دفع خوان من الشرفة وأخفى الجريمة عشر سنوات.",
+  "characters": [
+    {
+      "id": "char_juan",
+      "name": "خوان سيلفا",
+      "age": 42,
+      "role": "الضحية",
+      "description": "توفي عام 2016 في حادث سقوط من شرفته. كتب رسالة تكشف خوفه من شريكه قبل موته بأيام.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى منذ 10 سنوات ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "blue",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_carlos",
+      "name": "كارلوس مينديز",
+      "age": 55,
+      "role": "مشتبه به",
+      "description": "شريك خوان التجاري القديم. لا يزال يدير الشركة. مُسمّى في رسالة خوان صراحةً.",
+      "imageEmoji": "👤",
+      "interrogation": "يدّعي أن الرسالة كُتبت في لحظة توتر ولا أساس لها.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل كنت تعلم أن خوان اكتشف تزوير العقود؟",
+          "answer": "لم يكن هناك أي تزوير. هذا اتهام باطل من رجل كان يعاني من اضطرابات نفسية.",
+          "isLie": true,
+          "lieHint": "فحص العقود القديمة يكشف تزويراً موثقاً في توقيعات وتواريخ."
+        },
+        {
+          "id": "q2",
+          "text": "أين كنت ليلة وفاة خوان؟",
+          "answer": "في بيتي مع عائلتي، بعيد تماماً عن شقته.",
+          "isLie": true,
+          "lieHint": "كاميرا مبنى خوان تظهر كارلوس يدخل قبل وقت الحادث بساعة."
+        },
+        {
+          "id": "q3",
+          "text": "لماذا لم تُبلّغ الشرطة بمخاوف خوان إن كانت بلا أساس؟",
+          "answer": "لم أعرف بأي مخاوف، علاقتنا كانت ممتازة.",
+          "isLie": true,
+          "lieHint": "رسائل بريد إلكتروني تثبت شجاراً حاداً بينهما قبل أسبوع من الوفاة."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_maria",
+      "name": "ماريا سيلفا",
+      "age": 45,
+      "role": "شاهدة",
+      "description": "أخت الضحية. تلقّت الرسالة وأبلغت الشرطة. تتذكر شكوك أخيها القديمة.",
+      "imageEmoji": "👤",
+      "interrogation": "حزينة ومصممة على معرفة الحقيقة. تؤكد أن أخاها لم يكن عنده مشاكل نفسية.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل ذكر لك خوان أي مخاوف قبل وفاته؟",
+          "answer": "نعم، أخبرني قبل أسبوعين من موته أنه اكتشف شيئاً خطيراً في الشركة لكنه لم يُفصّل. كان خائفاً بوضوح.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "رسالة خوان الخطية",
+      "description": "رسالة بخط خوان تُسمّي كارلوس صراحةً وتذكر خوفه منه بسبب اكتشاف التزوير — كُتبت قبل أيام من موته.",
+      "type": "document",
+      "emoji": "✉️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "كاميرا المبنى — دخول كارلوس",
+      "description": "كاميرا مبنى خوان القديمة تظهر كارلوس يدخل المبنى قبل الحادث بساعة ولا يُرى يخرج.",
+      "type": "physical",
+      "emoji": "📹",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "عقود مزوّرة في الشركة",
+      "description": "فحص العقود القديمة يكشف تزويراً موثقاً في توقيعات وتواريخ يصب في مصلحة كارلوس على حساب خوان.",
+      "type": "document",
+      "emoji": "📋",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

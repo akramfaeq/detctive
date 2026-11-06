@@ -1,0 +1,178 @@
+{
+  "id": "case_cold_002",
+  "title": "صورة من الأرشيف",
+  "location": "كراكوف، بولندا",
+  "date": "2026/03/15",
+  "originalCrimeYear": 2009,
+  "yearsSinceCrime": 17,
+  "shortDesc": "صورة قديمة عُرضت في معرض فوتوغرافي تظهر في خلفيتها مشهد جريمة لم يُبلّغ عنها أحد عام 2009 — الضحية في الصورة وُجدت لاحقاً في مقبرة مجهولة.",
+  "thumbnailEmoji": "📸",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "في معرض فوتوغرافي بكراكوف، عُرضت صور أرشيفية لشوارع المدينة عام 2009. أحد الزوار لاحظ في خلفية إحدى الصور مشهداً مثيراً — رجل يجر شيئاً ثقيلاً ملفوفاً في بساط نحو سيارة مركونة في الظلام.\n\nنُشرت الصورة على الإنترنت وأبلغ أحد المتابعين أن أخته آنا فيشر اختفت في نفس المنطقة عام 2009 ولم تُعثر عليها. لاحقاً بتحليل الصورة تبيّن أن لوحة سيارة الجاني واضحة جزئياً.\n\nالسيارة كانت مسجلة باسم ستانيسلاف كوفالسكي الذي لا يزال يعيش في المدينة.",
+  "hint": "الصورة التقطت الجريمة بالصدفة — ماذا يظهر في خلفيتها؟",
+  "correctSuspectId": "char_stanislaw",
+  "solutionExplanation": "القاتل هو ستانيسلاف كوفالسكي، جار الضحية السابق.\n\nالثغرة القاتلة:\nلوحة سيارته مرئية جزئياً في الصورة وبمعالجة الصورة رقمياً تبيّنت الأرقام الكاملة. السيارة مسجلة باسمه في تلك الفترة. المقبرة المجهولة التي وُجدت فيها رفات آنا كانت في الاتجاه الذي يؤدي إليه الطريق الذي تظهر فيه السيارة في الصورة.",
+  "characters": [
+    {
+      "id": "char_ana",
+      "name": "آنا فيشر",
+      "age": 28,
+      "role": "الضحية",
+      "description": "اختفت عام 2009 ولم تُعثر عليها حتى فُتح التحقيق. رفاتها وُجدت في مقبرة مجهولة.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفاة منذ 17 سنة ولا يمكن استجوابها.",
+      "questions": [],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "long",
+        "clothColor": "red",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_stanislaw",
+      "name": "ستانيسلاف كوفالسكي",
+      "age": 58,
+      "role": "مشتبه به",
+      "description": "جار آنا السابق. سيارته تظهر في صورة الجريمة. لا يزال يعيش في كراكوف.",
+      "imageEmoji": "👤",
+      "interrogation": "ينكر بشدة ويدّعي أن السيارة بيعت قبل ذلك التاريخ.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل كنت تملك هذه السيارة عام 2009؟",
+          "answer": "بعتها في 2008، لم تعد ملكي في ذلك التاريخ.",
+          "isLie": true,
+          "lieHint": "سجلات نقل الملكية تثبت أن البيع كان في أواخر 2009 بعد تاريخ الصورة."
+        },
+        {
+          "id": "q2",
+          "text": "هل كنت تعرف آنا فيشر؟",
+          "answer": "جارة قديمة، تبادلنا التحية فقط.",
+          "isLie": true,
+          "lieHint": "جيران مشتركون يؤكدون وجود خلاف بينهما على موقف السيارات."
+        },
+        {
+          "id": "q3",
+          "text": "أين كنت ليلة الثاني عشر من مارس 2009؟",
+          "answer": "لا أتذكر بعد كل هذه السنوات، شيء طبيعي.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_brother",
+      "name": "توماس فيشر",
+      "age": 50,
+      "role": "شاهد",
+      "description": "أخو الضحية. رأى الصورة على الإنترنت وأبلغ الشرطة. يتذكر تفاصيل اختفاء أخته.",
+      "imageEmoji": "👤",
+      "interrogation": "منهك من سنوات البحث. يتذكر أن ستانيسلاف كان يختلف مع أخته.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما الذي تتذكره عن اختفاء أختك؟",
+          "answer": "اختفت فجأة ولم تُودّع أحداً. آخر شيء ذكرته أنها ستذهب لبيت الجيران لحل خلاف على موقف السيارات. لم تعد.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الصورة الأرشيفية — المشهد في الخلفية",
+      "description": "صورة فوتوغرافية من 2009 تظهر في خلفيتها رجلاً يجر بساطاً ثقيلاً نحو سيارة — ولوحة السيارة مرئية جزئياً.",
+      "type": "physical",
+      "emoji": "📸",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "تحليل لوحة السيارة رقمياً",
+      "description": "معالجة رقمية للصورة كشفت أرقام اللوحة كاملةً — مسجلة باسم ستانيسلاف كوفالسكي حتى أواخر 2009.",
+      "type": "digital",
+      "emoji": "🔍",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "سجل نقل ملكية السيارة",
+      "description": "سجلات رسمية تثبت أن ستانيسلاف باع السيارة في أواخر 2009 — بعد تاريخ الصورة لا قبله.",
+      "type": "document",
+      "emoji": "📄",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

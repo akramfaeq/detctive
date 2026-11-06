@@ -1,0 +1,220 @@
+{
+  "id": "case_cold_008",
+  "title": "يوميات الفتاة",
+  "location": "فيينا، النمسا",
+  "date": "2026/07/18",
+  "originalCrimeYear": 2008,
+  "yearsSinceCrime": 18,
+  "shortDesc": "يوميات فتاة توفيت قبل ثمانية عشر عاماً في حادث 'سقوط من النافذة' عُثر عليها في علية البيت — تثبت أنها لم تنتحر بل كانت تخاف شخصاً بعينه.",
+  "thumbnailEmoji": "📔",
+  "difficulty": "hard",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 350,
+  "fullStory": "في 2026، عثر المالك الجديد لبيت قديم في فيينا على يوميات مخبأة في العلية. اليوميات لـ'سوفي' وتنتهي فجأة في مارس 2008.\n\nبالتحقيق اتضح أن سوفي برونر (19 عاماً) توفيت في مارس 2008 في ما صُنّف انتحاراً بالقفز من نافذة شقتها. عائلتها لم تصدق الرواية أبداً لكن القضية أُغلقت.\n\nفي آخر صفحات اليوميات كتبت سوفي: 'كلاوس يعرف أنني سأبلّغ عنه. يهددني. خائفة جداً. إذا حدث لي شيء فهو السبب'. كلاوس هاينريش كان مشرفها في عملها وهو اليوم رجل محترم في المجتمع يبلغ من العمر ستين عاماً.",
+  "hint": "اليوميات تسمي الجاني — والصفحة الأخيرة مكتوبة بيد مرتعشة. ماذا يعني ذلك؟",
+  "correctSuspectId": "char_klaus",
+  "solutionExplanation": "القاتل هو كلاوس هاينريش، المشرف السابق للضحية.\n\nالثغرة القاتلة:\nكتابة سوفي في آخر الصفحات مرتعشة جداً — دليل على خوف شديد لا على اكتئاب هادئ ينتهي بانتحار. إعادة فحص تقرير الطب الشرعي القديم بمعايير حديثة أثبتت وجود آثار إمساك على معصمي سوفي — أي أن شخصاً أمسك بها وهي تقاوم. كلاوس ذكره اسمه في اليوميات مرتبط بتهديدات موثقة. وجد المحققون في أرشيفه الخاص رسائل يطلب فيها من سوفي التزام الصمت.",
+  "characters": [
+    {
+      "id": "char_sophie",
+      "name": "سوفي برونر",
+      "age": 19,
+      "role": "الضحية",
+      "description": "توفيت عام 2008 في ما صُنّف انتحاراً. يومياتها تثبت أنها كانت تخاف مشرفها وكانت ستبلّغ عنه.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفاة منذ 18 سنة ولا يمكن استجوابها.",
+      "questions": [],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "long",
+        "clothColor": "blue",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_klaus",
+      "name": "كلاوس هاينريش",
+      "age": 60,
+      "role": "مشتبه به",
+      "description": "المشرف السابق لسوفي. اسمه في يومياتها مقرون بالتهديد. رجل محترم اليوم.",
+      "imageEmoji": "👤",
+      "interrogation": "وقور ومسيطر. يصف سوفي بأنها كانت تعاني من اكتئاب.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل كنت تهدد سوفي بأي شكل؟",
+          "answer": "أبداً. كنت أهتم بها كمشرف وكنت قلقاً على صحتها النفسية. كانت تعاني من اكتئاب شديد.",
+          "isLie": true,
+          "lieHint": "رسائل في أرشيفه تطلب من سوفي الصمت وتهددها بعواقب."
+        },
+        {
+          "id": "q2",
+          "text": "ماذا كانت ستبلّغ عنك؟",
+          "answer": "لا أعرف ما تقصد. لم يكن لدي ما أخفيه.",
+          "isLie": true,
+          "lieHint": "سوفي كانت شاهدة على تلاعب مالي في الشركة حسب رسائل عثر عليها."
+        },
+        {
+          "id": "q3",
+          "text": "أين كنت ليلة وفاة سوفي؟",
+          "answer": "في بيتي، لا علاقة لي بما حدث لها.",
+          "isLie": true,
+          "lieHint": "جار سوفي سمع صوت شجار في شقتها قبل سقوطها بنصف ساعة."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_mother",
+      "name": "هيلدا برونر",
+      "age": 62,
+      "role": "شاهدة",
+      "description": "أم الضحية. لم تصدق الانتحار أبداً. سعيدة بإعادة فتح القضية.",
+      "imageEmoji": "👤",
+      "interrogation": "حزينة لكن قوية. تؤكد أن ابنتها لم تكن تعاني من اكتئاب.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل لاحظتِ أي تغيير في سوفي قبل وفاتها؟",
+          "answer": "كانت خائفة — لا حزينة. الفرق كبير. كانت تلتفت خلفها في الشارع وتقفل بابها مرتين. هذا ليس سلوك شخص يفكر في الانتحار.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_forensic_new",
+      "name": "خبير الطب الشرعي د. فيشر",
+      "age": 50,
+      "role": "شاهد",
+      "description": "أعاد فحص تقرير الطب الشرعي القديم بمعايير حديثة.",
+      "imageEmoji": "👤",
+      "interrogation": "يشرح الفرق بين ما أظهره الفحص القديم والجديد.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ماذا كشف إعادة فحص تقرير الطب الشرعي؟",
+          "answer": "الفحص القديم أغفل آثار إمساك على معصمي سوفي — التقنية الحديثة كشفتها بوضوح. هذه الآثار تدل على مقاومة شخص يمسك بمعصميها بقوة. لا يتسق هذا مع انتحار طوعي.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "يوميات سوفي — الصفحات الأخيرة",
+      "description": "آخر صفحات اليوميات تذكر كلاوس بالاسم وتصف التهديدات. الخط مرتعش بشدة — دليل على خوف شديد لا اكتئاب.",
+      "type": "document",
+      "emoji": "📔",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "آثار الإمساك على المعصمين",
+      "description": "إعادة فحص جنائي حديث كشف آثار إمساك قوي على معصمي سوفي — لا يتسق مع انتحار طوعي.",
+      "type": "physical",
+      "emoji": "🧪",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "رسائل كلاوس الأرشيفية",
+      "description": "رسائل في أرشيف كلاوس الخاص تطلب من سوفي التزام الصمت وتهددها بعواقب.",
+      "type": "document",
+      "emoji": "✉️",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "شهادة الجار عن الشجار",
+      "description": "جار سوفي سمع صوت شجار في شقتها قبل سقوطها بنصف ساعة — لم يُذكر في التحقيق الأصلي.",
+      "type": "testimonial",
+      "emoji": "👂",
+      "revealOrder": 4,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

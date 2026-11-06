@@ -1,0 +1,156 @@
+{
+  "id": "case_cold_003",
+  "title": "ما تحت الأرضية",
+  "location": "دبلن، أيرلندا",
+  "date": "2026/05/20",
+  "originalCrimeYear": 2011,
+  "yearsSinceCrime": 15,
+  "shortDesc": "بيع بيت عجوز بعد وفاتها — المالك الجديد أراد تجديد الأرضية فوجد ما لم يتوقعه. ما خُبّئ تحتها قبل خمس عشرة سنة فتح قضية ظن الجميع أنها حُسمت.",
+  "thumbnailEmoji": "🏚️",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "في عام 2026، اشترى المقاول شيموس أوبراين بيتاً قديماً في دبلن لتجديده. حين رفع ألواح أرضية الغرفة الخلفية وجد صندوقاً معدنياً قديماً يحتوي على مجوهرات ووثائق وساعة ذهبية منقوش عليها اسم 'باتريك مورفي'.\n\nباتريك مورفي كان جاراً أُبلغ عن اختفائه عام 2011 وأُغلقت قضيته كشخص مسافر. عائلته لم تسمع منه منذ ذلك اليوم. البيت القديم كان ملكاً لمارغريت فلانغان التي توفيت عام 2024.\n\nمارغريت كانت الجارة المباشرة لباتريك وكانت بينهما خلافات قديمة على الملكية. الوثائق في الصندوق تشمل عقد بيع موقعاً بتوقيع مزوّر لباتريك.",
+  "hint": "الصندوق تحت الأرضية يحتوي أشياء شخصية لشخص 'مسافر' — لماذا تركها؟",
+  "correctSuspectId": "char_margaret_estate",
+  "solutionExplanation": "الجانية الراحلة هي مارغريت فلانغان — توفيت عام 2024 قبل انكشاف جريمتها.\n\nالثغرة القاتلة:\nالمجوهرات والساعة الذهبية لباتريك لا يتركها مسافر خلفه — يحملها معه. وجودها تحت أرضية مارغريت يثبت أنه لم يغادر طوعاً. عقد البيع المزوّر يثبت أنها استولت على ممتلكاته. رفاته وُجدت لاحقاً في حديقة البيت الخلفية. مارغريت أخفت كل شيء بنجاح لخمس عشرة سنة لكنها ماتت قبل أن تكشف الحقيقة.",
+  "characters": [
+    {
+      "id": "char_patrick",
+      "name": "باتريك مورفي",
+      "age": 65,
+      "role": "الضحية",
+      "description": "جار اختفى عام 2011. قُدّمت قضيته كمسافر. مجوهراته وساعته وُجدت تحت أرضية منزل جارته.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_margaret_estate",
+      "name": "تركة مارغريت فلانغان",
+      "age": 0,
+      "role": "مشتبه بها",
+      "description": "الجارة المباشرة لباتريك. توفيت عام 2024. منزلها يخفي أسرار جريمتها. لا يمكن محاكمتها لكن يمكن إثبات الجريمة.",
+      "imageEmoji": "👤",
+      "interrogation": "الجانية متوفاة — التحقيق يعتمد على الأدلة المادية والوثائق.",
+      "questions": [],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_niece",
+      "name": "كايت مورفي",
+      "age": 45,
+      "role": "شاهدة",
+      "description": "ابنة أخ باتريك. تعرّفت على الساعة والمجوهرات. تتذكر الخلاف بين عمها وجارته.",
+      "imageEmoji": "👤",
+      "interrogation": "متأثرة لكن واضحة في تفاصيلها. تؤكد أن عمها لم يكن ليسافر دون ساعته.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل تتعرفين على هذه الساعة؟",
+          "answer": "نعم هذه ساعة عمي باتريك، أهداها إياه والده. كان لا يخلعها أبداً. لو سافر لأخذها معه بالتأكيد.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "blue",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الصندوق المعدني تحت الأرضية",
+      "description": "صندوق يحتوي مجوهرات باتريك وساعته الذهبية وعقد بيع مزوّر — لا يتركها مسافر خلفه.",
+      "type": "physical",
+      "emoji": "📦",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "عقد البيع بتوقيع مزوّر",
+      "description": "عقد استيلاء على ممتلكات باتريك بتوقيع مزوّر — يثبت نية مارغريت الإجرامية مسبقاً.",
+      "type": "document",
+      "emoji": "📝",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "شهادة كايت عن الساعة",
+      "description": "ابنة أخ باتريك تؤكد أنه لم يكن يخلع ساعته أبداً — وجودها في المنزل يثبت أنه لم يسافر طوعاً.",
+      "type": "testimonial",
+      "emoji": "⌚",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "id": "case_cold_006",
+  "title": "الصديق الغائب",
+  "location": "بوخارست، رومانيا",
+  "date": "2026/09/05",
+  "originalCrimeYear": 2011,
+  "yearsSinceCrime": 15,
+  "shortDesc": "رجل يعود لمسقط رأسه بعد خمس عشرة سنة ليكتشف أن صديقه المقرب 'المسافر للخارج' لم يغادر المدينة قط — والشخص الذي أبلغ عن سفره هو من ورث كل شيء.",
+  "thumbnailEmoji": "🏠",
+  "difficulty": "medium",
+  "estimatedMinutes": 15,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 200,
+  "fullStory": "في 2026، عاد أندريه بوبيسكو (45 عاماً) لمدينة بوخارست بعد خمس عشرة سنة في الخارج. حاول التواصل مع صديقه القديم ميهاي إيوانو الذي قيل إنه هاجر لألمانيا عام 2011.\n\nلكن أندريه لم يجد لميهاي أي أثر رقمي — لا حسابات، لا سجلات هجرة، لا أي شيء. الشخص الوحيد الذي أبلغ الجيران بسفر ميهاي كان صديقهم المشترك كريستيان.\n\nكريستيان يسكن الآن في شقة ميهاي القديمة ويملك سيارته وكل مقتنياته 'بموجب توكيل رسمي'. التوكيل موقّع بخط ميهاي لكن التاريخ مريب.",
+  "hint": "من أبلغ عن السفر ومن استفاد من الغياب؟",
+  "correctSuspectId": "char_cristian",
+  "solutionExplanation": "القاتل هو كريستيان دومير، الصديق المشترك.\n\nالثغرة القاتلة:\nلا يوجد أي سجل لهجرة ميهاي في قواعد البيانات الأوروبية — أي أنه لم يهاجر أبداً. التوكيل الرسمي فحصه خبير خطوط يثبت أنه مزوّر. كريستيان ورث كل شيء بموجب هذا التوكيل المزوّر وأقنع الجيران بقصة السفر. رفات ميهاي وُجد لاحقاً في الريف خارج المدينة.",
+  "characters": [
+    {
+      "id": "char_mihai",
+      "name": "ميهاي إيوانو",
+      "age": 45,
+      "role": "الضحية",
+      "description": "قُدِّم على أنه هاجر لألمانيا عام 2011. لا يوجد أي سجل لهجرته. رفاته وُجدت لاحقاً.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "green",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_cristian",
+      "name": "كريستيان دومير",
+      "age": 47,
+      "role": "مشتبه به",
+      "description": "الصديق المشترك. أبلغ الجيران بسفر ميهاي. يسكن شقته ويملك سيارته بموجب توكيل مزوّر.",
+      "imageEmoji": "👤",
+      "interrogation": "ثقيل الحيل ويتمسك بقصة السفر بثقة مصطنعة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "كيف حصلت على شقة ميهاي وسيارته؟",
+          "answer": "أعطاني توكيلاً رسمياً قبل سفره ليدير أموره. هذا قانوني تماماً.",
+          "isLie": true,
+          "lieHint": "خبير خطوط يثبت أن التوكيل مزوّر ولا يطابق خط ميهاي الحقيقي."
+        },
+        {
+          "id": "q2",
+          "text": "هل لديك عنوان أو رقم تواصل لميهاي في ألمانيا؟",
+          "answer": "فقد التواصل معي بعد فترة، هذا يحدث مع المهاجرين.",
+          "isLie": true,
+          "lieHint": "لا يوجد أي سجل لدخول ميهاي لألمانيا أو أي دولة أوروبية."
+        },
+        {
+          "id": "q3",
+          "text": "من كان معك حين أبلغت الجيران بسفر ميهاي؟",
+          "answer": "كنت وحدي، أردت إبلاغهم حتى لا يقلقوا.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_andrei",
+      "name": "أندريه بوبيسكو",
+      "age": 45,
+      "role": "شاهد",
+      "description": "صديق الضحية القديم. عاد من الخارج وأثار الشكوك. يؤكد أن ميهاي لم يذكر أي خطط للهجرة.",
+      "imageEmoji": "👤",
+      "interrogation": "مصدوم وحازم. يؤكد أن ميهاي لم يكن يخطط للهجرة حين غادر هو قبل خمس عشرة سنة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل ذكر لك ميهاي نية الهجرة قبل أن تسافر؟",
+          "answer": "أبداً. آخر مرة تكلمنا فيها لم يذكر شيئاً عن ألمانيا. بالعكس كان يتكلم عن خطط مستقبلية في بوخارست. هجرته المفاجئة لم تكن منطقية من البداية.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "غياب سجلات الهجرة",
+      "description": "قواعد البيانات الأوروبية لا تحتوي أي سجل لدخول ميهاي إيوانو لألمانيا أو أي دولة أوروبية بعد 2011.",
+      "type": "digital",
+      "emoji": "🗄️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "التوكيل المزوّر",
+      "description": "خبير خطوط يثبت أن توكيل ميهاي مزوّر ولا يطابق عينات خطه الحقيقية من مراسلات قديمة.",
+      "type": "document",
+      "emoji": "📝",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "شهادة أندريه عن خطط ميهاي",
+      "description": "أندريه يؤكد أن ميهاي لم يذكر أي خطط للهجرة — بل العكس كان يخطط لمشاريع في بوخارست.",
+      "type": "testimonial",
+      "emoji": "💬",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}
