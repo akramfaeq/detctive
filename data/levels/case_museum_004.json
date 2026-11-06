@@ -1,0 +1,157 @@
+{
+  "id": "case_museum_004",
+  "title": "سرقة تمثال الماتادور",
+  "location": "متحف الفنون التاريخية، مدريد",
+  "date": "2026/08/14",
+  "shortDesc": "سرقة تمثال أثري من قاعة مغلقة بالمتحف، والعثور على الحارس مقيداً. يؤكد الحارس أنه سمع دقات الساعة البرجية وقت الاقتحام، غير أن سجل صيانة الساعة يُفنّد روايته.",
+  "thumbnailEmoji": "🏛️",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "في منتصف أغسطس بمدينة مدريد، تلقّت الشرطة بلاغاً عند الساعة السادسة صباحاً من عاملة النظافة في متحف الفنون التاريخية، تُفيد بعدم فتح الأبواب الخارجية لوردية الصباح.\n\nعند دخول قاعة المعروضات الرئيسية، تبيّن اختفاء تمثال 'الماتادور الذهبي' الأثري من منصته الزجاجية المغلقة. وفي الغرفة المجاورة، عُثر على حارس الليل كارلوس مقيداً بسلاسل حديدية ومعصوب الوجه.\n\nأفاد كارلوس بأنه أثناء جولته التفتيشية عند الساعة الثانية صباحاً، باغتته مجموعة مجهولة من الخلف وقيّدته. وأكّد أنه واثق تماماً من هذا التوقيت لأنه سمع دقات الساعة البرجية الداخلية تدقّ مرتين متتاليتين بينما كان ملقىً على الأرض في الظلام.",
+  "hint": "افحص آلية عمل الساعة البرجية الأثرية داخل القاعة، وتحقق مما إذا كان الحارس قام بشحن زنبركها اليدوي قبل منتصف الليل كما تقتضي إجراءات المتحف اليومية.",
+  "correctSuspectId": "char_carlos",
+  "solutionExplanation": "السارق الحقيقي هو حارس المتحف كارلوس، بالتواطؤ مع مهرّب آثار.\n\nالثغرة القاتلة:\nادّعى كارلوس أنه سمع دقات الساعة البرجية الداخلية تدقّ مرتين (الساعة الثانية صباحاً) وهو مقيّد في الظلام، وذلك لإثبات توقيت الاقتحام المزعوم وتبرئة نفسه.\n\nغير أن سجلات المتحف وتقرير فني الصيانة يُثبتان أن الساعة البرجية تعمل بنظام زنبركي يدوي بالكامل، ويستلزم تدوير مفتاحه الخاص يومياً قبل الساعة الثانية عشرة منتصف الليل، وإلا توقف الجرس عن الرنين طوال الليل. وقد صرّح كارلوس رسمياً في بداية التحقيق بأنه نسي شحن مفتاح الساعة البرجية طوال ذلك اليوم.\n\nبما أن الزنبرك لم يُشحن، كان الجرس معطّلاً تماماً ولا يمكنه الدقّ في أي وقت تلك الليلة. وادّعاء كارلوس بسماع الدقات كان تفصيلاً مختلقاً أوقع نفسه فيه. والثابت أنه سلّم التمثال للمهرّب عند الساعة الحادية عشرة مساءً، ثم قيّد نفسه لصرف الشبهات عنه.",
+  "characters": [
+    {
+      "id": "char_carlos",
+      "name": "كارلوس غوميز",
+      "age": 42,
+      "role": "مشتبه به",
+      "description": "حارس المتحف الليلي، عُثر عليه مقيداً داخل الغرفة المجاورة لقاعة العرض. ادّعى تعرّضه لاعتداء عند الساعة الثانية صباحاً.",
+      "imageEmoji": "👤",
+      "interrogation": "يتحدث بتوتر واضح، ويُكرر تفصيل دقات الساعة في كل مرة يُسأل عن التوقيت.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "كيف تأكدتَ أن الاقتحام حدث في الساعة الثانية صباحاً تحديداً؟",
+          "answer": "كنتُ مقيداً ووجهي معصوب في الظلام، لكنني سمعتُ دقات الساعة البرجية الأثرية تدقّ مرتين بوضوح شديد.",
+          "isLie": true,
+          "lieHint": "الساعة البرجية لم تكن تعمل؛ إذ لم يُشحن زنبركها اليدوي طوال ذلك اليوم، فلم يكن بإمكانها الدقّ."
+        },
+        {
+          "id": "q2",
+          "text": "هل قمتَ بشحن زنبرك الساعة البرجية قبل منتصف الليل كما تقتضي إجراءات المتحف اليومية؟",
+          "answer": "لا، نسيتُ شحن المفتاح تماماً ذلك اليوم كنتُ مرهقاً جداً.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q3",
+          "text": "هل كانت أقفال القاعة الخارجية سليمة حين وصلت الشرطة؟",
+          "answer": "نعم، أعتقد أن المتسلّلين دخلوا عبر فتحة التهوية في السقف.",
+          "isLie": true,
+          "lieHint": "فتحة التهوية مغلقة بشبكة معدنية سليمة ومغطاة بطبقة من الأتربة تدل على عدم لمسها."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "medium",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_sofia",
+      "name": "صوفيا موراليس",
+      "age": 35,
+      "role": "مشتبه بها",
+      "description": "أمينة المتحف المسؤولة عن الجرد. لديها ديون شخصية، وشوهدت تغادر المتحف في الثامنة مساءً.",
+      "imageEmoji": "👤",
+      "interrogation": "إفادتها هادئة ومنطقية ومتطابقة مع سجلات الكاميرات الخارجية.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنتِ عند الساعة الثانية صباحاً؟",
+          "answer": "كنتُ في منزلي نائمة، ويمكنكم مراجعة كاميرات المراقبة في الشارع المقابل لبيتي.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "purple",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "شهادة الحارس كارلوس",
+      "description": "أكّد الحارس أنه سمع دقات الساعة البرجية تدقّ مرتين عند الساعة الثانية صباحاً بينما كان مقيداً في الداخل.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "تقرير صيانة الساعة البرجية",
+      "description": "يُوضّح التقرير أن الساعة البرجية تعمل بنظام زنبركي يدوي بالكامل، ولا يُصدر جرسها أي صوت ليلاً ما لم يُشحن زنبركها بمفتاح خاص قبل منتصف الليل.",
+      "type": "physical",
+      "emoji": "⚙️",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "سجل الدورية الليلي",
+      "description": "سجل بخط يد الحارس كارلوس يُقرّ فيه بأنه نسي شحن زنبرك الساعة البرجية طوال ذلك اليوم.",
+      "type": "physical",
+      "emoji": "📝",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

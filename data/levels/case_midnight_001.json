@@ -1,0 +1,211 @@
+{
+"id": "case_midnight_001",
+"title": "جريمة في منتصف الليل",
+"location": "مكتب الشروق للاستشارات، بغداد",
+"date": "2026/10/12",
+"shortDesc": "عُثر على رجل أعمال مقتولاً في مكتبه في ساعة متأخرة من الليل. أدلى ثلاثة أشخاص بإفاداتهم، غير أن انقطاع التيار الكهربائي كشف الجاني الحقيقي.",
+"thumbnailEmoji": "🌩️",
+"difficulty": "easy",
+"estimatedMinutes": 10,
+"isNew": true,
+"requiredPoints": 0,
+"rewardPoints": 100,
+"fullStory": "في ليلة عاصفة وممطرة، عُثر على جثة رجل الأعمال طارق المحمود (52 عاماً) ملقاةً على أرضية مكتبه في الطابق الثالث من بناية الشروق. كان طارق قد بقي بمفرده لإتمام بعض الملفات المالية المعقدة.\n\nأكّد تقرير الطب الشرعي أن الوفاة حدثت بين الساعة الحادية عشرة والنصف وحتى منتصف الليل، إثر ضربة بجسم صلب على الرأس. حصر الأمن دخول البناية بثلاثة أشخاص فحسب: مدير الحسابات الذي يُحاول إخفاء عجز مالي، والشريك التجاري الخاسر، وعامل النظافة في وردية الليل.\n\nأظهر التحقيق الأوّلي أن جميع المشتبه بهم يُقدّمون أعذاراً وجيهة، إلا أن مراجعة سجلات شركة الكهرباء كشفت الخيطَ الحاسم في القضية.",
+"hint": "قارن توقيتات إفادات المشتبه بهم مع تقرير شركة الكهرباء الرسمي المتعلق بتلك الليلة العاصفة.",
+"correctSuspectId": "char_accountant",
+"solutionExplanation": "الجاني هو مدير الحسابات ماجد.\n\nادّعى ماجد أنه دخل مكتب الضحية في الساعة الحادية عشرة وخمسين دقيقةً ليسلّمه ملفاً، وأنه رآه يقرأ الأوراق تحت ضوء المصباح المكتبي الأصفر. غير أن تقرير شركة الكهرباء يُثبت انقطاع التيار الكهربائي كلياً عن المنطقة اعتباراً من الساعة الحادية عشرة مساءً وحتى الصباح، بسبب تضرر محوّل كهربائي جراء العاصفة.\n\nهذا يعني أن المكتب كان في ظلام تام، ولم يكن باستطاعة أحد استخدام أي مصباح كهربائي. وبذلك تنهار رواية ماجد بالكامل، مما يؤكد أنه استغل الظلام لضرب طارق وإخفاء جريمة الاختلاس المالي.",
+"characters": [
+{
+"id": "char_tareq",
+"name": "طارق المحمود",
+"age": 52,
+"role": "الضحية",
+"description": "رجل أعمال ومدير شركة الشروق، عُثر عليه مقتولاً بضربة على الرأس بجانب مكتبه.",
+"imageEmoji": "👤",
+"interrogation": "الضحية لا يمكن استجوابه.",
+"questions": [],
+"appearance": {
+"gender": "male",
+"skinTone": "medium",
+"hairColor": "black",
+"hairStyle": "short",
+"clothColor": "navy",
+"hasBeard": true,
+"hasGlasses": true
+}
+},
+{
+"id": "char_accountant",
+"name": "ماجد المالي",
+"age": 41,
+"role": "مشتبه به",
+"description": "مدير الحسابات في الشركة، جرى تدقيق حساباته مؤخراً وتبيّن وجود تلاعب في دفتر الشيكات.",
+"imageEmoji": "👤",
+"interrogation": "يبدو متوتراً ويفرك يديه باستمرار، ويحاول إبعاد الشبهات عن نفسه بتفاصيل مفرطة الدقة.",
+"questions": [
+{
+"id": "q1",
+"text": "متى كانت آخر مرة رأيتَ فيها طارق حياً؟",
+"answer": "دخلتُ عليه في الساعة الحادية عشرة وخمسين دقيقةً ليلاً لأسلّمه ملفاً، وكان يجلس تحت ضوء مصباحه المكتبي الأصفر يطّلع على الأوراق، فسلّمتُه الملف وغادرت فوراً.",
+"isLie": true,
+"lieHint": "المصباح المكتبي يستلزم وجود تيار كهربائي — هل كان التيار يعمل في تلك اللحظة؟"
+},
+{
+"id": "q2",
+"text": "هل كانت هناك خلافات بينك وبين المجني عليه؟",
+"answer": "لا إطلاقاً، كانت علاقتنا ممتازة وكان يعتمد عليّ في كل شيء.",
+"isLie": true,
+"lieHint": "تقرير التفتيش المالي يكشف وجود خلاف جوهري بينهما بسبب عمليات اختلاس."
+}
+],
+"appearance": {
+"gender": "male",
+"skinTone": "light",
+"hairColor": "black",
+"hairStyle": "short",
+"clothColor": "gray",
+"hasBeard": false,
+"hasGlasses": true
+}
+},
+{
+"id": "char_partner",
+"name": "سليم العبيدي",
+"age": 48,
+"role": "مشتبه به",
+"description": "الشريك التجاري لطارق، تربطهما دعوى قضائية حول توزيع الأرباح.",
+"imageEmoji": "👤",
+"interrogation": "يتحدث بنبرة غاضبة غير أنه يظل هادئاً عند سرد تحركاته.",
+"questions": [
+{
+"id": "q1",
+"text": "أين كنتَ بين الساعة الحادية عشرة والنصف ومنتصف الليل؟",
+"answer": "كنتُ في سيارتي أسفل البناية أحاول الاتصال بطارق، غير أن التغطية وانقطاع الكهرباء بسبب العاصفة حالا دون ذلك، فغادرتُ دون الصعود.",
+"isLie": false,
+"lieHint": null
+}
+],
+"appearance": {
+"gender": "male",
+"skinTone": "medium",
+"hairColor": "black",
+"hairStyle": "short",
+"clothColor": "black",
+"hasBeard": true,
+"hasGlasses": false
+}
+},
+{
+"id": "char_cleaner",
+"name": "أبو علي",
+"age": 58,
+"role": "مشتبه به",
+"description": "عامل النظافة في الوردية المسائية بالبناية.",
+"imageEmoji": "👤",
+"interrogation": "رجل بسيط ومتعاون تماماً مع التحقيق.",
+"questions": [
+{
+"id": "q1",
+"text": "متى أنهيتَ عملك وغادرتَ البناية؟",
+"answer": "أنهيتُ تنظيف الممرات وغادرتُ في الساعة الحادية عشرة وربع ليلاً، بعد أن انقطع التيار الكهربائي كلياً عن المبنى وأصبح المكان في ظلام تام.",
+"isLie": false,
+"lieHint": null
+}
+],
+"appearance": {
+"gender": "male",
+"skinTone": "dark",
+"hairColor": "white",
+"hairStyle": "short",
+"clothColor": "blue",
+"hasBeard": true,
+"hasGlasses": false
+}
+}
+],
+"evidences": [
+{
+"id": "ev1",
+"title": "تقرير الطب الشرعي",
+"description": "أكّد التقرير أن الوفاة حدثت بين الساعة الحادية عشرة والنصف ومنتصف الليل، إثر ضربة بجسم صلب على الرأس.",
+"type": "physical",
+"emoji": "🩺",
+"revealOrder": 1,
+"importance": "critical",
+"unlocksEvidenceId": null,
+"difficultyVisibility": {
+"easy": { "showImportanceTag": true, "showDescription": true },
+"medium": { "showImportanceTag": true, "showDescription": true },
+"hard": { "showImportanceTag": false, "showDescription": true }
+}
+},
+{
+"id": "ev2",
+"title": "تقرير شركة الكهرباء",
+"description": "انقطع التيار الكهربائي عن منطقة البناية بالكامل اعتباراً من الساعة الحادية عشرة مساءً وحتى الخامسة صباحاً، بسبب تضرر محوّل كهربائي جراء العاصفة.",
+"type": "official",
+"emoji": "⚡",
+"revealOrder": 2,
+"importance": "critical",
+"unlocksEvidenceId": null,
+"difficultyVisibility": {
+"easy": { "showImportanceTag": true, "showDescription": true },
+"medium": { "showImportanceTag": true, "showDescription": true },
+"hard": { "showImportanceTag": false, "showDescription": true }
+}
+},
+{
+"id": "ev3",
+"title": "إفادة ماجد (مدير الحسابات)",
+"description": "ادّعى ماجد أنه شاهد الضحية يطّلع على أوراقه تحت ضوء مصباح المكتب الأصفر عند الساعة الحادية عشرة وخمسين دقيقةً ليلاً.",
+"type": "testimony",
+"emoji": "🗣️",
+"revealOrder": 3,
+"importance": "critical",
+"unlocksEvidenceId": null,
+"difficultyVisibility": {
+"easy": { "showImportanceTag": true, "showDescription": true },
+"medium": { "showImportanceTag": true, "showDescription": true },
+"hard": { "showImportanceTag": false, "showDescription": true }
+}
+},
+{
+"id": "ev4",
+"title": "تقرير المراجعة المالية",
+"description": "كشف التقرير عن اختلاس مبلغ كبير من حسابات الشركة يُقدَّر بخمسين ألف دولار، جرى تسجيله باسم مدير الحسابات.",
+"type": "document",
+"emoji": "📄",
+"revealOrder": 4,
+"importance": "important",
+"unlocksEvidenceId": null,
+"difficultyVisibility": {
+"easy": { "showImportanceTag": true, "showDescription": true },
+"medium": { "showImportanceTag": true, "showDescription": true },
+"hard": { "showImportanceTag": false, "showDescription": true }
+}
+}
+],
+"difficultySettings": {
+"easy": {
+"showLieIndicator": true,
+"showEvidenceImportance": true,
+"showLinkingSuggestions": true,
+"evidencesLockedCount": 0,
+"interrogationQuestionsPerChar": 2
+},
+"medium": {
+"showLieIndicator": false,
+"showEvidenceImportance": true,
+"showLinkingSuggestions": false,
+"evidencesLockedCount": 1,
+"interrogationQuestionsPerChar": 2
+},
+"hard": {
+"showLieIndicator": false,
+"showEvidenceImportance": false,
+"showLinkingSuggestions": false,
+"evidencesLockedCount": 2,
+"interrogationQuestionsPerChar": 1
+}
+}
+}

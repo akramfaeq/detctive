@@ -1,0 +1,176 @@
+{
+  "id": "case_coffee_003",
+  "title": "فنجان القهوة الأخير",
+  "location": "مرسم فني في مدينة روما، إيطاليا",
+  "date": "2026/05/19",
+  "shortDesc": "عُثر على ناقد فني مشهور مقتولاً بالسم داخل مرسمه المغلق. بجانب الجثة فنجان قهوة محلّى بالسكر، والمساعد يؤكد أنه أعدّه بناءً على طلب الضحية.",
+  "thumbnailEmoji": "☕",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "في ليلة دافئة بمدينة روما، كان الناقد الفني الإيطالي الشهير لورينزو فاليري (50 عاماً) يعمل بمفرده داخل مرسمه الخاص لإعداد مقالته الأخيرة قبيل المعرض السنوي.\n\nعند الساعة الحادية عشرة مساءً، دخل حارس المبنى ليطمئن عليه، فوجده فاقداً للوعي ومنهاراً على مكتبه، وتوفي قبل وصول سيارة الإسعاف. أظهر تقرير الطب الشرعي أن سبب الوفاة تسمم حاد بمادة سامة سريعة المفعول أُذيبت في مشروب ساخن.\n\nعُثر على فنجان قهوة نصف فارغ على الطاولة بجانب الجثة، وتظهر عليه آثار سكر واضحة. أشار مساعده الشخصي برونو إلى أنه أعدّ هذا الفنجان بنفسه وقدّمه للسيد لورينزو قبل ساعة كاملة من مغادرته المرسم.",
+  "hint": "راجع السجلات الطبية للضحية بعناية، ولا سيما نظامه الغذائي وأمراضه المزمنة. هل كان يتناول السكر فعلاً؟ ولماذا أُضيف السكر إلى القهوة التي تحتوي على السم؟",
+  "correctSuspectId": "char_bruno",
+  "solutionExplanation": "القاتل الحقيقي هو المساعد الشخصي برونو.\n\nالثغرة القاتلة:\nأكّد برونو في التحقيق أنه أعدّ القهوة محلّاةً بالسكر لأن لورينزو كان يطلبها دائماً هكذا. غير أن تقرير الفحص الطبي وسجلات الضحية المرضية تُثبت بما لا يدع مجالاً للشك أن لورينزو كان مصاباً بمرض السكري المزمن الحاد، وكان ممنوعاً منعاً باتاً من تناول أي كمية من السكر منذ أكثر من عشر سنوات.\n\nوضع برونو السكر عمداً في فنجان القهوة لإخفاء الطعم المر للسم القوي الذي أضافه. وبسبب كذبه في وصف عادات الضحية الغذائية، انكشف أنه هو من دسّ السم وليس مجرد مساعد بريء.",
+  "characters": [
+    {
+      "id": "char_lorenzo",
+      "name": "لورينزو فاليري",
+      "age": 50,
+      "role": "الضحية",
+      "description": "ناقد فني معروف بصرامته في تقييم الأعمال الفنية. مصاب بمرض السكري الحاد ولا يتناول السكر نهائياً. عُثر عليه مقتولاً بالسم.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_bruno",
+      "name": "برونو روسي",
+      "age": 32,
+      "role": "مشتبه به",
+      "description": "المساعد الشخصي للناقد الفني. كان آخر شخص رافق الضحية وأعدّ له فنجان القهوة قبيل الحادثة.",
+      "imageEmoji": "👤",
+      "interrogation": "يبدو هادئاً في ظاهره، غير أنه يُصرّ بشكل لافت على أن الضحية هو من طلب السكر بنفسه هذه المرة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى غادرتَ المرسم ليلة الجريمة؟",
+          "answer": "غادرتُ في تمام الساعة التاسعة والنصف ليلاً بعد أن أعددتُ له فنجان القهوة بناءً على طلبه.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q2",
+          "text": "هل أضفتَ السكر إلى فنجان قهوة لورينزو؟",
+          "answer": "نعم، طلب مني بالحرف الواحد أن أضع ملعقتين من السكر، قال إنه متعب ويحتاج إلى طاقة.",
+          "isLie": true,
+          "lieHint": "الضحية مصاب بمرض السكري الحاد ومحظور عليه تناول السكر قطعياً."
+        },
+        {
+          "id": "q3",
+          "text": "هل كانت ثمة خلافات مالية أو مهنية بينك وبينه؟",
+          "answer": "لا أبداً، كانت علاقتنا ممتازة طوال فترة عملي معه.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_elena",
+      "name": "إيلينا مارتينيز",
+      "age": 45,
+      "role": "مشتبه بها",
+      "description": "فنانة تشكيلية تتنافس على جائزة المعرض الكبرى التي يترأس لورينزو لجنة تحكيمها.",
+      "imageEmoji": "👤",
+      "interrogation": "تبدو متوترة بسبب توقيت الجريمة وتأثيرها على المعرض، غير أن إفادتها متسقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنتِ بين الساعة التاسعة والعاشرة مساءً؟",
+          "answer": "كنتُ في مقهى يبعد مسافة كبيرة عن المرسم، ويوجد شهود عيان وفاتورة تُثبت ذلك.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "long",
+        "clothColor": "purple",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "تقرير الطب الشرعي",
+      "description": "أكّد التقرير وجود مادة سامة مركّزة في الجهاز الهضمي للضحية، وبيّنت التحاليل أن السم أُدخل عن طريق مشروب ساخن محلّى.",
+      "type": "physical",
+      "emoji": "🧪",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "السجلات الطبية للضحية",
+      "description": "ملف رسمي يُثبت أن لورينزو فاليري مصاب بمرض السكري الحاد منذ سنوات طويلة، ومحظور عليه تناول السكريات بصورة قاطعة.",
+      "type": "physical",
+      "emoji": "📋",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "فنجان القهوة المحلّى",
+      "description": "فنجان القهوة الموجود على الطاولة يحتوي على ترسبات سكر واضحة في قاعه، إلى جانب آثار المادة السامة.",
+      "type": "physical",
+      "emoji": "☕",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

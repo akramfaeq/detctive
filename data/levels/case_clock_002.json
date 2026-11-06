@@ -1,0 +1,232 @@
+{
+  "id": "case_clock_002",
+  "title": "لغز الساعة المكسورة",
+  "location": "شقة في منطقة كنسينغتون، لندن",
+  "date": "2026/04/12",
+  "shortDesc": "عُثر على رجل أعمال متقاعد مقتولاً في شقته بلندن، وبجانبه ساعة جدارية أثرية متوقفة عند الساعة التاسعة والربع. يدّعي المتهم الرئيسي أنه غادر المدينة قبل وقوع الجريمة، غير أن كلمة واحدة قالها تكشف أنه كان حاضراً.",
+  "thumbnailEmoji": "🕵️‍♂️",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "في ليلة هادئة بشارع كنسينغتون الراقي، تلقّت الشرطة بلاغاً من أحد جيران العمارة يُفيد بسماعه صوت شجار وضجة شديدة قادمة من شقة رجل الأعمال المتقاعد آرثر بينتلي (62 عاماً).\n\nعند وصول المحققين في الساعة العاشرة والنصف مساءً، وجدوا السيد بينتلي مسجّى على الأرض فاقداً للحياة، إثر ضربة بقاعدة تمثال نحاسي على رأسه. بجانب الجثة، كانت ساعة جدارية أثرية تعمل بنظام البندول قد تحطّمت زجاجتها وتوقفت عقاربها عند الساعة التاسعة والربع مساءً.\n\nتوجّهت الشبهات فوراً نحو ابن أخ الضحية أوليفر، الذي شوهد يخرج من البناية تلك الليلة. أنكر أوليفر التهمة، مستنداً إلى توقيت الساعة المكسورة دليلاً على أنه كان بعيداً حين وقعت الجريمة، غير أنه وقع في فخ نصبه لنفسه بكلمة واحدة.",
+  "hint": "انتبه إلى عبارة أوليفر حين وصف لحظة تحطم الساعة بالتحديد — كيف عرف أن الساعة تحطّمت وهو يدّعي أنه كان قد غادر قبل ذلك؟",
+  "correctSuspectId": "char_oliver",
+  "solutionExplanation": "أوليفر هو القاتل الحقيقي، وقد ارتكب جريمته في الساعة السابعة والنصف مساءً تقريباً، وليس عند التاسعة والربع.\n\nخطّط أوليفر لجعل الساعة المكسورة دليلاً على عذر غيابه: أراد إيهام المحققين بأن الجريمة وقعت عند التاسعة والربع، وهو وقت كان يمتلك فيه تذكرة قطار تثبت سفره نحو ليفربول.\n\nالثغرة القاتلة:\nحين سُئل أوليفر عن مغادرته الشقة، قال: \"غادرتُ في الثامنة وسمعتُ صوت تحطم الساعة وأنا أنزل الدرج.\" هذه الجملة تُدينه تماماً:\nأولاً: إذا كان قد غادر قبل الثامنة كما يزعم، فكيف سمع الساعة تتحطم عند التاسعة والربع؟\nثانياً: تقرير الجهة الجنائية أثبت أن زنبرك الساعة كان متوقفاً منذ ساعات قبل تحطمها، أي أن عقاربها توقفت عند التاسعة والربع في وقت سابق وليس بسبب سقوطها.\n\nالساعة تحطمت حين وقع الشجار في الساعة السابعة والنصف، وكانت عقاربها متوقفة أصلاً عند التاسعة والربع من تلقاء نفسها، فاستغل أوليفر ذلك لاختلاق عذر زمني مزيف — إلا أن اعترافه بسماع صوت التحطم وهو في الدرج كشف أنه كان لا يزال في البناية وقت ارتكاب الجريمة.",
+  "characters": [
+    {
+      "id": "char_arthur",
+      "name": "آرثر بينتلي",
+      "age": 62,
+      "role": "الضحية",
+      "description": "رجل أعمال متقاعد يعيش بمفرده في شقته بلندن، ويمتلك مجموعة من الأثاث والساعات الأثرية. عُثر عليه مقتولاً بضربة على الرأس.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية لا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": true,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_oliver",
+      "name": "أوليفر بينتلي",
+      "age": 28,
+      "role": "مشتبه به",
+      "description": "ابن أخ الضحية، شاب مثقل بديون القمار. شوهد يدخل الشقة في السابعة مساءً، ويدّعي أنه غادر في الثامنة متجهاً نحو محطة القطار.",
+      "imageEmoji": "👤",
+      "interrogation": "أوليفر يبدو متوتراً ويُصرّ بإلحاح مريب على تذكّر لحظة تحطم الساعة بالتحديد.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى غادرتَ شقة عمّك ليلة الجريمة؟",
+          "answer": "غادرتُ في تمام الساعة الثامنة مساءً للحاق بقطار ليفربول، وكان عمي على قيد الحياة حين خرجتُ.",
+          "isLie": true,
+          "lieHint": "يدّعي المغادرة في الثامنة، غير أن الجريمة وقعت قبل ذلك بين السابعة والربع والسابعة والنصف."
+        },
+        {
+          "id": "q2",
+          "text": "هل سمعتَ أي أصوات غير عادية حين كنتَ تغادر البناية؟",
+          "answer": "نعم، سمعتُ صوت تحطم الساعة الجدارية بوضوح وأنا أنزل الدرج بعد مغادرتي الشقة.",
+          "isLie": true,
+          "lieHint": "إذا كان قد غادر في الثامنة كما يزعم، فكيف سمع تحطم الساعة التي توقفت عقاربها عند التاسعة والربع؟ هذا يعني أنه كان لا يزال في البناية وقت الجريمة."
+        },
+        {
+          "id": "q3",
+          "text": "لماذا جرى شجار بينك وبين عمّك حسب إفادة الجيران؟",
+          "answer": "كان مجرد نقاش عادي حول بعض المسائل المالية، ولم يتطور إلى أي مواجهة.",
+          "isLie": true,
+          "lieHint": "كان الشجار عنيفاً وأسفر عن مقتل العم وتكسير الأثاث."
+        },
+        {
+          "id": "q4",
+          "text": "أين كنتَ عند الساعة التاسعة والربع مساءً؟",
+          "answer": "كنتُ داخل القطار المتجه إلى ليفربول؛ والساعة المكسورة تؤكد أن الجريمة وقعت في التاسعة والربع وقد غادرتُ قبل ذلك.",
+          "isLie": true,
+          "lieHint": "يستغل توقيت الساعة المزيف دليلاً لبراءته، في حين أن اعترافه بسماع صوت التحطم يكشف أنه كان في البناية وقت الجريمة."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_henry",
+      "name": "السيد هينري",
+      "age": 55,
+      "role": "شاهد",
+      "description": "جار الضحية في الشقة المجاورة. أفاد بسماعه صوت صراخ وسقوط أثاث ثقيل بين السابعة والربع والسابعة والنصف مساءً.",
+      "imageEmoji": "👤",
+      "interrogation": "شاهد دقيق ومستعد لإعادة التفاصيل الزمنية بدقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى سمعتَ صوت الشجار بالتحديد؟",
+          "answer": "سمعتُ الضجة العنيفة وصوت تحطم قوي بين السابعة والربع والسابعة والنصف مساءً، ثم ساد الهدوء تماماً بعد ذلك.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q2",
+          "text": "هل سمعتَ أي صوت في التاسعة والربع مساءً؟",
+          "answer": "لا إطلاقاً، كانت الشقة هادئة تماماً طوال الليل بعد الثامنة.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_clara",
+      "name": "كلارا أندرسون",
+      "age": 40,
+      "role": "مشتبه بها",
+      "description": "تدير متجر الأنتيكات المقابل للبناية. زارت الضحية في السادسة والنصف مساءً لمعاينة بعض القطع الأثرية.",
+      "imageEmoji": "👤",
+      "interrogation": "إفادتها متطابقة مع سجلات المتجر.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما سبب زيارتك للسيد بينتلي؟",
+          "answer": "كنتُ أعاين بعض الساعات الأثرية، وغادرتُ قبل السابعة مساءً فور وصول ابن أخيه.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "long",
+        "clothColor": "brown",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الساعة الجدارية المكسورة",
+      "description": "ساعة جدارية أثرية ملقاة على الأرض بجانب الجثة، زجاجها مكسور وعقاربها متوقفة عند التاسعة والربع مساءً.",
+      "type": "physical",
+      "emoji": "🕰️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "تقرير فحص آلية الساعة",
+      "description": "أثبت الخبير الجنائي أن زنبرك الساعة كان متوقفاً منذ ساعات قبل تحطمها، وأن توقف العقارب عند التاسعة والربع لم يكن نتيجة السقوط، بل حدث تلقائياً في وقت سابق.",
+      "type": "physical",
+      "emoji": "🔍",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "تذكرة قطار ليفربول",
+      "description": "تذكرة قطار باسم أوليفر بينتلي بتوقيت مغادرة الثامنة والربع مساءً من محطة يويستون.",
+      "type": "physical",
+      "emoji": "🎫",
+      "revealOrder": 3,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "شهادة الجار هينري",
+      "description": "أكّد الجار أنه سمع صوت الشجار وتحطم الأشياء الثقيلة بين السابعة والربع والسابعة والنصف مساءً فحسب، وأن الشقة كانت هادئة بعد ذلك.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 4,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 4
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 3
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

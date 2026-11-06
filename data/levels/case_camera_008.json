@@ -1,0 +1,176 @@
+{
+  "id": "case_camera_008",
+  "title": "عطل في الكاميرا الأمنية",
+  "location": "مستودع إلكترونيات، طوكيو، اليابان",
+  "date": "2026/10/22",
+  "shortDesc": "مقتل مدير مستودع في طوكيو. يدّعي أمين المستودع أن الكاميرات توقفت بسبب عطل كهربائي مفاجئ، غير أن السجل الرقمي للنظام يكشف التلاعب المتعمد.",
+  "thumbnailEmoji": "📹",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "في ليلة هادئة بمدينة طوكيو، عُثر على تاجر الإلكترونيات كينجي ساتو (49 عاماً) مقتولاً طعناً داخل المستودع الرئيسي لشركته في الساعة الثامنة صباحاً.\n\nعند استجواب أمين المستودع ومسؤول الأنظمة كينتا، صرّح بأنه كان متواجداً طوال الليل في غرفة الحراسة، وأنه لاحظ توقف كاميرات المراقبة بشكل مفاجئ عند الساعة الثانية صباحاً بسبب عطل كهربائي في البناية، مما حال دون رؤيته للجاني.\n\nاستدعت الشرطة خبيراً تقنياً لفحص أجهزة التسجيل والسجلات الرقمية للكاميرات لمعرفة السبب الحقيقي لانقطاع البث.",
+  "hint": "افحص سجلات النظام الرقمية لجهاز تسجيل الكاميرات، وتحقق مما إذا كان الانقطاع ناتجاً عن عطل كهربائي حقيقي أم تدخل بشري متعمد.",
+  "correctSuspectId": "char_kenta",
+  "solutionExplanation": "القاتل الحقيقي هو أمين المستودع كينتا.\n\nالثغرة القاتلة:\nادّعى كينتا أن الكاميرات توقفت تلقائياً بسبب عطل كهربائي مفاجئ في البناية عند الساعة الثانية صباحاً.\n\nغير أن فحص سجلات النظام الرقمية أثبت أمرين: الأول، أن الجهاز مزوّد ببطارية طوارئ داخلية تُبقي الكاميرات تعمل حتى في حالة انقطاع التيار الكهربائي الخارجي تماماً، ما يعني أن أي عطل كهربائي عادي لا يؤثر على التسجيل. الثاني، أن نظام التسجيل أُوقف يدوياً عن قصد في تمام الساعة الثانية صباحاً باستخدام كلمة مرور المسؤول من لوحة المفاتيح المحلية للجهاز. وبما أن كينتا كان الشخص الوحيد الذي يمتلك صلاحيات المسؤول تلك الليلة، فقد انكشف أنه أوقف الكاميرات بنفسه ليُخفي جريمة قتله للمدير وسرقة الأجهزة.",
+  "characters": [
+    {
+      "id": "char_kenji",
+      "name": "كينجي ساتو",
+      "age": 49,
+      "role": "الضحية",
+      "description": "مدير شركة الإلكترونيات، عُثر عليه مقتولاً داخل المستودع.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_kenta",
+      "name": "كينتا تاكاهاشي",
+      "age": 30,
+      "role": "مشتبه به",
+      "description": "أمين المستودع ومسؤول الأنظمة التقنية، يدّعي أن الكاميرات توقفت تلقائياً بسبب عطل كهربائي ليلي.",
+      "imageEmoji": "👤",
+      "interrogation": "يبدو مرتبكاً حين يُسأل عن تفاصيل نظام الطاقة الاحتياطية للكاميرات.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما الذي حدث لكاميرات المراقبة عند الساعة الثانية صباحاً؟",
+          "answer": "حدث عطل كهربائي مفاجئ في الشبكة، فانطفأت الشاشات وتوقف تسجيل الكاميرات.",
+          "isLie": true,
+          "lieHint": "الجهاز مزوّد ببطارية طوارئ داخلية تُبقيه يعمل عند انقطاع الكهرباء، لذا لا يمكن لأي عطل كهربائي عادي إيقاف الكاميرات."
+        },
+        {
+          "id": "q2",
+          "text": "هل يمتلك أحد غيرك صلاحية الوصول إلى جهاز التحكم الرئيسي للكاميرات؟",
+          "answer": "لا، أنا الوحيد المسؤول عن صيانة وتشغيل غرفة المراقبة وجهاز التسجيل.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q3",
+          "text": "هل غادرتَ غرفة الحراسة في أي وقت خلال تلك الليلة؟",
+          "answer": "لم أغادر غرفة الحراسة أبداً حتى الصباح.",
+          "isLie": true,
+          "lieHint": "بصماته موجودة على باب المستودع الداخلي حيث وقعت الجريمة."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_yuki",
+      "name": "يوكي تاناكا",
+      "age": 27,
+      "role": "مشتبه بها",
+      "description": "موظفة المبيعات، حضرت صباحاً واكتشفت الجريمة حين فتحت بوابة المستودع.",
+      "imageEmoji": "👤",
+      "interrogation": "إفادتها هادئة ومتطابقة مع توقيت اكتشاف الجريمة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى وصلتِ إلى المستودع صباح اليوم؟",
+          "answer": "وصلتُ في الساعة الثامنة صباحاً ووجدتُ كينتا يفتح الباب ببطء.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "purple",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "سجلات النظام الرقمي للكاميرات",
+      "description": "يُثبت التقرير التقني أن التسجيل لم يتوقف بسبب عطل، بل أُوقف يدوياً باستخدام كلمة مرور المسؤول في تمام الساعة الثانية صباحاً.",
+      "type": "digital",
+      "emoji": "🖥️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "تقرير فحص البطارية الاحتياطية للجهاز",
+      "description": "يوضح التقرير أن البطارية الاحتياطية الداخلية للجهاز عملت بكفاءة تامة طوال الليل، وأن الكاميرات لم تتأثر بأي انقطاع في التيار الكهربائي الخارجي.",
+      "type": "physical",
+      "emoji": "🔋",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "إفادة كينتا الأولى",
+      "description": "ادعاء أمين المستودع المتكرر بأن انقطاع الكاميرات كان بسبب عطل كهربائي مفاجئ في البناية.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 3,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}
