@@ -1,4 +1,9 @@
 {
+  "cardId": "isolated_village",
+  "cardTitle": "القرية المعزولة",
+  "cardDescription": "جرائم غامضة في قرية منعزلة عن العالم — كل شيء مشبوه والجميع متهم.",
+  "cardEmoji": "🏚️",
+  "isSeries": false,
   "cases": [
     {
       "id": "case_village_001",

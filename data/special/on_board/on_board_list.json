@@ -1,4 +1,9 @@
 {
+  "cardId": "on_board",
+  "cardTitle": "على المتن",
+  "cardDescription": "جرائم وقعت على متن سفن وطائرات — لا مفر والمجرم بينكم.",
+  "cardEmoji": "🚢",
+  "isSeries": false,
   "cases": [
     {
       "id": "case_onboard_001",

@@ -1,4 +1,9 @@
 {
+  "cardId": "child_witness",
+  "cardTitle": "شاهد صغير",
+  "cardDescription": "طفل شهد الجريمة — لكن هل يصدقه أحد؟",
+  "cardEmoji": "👦",
+  "isSeries": false,
   "cases": [
     {
       "id": "case_child_001",

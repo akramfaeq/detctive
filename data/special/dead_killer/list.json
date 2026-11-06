@@ -134,5 +134,6 @@
       "requiredPoints": 200,
       "mechanism": "faked_death"
     }
-  ]
+  ],
+  "isSeries": false
 }

@@ -1,4 +1,9 @@
 {
+  "cardId": "cold_cases",
+  "cardTitle": "قضايا باردة",
+  "cardDescription": "جرائم أُغلقت دون حل — هل تستطيع فتحها من جديد؟",
+  "cardEmoji": "🧊",
+  "isSeries": false,
   "cases": [
     {
       "id": "case_cold_001",

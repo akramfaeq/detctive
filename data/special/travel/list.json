@@ -134,5 +134,6 @@
       "requiredPoints": 200,
       "vehicle": "monorail"
     }
-  ]
+  ],
+  "isSeries": false
 }

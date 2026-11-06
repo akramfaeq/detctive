@@ -1,4 +1,9 @@
 {
+  "cardId": "wedding_night",
+  "cardTitle": "ليلة الزفاف",
+  "cardDescription": "جرائم وقعت في ليالي أفراح — خلف الابتسامات أسرار قاتلة.",
+  "cardEmoji": "💍",
+  "isSeries": false,
   "cases": [
     {
       "id": "case_wedding_001",

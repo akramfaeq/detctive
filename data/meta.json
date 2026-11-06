@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730793600,
+  "lastUpdate": 1762761600,
   "version": "1.0.0",
   "specialTypes": [
     "arkanum",
@@ -7,7 +7,10 @@
     "dead_killer",
     "isolated_village",
     "travel",
-    "wedding_night"
+    "wedding_night",
+    "on_board",
+    "child_witness",
+    "cold_cases"
   ],
   "notes": "زيادة lastUpdate = التطبيق يجلب كل شي من جديد. الأنواع الخاصة تُحكم من specialTypes"
 }

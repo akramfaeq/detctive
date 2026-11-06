@@ -134,5 +134,6 @@
       "requiredPoints": 200,
       "mechanism": "hidden_room"
     }
-  ]
+  ],
+  "isSeries": false
 }

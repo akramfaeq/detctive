@@ -1,0 +1,129 @@
+{
+  "cardId": "on_board",
+  "cardTitle": "على المتن",
+  "cardDescription": "جرائم وقعت على متن سفن وطائرات — لا مفر والمجرم بينكم.",
+  "cardEmoji": "🚢",
+  "isSeries": false,
+  "cases": [
+    {
+      "id": "case_onboard_001",
+      "title": "الركاب الثلاثة",
+      "location": "قطار أوريان إكسبريس، بين باريس وفيينا",
+      "shortDesc": "في عربة النوم الأولى من قطار أوريان إكسبريس، وُجد تاجر ألماني ثري ميتاً في مقصورته المقفلة. ثلاثة ركاب فقط في نفس العربة — وكلهم يسمعون كل شيء.",
+      "thumbnailEmoji": "🚂",
+      "difficulty": "easy",
+      "estimatedMinutes": 10,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_onboard_002",
+      "title": "الرحلة 447",
+      "location": "طيران الخليج، رحلة دبي - لندن",
+      "shortDesc": "في منتصف رحلة من دبي للندن، وُجد راكب في درجة الأعمال ميتاً في مقعده. الطيارة في الجو — لا مفر لأحد. لكن السم لم يكن في الطعام.",
+      "thumbnailEmoji": "✈️",
+      "difficulty": "easy",
+      "estimatedMinutes": 10,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_onboard_003",
+      "title": "الكابينة المقفلة",
+      "location": "سفينة كوين ماري 2، المحيط الأطلسي",
+      "shortDesc": "في الليلة الثالثة من رحلة عبور الأطلسي، وُجد مدير شركة استثمارية ميتاً في كابينته. النافذة مفتوحة — لكن في وسط المحيط لا مكان لأحد يهرب إليه.",
+      "thumbnailEmoji": "🚢",
+      "difficulty": "easy",
+      "estimatedMinutes": 10,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_onboard_004",
+      "title": "قطار الرصاصة",
+      "location": "شينكانسن، بين طوكيو وأوساكا، اليابان",
+      "shortDesc": "في قطار الشينكانسن الفائق السرعة، اختفت حقيبة تحتوي على بيانات سرية لشركة تقنية كبيرة. صاحبها ادّعى سرقتها — لكن كاميرات القطار تكشف أنه وضعها بيده في مكان ما.",
+      "thumbnailEmoji": "🚄",
+      "difficulty": "medium",
+      "estimatedMinutes": 15,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_onboard_005",
+      "title": "ليلة البحر المتوسط",
+      "location": "سفينة كوستا فورتونا، بين برشلونة وروما",
+      "shortDesc": "في سفرية بحرية فاخرة بالمتوسط، اختفى مليونير بريطاني بين الرسو في برشلونة والوصول لروما. البحر لا يمحو كل شيء — ساعته الذكية لا تزال تُرسل إشارة.",
+      "thumbnailEmoji": "🌊",
+      "difficulty": "medium",
+      "estimatedMinutes": 15,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_onboard_006",
+      "title": "عبّارة منتصف الليل",
+      "location": "عبّارة بين هلسنكي وستوكهولم، بحر البلطيق",
+      "shortDesc": "في رحلة عبّارة ليلية بين فنلندا والسويد، وُجد دبلوماسي فنلندي ميتاً في جناحه الخاص. جواز سفره اختفى — وفي بحر البلطيق لا مكان يهرب منه أحد.",
+      "thumbnailEmoji": "⛴️",
+      "difficulty": "medium",
+      "estimatedMinutes": 15,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_onboard_007",
+      "title": "الطائرة الخاصة",
+      "location": "طائرة خاصة، بين نيويورك وميامي، الولايات المتحدة",
+      "shortDesc": "على متن طائرة خاصة بخمسة ركاب فقط، وُجد مدير صندوق استثماري ميتاً في مقعده بعد ساعة من الإقلاع. أربعة مشتبه بهم ولا مكان يهرب منه أحد.",
+      "thumbnailEmoji": "🛩️",
+      "difficulty": "hard",
+      "estimatedMinutes": 20,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_onboard_008",
+      "title": "سفينة الشحن",
+      "location": "سفينة شحن، المحيط الهندي، بين مومباي وسنغافورة",
+      "shortDesc": "على متن سفينة شحن في المحيط الهندي، وُجد أحد البحارة ميتاً داخل حاوية مقفلة. رمز القفل يعرفه ثلاثة فقط — والجثة داخل حاوية لا علاقة له بعمله.",
+      "thumbnailEmoji": "🚢",
+      "difficulty": "hard",
+      "estimatedMinutes": 20,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_onboard_009",
+      "title": "عبور الأطلسي",
+      "location": "رحلة لوفتهانزا، بين فرانكفورت وشيكاغو",
+      "shortDesc": "في رحلة عبور أطلسية طويلة، اختفت حقيبة دبلوماسية تحتوي على وثائق سرية دولية. المسافة 9 ساعات والجميع لا يزال على متن الطائرة — لكن الوثائق تبخّرت.",
+      "thumbnailEmoji": "🌍",
+      "difficulty": "hard",
+      "estimatedMinutes": 20,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_onboard_010",
+      "title": "المحطة الأخيرة",
+      "location": "سفينة رويال كاريبيان، بين ميامي وجزر الكاريبي",
+      "shortDesc": "على متن رحلة كاريبية فاخرة، وُجد مدير تأمين بريطاني ميتاً في يخت صغير تابع للسفينة قبل رسوها بساعة. اليخت مقفل ولا أحد يملك مفتاحه — إلا ثلاثة.",
+      "thumbnailEmoji": "🏝️",
+      "difficulty": "hard",
+      "estimatedMinutes": 25,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 0
+    }
+  ]
+}
