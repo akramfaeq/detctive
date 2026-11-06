@@ -1,0 +1,124 @@
+{
+  "cases": [
+    {
+      "id": "case_child_001",
+      "title": "الرسمة التي تكشف كل شيء",
+      "location": "حي شينجوكو، طوكيو، اليابان",
+      "shortDesc": "طفل خمس سنوات رسم ما رآه ليلة اختفاء جارتهم. الجميع ظنها رسمة عشوائية — حتى لاحظ المحقق تفصيلاً واحداً غيّر كل شيء.",
+      "thumbnailEmoji": "🖍️",
+      "difficulty": "easy",
+      "estimatedMinutes": 10,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_child_002",
+      "title": "لعبتي الجديدة",
+      "location": "حي أوكفيل، تورنتو، كندا",
+      "shortDesc": "طفلة ست سنوات وجدت شيئاً في حقيبة جارتهم وأخذته لتلعب به. ما أخذته كان الدليل الوحيد على جريمة اختفاء.",
+      "thumbnailEmoji": "🧸",
+      "difficulty": "easy",
+      "estimatedMinutes": 10,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_child_003",
+      "title": "الرجل الذي يخبّئ يده",
+      "location": "مدينة ساو باولو، البرازيل",
+      "shortDesc": "طفل سبع سنوات شاهد رجلاً يهرب من محل مسروق. وصفه للمحققين بطريقة غريبة — 'الرجل الذي يخبّئ يده دايماً'. هذا التفصيل الواحد كشف الجاني.",
+      "thumbnailEmoji": "✋",
+      "difficulty": "easy",
+      "estimatedMinutes": 10,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_child_004",
+      "title": "قصة قبل النوم",
+      "location": "ليون، فرنسا",
+      "shortDesc": "طفلة ثماني سنوات تروي لأمها قصة خيالية عن 'أميرة في القبو'. الأم ضحكت في البداية — ثم أدركت أن ابنتها تصف جارة مختطفة.",
+      "thumbnailEmoji": "📖",
+      "difficulty": "medium",
+      "estimatedMinutes": 15,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_child_005",
+      "title": "الصوت من الغرفة المجاورة",
+      "location": "سيول، كوريا الجنوبية",
+      "shortDesc": "طفل تسع سنوات سمع حواراً من الغرفة المجاورة في الفندق ليلة الجريمة. لم يفهم كل الكلمات — لكن جملة واحدة حفظها غيّرت مسار التحقيق.",
+      "thumbnailEmoji": "🎧",
+      "difficulty": "medium",
+      "estimatedMinutes": 15,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_child_006",
+      "title": "صديقي الخفي",
+      "location": "مدينة غوادالاخارا، المكسيك",
+      "shortDesc": "طفلة سبع سنوات تتحدث عن 'صديقها الخفي' الذي يزورها من الشقة فوقهم ليلاً. الأم قلقت — والمحقق أدرك أن 'الصديق الخفي' شخص حقيقي يختبئ.",
+      "thumbnailEmoji": "👻",
+      "difficulty": "medium",
+      "estimatedMinutes": 15,
+      "evidenceCount": 3,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_child_007",
+      "title": "الذاكرة المكسورة",
+      "location": "ميونخ، ألمانيا",
+      "shortDesc": "طفل عشر سنوات شاهد حادث دهس عمداً — الصدمة أثّرت على ذاكرته وروايته متشتتة. المحقق يجمع الأجزاء المتناثرة ليكتشف أن الطفل يتذكر أكثر مما يظن.",
+      "thumbnailEmoji": "🧩",
+      "difficulty": "hard",
+      "estimatedMinutes": 20,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_child_008",
+      "title": "الكذبة الصادقة",
+      "location": "فلورنسا، إيطاليا",
+      "shortDesc": "طفلة إحدى عشرة سنة تكذب لحماية شخص تحبه — لكن كذبتها غير المحكمة تكشف الحقيقة بطريقة لم تتوقعها.",
+      "thumbnailEmoji": "🤥",
+      "difficulty": "hard",
+      "estimatedMinutes": 20,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_child_009",
+      "title": "اللعبة والدم",
+      "location": "مومباي، الهند",
+      "shortDesc": "طفل ست سنوات شاهد جريمة ظنّها لعبة بين الكبار. يصفها بمصطلحات الألعاب — والمحقق يُترجم كل كلمة لتكشف جريمة قتل.",
+      "thumbnailEmoji": "🎮",
+      "difficulty": "hard",
+      "estimatedMinutes": 20,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 0
+    },
+    {
+      "id": "case_child_010",
+      "title": "الصورة في الحلم",
+      "location": "إسطنبول، تركيا",
+      "shortDesc": "طفلة اثنا عشر عاماً تعاني من أحلام مزعجة متكررة منذ ثلاثة أشهر. الطبيب النفسي يكتشف أن أحلامها ليست خيالاً — بل ذاكرة مكبوتة لحادثة حقيقية شهدتها.",
+      "thumbnailEmoji": "🌙",
+      "difficulty": "hard",
+      "estimatedMinutes": 25,
+      "evidenceCount": 4,
+      "isNew": true,
+      "requiredPoints": 0
+    }
+  ]
+}
