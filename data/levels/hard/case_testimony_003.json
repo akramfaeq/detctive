@@ -1,0 +1,233 @@
+{
+  "id": "case_testimony_003",
+  "title": "الرواية المتكررة",
+  "location": "فيلا خاصة على ضفاف البحيرة، لوزان، سويسرا",
+  "date": "2026/04/29",
+  "shortDesc": "مقتل ملياردير في فيلته المحاطة بالضيوف. خمسة شهود يصفون مشهداً واحداً بتطابق مريب يستحيل في الروايات العفوية الصادقة — والتطابق نفسه هو الدليل على التنسيق المسبق.",
+  "thumbnailEmoji": "🔄",
+  "difficulty": "hard",
+  "estimatedMinutes": 35,
+  "isNew": true,
+  "requiredPoints": 300,
+  "rewardPoints": 400,
+  "fullStory": "في حفلة العشاء الخاصة التي أقامها الملياردير السويسري أوتو فايس (71 عاماً) في فيلته على ضفاف بحيرة جنيف، عُثر عليه مقتولاً في مكتبه بين الحادية عشرة والحادية عشرة والربع ليلاً بينما كان ضيوفه يتناولون العشاء في القاعة الكبرى.\n\nستة أشخاص كانوا في الفيلا: خمسة ضيوف والطاهي. حين استُجوب الضيوف الخمسة عن مكان وجودهم، جاءت إجاباتهم بشكل مثير للريبة — كلهم ادّعوا أنهم رأوا نفس الحادثة الصغيرة: سقوط قنينة نبيذ من الطاولة في الساعة الحادية عشرة بالضبط.\n\nالمحقق النفسي الذي استُعين به نبّه فوراً: في الروايات العفوية الصادقة، كل شاهد يصف الحادثة من زاويته ويذكر تفاصيل مختلفة. التطابق التام في التفاصيل الثانوية علامة تنسيق — أحدهم هو القاتل ودرّب الباقين على الرواية.",
+  "hint": "لا تبحث عن من كذب — ابحث عن من قال الحقيقة بشكل ناقص. الشاهد البريء الوحيد في المجموعة ذكر تفصيلة واحدة زيادة لم يذكرها الآخرون — لأنه رآها فعلاً ولم يكن جزءاً من التنسيق.",
+  "correctSuspectId": "char_maximilian",
+  "solutionExplanation": "القاتل هو ماكسيميليان فايس، ابن الضحية.\n\nالثغرة القاتلة:\nالمحقق راجع الروايات الخمس بدقة. أربعة منهم وصفوا سقوط القنينة بنفس الكلمات: 'قنينة النبيذ الأحمر سقطت من الطرف الأيسر للطاولة.' الخامسة — إيفا الصديقة — قالت: 'سقطت القنينة وسمعت صوت ضحكة ماكسيميليان في نفس اللحظة ثم توقف فجأة.'\n\nإيفا أضافت تفصيلة صوتية لأنها رأت وسمعت فعلاً — لم تكن جزءاً من التنسيق. أما التطابق المريب بين الأربعة الآخرين فيكشف أن ماكسيميليان درّبهم على الرواية وطلب منهم استخدام هذه الجملة كغطاء زمني — لكنه نسي أن إيفا لم تكن في الاجتماع التحضيري.\n\nالدليل الإضافي: بصمة ماكسيميليان وُجدت على كوب كان في مكتب أبيه — كوب ادّعى أنه لم يدخل المكتب قط.",
+  "characters": [
+    {
+      "id": "char_otto",
+      "name": "أوتو فايس",
+      "age": 71,
+      "role": "الضحية",
+      "description": "ملياردير سويسري، مقتول في مكتبه. كان على وشك إعلان تعديل وصيته لصالح مؤسسة خيرية بدلاً من ابنه.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_maximilian",
+      "name": "ماكسيميليان فايس",
+      "age": 43,
+      "role": "مشتبه به",
+      "description": "الابن الوحيد للضحية. مدين بمبالغ ضخمة ويعتمد كلياً على ثروة والده. درّب الضيوف على رواية موحدة لإثبات غيابه عن مكتب والده.",
+      "imageEmoji": "👤",
+      "interrogation": "يُبدي حزناً مُصطنعاً ويُكرر الرواية بنفس الكلمات التي سمعها المحقق من الآخرين.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل دخلت مكتب والدك في أي وقت خلال الحفلة؟",
+          "answer": "لا، كنت في القاعة الكبرى طوال الوقت. قنينة النبيذ سقطت من الطرف الأيسر للطاولة في الحادية عشرة بالضبط — خمسة أشخاص يُؤكدون ذلك.",
+          "isLie": true,
+          "lieHint": "بصمته على كوب في المكتب تُثبت دخوله — والكوب كان ساخناً لا يزال حين وُجدت الجثة."
+        },
+        {
+          "id": "q2",
+          "text": "هل تعلم أن والدك كان يعتزم تعديل وصيته؟",
+          "answer": "سمعت شائعات لكن لم أُصدقها. علاقتنا كانت ممتازة.",
+          "isLie": true,
+          "lieHint": "محامي الوصية يؤكد أنه أبلغ ماكسيميليان بالقرار قبل ثلاثة أيام."
+        },
+        {
+          "id": "q3",
+          "text": "هل اجتمعت بالضيوف قبل وصول الشرطة؟",
+          "answer": "التقينا بشكل طبيعي في القاعة حين اكتشفنا ما حدث.",
+          "isLie": true,
+          "lieHint": "الطاهي رأى ماكسيميليان يجمع الضيوف في الممر قبل استدعاء الشرطة بعشر دقائق."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_eva",
+      "name": "إيفا برونر",
+      "age": 38,
+      "role": "مشتبه بها",
+      "description": "صديقة قديمة لماكسيميليان. لم تكن جزءاً من التنسيق لأنها وصلت متأخرة لاجتماع ماكسيميليان مع الآخرين.",
+      "imageEmoji": "👤",
+      "interrogation": "صادقة دون أن تدرك أن تفصيلتها الإضافية تُدين ماكسيميليان.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "صفي لحظة سقوط قنينة النبيذ.",
+          "answer": "سقطت القنينة وسمعتُ في نفس اللحظة صوت ضحكة ماكسيميليان ثم توقفت فجأة وتوجّه نحو الباب.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "long",
+        "clothColor": "purple",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_hans",
+      "name": "هانز ريتر",
+      "age": 55,
+      "role": "مشتبه به",
+      "description": "رجل أعمال شريك لأوتو. دُرِّب على الرواية الموحدة.",
+      "imageEmoji": "👤",
+      "interrogation": "يُكرر عبارة 'قنينة النبيذ الأحمر سقطت من الطرف الأيسر للطاولة' بنفس الكلمات.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "صف لحظة سقوط القنينة.",
+          "answer": "قنينة النبيذ الأحمر سقطت من الطرف الأيسر للطاولة في الحادية عشرة بالضبط.",
+          "isLie": true,
+          "lieHint": "هذه الجملة بالحرف الواحد تطابق ما قاله الثلاثة الآخرون — التطابق في الروايات العفوية مستحيل."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "تقرير المحقق النفسي",
+      "description": "يُثبت التقرير أن التطابق الحرفي في وصف تفصيلة ثانوية بين أربعة شهود مستقلين أمر يستحيل إحصائياً في الروايات العفوية — ويشير قطعياً إلى تنسيق مسبق.",
+      "type": "physical",
+      "emoji": "🧠",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "مقارنة الروايات الخمس",
+      "description": "أربعة شهود يصفون سقوط القنينة بنفس الجملة الحرفية. إيفا وحدها أضافت تفصيلة صوتية: سماع ضحكة ماكسيميليان ثم توقفها المفاجئ وتوجهه نحو الباب.",
+      "type": "testimony",
+      "emoji": "🗣️",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev3",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "بصمة ماكسيميليان على الكوب",
+      "description": "عُثر داخل مكتب الضحية على كوب قهوة يحمل بصمة ماكسيميليان — وكان الكوب لا يزال دافئاً حين اكتُشفت الجثة.",
+      "type": "physical",
+      "emoji": "☕",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "شهادة الطاهي",
+      "description": "الطاهي رأى ماكسيميليان يجمع الضيوف في الممر الجانبي قبل استدعاء الشرطة بعشر دقائق كاملة.",
+      "type": "testimony",
+      "emoji": "🍳",
+      "revealOrder": 4,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev5",
+      "title": "وثيقة تعديل الوصية",
+      "description": "مسودة موقعة تُثبت أن أوتو كان يعتزم تحويل ثروته لمؤسسة خيرية وإقصاء ماكسيميليان كلياً.",
+      "type": "physical",
+      "emoji": "📄",
+      "revealOrder": 5,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 4,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

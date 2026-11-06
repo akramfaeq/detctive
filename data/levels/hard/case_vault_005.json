@@ -1,0 +1,179 @@
+{
+  "id": "case_vault_005",
+  "title": "صندوق الأمانات",
+  "location": "بنك خاص، جنيف، سويسرا",
+  "date": "2026/06/17",
+  "shortDesc": "سرقة من خزنة بنك لا تُفتح إلا بمفتاحين في آنٍ واحد — أحدهما للمدير والآخر لكبير أمناء الخزينة. كلاهما يتهم الآخر. لكن ساعة المدير الفاخرة التي تتوقف عند الصدمات الشديدة تحسم من كان في الخزنة فعلاً.",
+  "thumbnailEmoji": "🗝️",
+  "difficulty": "hard",
+  "estimatedMinutes": 35,
+  "isNew": true,
+  "requiredPoints": 300,
+  "rewardPoints": 400,
+  "fullStory": "في بنك 'فولر برايفت' العريق بجنيف، اكتُشف فقدان محتويات خزنة رقم 7 — وثائق وأصول بقيمة لا تقل عن ثلاثين مليون فرنك. الخزنة تحتاج مفتاحين يُدوَّران في نفس اللحظة بيدين مختلفتين: مفتاح المدير التنفيذي وكلمة مرور كبير أمناء الخزينة.\n\nالمدير أندرياس شتاين ادّعى أنه لم يقترب من الخزنة. كبير أمناء الخزينة فريدريك رومر ادّعى نفس الشيء. كلاهما متهم والاثنان لا يمكن لأي منهما فتح الخزنة بمفرده.\n\nالمحقق الجنائي لاحظ شيئاً على معصم أندرياس — ساعة فاخرة من نوع يتوقف عقاربها عند تلقيها صدمة ميكانيكية قوية. والساعة كانت متوقفة.",
+  "hint": "الساعة الفاخرة على معصم أندرياس توقفت عند صدمة ميكانيكية. الخزنة الثقيلة تُصدر اهتزازاً قوياً حين تُفتح وتُغلق — ما الوقت الذي توقفت عنده الساعة؟ وهل يتوافق مع وقت السرقة؟",
+  "correctSuspectId": "char_andreas",
+  "solutionExplanation": "المدير أندرياس شتاين هو المحرك الرئيسي للسرقة — بتواطؤ مضطر من فريدريك.\n\nالثغرة القاتلة:\nساعة أندرياس الفاخرة من طراز يتوقف حين يتلقى آلية الحركة الداخلية اهتزازاً قوياً. الخزنة الثقيلة حين تُفتح وتُغلق تُصدر اهتزازاً مميزاً.\n\nالساعة كانت متوقفة عند الساعة الثانية وثماني عشرة دقيقة بعد منتصف الليل — وهو التوقيت الدقيق الذي تُظهره سجلات درجة الحرارة في غرفة الخزنة كنشاط غير معتاد تلك الليلة.\n\nادّعى أندرياس أنه كان في منزله بين منتصف الليل والثالثة صباحاً. لكن ساعته تُثبت أنه كان بجانب الخزنة في الثانية وثماني عشرة دقيقة.\n\nفريدريك أجبره أندرياس على التعاون بالتهديد بكشف قضية قديمة تورط فيها فريدريك.",
+  "characters": [
+    {
+      "id": "char_andreas",
+      "name": "أندرياس شتاين",
+      "age": 52,
+      "role": "مشتبه به",
+      "description": "المدير التنفيذي للبنك. يمتلك المفتاح الأول للخزنة. يرتدي ساعة فاخرة من طراز يتوقف عند الصدمات الميكانيكية.",
+      "imageEmoji": "👤",
+      "interrogation": "يبدو واثقاً لكنه يضع يده اليسرى فوق الساعة باستمرار دون أن يُدرك ذلك.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت بين منتصف الليل والثالثة صباحاً ليلة السرقة؟",
+          "answer": "في منزلي نائماً. يمكن لزوجتي التأكيد.",
+          "isLie": true,
+          "lieHint": "ساعته توقفت عند الثانية وثماني عشرة دقيقة — وهو وقت نشاط غير معتاد في غرفة الخزنة."
+        },
+        {
+          "id": "q2",
+          "text": "متى توقفت ساعتك؟",
+          "answer": "لا أعرف متى بالضبط. ربما اصطدمت بشيء خلال اليوم.",
+          "isLie": true,
+          "lieHint": "الساعة تحتاج صدمة ميكانيكية قوية للتوقف — لا مجرد اصطدام عادي."
+        },
+        {
+          "id": "q3",
+          "text": "هل أجبرت فريدريك على المشاركة؟",
+          "answer": "سؤال مضحك — فريدريك هو من خطط لكل شيء.",
+          "isLie": true,
+          "lieHint": "رسائل تُثبت أن أندرياس هو من بدأ الخطة وأجبر فريدريك بالتهديد."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_frederic",
+      "name": "فريدريك رومر",
+      "age": 45,
+      "role": "مشتبه به",
+      "description": "كبير أمناء الخزينة. يمتلك كلمة المرور الثانية. أُجبر على التعاون بالتهديد.",
+      "imageEmoji": "👤",
+      "interrogation": "خائف وغير متسق — يبدو أنه يُخفي شيئاً لكنه ليس المحرك الرئيسي.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل فتحت الخزنة ليلة السرقة؟",
+          "answer": "لا، لم أقترب منها.",
+          "isLie": true,
+          "lieHint": "كلمة مروره استُخدمت — ولا أحد غيره يعرفها."
+        },
+        {
+          "id": "q2",
+          "text": "هل يمتلك أندرياس معلومات تضرك؟",
+          "answer": "أندرياس زميل عمل عادي.",
+          "isLie": true,
+          "lieHint": "أندرياس يعرف بقضية قديمة يخافها فريدريك."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "ساعة أندرياس المتوقفة",
+      "description": "ساعة فاخرة من طراز يتوقف عند الصدمات الميكانيكية القوية — متوقفة عند الثانية وثماني عشرة دقيقة بعد منتصف الليل.",
+      "type": "physical",
+      "emoji": "⌚",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "سجل درجة الحرارة في غرفة الخزنة",
+      "description": "سجل إلكتروني يُثبت ارتفاع طفيف في درجة الحرارة بين الثانية وربع والثانية وعشرين دقيقة — ناتج عن حركة جسم بشري في الغرفة.",
+      "type": "digital",
+      "emoji": "🌡️",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "وثيقة التهديد",
+      "description": "رسائل مشفرة تُثبت أن أندرياس أرسل لفريدريك معلومات مُدينة له مع طلب 'التعاون في مشروع مؤقت' تحت التهديد.",
+      "type": "digital",
+      "emoji": "📧",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "دليل خبير الساعات",
+      "description": "خبير ساعات فاخرة يُؤكد أن هذا الطراز تحديداً يتوقف فقط عند تلقي اهتزاز يُعادل فتح خزنة بنكية ثقيلة أو صدمة مماثلة — لا يتوقف في الظروف اليومية العادية.",
+      "type": "testimony",
+      "emoji": "🕰️",
+      "revealOrder": 4,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 4,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

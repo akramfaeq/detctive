@@ -1,0 +1,191 @@
+{
+  "id": "case_timing_009",
+  "title": "الساعة الرابعة",
+  "location": "مجمع سكني فاخر، سنغافورة",
+  "date": "2026/10/05",
+  "shortDesc": "أربعة مشتبه بهم يدّعون جميعاً مغادرة المجمع السكني في نفس الوقت تقريباً. الفارق بين الجاني والبريء دقيقتان فقط — لكن نظام الأمن الذي يُسجّل وزن كل سيارة عند الخروج يُثبت أن أحدهم كذب بدقيقتين بالضبط.",
+  "thumbnailEmoji": "⏰",
+  "difficulty": "hard",
+  "estimatedMinutes": 35,
+  "isNew": true,
+  "requiredPoints": 300,
+  "rewardPoints": 400,
+  "fullStory": "في مجمع 'مارينا بيك' السكني الفاخر بسنغافورة، وُجد المصرفي الشهير ريتشارد تان (50 عاماً) مقتولاً في شقته في الطابق الثاني والثلاثين بين الثامنة وخمس وعشرين دقيقة والثامنة وخمس وثلاثين دقيقة مساءً.\n\nأربعة سكان غادروا المجمع تلك الليلة: كل واحد منهم ادّعى المغادرة بين الثامنة وعشرين والثامنة وأربعين دقيقة. الفارق الزمني الذي يجعل أحدهم كاذباً لا يتجاوز دقيقتين.\n\nنظام الأمن المتطور للمجمع يُسجّل وزن كل مركبة عند البوابة بدقة عالية — وسجل تلك الليلة يُظهر أن إحدى السيارات خرجت بوزن أكبر من وزنها المعتاد بفارق يُعادل جسماً إضافياً صغيراً.",
+  "hint": "السيارة التي خرجت بوزن إضافي حملت شيئاً لم تدخل به. ما الذي يمكن أن يحمله القاتل خروجاً من شقة الضحية يُضيف هذا الوزن؟ وأي المشتبه بهم خرج في التوقيت الذي يتوافق مع ارتكاب الجريمة والخروج بالأداة؟",
+  "correctSuspectId": "char_linda",
+  "solutionExplanation": "القاتلة هي ليندا كوه، الجارة في الطابق الثالث والثلاثين.\n\nالثغرة القاتلة:\nسجل نظام الوزن عند البوابة يُثبت أن سيارة ليندا خرجت الثامنة وسبع وثلاثين دقيقة بوزن أكبر من وزنها المعتاد بكيلوغرامين ونصف — وهو وزن حقيبة كبيرة لم تكن معها حين دخلت صباحاً.\n\nالحقيبة احتوت الوشاح الحريري الذي استخدمته في الجريمة وبعض الأدوات — لم تترك شيئاً في شقة الضحية.\n\nادّعت ليندا أنها غادرت الثامنة وخمساً وعشرين دقيقة — لكن سجل الوزن يُثبت خروجها الثامنة وسبعاً وثلاثين دقيقة، أي بعد الجريمة بدقيقتين على الأقل.\n\nالدافع: ريتشارد تان كان على وشك الإفصاح عن احتيال مالي ورطت فيه ليندا عميلات الشركة التي تعمل بها.",
+  "characters": [
+    {
+      "id": "char_richard",
+      "name": "ريتشارد تان",
+      "age": 50,
+      "role": "الضحية",
+      "description": "مصرفي شهير وُجد مقتولاً في شقته. كان يمتلك وثائق تُثبت احتيالاً مالياً كبيراً.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_linda",
+      "name": "ليندا كوه",
+      "age": 44,
+      "role": "مشتبه بها",
+      "description": "جارة في الطابع الثالث والثلاثين. مسؤولة مالية في شركة استثمارية. ادّعت مغادرة المجمع الثامنة وخمساً وعشرين دقيقة.",
+      "imageEmoji": "👤",
+      "interrogation": "تتحدث بدقة مفرطة عن توقيت مغادرتها — دقة تنمّ عن تحضير مسبق.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى بالضبط غادرت المجمع؟",
+          "answer": "الثامنة وخمس وعشرون دقيقة بالضبط — عندي موعد وكنت أراقب الوقت.",
+          "isLie": true,
+          "lieHint": "سجل وزن السيارة عند البوابة يُثبت خروجها الثامنة وسبعاً وثلاثين — فارق اثنتي عشرة دقيقة."
+        },
+        {
+          "id": "q2",
+          "text": "هل كانت معك حقيبة إضافية حين غادرت؟",
+          "answer": "حقيبتي اليومية المعتادة فقط.",
+          "isLie": true,
+          "lieHint": "سجل الوزن يُثبت وزناً إضافياً بكيلوغرامين ونصف لم يكن موجوداً حين دخلت صباحاً."
+        },
+        {
+          "id": "q3",
+          "text": "هل تعرفين ريتشارد تان خارج كونه جاراً؟",
+          "answer": "معرفة سطحية فقط كجيران في نفس الطابق تقريباً.",
+          "isLie": true,
+          "lieHint": "وثيقة الاحتيال التي كان يمتلكها ريتشارد تذكر اسمها صراحة."
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_james",
+      "name": "جيمس وو",
+      "age": 38,
+      "role": "مشتبه به",
+      "description": "ساكن في الطابع التاسع. غادر الثامنة وثمانية وعشرين دقيقة حسب سجل الوزن — يتطابق مع ادعائه.",
+      "imageEmoji": "👤",
+      "interrogation": "إجاباته متسقة مع سجل البوابة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى غادرت المجمع؟",
+          "answer": "الثامنة والنصف تقريباً. كنت مستعجلاً لاجتماع.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "سجل نظام الوزن عند البوابة",
+      "description": "يُثبت السجل الإلكتروني الدقيق أن سيارة ليندا خرجت الثامنة وسبعاً وثلاثين دقيقة — لا الخامسة والعشرين كما ادّعت — وبوزن أكبر من المعتاد بكيلوغرامين ونصف.",
+      "type": "digital",
+      "emoji": "⚖️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "سجل دخول سيارة ليندا صباحاً",
+      "description": "وزن سيارة ليندا حين دخلت صباح الجريمة — يُثبت أنها لم تكن تحمل أي حقيبة إضافية، مما يعني أن الوزن الإضافي جاء من داخل المجمع.",
+      "type": "digital",
+      "emoji": "🚗",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "وثيقة الاحتيال في شقة الضحية",
+      "description": "وثيقة تذكر اسم ليندا صراحة في عملية احتيال مالي تطال عملاء الشركة — كان ريتشارد على وشك تسليمها للجهات الرقابية.",
+      "type": "physical",
+      "emoji": "📄",
+      "revealOrder": 3,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "تقرير الطب الشرعي — وقت الوفاة",
+      "description": "يُحدد التقرير وقت الوفاة بين الثامنة وخمس وعشرين والثامنة وخمس وثلاثين دقيقة — يتوافق مع خروج ليندا الثامنة وسبعاً وثلاثين لا مع الخامسة والعشرين كما ادّعت.",
+      "type": "physical",
+      "emoji": "🩺",
+      "revealOrder": 4,
+      "importance": "important",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 4,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}
