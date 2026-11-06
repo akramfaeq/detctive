@@ -1,0 +1,178 @@
+{
+  "id": "case_child_004",
+  "title": "قصة قبل النوم",
+  "location": "ليون، فرنسا",
+  "date": "2026/03/08",
+  "shortDesc": "طفلة ثماني سنوات تروي لأمها قصة خيالية عن 'أميرة في القبو'. الأم ضحكت في البداية — ثم أدركت أن ابنتها تصف جارة مختطفة.",
+  "thumbnailEmoji": "📖",
+  "difficulty": "medium",
+  "estimatedMinutes": 15,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 200,
+  "fullStory": "في حي هادئ بليون الفرنسية، اختفت المرأة الشابة كلير دوبوا (29 عاماً) منذ أسبوعين. الشرطة ظنت أنها غادرت الحي طوعاً بسبب خلاف عائلي.\n\nالطفلة زوي (8 سنوات) كانت تحكي لأمها كل ليلة قصة عن 'أميرة حبسها الوحش في القبو وهي تبكي وتطرق على الجدار'. الأم تجاهلت القصة أسبوعاً كاملاً.\n\nلكن حين ذكرت زوي أن 'الأميرة شعرها أصفر وعندها وشم فراشة على يدها' — نفس وصف كلير تماماً — أدركت الأم أن ابنتها تصف شيئاً حقيقياً. البيت المجاور لديه قبو وصاحبه بيير لم يُرَ كثيراً مؤخراً.",
+  "hint": "القصة الخيالية فيها تفاصيل واقعية جداً — من تصف زوي بـ'الأميرة'؟",
+  "correctSuspectId": "char_pierre",
+  "childWitnessStatement": "في قصتي في أميرة شعرها أصفر ومحبوسة في القبو وعندها وشم فراشة حلو على يدها. هي تطرق على الجدار كل يوم. الوحش يجيب لها أكل بس ما يخليها تطلع. هي حزينة جداً.",
+  "childWitnessAge": 8,
+  "solutionExplanation": "المجرم هو بيير لوران، جار الضحية.\n\nالثغرة القاتلة:\nزوي سمعت الطرق على الجدار من القبو المجاور وشاهدت من شباك مرة امرأة شقراء بوشم الفراشة — وهو وصف دقيق لكلير. حوّلت ما رأته وسمعته لقصة خيالية كما يفعل الأطفال. بيير لوران يملك القبو في البيت المجاور وعنده سوابق. حين فتشت الشرطة القبو وجدت كلير حية.",
+  "characters": [
+    {
+      "id": "char_claire",
+      "name": "كلير دوبوا",
+      "age": 29,
+      "role": "الضحية",
+      "description": "شابة اختفت منذ أسبوعين. شقراء ولديها وشم فراشة على يدها — تطابق وصف زوي لـ'الأميرة'.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية مختفية ولا يمكن استجوابها.",
+      "questions": [],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "long",
+        "clothColor": "blue",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_pierre",
+      "name": "بيير لوران",
+      "age": 50,
+      "role": "مشتبه به",
+      "description": "جار قبو بيته مجاور لجدار بيت زوي. لم يُرَ كثيراً مؤخراً. لديه سوابق.",
+      "imageEmoji": "👤",
+      "interrogation": "بارد ومتحكم في ردوده. يرفض السماح بتفتيش القبو بدون أمر قضائي.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل تسمح لنا بتفتيش قبو بيتك؟",
+          "answer": "لن أسمح بأي تفتيش بدون أمر قضائي رسمي، هذا حقي القانوني.",
+          "isLie": false,
+          "lieHint": null
+        },
+        {
+          "id": "q2",
+          "text": "هل تعرف كلير دوبوا جارتك المختفية؟",
+          "answer": "رأيتها أحياناً في الشارع، لا أكثر.",
+          "isLie": true,
+          "lieHint": "كاميرا الشارع تظهرهما في حوار طويل قبل أسبوع من اختفائها."
+        },
+        {
+          "id": "q3",
+          "text": "ماذا يوجد في قبو بيتك؟",
+          "answer": "أغراض قديمة فقط، لا شيء مثير للاهتمام.",
+          "isLie": true,
+          "lieHint": "زوي سمعت طرقاً على الجدار المشترك بين بيتها وبيته كل يوم."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "dark",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_zoe",
+      "name": "زوي مارتان",
+      "age": 8,
+      "role": "شاهدة",
+      "description": "طفلة تروي قصص خيالية عن 'أميرة في القبو' — تصف في الحقيقة ما سمعته ورأته.",
+      "imageEmoji": "👤",
+      "interrogation": "تروي قصتها بحماس وخيال لكن التفاصيل الواقعية واضحة جداً.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "من أين جاءت قصة الأميرة في القبو يا زوي؟",
+          "answer": "سمعت طرقاً من الجدار كل يوم وتخيلت أميرة تطرق. ومرة شفت من الشباك بنت شعرها أصفر تنظر من نافذة صغيرة تحت الأرض وكانت تبكي.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "purple",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "قصة زوي — تفاصيل واقعية",
+      "description": "قصة زوي تحتوي على تفاصيل دقيقة تطابق كلير: شعر أصفر ووشم فراشة — لا يمكن لطفلة اختراعها بالصدفة.",
+      "type": "testimonial",
+      "emoji": "📖",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "الطرق اليومي على الجدار",
+      "description": "زوي سمعت طرقاً منتظماً على الجدار المشترك بين بيتها وبيت بيير كل يوم — إشارة استغاثة.",
+      "type": "testimonial",
+      "emoji": "🔨",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "كاميرا الشارع — لقاء بيير وكلير",
+      "description": "كاميرا الشارع تظهر بيير وكلير في حوار طويل قبل أسبوع من اختفائها.",
+      "type": "physical",
+      "emoji": "📹",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

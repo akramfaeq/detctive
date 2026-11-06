@@ -1,0 +1,220 @@
+{
+  "id": "case_child_009",
+  "title": "اللعبة والدم",
+  "location": "مومباي، الهند",
+  "date": "2026/09/03",
+  "shortDesc": "طفل ست سنوات شاهد جريمة ظنّها لعبة بين الكبار. يصفها بمصطلحات الألعاب — والمحقق يُترجم كل كلمة لتكشف جريمة قتل.",
+  "thumbnailEmoji": "🎮",
+  "difficulty": "hard",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 350,
+  "fullStory": "في شقة صغيرة بمومباي، وُجد رجل ميتاً. جاره الطفل أرجون (6 سنوات) كان يلعب في الممر المشترك ورأى ما حدث — لكنه وصفه بمصطلحات ألعاب الفيديو التي يعرفها.\n\nأرجون قال: 'شفت لعبة حلوة. رجل كبير ضرب رجل ثاني وطاح. بعدين الرجل الأول أخذ الكيس الأحمر وركض. اللعبة انتهت وفاز الأول'.\n\nالمحقق رانا ترجم وصف الطفل: 'ضرب' = ضربة قاتلة، 'طاح' = سقط الضحية، 'الكيس الأحمر' = حقيبة جلدية حمراء كانت مع الضحية، 'ركض' = هرب القاتل. وصف أرجون لـ'الرجل الأول' كان دقيقاً جداً: 'طويل وعنده نقطة بيضاء في شعره الأسود'.",
+  "hint": "ترجم كلام الطفل من لغة الألعاب — ما الذي يصفه فعلاً؟ ومن يطابق وصفه؟",
+  "correctSuspectId": "char_vikram",
+  "childWitnessStatement": "شفت لعبة حلوة في الممر. رجل كبير طويل ضرب رجل ثاني وطاح على الأرض. الرجل الأول أخذ الكيس الأحمر وركض بسرعة. عنده نقطة بيضاء في شعره الأسود زي لاعب كارتون أعرفه. اللعبة كانت سريعة.",
+  "childWitnessAge": 6,
+  "solutionExplanation": "القاتل هو فيكرام سينغ، تاجر مدين للضحية.\n\nالثغرة القاتلة:\nأرجون وصف القاتل بـ'نقطة بيضاء في الشعر الأسود' — وهي علامة مميزة جداً. فيكرام سينغ لديه خصلة شعر بيضاء طبيعية في شعره الأسود — لا يوجد في دائرة المشتبه بهم غيره بهذه العلامة. كما أن الحقيبة الجلدية الحمراء التي 'أخذها الرجل' كانت تحتوي على وثائق دين فيكرام للضحية.",
+  "characters": [
+    {
+      "id": "char_victim_mumbai",
+      "name": "رام شارما",
+      "age": 55,
+      "role": "الضحية",
+      "description": "مقرض محلي. وُجد ميتاً في الممر المشترك. حقيبته الحمراء التي تحتوي وثائق الديون مفقودة.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_vikram",
+      "name": "فيكرام سينغ",
+      "age": 42,
+      "role": "مشتبه به",
+      "description": "تاجر مدين للضحية بمبلغ كبير. لديه خصلة شعر بيضاء طبيعية في شعره الأسود.",
+      "imageEmoji": "👤",
+      "interrogation": "ينكر وجوده في المبنى ويدّعي أنه كان في دكانه.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل كنت في المبنى وقت الجريمة؟",
+          "answer": "لا، كنت في دكاني طوال اليوم. اسأل موظفيّ.",
+          "isLie": true,
+          "lieHint": "موظفوه يؤكدون غيابه لساعة كاملة في وقت الجريمة."
+        },
+        {
+          "id": "q2",
+          "text": "هل أنت مدين لرام شارما؟",
+          "answer": "كان بيننا تعامل تجاري عادي، أمور مالية بسيطة.",
+          "isLie": true,
+          "lieHint": "الحقيبة المفقودة تحتوي وثائق دين بمبلغ كبير باسم فيكرام."
+        },
+        {
+          "id": "q3",
+          "text": "هل الخصلة البيضاء في شعرك طبيعية؟",
+          "answer": "نعم طبيعية منذ صغري، كثير من الناس عندهم هذا.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "blue",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_arjun",
+      "name": "أرجون كومار",
+      "age": 6,
+      "role": "شاهد",
+      "description": "طفل كان يلعب في الممر. شاهد الجريمة وظنّها لعبة. وصفه دقيق لكن بمصطلحات الأطفال.",
+      "imageEmoji": "👤",
+      "interrogation": "متحمس لوصف 'اللعبة' التي رآها. لا يدرك خطورة ما شاهده.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "صف لي الرجل الذي 'فاز في اللعبة' يا أرجون.",
+          "answer": "طويل وعنده نقطة بيضاء في شعره الأسود زي لاعب كارتون. أخذ الكيس الأحمر وركض بسرعة كبيرة. ما شافني.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "green",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_rana",
+      "name": "المحقق رانا غوبتا",
+      "age": 48,
+      "role": "شاهد",
+      "description": "محقق خبير. ترجم وصف أرجون من لغة الألعاب لوقائع الجريمة.",
+      "imageEmoji": "👤",
+      "interrogation": "يشرح كيف فسّر كلام الطفل وما توصل إليه.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "كيف فسّرت وصف أرجون؟",
+          "answer": "الطفل وصف الجريمة بمصطلحات ألعاب الفيديو. 'ضرب وطاح' = ضربة قاتلة، 'الكيس الأحمر' = حقيبة وثائق الضحية، 'نقطة بيضاء في الشعر الأسود' = علامة مميزة جداً في المشتبه به. لا يوجد في دائرة مشتبهينا غير فيكرام سينغ بهذه العلامة.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "brown",
+        "hasBeard": true,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "وصف الخصلة البيضاء",
+      "description": "أرجون وصف القاتل بـ'نقطة بيضاء في الشعر الأسود' — علامة مميزة يملكها فيكرام سينغ وحده في دائرة المشتبه بهم.",
+      "type": "testimonial",
+      "emoji": "👤",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "غياب فيكرام عن دكانه",
+      "description": "موظفو فيكرام يؤكدون غيابه ساعة كاملة في وقت الجريمة — يدحض روايته.",
+      "type": "testimonial",
+      "emoji": "🏪",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "وثائق الدين المفقودة",
+      "description": "الحقيبة الحمراء التي وصف أرجون أن القاتل أخذها كانت تحتوي وثائق دين كبير باسم فيكرام سينغ.",
+      "type": "document",
+      "emoji": "💼",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "ترجمة المحقق لوصف الطفل",
+      "description": "المحقق رانا ترجم كل مصطلح من مصطلحات أرجون لوقيعة حقيقية — مما يجعل الشهادة متماسكة ومتسقة مع الأدلة المادية.",
+      "type": "testimonial",
+      "emoji": "🔍",
+      "revealOrder": 4,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

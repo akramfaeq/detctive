@@ -1,0 +1,220 @@
+{
+  "id": "case_child_007",
+  "title": "الذاكرة المكسورة",
+  "location": "ميونخ، ألمانيا",
+  "date": "2026/08/30",
+  "shortDesc": "طفل عشر سنوات شاهد حادث دهس عمداً — الصدمة أثّرت على ذاكرته وروايته متشتتة. المحقق يجمع الأجزاء المتناثرة ليكتشف أن الطفل يتذكر أكثر مما يظن.",
+  "thumbnailEmoji": "🧩",
+  "difficulty": "hard",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 350,
+  "fullStory": "في شارع هادئ بميونخ، دُهس الدكتور فولفغانغ شنايدر (60 عاماً) بسيارة مسرعة التي فرّت فوراً. الطفل فيليكس (10 سنوات) كان الشاهد الوحيد لكن الصدمة أثّرت على ذاكرته.\n\nروايته كانت متشتتة ومتناقضة: مرة قال السيارة حمراء ومرة قال رمادية، مرة قال السائق رجل ومرة قال ما يعرف. المحققون كادوا يتخلون عن شهادته.\n\nلكن طبيب الأطفال المتخصص في الصدمات جلس معه بصبر وكشف أن فيليكس يتذكر تفصيلاً واحداً بثقة تامة لم يتناقض فيه أبداً: 'السيارة كان عليها ملصق كرة قدم فريق بايرن ميونخ على الزجاج الخلفي — وكان فيه خدش كبير في وسط الملصق'.",
+  "hint": "الذاكرة المتشتتة تخفي تفصيلاً واحداً ثابتاً لم يتناقض فيه الطفل أبداً — ما هو؟",
+  "correctSuspectId": "char_hans_driver",
+  "childWitnessStatement": "ما أذكر كل شيء. أذكر... السيارة كانت تجي بسرعة. وأذكر... كان في ملصق بايرن ميونخ على الزجاج الخلفي وفيه خدش كبير في وسطه. هذا أذكره زين. باقي الأشياء مشوشة.",
+  "childWitnessAge": 10,
+  "solutionExplanation": "السائق هو هانز بيكر، مريض سابق للدكتور شنايدر.\n\nالثغرة القاتلة:\nفيليكس تذكر بثقة تامة ملصق بايرن ميونخ بخدش كبير في وسطه — تفصيل شبه مستحيل اختراعه. التحقيق فحص سيارات المشتبه بهم الذين لديهم دوافع ضد الدكتور ووجد سيارة هانز بيكر تحمل هذا الملصق بالخدش المطابق. هانز كان يلوم الدكتور على تشخيص خاطئ أضرّ بعلاجه.",
+  "characters": [
+    {
+      "id": "char_wolfgang",
+      "name": "د. فولفغانغ شنايدر",
+      "age": 60,
+      "role": "الضحية",
+      "description": "طبيب متقاعد. دُهس عمداً في شارع هادئ. أحد مرضاه السابقين يلومه على تشخيص خاطئ.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_hans_driver",
+      "name": "هانز بيكر",
+      "age": 45,
+      "role": "مشتبه به",
+      "description": "مريض سابق للضحية. يلومه على تشخيص خاطئ. سيارته تحمل ملصق بايرن ميونخ بخدش في وسطه.",
+      "imageEmoji": "👤",
+      "interrogation": "ينكر بقوة ويقول أنه كان في مكان آخر.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت ليلة الحادث؟",
+          "answer": "في البيت طوال الوقت، زوجتي معي.",
+          "isLie": true,
+          "lieHint": "زوجته كانت في زيارة لأهلها تلك الليلة — ليس لديه شاهد."
+        },
+        {
+          "id": "q2",
+          "text": "هل لديك ملصق بايرن ميونخ على سيارتك؟",
+          "answer": "كثير من الناس عندهم ملصقات بايرن، هذا لا يعني شيئاً.",
+          "isLie": true,
+          "lieHint": "ملصقه تحديداً فيه خدش كبير في الوسط يطابق وصف فيليكس تماماً."
+        },
+        {
+          "id": "q3",
+          "text": "كيف علاقتك بالدكتور شنايدر؟",
+          "answer": "مريض سابق له فقط، لا مشاعر شخصية.",
+          "isLie": true,
+          "lieHint": "رسائل بريد إلكتروني يلوم فيها الدكتور على تشخيص خاطئ أثّر على علاجه."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_felix",
+      "name": "فيليكس مولر",
+      "age": 10,
+      "role": "شاهد",
+      "description": "الشاهد الوحيد. ذاكرته متشتتة بسبب الصدمة لكن تفصيلاً واحداً يتذكره بثقة تامة.",
+      "imageEmoji": "👤",
+      "interrogation": "يبدو خائفاً ومرتبكاً لكن حين يُسأل عن الملصق يجيب بثقة واضحة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما الذي تتذكره بثقة من السيارة؟",
+          "answer": "الملصق. ملصق بايرن ميونخ على الزجاج الخلفي وفيه خدش كبير في وسطه. هذا أذكره زين جداً لأني ركزت عليه لما مرت السيارة.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "short",
+        "clothColor": "blue",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_child_doctor",
+      "name": "د. أنا فيشر",
+      "age": 40,
+      "role": "شاهدة",
+      "description": "طبيبة متخصصة في صدمات الأطفال. كشفت التفصيل الثابت في ذاكرة فيليكس.",
+      "imageEmoji": "👤",
+      "interrogation": "تشرح بصبر كيف تعمل الذاكرة بعد الصدمة وأهمية التفصيل الثابت.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "كيف تقيّمين موثوقية شهادة فيليكس؟",
+          "answer": "الذاكرة بعد الصدمة تكون مشوشة في التفاصيل الإجمالية لكن تحتفظ بتفصيل واحد أو اثنين بوضوح شديد. الملصق الذي وصفه فيليكس لم يتناقض فيه مرة واحدة خلال ست جلسات — هذا يعني أنه حقيقي بنسبة عالية جداً.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "الملصق بالخدش — التفصيل الثابت",
+      "description": "فيليكس وصف ملصق بايرن ميونخ بخدش كبير في وسطه في كل جلساته الست دون تناقض واحد — تفصيل موثوق.",
+      "type": "testimonial",
+      "emoji": "🏟️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "ملصق سيارة هانز المخدوش",
+      "description": "سيارة هانز بيكر تحمل ملصق بايرن ميونخ بخدش كبير في وسطه يطابق وصف فيليكس تماماً.",
+      "type": "physical",
+      "emoji": "🚗",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "رسائل اللوم للدكتور",
+      "description": "رسائل بريد إلكتروني من هانز للدكتور شنايدر يلومه فيها بشدة على تشخيص خاطئ أثّر على علاجه.",
+      "type": "digital",
+      "emoji": "📧",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "غياب شاهد هانز",
+      "description": "زوجة هانز كانت في زيارة لأهلها ليلة الحادث — لا يوجد شاهد يؤكد وجوده في البيت.",
+      "type": "testimonial",
+      "emoji": "👤",
+      "revealOrder": 4,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

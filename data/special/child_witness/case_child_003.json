@@ -1,0 +1,186 @@
+{
+  "id": "case_child_003",
+  "title": "الرجل الذي يخبّئ يده",
+  "location": "مدينة ساو باولو، البرازيل",
+  "date": "2026/06/15",
+  "shortDesc": "طفل سبع سنوات شاهد رجلاً يهرب من محل مسروق. وصفه للمحققين بطريقة غريبة — 'الرجل الذي يخبّئ يده دايماً'. هذا التفصيل الواحد كشف الجاني.",
+  "thumbnailEmoji": "✋",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "في سوق شعبي بساو باولو، سُرق محل مجوهرات في وضح النهار بينما كان صاحبه في الخلف. الطفل بيدرو (7 سنوات) كان يبيع العصير بجانب المحل مع جده ورأى الجاني يخرج مسرعاً.\n\nحين وصف بيدرو الجاني للمحققين قال: 'رجل كبير بقميص أخضر ويخبّئ يده اليسرى دايماً في جيبه حتى وهو يركض'. لم يهتم المحققون كثيراً بهذا التفصيل في البداية.\n\nلكن المحقق المخضرم كارلوس انتبه — من يخبّئ يده دائماً؟ شخص لديه ما يخفيه في يده، أو شخص يده مميزة بشكل ما. فحص قائمة المشتبه بهم ووجد أن أحدهم فقد إصبعه الخنصر الأيسر في حادث.",
+  "hint": "من يخبّئ يده دائماً؟ وما الذي يجعل يده مميزة؟",
+  "correctSuspectId": "char_roberto",
+  "childWitnessStatement": "رجل كبير طويل لابس قميص أخضر. كان دايماً يخبّئ يده الشمال في جيبه. حتى لما ركض كانت يده جوّا الجيب. وكان شعره أحمر شوية.",
+  "childWitnessAge": 7,
+  "solutionExplanation": "القاتل هو روبيرتو ألفيس، تاجر من السوق المجاور.\n\nالثغرة القاتلة:\nروبيرتو فقد إصبعه الخنصر الأيسر في حادث عمل قبل سنتين — وهو يخبّئ يده اليسرى دائماً بسبب الإحراج. وصف بيدرو الدقيق لشخص 'يخبّئ يده دائماً' حتى أثناء الركض يطابق هذه الحالة تماماً. كما وصف شعراً 'أحمر شوية' وروبيرتو يصبغ شعره بلون بني محمر.",
+  "characters": [
+    {
+      "id": "char_jewelry_owner",
+      "name": "أنطونيو فيريرا",
+      "age": 55,
+      "role": "الضحية",
+      "description": "صاحب محل المجوهرات. وجد محله مسروقاً حين عاد من الخلف.",
+      "imageEmoji": "👤",
+      "interrogation": "غاضب ويريد إيجاد الجاني. لم ير شيئاً بنفسه.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "هل لاحظت أي شيء مريب قبل السرقة؟",
+          "answer": "لا، كان يوماً عادياً. ذهبت للخلف خمس دقائق فقط وحين عدت كانت واجهة المجوهرات فارغة.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_roberto",
+      "name": "روبيرتو ألفيس",
+      "age": 45,
+      "role": "مشتبه به",
+      "description": "تاجر من السوق المجاور. فقد إصبعه الخنصر الأيسر في حادث. يصبغ شعره بني محمر.",
+      "imageEmoji": "👤",
+      "interrogation": "يدافع عن نفسه بقوة ويحاول تشتيت الأسئلة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت بين الساعة الثانية والثالثة ظهراً؟",
+          "answer": "في محلي طوال الوقت، اسأل أي شخص في السوق.",
+          "isLie": true,
+          "lieHint": "لا يوجد شاهد يؤكد تواجده في محله في تلك الفترة."
+        },
+        {
+          "id": "q2",
+          "text": "لماذا تخبّئ يدك اليسرى دائماً؟",
+          "answer": "عادة شخصية فقط، لا معنى لها.",
+          "isLie": true,
+          "lieHint": "يده اليسرى تفقد الإصبع الخنصر — مما يجعله يخجل من إظهارها."
+        },
+        {
+          "id": "q3",
+          "text": "هل ترتدي قمصاناً خضراء عادةً؟",
+          "answer": "أحياناً مثل أي شخص، اللون الأخضر شائع.",
+          "isLie": true,
+          "lieHint": "كاميرا السوق تظهره يرتدي قميصاً أخضر في نفس اليوم."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "green",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_pedro",
+      "name": "بيدرو سانتوس",
+      "age": 7,
+      "role": "شاهد",
+      "description": "طفل يبيع العصير مع جده. الشاهد الوحيد على الجريمة. وصفه للجاني دقيق جداً.",
+      "imageEmoji": "👤",
+      "interrogation": "يتكلم بحيوية ويصف ما رآه بتفاصيل دقيقة بطريقة الأطفال الصادقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "صف لي الرجل الذي رأيته يخرج من المحل يا بيدرو.",
+          "answer": "رجل كبير طويل لابس قميص أخضر. كان دايماً يخبّئ يده الشمال في جيبه. حتى لما ركض كانت يده جوّا الجيب. وكان شعره أحمر شوية. ركض بسرعة وما لاقاني.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "orange",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "وصف بيدرو — اليد المخبّأة دائماً",
+      "description": "الطفل بيدرو لاحظ أن الجاني يخبّئ يده اليسرى في جيبه دائماً حتى أثناء الركض — سلوك غير طبيعي يدل على تميّز جسدي.",
+      "type": "testimonial",
+      "emoji": "✋",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "إصبع روبيرتو المفقود",
+      "description": "سجلات المستشفى تثبت أن روبيرتو ألفيس فقد إصبعه الخنصر الأيسر في حادث عمل قبل سنتين.",
+      "type": "document",
+      "emoji": "🏥",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "كاميرا السوق — القميص الأخضر",
+      "description": "كاميرا السوق تظهر روبيرتو يرتدي قميصاً أخضر في نفس يوم الجريمة.",
+      "type": "physical",
+      "emoji": "📹",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

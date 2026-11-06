@@ -1,0 +1,178 @@
+{
+  "id": "case_child_002",
+  "title": "لعبتي الجديدة",
+  "location": "حي أوكفيل، تورنتو، كندا",
+  "date": "2026/04/22",
+  "shortDesc": "طفلة ست سنوات وجدت شيئاً في حقيبة جارتهم وأخذته لتلعب به. ما أخذته كان الدليل الوحيد على جريمة اختفاء.",
+  "thumbnailEmoji": "🧸",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "في حي أوكفيل الهادئ بتورنتو، أبلغت ليندا كوبر (40 عاماً) عن اختفاء صديقتها راشيل التي لم تأتِ لموعد القهوة الأسبوعي منذ ثلاثة أسابيع.\n\nابنة ليندا إيما (6 سنوات) كانت تلعب بـ'لعبة جديدة حلوة' وجدتها في حقيبة خارجية كانت على باب الجيران. حين سألتها أمها أحضرت مفتاح شقة غير مألوف — كان مفتاح وحدة تخزين خاصة.\n\nالمحقق اكتشف أن المفتاح يعود لوحدة تخزين استأجرها مؤخراً زوج راشيل — مارك — الذي ادّعى أنها سافرت لزيارة أهلها.",
+  "hint": "اللعبة التي وجدتها إيما ليست لعبة — ما هي وإلى أين تقود؟",
+  "correctSuspectId": "char_mark",
+  "childWitnessStatement": "لقيت لعبة حلوة في الشنطة الكبيرة على الباب. هي زي مفتاح بس شكله غريب وعليه رقم. ماما قالت ما آخذ أشياء الناس بس هي حلوة جداً!",
+  "childWitnessAge": 6,
+  "solutionExplanation": "القاتل هو مارك تيلور، زوج الضحية.\n\nالثغرة القاتلة:\nالمفتاح الذي أخذته إيما هو مفتاح وحدة تخزين رقم 47 في مستودع قريب. مارك استأجر الوحدة قبل أسبوع من اختفاء راشيل — ولا يوجد سبب منطقي لاستئجارها. فتح المحققون الوحدة ووجدوا أدلة تدين مارك. الحقيبة كانت على باب الجيران بالخطأ — مارك نسيها هناك.",
+  "characters": [
+    {
+      "id": "char_rachel",
+      "name": "راشيل تيلور",
+      "age": 38,
+      "role": "الضحية",
+      "description": "ربة بيت اختفت منذ ثلاثة أسابيع. زوجها يدّعي أنها سافرت لأهلها.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية مختفية ولا يمكن استجوابها.",
+      "questions": [],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "red",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_mark",
+      "name": "مارك تيلور",
+      "age": 42,
+      "role": "مشتبه به",
+      "description": "زوج الضحية. استأجر وحدة تخزين قبل أسبوع من اختفاء زوجته. يدّعي أنها سافرت.",
+      "imageEmoji": "👤",
+      "interrogation": "يبدو هادئاً ومتعاوناً لكن يتجنب أي سؤال عن الوحدة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "لماذا استأجرت وحدة تخزين قبل أسبوع من اختفاء زوجتك؟",
+          "answer": "لتخزين أثاث قديم، أمور منزلية عادية.",
+          "isLie": true,
+          "lieHint": "الوحدة فارغة من الأثاث لكن فيها أدلة تدين مارك."
+        },
+        {
+          "id": "q2",
+          "text": "هل تعرف من أين جاء هذا المفتاح؟",
+          "answer": "لا أعرف هذا المفتاح، لم أره من قبل.",
+          "isLie": true,
+          "lieHint": "المفتاح يطابق قفل الوحدة المستأجرة باسمه."
+        },
+        {
+          "id": "q3",
+          "text": "متى آخر مرة تحدثت مع أهل زوجتك؟",
+          "answer": "قبل أسبوع، قالوا إنها بخير عندهم.",
+          "isLie": true,
+          "lieHint": "أهل راشيل يؤكدون أنها لم تصلهم ولم يسمعوا منها منذ شهر."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "short",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_emma",
+      "name": "إيما كوبر",
+      "age": 6,
+      "role": "شاهدة",
+      "description": "طفلة الجيران. وجدت مفتاح وحدة التخزين وأخذته ظناً منها أنه لعبة.",
+      "imageEmoji": "👤",
+      "interrogation": "تتكلم بحماس عن 'لعبتها الجديدة' وتصف بالضبط أين وجدتها.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين بالضبط وجدتِ اللعبة يا إيما؟",
+          "answer": "في شنطة كبيرة سودا كانت على باب بيت جيراننا. الشنطة كانت مفتوحة وشفت الشي اللامع جوّا فأخذته!",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "blonde",
+        "hairStyle": "long",
+        "clothColor": "pink",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "مفتاح وحدة التخزين رقم 47",
+      "description": "مفتاح وُجد عند الطفلة إيما يفتح وحدة تخزين استأجرها مارك تيلور قبل أسبوع من اختفاء زوجته.",
+      "type": "physical",
+      "emoji": "🗝️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "عقد استئجار الوحدة",
+      "description": "عقد رسمي يثبت أن مارك استأجر الوحدة رقم 47 قبل 8 أيام من اختفاء راشيل.",
+      "type": "document",
+      "emoji": "📄",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "تأكيد أهل راشيل",
+      "description": "أهل راشيل يؤكدون أنها لم تصلهم ولم يسمعوا منها منذ شهر — يدحض رواية مارك.",
+      "type": "testimonial",
+      "emoji": "📞",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

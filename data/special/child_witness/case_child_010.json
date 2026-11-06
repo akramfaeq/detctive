@@ -1,0 +1,228 @@
+{
+  "id": "case_child_010",
+  "title": "الصورة في الحلم",
+  "location": "إسطنبول، تركيا",
+  "date": "2026/11/14",
+  "shortDesc": "طفلة اثنا عشر عاماً تعاني من أحلام مزعجة متكررة منذ ثلاثة أشهر. الطبيب النفسي يكتشف أن أحلامها ليست خيالاً — بل ذاكرة مكبوتة لحادثة حقيقية شهدتها.",
+  "thumbnailEmoji": "🌙",
+  "difficulty": "hard",
+  "estimatedMinutes": 25,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 350,
+  "fullStory": "في إسطنبول، راجعت عائلة دنيز (12 سنة) طبيباً نفسياً بسبب أحلام مزعجة متكررة تؤرقها منذ ثلاثة أشهر. تصف في كل حلم نفس المشهد: 'غرفة زرقاء وامرأة تصرخ ورجل يحمل حقيبة سوداء ويخرج'.\n\nالطبيب النفسي الدكتور أحمد لاحظ أن الأحلام تبدأ بالتاريخ الذي سافرت فيه دنيز مع أهلها لزيارة خالتها. في تلك الليلة بالذات سمعت دنيز شيئاً من الغرفة المجاورة في فندقهم وكبتت الذاكرة بسبب الصدمة.\n\nفي نفس الفترة بلّغت امرأة عن اختفاء زوجها من نفس الفندق. الغرفة المجاورة لعائلة دنيز كانت مطلية بالأزرق — وصف يطابق 'الغرفة الزرقاء' في أحلامها.",
+  "hint": "الأحلام المتكررة ذاكرة مكبوتة — ما الذي رأته دنيز فعلاً تلك الليلة في الفندق؟",
+  "correctSuspectId": "char_kemal",
+  "childWitnessStatement": "في الحلم دايماً في غرفة زرقاء. وفي امرأة تصرخ وتقول 'لا بلاش'. ورجل طويل عنده حاجب واحد كبير يمشي فوق الثاني يحمل حقيبة سودا ويخرج من الباب بسرعة. بعدين يصير هدوء. هذا الحلم يجيني كل ليلة.",
+  "childWitnessAge": 12,
+  "solutionExplanation": "القاتل هو كمال أيدين، صديق زوج الضحية.\n\nالثغرة القاتلة:\nدنيز وصفت 'رجل طويل عنده حاجب واحد كبير يمشي فوق الثاني' — وصف حاجب مندمج وهي علامة مميزة جداً. كمال أيدين لديه هذه العلامة بالضبط. الحقيبة السوداء التي حملها وخرج بها من غرفة ضحيته كانت تحتوي أموالاً. دنيز رأت كل شيء من فرجة الباب المجاور حين استيقظت على الصراخ — وذاكرتها المكبوتة ظهرت على شكل أحلام.",
+  "characters": [
+    {
+      "id": "char_victim_istanbul",
+      "name": "سلمى يلماظ",
+      "age": 45,
+      "role": "الضحية",
+      "description": "امرأة اختفى زوجها من الفندق. هي الصارخة في أحلام دنيز.",
+      "imageEmoji": "👤",
+      "interrogation": "مصدومة وتتعاون. تؤكد أن زوجها اختفى وأن آخر شخص رآه كان كمال.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "من كان آخر من رأى زوجك؟",
+          "answer": "كمال أيدين صديقه. قالوا إنهما خرجا معاً من الغرفة لكن زوجي لم يعد.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "blue",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_kemal",
+      "name": "كمال أيدين",
+      "age": 48,
+      "role": "مشتبه به",
+      "description": "صديق زوج الضحية. حاجبه مندمج — علامة مميزة وصفتها دنيز بدقة. كان في الفندق ليلة الجريمة.",
+      "imageEmoji": "👤",
+      "interrogation": "يدّعي أنه غادر الفندق مبكراً وأن زوج سلمى كان بخير حين فارقه.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "متى غادرت الفندق ليلة الجريمة؟",
+          "answer": "غادرت في العاشرة مساءً بعد أن تركت صديقي بخير في غرفته.",
+          "isLie": true,
+          "lieHint": "كاميرا الفندق تظهره يخرج في الثانية عشرة ليلاً بحقيبة سوداء لم تكن معه حين دخل."
+        },
+        {
+          "id": "q2",
+          "text": "هل أحضرت حقيبة سوداء للفندق؟",
+          "answer": "لا، لم يكن معي سوى محفظتي.",
+          "isLie": true,
+          "lieHint": "كاميرا المدخل تظهره يدخل بيدين فارغتين ويخرج بحقيبة سوداء."
+        },
+        {
+          "id": "q3",
+          "text": "هل كان بينك وبين صديقك خلاف مالي؟",
+          "answer": "لا، كانت علاقتنا ممتازة دائماً.",
+          "isLie": true,
+          "lieHint": "رسائل تثبت خلافاً حاداً على دين كبير رفض صديقه سداده."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "dark",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_deniz",
+      "name": "دنيز قايا",
+      "age": 12,
+      "role": "شاهدة",
+      "description": "طفلة تعاني من أحلام مزعجة متكررة هي في الحقيقة ذاكرة مكبوتة لما رأته في الفندق.",
+      "imageEmoji": "👤",
+      "interrogation": "تصف أحلامها بتفاصيل دقيقة متسقة. لا تعلم أنها تصف ذكرى حقيقية.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "صفي لي الرجل في حلمك بدقة.",
+          "answer": "طويل وعنده حاجب واحد كبير يمشي فوق الثاني — زي حاجب مدمج. يحمل حقيبة سودا ويمشي بسرعة. وجهه ما شفته كامل بس الحاجب واضح.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "tan",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "purple",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_dr_ahmed",
+      "name": "الدكتور أحمد تشيليك",
+      "age": 50,
+      "role": "شاهد",
+      "description": "طبيب نفسي متخصص في صدمات الأطفال. اكتشف أن أحلام دنيز ذاكرة مكبوتة.",
+      "imageEmoji": "👤",
+      "interrogation": "يشرح بدقة علمية آلية الذاكرة المكبوتة وأهمية ما تصفه دنيز.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "كيف تأكدت أن أحلام دنيز ذاكرة حقيقية وليست خيالاً؟",
+          "answer": "ثلاثة أشياء: التكرار الحرفي الدقيق في كل مرة يدل على ذاكرة لا خيال، التفاصيل متسقة دون تناقض على مدى عشرين جلسة، وبدء الأحلام بالتاريخ الدقيق لزيارة الفندق ليس صدفة. الذاكرة المكبوتة تظهر هكذا عند الأطفال.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "tan",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "white",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "وصف الحاجب المندمج",
+      "description": "دنيز وصفت رجلاً بحاجب مندمج بشكل متسق في عشرين جلسة — علامة مميزة تطابق كمال أيدين وحده.",
+      "type": "testimonial",
+      "emoji": "🌙",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "كاميرا الفندق — الحقيبة السوداء",
+      "description": "كاميرا مدخل الفندق تظهر كمال يدخل بيدين فارغتين ويخرج في الثانية عشرة ليلاً بحقيبة سوداء.",
+      "type": "physical",
+      "emoji": "📹",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "تقرير الطبيب النفسي",
+      "description": "الدكتور أحمد يؤكد علمياً أن تكرار الأحلام بنفس التفاصيل الدقيقة لعشرين جلسة يعني ذاكرة حقيقية مكبوتة.",
+      "type": "document",
+      "emoji": "📋",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "الغرفة الزرقاء في الفندق",
+      "description": "الغرفة المجاورة لغرفة عائلة دنيز في الفندق مطلية بالأزرق — تطابق وصفها لـ'الغرفة الزرقاء' في أحلامها.",
+      "type": "physical",
+      "emoji": "🔵",
+      "revealOrder": 4,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

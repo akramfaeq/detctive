@@ -1,0 +1,227 @@
+{
+  "id": "case_child_008",
+  "title": "الكذبة الصادقة",
+  "location": "فلورنسا، إيطاليا",
+  "date": "2026/10/05",
+  "shortDesc": "طفلة إحدى عشرة سنة تكذب لحماية شخص تحبه — لكن كذبتها غير المحكمة تكشف الحقيقة بطريقة لم تتوقعها.",
+  "thumbnailEmoji": "🤥",
+  "difficulty": "hard",
+  "estimatedMinutes": 20,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 350,
+  "fullStory": "في فيلا عائلية بضواحي فلورنسا، وُجد أنطونيو روسي (65 عاماً) ميتاً في مكتبته. حفيدته كياراً (11 سنة) كانت في الفيلا تلك الليلة مع والدها ماركو وعمها لوكا.\n\nكياراً قالت للمحقق بثقة: 'أبي ماركو كان معي في غرفتي طوال الليل يحكي لي قصة حتى نمت'. رواية مثالية لتبرئة والدها.\n\nلكن المحقق الخبير جوليو لاحظ تفصيلاً: كياراً قالت 'حكى لي قصة الجنية الزرقاء التي يحكيها دايماً' — والقصة التي يحكيها ماركو لابنته دائماً هي 'الجنية الحمراء' وليس الزرقاء. كياراً كذبت لكنها لم تعرف التفصيل الصحيح لأن والدها لم يكن معها فعلاً.",
+  "hint": "الطفلة تكذب لكنها أخطأت في تفصيل واحد لا يعرفه إلا من كان موجوداً فعلاً — ما هو؟",
+  "correctSuspectId": "char_marco",
+  "childWitnessStatement": "أبي كان معي طوال الليل في غرفتي. حكى لي قصة الجنية الزرقاء اللي يحكيها لي دايماً وبعدها نمت. أبي ما راح من غرفتي أبداً.",
+  "childWitnessAge": 11,
+  "solutionExplanation": "القاتل هو ماركو روسي، ابن الضحية ووالد كياراً.\n\nالثغرة القاتلة:\nكياراً قالت إن أباها حكى لها 'قصة الجنية الزرقاء التي يحكيها دائماً' — لكن القصة التي يحكيها ماركو لابنته دائماً هي 'الجنية الحمراء'. هذا التناقض الصغير يثبت أن ماركو لم يكن في الغرفة فعلاً وأن كياراً تكذب لحمايته لكنها لم تعرف التفصيل الصحيح. ماركو قتل والده في نزاع على الميراث ثم أقنع ابنته بتقديم شهادة كاذبة.",
+  "characters": [
+    {
+      "id": "char_antonio",
+      "name": "أنطونيو روسي",
+      "age": 65,
+      "role": "الضحية",
+      "description": "رجل أعمال ثري. وُجد ميتاً في مكتبة فيلته العائلية. كان على وشك تغيير وصيته.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية متوفى ولا يمكن استجوابه.",
+      "questions": [],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "white",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    },
+    {
+      "id": "char_marco",
+      "name": "ماركو روسي",
+      "age": 40,
+      "role": "مشتبه به",
+      "description": "ابن الضحية. يدّعي أنه كان مع ابنته كياراً طوال الليل. كان سيخسر حصته في الميراث.",
+      "imageEmoji": "👤",
+      "interrogation": "يتمسك بشهادة ابنته ويبدو واثقاً.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما القصة التي حكيتها لكياراً تلك الليلة؟",
+          "answer": "القصة التي أحكيها لها دائماً — الجنية الحمراء.",
+          "isLie": true,
+          "lieHint": "كياراً قالت 'الجنية الزرقاء' — التناقض يثبت أنه لم يكن في الغرفة."
+        },
+        {
+          "id": "q2",
+          "text": "هل كنت تعلم أن والدك سيغير وصيته؟",
+          "answer": "سمعت إشاعات لكن لم يخبرني رسمياً.",
+          "isLie": true,
+          "lieHint": "محامي الأسرة يؤكد أن أنطونيو أبلغ ماركو شخصياً قبل يومين."
+        },
+        {
+          "id": "q3",
+          "text": "هل أنت من أقنع كياراً بالشهادة لصالحك؟",
+          "answer": "ابنتي تكلمت بحرية تامة وبدون أي ضغط مني.",
+          "isLie": true,
+          "lieHint": "كياراً أخطأت في تفصيل القصة مما يثبت أنها تكذب بناءً على ما أخبرها به والدها."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "black",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_chiara",
+      "name": "كياراً روسي",
+      "age": 11,
+      "role": "شاهدة",
+      "description": "حفيدة الضحية وابنة المشتبه به. تكذب لحماية والدها لكن كذبتها تنطوي على خطأ يفضحها.",
+      "imageEmoji": "👤",
+      "interrogation": "تبدو واثقة في البداية لكن حين يُضغط عليها في تفصيل القصة تتلعثم.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ما القصة التي حكاها أبوك لك تلك الليلة؟",
+          "answer": "قصة الجنية الزرقاء اللي يحكيها لي دايماً قبل النوم.",
+          "isLie": true,
+          "lieHint": "القصة التي يحكيها ماركو دائماً هي الجنية الحمراء وليس الزرقاء."
+        },
+        {
+          "id": "q2",
+          "text": "هل أنت متأكدة أن أبوك كان معك طوال الليل؟",
+          "answer": "نعم، كان معي حتى نمت.",
+          "isLie": true,
+          "lieHint": "أخطأت في تفصيل القصة مما يثبت أنها لم تعش اللحظة فعلاً."
+        }
+      ],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "brown",
+        "hairStyle": "long",
+        "clothColor": "pink",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_giulio",
+      "name": "المحقق جوليو فيراري",
+      "age": 55,
+      "role": "شاهد",
+      "description": "محقق خبير لاحظ التناقض في قصة كياراً.",
+      "imageEmoji": "👤",
+      "interrogation": "يشرح بهدوء كيف اكتشف التناقض الصغير الذي كشف الحقيقة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "كيف اكتشفت أن شهادة كياراً كاذبة؟",
+          "answer": "قالت إن أباها حكى لها 'قصة الجنية الزرقاء التي يحكيها دائماً'. سألت المربية العائلية فأكدت أن القصة التي يحكيها ماركو لكياراً منذ سنوات هي الجنية الحمراء. هذا التناقض الصغير كشف أن كياراً تحفظت رواية أعطاها إياها والدها لكنه نسي تصحيح هذا التفصيل.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "gray",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": true
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "التناقض في لون الجنية",
+      "description": "كياراً قالت 'الجنية الزرقاء' بينما القصة الحقيقية التي يحكيها ماركو دائماً هي 'الجنية الحمراء' — تناقض يثبت أنها تكذب.",
+      "type": "testimonial",
+      "emoji": "🧚",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "تأكيد المربية العائلية",
+      "description": "المربية العائلية تؤكد أن 'الجنية الحمراء' هي القصة التي يحكيها ماركو لكياراً منذ سنوات دون استثناء.",
+      "type": "testimonial",
+      "emoji": "👩‍🍼",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "إبلاغ ماركو بتغيير الوصية",
+      "description": "محامي الأسرة يؤكد أن أنطونيو أبلغ ماركو شخصياً بقراره تغيير الوصية قبل يومين من وفاته.",
+      "type": "testimonial",
+      "emoji": "⚖️",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    },
+    {
+      "id": "ev4",
+      "title": "ماركو قال الجنية الحمراء",
+      "description": "حين سُئل ماركو عن القصة قال 'الجنية الحمراء' — يختلف عما قالته ابنته 'الزرقاء' مما يثبت أن الرواية ملفقة.",
+      "type": "testimonial",
+      "emoji": "🔴",
+      "revealOrder": 4,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": false }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}

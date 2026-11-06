@@ -1,0 +1,178 @@
+{
+  "id": "case_child_001",
+  "title": "الرسمة التي تكشف كل شيء",
+  "location": "حي شينجوكو، طوكيو، اليابان",
+  "date": "2026/02/10",
+  "shortDesc": "طفل خمس سنوات رسم ما رآه ليلة اختفاء جارتهم. الجميع ظنها رسمة عشوائية — حتى لاحظ المحقق تفصيلاً واحداً غيّر كل شيء.",
+  "thumbnailEmoji": "🖍️",
+  "difficulty": "easy",
+  "estimatedMinutes": 10,
+  "isNew": true,
+  "requiredPoints": 0,
+  "rewardPoints": 100,
+  "fullStory": "في حي شينجوكو الهادئ بطوكيو، اختفت الجارة أيكو ناكامورا (35 عاماً) في ليلة ماطرة. زوجها كينجي أبلغ الشرطة في الصباح وادّعى أنها خرجت ولم تعد.\n\nالطفل ريو (5 سنوات)، ابن الجيران، كان مستيقظاً تلك الليلة ورسم ما رآه من نافذته: رجل يحمل شيئاً ثقيلاً نحو السيارة تحت المطر. الجميع ظنها مجرد رسمة طفل خيالية.\n\nلكن المحقق لاحظ في الرسمة تفصيلاً دقيقاً — الرجل في الرسمة يرتدي حذاءً بلون مختلف في كل قدم. وحين فحص المحقق أحذية كينجي وجد زوجاً غير متطابق اللون في خزانته.",
+  "hint": "الطفل رسم تفصيلاً لم ينتبه له الكبار — ماذا كان في قدمي الرجل؟",
+  "correctSuspectId": "char_kenji",
+  "childWitnessStatement": "رجل شايل شي تقيل وحطّه في السيارة. كان لابس جزمة حمرا وجزمة سودا. كان المطر يبلّله.",
+  "childWitnessAge": 5,
+  "solutionExplanation": "القاتل هو كينجي ناكامورا، زوج الضحية.\n\nالثغرة القاتلة:\nريو رسم رجلاً يرتدي حذاءً بلونين مختلفين — أحمر وأسود. في خزانة كينجي وُجد زوج أحذية رياضية: حذاء أحمر وحذاء أسود من نفس الطراز. ارتداه بالخطأ في الظلام والمطر حين كان يُخرج جثة زوجته للسيارة. ريو لم يكن يعلم أهمية ما رأى — لكن رسمه أدانت القاتل.",
+  "characters": [
+    {
+      "id": "char_aiko",
+      "name": "أيكو ناكامورا",
+      "age": 35,
+      "role": "الضحية",
+      "description": "جارة عائلة ريو. اختفت في ليلة ماطرة. زوجها أبلغ عن اختفائها في الصباح.",
+      "imageEmoji": "👤",
+      "interrogation": "الضحية مختفية ولا يمكن استجوابها.",
+      "questions": [],
+      "appearance": {
+        "gender": "female",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "long",
+        "clothColor": "gray",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_kenji",
+      "name": "كينجي ناكامورا",
+      "age": 38,
+      "role": "مشتبه به",
+      "description": "زوج الضحية. أبلغ عن اختفائها. في خزانته حذاءان غير متطابقَي اللون.",
+      "imageEmoji": "👤",
+      "interrogation": "يتظاهر بالقلق ويدّعي أنها غادرت بإرادتها.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "أين كنت ليلة اختفاء زوجتك؟",
+          "answer": "كنت في البيت نائماً، استيقظت ووجدتها غائبة.",
+          "isLie": true,
+          "lieHint": "ريو رأى رجلاً يحمل شيئاً ثقيلاً نحو السيارة في نفس الليلة."
+        },
+        {
+          "id": "q2",
+          "text": "لماذا في خزانتك حذاءان بلونين مختلفين؟",
+          "answer": "اشتريتهما بالخطأ، لم أنتبه لوقت الشراء.",
+          "isLie": true,
+          "lieHint": "الحذاءان من طرازَين مختلفَين تماماً — مستحيل شراؤهما بالخطأ."
+        },
+        {
+          "id": "q3",
+          "text": "هل كان بينك وبين زوجتك خلافات؟",
+          "answer": "حياتنا كانت هادئة تماماً.",
+          "isLie": true,
+          "lieHint": "الجيران سمعوا شجاراً حاداً في البيت قبل يومين من الاختفاء."
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "navy",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    },
+    {
+      "id": "char_ryu",
+      "name": "ريو تاناكا",
+      "age": 5,
+      "role": "شاهد",
+      "description": "طفل الجيران. رسم ما رآه من نافذته ليلة الاختفاء دون أن يدرك أهمية ما رسم.",
+      "imageEmoji": "👤",
+      "interrogation": "يتكلم ببراءة تامة ويصف ما رآه كأنه يحكي قصة.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "ماذا رأيت من النافذة تلك الليلة يا ريو؟",
+          "answer": "رجل شايل شي تقيل وحطّه في السيارة. كان لابس جزمة حمرا وجزمة سودا. كان المطر يبلّله وكان زعلان.",
+          "isLie": false,
+          "lieHint": null
+        }
+      ],
+      "appearance": {
+        "gender": "male",
+        "skinTone": "light",
+        "hairColor": "black",
+        "hairStyle": "short",
+        "clothColor": "yellow",
+        "hasBeard": false,
+        "hasGlasses": false
+      }
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev1",
+      "title": "رسمة ريو — الحذاءان المختلفان",
+      "description": "رسمة الطفل تظهر رجلاً يرتدي حذاءً أحمر في القدم اليمنى وأسود في اليسرى — تفصيل دقيق لا يخترعه طفل.",
+      "type": "physical",
+      "emoji": "🖼️",
+      "revealOrder": 1,
+      "importance": "critical",
+      "unlocksEvidenceId": "ev2",
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev2",
+      "title": "الحذاءان في خزانة كينجي",
+      "description": "في خزانة كينجي حذاء رياضي أحمر وآخر أسود من نفس الطراز — يطابقان ما رسمه ريو تماماً.",
+      "type": "physical",
+      "emoji": "👟",
+      "revealOrder": 2,
+      "importance": "critical",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": true, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    },
+    {
+      "id": "ev3",
+      "title": "شهادة الجيران عن الشجار",
+      "description": "جيران سمعوا شجاراً حاداً بين كينجي وزوجته قبل يومين من الاختفاء.",
+      "type": "testimonial",
+      "emoji": "👂",
+      "revealOrder": 3,
+      "importance": "supporting",
+      "unlocksEvidenceId": null,
+      "difficultyVisibility": {
+        "easy": { "showImportanceTag": true, "showDescription": true },
+        "medium": { "showImportanceTag": false, "showDescription": true },
+        "hard": { "showImportanceTag": false, "showDescription": true }
+      }
+    }
+  ],
+  "difficultySettings": {
+    "easy": {
+      "showLieIndicator": true,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": true,
+      "evidencesLockedCount": 0,
+      "interrogationQuestionsPerChar": 3
+    },
+    "medium": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": true,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 1,
+      "interrogationQuestionsPerChar": 2
+    },
+    "hard": {
+      "showLieIndicator": false,
+      "showEvidenceImportance": false,
+      "showLinkingSuggestions": false,
+      "evidencesLockedCount": 2,
+      "interrogationQuestionsPerChar": 2
+    }
+  }
+}
