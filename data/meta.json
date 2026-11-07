@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1762761600,
+  "lastUpdate": 1762848000,
   "version": "1.0.0",
   "specialTypes": [
     "arkanum",
@@ -13,4 +13,4 @@
     "cold_cases"
   ],
   "notes": "زيادة lastUpdate = التطبيق يجلب كل شي من جديد. الأنواع الخاصة تُحكم من specialTypes"
-} 
+}
